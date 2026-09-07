@@ -1,0 +1,10 @@
+{
+  "source_manifests": {
+    "icbhi_cycles": "e19935b19ead0dd44051a706eff8d1dd7c61993c95741c7d7dd8c7f535f428b4",
+    "icbhi_recordings": "fa56905ddce673f1b4970f2a724e9e91be21152ed277368a331b88075f424441",
+    "sprsound_events": "feceeb48afe952061a3192239e637ee7d27f0d9574b03b56f118bbbdbb180ded",
+    "sprsound_recordings": "f9ea0327a90f91cef6b2d8fb5b13e91248a4a059c0d3a69521a10a51a7098377"
+  },
+  "cross_domain_binary": "2dd168129fc0fc159db201f2990c4d7074cb746fc9bc2c13bd5031e47dbd1419",
+  "cross_domain_binary_audit": "9f02d709b989677097bab227bfd1a9f8b3d2dd299f3c3018d02aa1242810e201"
+}

@@ -1,0 +1,11 @@
+{
+  "status": "complete_pending_independent_QA",
+  "completed_at": "2026-09-05T20:17:37.397196+08:00",
+  "base_execution_freeze_sha256": "16c9dc34ad7aae4c2c055fff35f6c4452f4905c1e8d501a7a6a5f5df7f778f66",
+  "path_amendment_sha256": "0697b1e1d8854c91aeb352a3d0a0c2b4851664a0a3d9fa33ed2d4506b180dad3",
+  "validation_path_audit_sha256": "8fc73f0324675eaa40d9431104f5cc63edc869234d6b15454c70794910c6410e",
+  "prediction_manifest_sha256": "ced549d2f646a44c256b57a3210fa407d2d2a8baf2fb11fa0145c0c085a607b1",
+  "analysis_b_final_sha256": "93d4be2e39ce59fd47349e9940175de0c2632e521398d4defc83bc12e6cc3a13",
+  "original_statistics_code_unchanged": true,
+  "same_role_paths_matched_between_arms": true
+}

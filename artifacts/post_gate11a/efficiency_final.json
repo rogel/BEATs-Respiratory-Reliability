@@ -1,0 +1,243 @@
+{
+  "stage": "post_gate11a_efficiency",
+  "device": "mps",
+  "input": {
+    "sample_rate": 16000,
+    "seconds": 8.0,
+    "samples": 128000,
+    "mask": "all valid"
+  },
+  "families": {
+    "fullft": {
+      "single": {
+        "logical_total_parameters": 90313330,
+        "training_parameters": 90313330,
+        "checkpoint_bytes": 361505735,
+        "profiles": {
+          "1": {
+            "batch_size": 1,
+            "warmup_iterations": 5,
+            "timed_iterations": 20,
+            "median_batch_latency_seconds": 0.02489897950727027,
+            "p95_batch_latency_seconds": 0.02617545479151886,
+            "median_per_event_latency_seconds": 0.02489897950727027,
+            "events_per_second_at_median": 40.16228856720852,
+            "peak_memory": {
+              "process_peak_rss_bytes": 1773174784,
+              "mps_current_allocated_bytes": 1103292416,
+              "mps_driver_allocated_bytes": 1472970752
+            }
+          },
+          "8": {
+            "batch_size": 8,
+            "warmup_iterations": 5,
+            "timed_iterations": 20,
+            "median_batch_latency_seconds": 0.20414614600304049,
+            "p95_batch_latency_seconds": 0.39212950804940194,
+            "median_per_event_latency_seconds": 0.02551826825038006,
+            "events_per_second_at_median": 39.18761219171314,
+            "peak_memory": {
+              "process_peak_rss_bytes": 1798504448,
+              "mps_current_allocated_bytes": 1111356416,
+              "mps_driver_allocated_bytes": 2557280256
+            }
+          }
+        }
+      },
+      "three_seed_ensemble": {
+        "logical_total_parameters": 270939990,
+        "training_parameters_across_members": 270939990,
+        "checkpoint_bytes": 1084517205,
+        "weights": [
+          0.3333333333333333,
+          0.3333333333333333,
+          0.3333333333333333
+        ],
+        "profiles": {
+          "1": {
+            "batch_size": 1,
+            "warmup_iterations": 5,
+            "timed_iterations": 20,
+            "median_batch_latency_seconds": 0.08584910450736061,
+            "p95_batch_latency_seconds": 0.08786846183938905,
+            "median_per_event_latency_seconds": 0.08584910450736061,
+            "events_per_second_at_median": 11.648345148600368,
+            "peak_memory": {
+              "process_peak_rss_bytes": 1798537216,
+              "mps_current_allocated_bytes": 1141041152,
+              "mps_driver_allocated_bytes": 2557280256
+            }
+          },
+          "8": {
+            "batch_size": 8,
+            "warmup_iterations": 5,
+            "timed_iterations": 20,
+            "median_batch_latency_seconds": 0.5475314790091943,
+            "p95_batch_latency_seconds": 0.5759069375009859,
+            "median_per_event_latency_seconds": 0.06844143487614929,
+            "events_per_second_at_median": 14.611032071574577,
+            "peak_memory": {
+              "process_peak_rss_bytes": 1798537216,
+              "mps_current_allocated_bytes": 1149105152,
+              "mps_driver_allocated_bytes": 2557280256
+            }
+          }
+        }
+      },
+      "training_evidence": [
+        {
+          "seed": 20260729,
+          "best_epoch": 2,
+          "epochs_completed": 7,
+          "training_parameters": 90313330,
+          "total_parameters": 90313330,
+          "training_seconds_total": 8258.035203333944,
+          "memory": {
+            "peak_process_rss_bytes": 2603057152,
+            "peak_mps_current_allocated_bytes": 3289336064,
+            "peak_mps_driver_allocated_bytes": 9911500800,
+            "measurement": "process ru_maxrss plus MPS allocation samples after every batch"
+          }
+        },
+        {
+          "seed": 20260730,
+          "best_epoch": 4,
+          "epochs_completed": 9,
+          "training_parameters": 90313330,
+          "total_parameters": 90313330,
+          "training_seconds_total": 10969.110914290999,
+          "memory": {
+            "peak_process_rss_bytes": 2663120896,
+            "peak_mps_current_allocated_bytes": 3284489472,
+            "peak_mps_driver_allocated_bytes": 9903112192,
+            "measurement": "process ru_maxrss plus MPS allocation samples after every batch"
+          }
+        },
+        {
+          "seed": 20260731,
+          "best_epoch": 1,
+          "epochs_completed": 6,
+          "training_parameters": 90313330,
+          "total_parameters": 90313330,
+          "training_seconds_total": 7604.165215207962,
+          "memory": {
+            "peak_process_rss_bytes": 2591866880,
+            "peak_mps_current_allocated_bytes": 3146054656,
+            "peak_mps_driver_allocated_bytes": 9903112192,
+            "measurement": "process ru_maxrss plus MPS allocation samples after every batch"
+          }
+        }
+      ]
+    },
+    "lora": {
+      "single": {
+        "logical_total_parameters": 90411634,
+        "training_parameters": 99842,
+        "checkpoint_bytes": 407725,
+        "profiles": {
+          "1": {
+            "batch_size": 1,
+            "warmup_iterations": 5,
+            "timed_iterations": 20,
+            "median_batch_latency_seconds": 0.024911854503443465,
+            "p95_batch_latency_seconds": 0.025817785100662148,
+            "median_per_event_latency_seconds": 0.024911854503443465,
+            "events_per_second_at_median": 40.14153181015785,
+            "peak_memory": {
+              "process_peak_rss_bytes": 2175320064,
+              "mps_current_allocated_bytes": 1104484864,
+              "mps_driver_allocated_bytes": 1514913792
+            }
+          },
+          "8": {
+            "batch_size": 8,
+            "warmup_iterations": 5,
+            "timed_iterations": 20,
+            "median_batch_latency_seconds": 0.13402460400538985,
+            "p95_batch_latency_seconds": 0.13736528330191505,
+            "median_per_event_latency_seconds": 0.01675307550067373,
+            "events_per_second_at_median": 59.69053264039696,
+            "peak_memory": {
+              "process_peak_rss_bytes": 2182070272,
+              "mps_current_allocated_bytes": 1114293760,
+              "mps_driver_allocated_bytes": 2599223296
+            }
+          }
+        }
+      },
+      "three_seed_ensemble": {
+        "logical_total_parameters": 271234902,
+        "training_parameters_across_members": 299526,
+        "checkpoint_bytes": 1223175,
+        "weights": [
+          0.3333333333333333,
+          0.3333333333333333,
+          0.3333333333333333
+        ],
+        "profiles": {
+          "1": {
+            "batch_size": 1,
+            "warmup_iterations": 5,
+            "timed_iterations": 20,
+            "median_batch_latency_seconds": 0.07689260400366038,
+            "p95_batch_latency_seconds": 0.08008054099482251,
+            "median_per_event_latency_seconds": 0.07689260400366038,
+            "events_per_second_at_median": 13.005151964321513,
+            "peak_memory": {
+              "process_peak_rss_bytes": 2182103040,
+              "mps_current_allocated_bytes": 1142248448,
+              "mps_driver_allocated_bytes": 2599223296
+            }
+          },
+          "8": {
+            "batch_size": 8,
+            "warmup_iterations": 5,
+            "timed_iterations": 20,
+            "median_batch_latency_seconds": 0.46219733299221843,
+            "p95_batch_latency_seconds": 0.4697600285478984,
+            "median_per_event_latency_seconds": 0.057774666624027304,
+            "events_per_second_at_median": 17.30862432331406,
+            "peak_memory": {
+              "process_peak_rss_bytes": 2182103040,
+              "mps_current_allocated_bytes": 1152055808,
+              "mps_driver_allocated_bytes": 2599223296
+            }
+          }
+        }
+      },
+      "training_evidence": [
+        {
+          "seed": 20260729,
+          "best_epoch": 4,
+          "epochs_completed": 8,
+          "training_parameters": 99842,
+          "total_parameters": 90411634,
+          "training_seconds_total": null,
+          "memory": null
+        },
+        {
+          "seed": 20260730,
+          "best_epoch": 2,
+          "epochs_completed": 6,
+          "training_parameters": 99842,
+          "total_parameters": 90411634,
+          "training_seconds_total": null,
+          "memory": null
+        },
+        {
+          "seed": 20260731,
+          "best_epoch": 3,
+          "epochs_completed": 7,
+          "training_parameters": 99842,
+          "total_parameters": 90411634,
+          "training_seconds_total": null,
+          "memory": null
+        }
+      ]
+    }
+  },
+  "development_freeze_sha256": "5e9e2faa24ead873a673d79eec1ea0c814b128e04f19ed205d6ec416b70b99c9",
+  "calibration_artifact_sha256": "c332f0edd9578191068e00007728d95cf9d406fd962d70845bf7dcb8ee7e00b9",
+  "calibration_accessed": true,
+  "locked_tests_accessed": false
+}

@@ -1,0 +1,34 @@
+{
+  "gate": "11A",
+  "stage": "single_seed",
+  "freeze": "artifacts/gate11a_exactmask_fullft_freeze.json",
+  "freeze_sha256": "b5224677601c520f0f411af8ec002befe366ce10032626f564920daedae1a27c",
+  "run": "runs/gate11a_exactmask_fullft_seed20260729",
+  "decision": {
+    "gate": "11A",
+    "seed": 20260729,
+    "scores": {
+      "icbhi_average_score": 0.7348980151117723,
+      "sprsound_average_score": 0.8932558765174698,
+      "icbhi_sensitivity": 0.7415730337078652,
+      "icbhi_specificity": 0.7282229965156795,
+      "sprsound_sensitivity": 0.8590308370044053,
+      "sprsound_specificity": 0.9274809160305344,
+      "two_domain_mean_average_score": 0.8140769458146211
+    },
+    "checks": {
+      "icbhi_average_score_at_least_0_69": true,
+      "sprsound_average_score_at_least_0_86": true,
+      "two_domain_mean_average_score_at_least_0_79": true,
+      "sensitivity_each_domain_at_least_0_50": true,
+      "specificity_each_domain_at_least_0_50": true,
+      "finite_audit_passed": true,
+      "data_boundary_audit_passed": true,
+      "exact_mask_audit_passed": true
+    },
+    "passed": true
+  },
+  "recommendation": "continue_remaining_seeds",
+  "calibration_accessed": false,
+  "locked_tests_accessed": false
+}

@@ -1,0 +1,81 @@
+{
+  "gate": "9B",
+  "frozen_at": "2026-07-30",
+  "classification": "mandatory input-mask correctness amendment",
+  "frozen_before_any_corrected_validation_result": true,
+  "locked_test_accessed": false,
+  "calibration_accessed": false,
+  "trigger": {
+    "candidate": "beats_lora_qv_r8",
+    "seed": 20260729,
+    "epoch": 5,
+    "batch_index_zero_based": 138,
+    "affected_sample": "sprsound2022::65044711_0.4_1_p4_340__event_001",
+    "affected_view_valid_samples": 2016,
+    "affected_view_pad_interval": [
+      125554,
+      127570
+    ],
+    "observed_failure": "The non-empty view mapped to zero valid BEATs tokens, making all layer-0 attention probabilities and its logits NaN."
+  },
+  "root_cause": {
+    "data_configuration": "8-second zero padding with random valid-audio position",
+    "upstream_assumption": "Official BEATs forward_padding_mask groups a right-padding mask by sequence length and is not an exact mapping for an arbitrary internal valid interval.",
+    "patch_tail": "The 798 Kaldi fbank frames were reduced by a 16-frame patch embedding without padding, dropping the final incomplete time patch.",
+    "not_label_or_split_error": true,
+    "not_empty_audio": true,
+    "not_lora_divergence": true,
+    "not_mps_scatter_root_cause": true
+  },
+  "corrected_mapping": {
+    "sample_to_fbank": "Max-pool the valid-sample mask with the same 400-sample frame length and 160-sample frame shift used by BEATs preprocessing.",
+    "fbank_tail": "Pad 798 fbank frames to 800, the next multiple of patch size 16.",
+    "fbank_to_time_patch": "Max-pool frame validity with kernel and stride 16.",
+    "time_to_flat_token": "Repeat each time-patch validity value across the 8 frequency patches in the same flattening order as the Conv2d output.",
+    "safety_assertion": "Reject any non-empty waveform that becomes all-padding tokens.",
+    "resulting_token_count_for_8_seconds": 400
+  },
+  "failure_batch_replay": {
+    "old_valid_token_counts_for_two_views": [
+      7,
+      0
+    ],
+    "corrected_valid_token_counts_for_two_views": [
+      16,
+      16
+    ],
+    "all_12_encoder_layers_finite": true,
+    "binary_logits_finite": true,
+    "complete_ce_js_lora_drift_backward_passed": true,
+    "all_99842_trainable_gradients_finite": true,
+    "replay_loss": 0.12029746174812317
+  },
+  "unchanged_design": {
+    "candidates": true,
+    "trainable_parameter_counts": true,
+    "optimizer_and_learning_rates": true,
+    "loss_weights": true,
+    "sampling_and_augmentation": true,
+    "seeds": true,
+    "gate_thresholds": true,
+    "checkpoint_selection": true
+  },
+  "formal_result_reset": {
+    "all_pre_amendment_gate9b_runs_are_diagnostic_only": true,
+    "rerun_from_initialization": [
+      "beats_head_only",
+      "beats_last_block",
+      "beats_lora_qv_r8",
+      "beats_drift_anchored_lora_qv_r8"
+    ],
+    "do_not_resume_epoch4_checkpoint": true,
+    "gate9a_teacher_status": "Gate 9A remains route-screening evidence; if corrected Gate 9B succeeds, rerun the three BEATs teacher seeds with exact masking before a final paper comparison."
+  },
+  "code_audit": {
+    "implementation": "src/respiratory_sound/models/pretrained_audio.py",
+    "implementation_sha256": "226848c092f55543d451209c8c52cb1b2d058ebce08c3003c583b5a0417e5c32",
+    "third_party_beats_backbone_sha256": "31c0378379a7e0f1d1069f9da444fb86890fe1ea078959a2dcd39640cdcadbaa",
+    "unit_test": "tests/test_pretrained_audio.py",
+    "captured_failure_batch": "artifacts/gate9b_epoch5_batch138_snapshot.pt"
+  }
+}

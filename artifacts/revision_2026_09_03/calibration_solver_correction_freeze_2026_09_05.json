@@ -1,0 +1,19 @@
+{
+  "status": "frozen_before_corrected_formal_statistics",
+  "frozen_at": "2026-09-05T08:11:54.387044+08:00",
+  "scope": "implementation correction of the same unpenalized model; original predictions and training frozen",
+  "files": {
+    "scripts/correct_revision_calibration_20260905.py": "c64f623605897d1ea023506b9bfe554bf4a629171e98648196ec501b7e780acf",
+    "src/respiratory_sound/revision_calibration_regression.py": "aa58b0cbd0e8590aad6302cd4350e3bce03e54db8fd60b9fab049509e4270a68",
+    "tests/test_revision_calibration_regression.py": "a849f79718d9fe88c7b088d7db828333f6f91a3839fa7fa7ac917c180868a450",
+    "[user-home]/Documents/njgpt/学术方向/experiment_plans/2026-09-03/05_CALIBRATION_IMPLEMENTATION_CORRECTION_2026-09-05.md": "7c04327c938c08ec76d01ac886526c6012183c4cbd89581e380fda25bb24ee65",
+    "artifacts/revision_2026_09_03/analysis_a_final/analysis_a_final.json": "8f2d39a665e2678ee20a00afe96ae1b5a81422b18471360cbee566220df1caa9",
+    "artifacts/revision_2026_09_03/analysis_a_final/classification_metrics.csv": "76d2c76a50ecd23032fefe318daa1be382e96a0a442f83db0da4e673220f8137",
+    "artifacts/revision_2026_09_03/analysis_a_final/calibration_metrics.csv": "bc53ae04b5f9dc735ba3047258ded674149a8fdd308e27fa286e60e30ad1c7ab",
+    "artifacts/revision_2026_09_03/review_2026_09_05/independent_review_diagnostic.json": "2987c94b3e5cb669d40f27715142b29f82d104d89a0572c2d4ebc76cb6aec454"
+  },
+  "original_result_sha256": "8f2d39a665e2678ee20a00afe96ae1b5a81422b18471360cbee566220df1caa9",
+  "bootstrap_iterations": 4000,
+  "bootstrap_seed": 20260729,
+  "invalid_replicate_policy": "retain and enumerate; no replacement; withhold affected interval unless all 4000 valid"
+}

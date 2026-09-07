@@ -1,0 +1,29 @@
+{
+  "status": "frozen_before_corrected_independent_audit_after_outcome_computation",
+  "frozen_at": "2026-09-06T06:30:17.296867+08:00",
+  "reason": "reconstruct original validation diagnostic producer dtypes",
+  "author_rule": "clear evidence-backed steps proceed; ask only for unresolved dilemmas",
+  "same_path_probability_gate": 1e-06,
+  "diagnostic_identity_atol": 1e-14,
+  "classification_threshold": 0.5,
+  "original_result_sha256": "907d0627c2b8142dcfad0f1b49c3d221e57f74f3c1cef07cf354a6508d5bfce0",
+  "no_retraining_or_model_inference": true,
+  "no_statistical_results_changed": true,
+  "files": {
+    "[user-home]/Documents/njgpt/学术方向/Respiratory Sound Classification/scripts/audit_analysis_c_final_dtype_corrected.py": "7d504960e80c946d8f56c1f29fab59f091087c1792449a34786be01ea1b70f8f",
+    "[user-home]/Documents/njgpt/学术方向/Respiratory Sound Classification/scripts/audit_analysis_c_final.py": "334cf22b6889e9e4efe0475247b5778a17e297b11408f4faa7746a9ee8840005",
+    "[user-home]/Documents/njgpt/学术方向/experiment_plans/2026-09-03/21_ANALYSIS_C_AUDIT_DTYPE_AMENDMENT_2026-09-06.md": "2e0151632ea606253f1296eb48b62dc2099bed6f0e80d66b2b31ef1e27d34e33",
+    "[user-home]/Documents/njgpt/学术方向/Respiratory Sound Classification/artifacts/revision_2026_09_03/analysis_c_execution_freeze_2026_09_06.json": "3198f7d4f672554b719044a722c0fd7fab7bae5546e32890f2abdee94f477094",
+    "[user-home]/Documents/njgpt/学术方向/Respiratory Sound Classification/artifacts/revision_2026_09_03/analysis_c_2026_09_06/analysis_c_final.json": "907d0627c2b8142dcfad0f1b49c3d221e57f74f3c1cef07cf354a6508d5bfce0",
+    "[user-home]/Documents/njgpt/学术方向/Respiratory Sound Classification/tests/test_analysis_c_audit_dtype.py": "cbe54e9618464f7609c716d6c06936093b5c7400c55c99c7f2da8330c81394e8",
+    "[user-home]/Documents/njgpt/学术方向/experiment_plans/2026-09-03/20_ANALYSIS_C_AUDIT_PRECISION_PAUSE_2026-09-06.md": "cf90378c38d1e5330a13c7591160bbe4beff7339a61fe3be6c9baa9fe880cd4b",
+    "[user-home]/Documents/njgpt/学术方向/Respiratory Sound Classification/artifacts/revision_2026_09_03/analysis_c_csv_roundtrip_diagnostic_2026_09_06/diagnostic.json": "202c0b42d9b8c9de1d5a781e3e30e04198d3bcdd525f3f76098572b5fde45389",
+    "[user-home]/Documents/njgpt/学术方向/Respiratory Sound Classification/scripts/diagnose_analysis_c_csv_roundtrip.py": "a1f036dc791d0afe658cdd2e7dddbd92519ac57e7b19a8bd373b111e2a943bd8",
+    "[user-home]/Documents/njgpt/学术方向/Respiratory Sound Classification/artifacts/revision_2026_09_03/analysis_c_validation_replay_2026_09_06/audit_final.json": "14bf3bc6f6e702347d3f33ba8b74f7ea502392c9f9bcd75250e7c6d959031b2d",
+    "[user-home]/Documents/njgpt/学术方向/Respiratory Sound Classification/artifacts/revision_2026_09_03/predictions/matched_lora_2026_09_06/prediction_manifest.json": "3cdda96131ff65332866223b9297654fce1c9c792aeaa842bdfeda87d405774f",
+    "[user-home]/Documents/njgpt/学术方向/Respiratory Sound Classification/artifacts/revision_2026_09_03/jobs_2026_09_06/analysis_c/status.json": "019d510f969be019fbbdecca5704b850cd9fa8adb18a8d6bc09229ab93d22c33",
+    "[user-home]/Documents/njgpt/学术方向/Respiratory Sound Classification/artifacts/revision_2026_09_03/jobs_2026_09_06/analysis_c/validate.log": "406dda2911e5354d749f5b845014b7d58808b8ed8e92fab0ee42715a5eca896e",
+    "[user-home]/Documents/njgpt/学术方向/Respiratory Sound Classification/artifacts/revision_2026_09_03/jobs_2026_09_06/analysis_c/predict.log": "d28daefaff3533b9267c0a92414a9c18b38d60aae6ec307e973d4cdbc30509ce",
+    "[user-home]/Documents/njgpt/学术方向/Respiratory Sound Classification/artifacts/revision_2026_09_03/jobs_2026_09_06/analysis_c/analyze.log": "5c19314b5bcf3153b103ea23e6c69edc8941e302a25b5692699bdbaf928a21af"
+  }
+}

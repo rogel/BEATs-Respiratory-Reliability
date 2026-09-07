@@ -1,0 +1,12 @@
+./.venv/lib/python3.12/site-packages/torch/nn/utils/weight_norm.py:144: FutureWarning: `torch.nn.utils.weight_norm` is deprecated in favor of `torch.nn.utils.parametrizations.weight_norm`.
+  WeightNorm.apply(module, name, dim)
+{"case": "20260729/icbhi2017", "completed_cases": 1, "same_path_max_difference": 2.94235229514328e-08, "cross_path_changed_decisions": 0}
+{"case": "20260729/sprsound2022", "completed_cases": 2, "same_path_max_difference": 2.979812618875144e-08, "cross_path_changed_decisions": 0}
+./.venv/lib/python3.12/site-packages/torch/nn/utils/weight_norm.py:144: FutureWarning: `torch.nn.utils.weight_norm` is deprecated in favor of `torch.nn.utils.parametrizations.weight_norm`.
+  WeightNorm.apply(module, name, dim)
+{"case": "20260730/icbhi2017", "completed_cases": 3, "same_path_max_difference": 2.950744626417645e-08, "cross_path_changed_decisions": 0}
+{"case": "20260730/sprsound2022", "completed_cases": 4, "same_path_max_difference": 2.9783630339785816e-08, "cross_path_changed_decisions": 0}
+./.venv/lib/python3.12/site-packages/torch/nn/utils/weight_norm.py:144: FutureWarning: `torch.nn.utils.weight_norm` is deprecated in favor of `torch.nn.utils.parametrizations.weight_norm`.
+  WeightNorm.apply(module, name, dim)
+{"case": "20260731/icbhi2017", "completed_cases": 5, "same_path_max_difference": 2.9780578558735726e-08, "cross_path_changed_decisions": 0}
+{"case": "20260731/sprsound2022", "completed_cases": 6, "same_path_max_difference": 2.9712676985482744e-08, "cross_path_changed_decisions": 0}

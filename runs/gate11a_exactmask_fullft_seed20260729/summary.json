@@ -1,0 +1,110 @@
+{
+  "gate": "11A",
+  "candidate": "beats_exactmask_fullft",
+  "seed": 20260729,
+  "selection_metric": "minimum_domain_average_score_then_mean",
+  "best_epoch": 2,
+  "best_worst_domain_average_score": 0.7348980151117723,
+  "best_mean_domain_average_score": 0.8140769458146211,
+  "epochs_completed": 7,
+  "training_parameters": 90313330,
+  "total_parameters": 90313330,
+  "trainable_fraction": 1.0,
+  "best_validation_metrics": {
+    "icbhi2017": {
+      "accuracy": 0.7346570397111913,
+      "sensitivity": 0.7415730337078652,
+      "specificity": 0.7282229965156795,
+      "average_score": 0.7348980151117723,
+      "harmonic_score": 0.7348373864635218,
+      "score": 0.7348677007876471,
+      "macro_f1": 0.7345523884026793,
+      "uar": 0.7348980151117723,
+      "per_class_recall": {
+        "normal": 0.7282229965156795,
+        "adventitious": 0.7415730337078652
+      },
+      "confusion_matrix": [
+        [
+          209,
+          78
+        ],
+        [
+          69,
+          198
+        ]
+      ],
+      "support": {
+        "normal": 287,
+        "adventitious": 267
+      },
+      "auroc": 0.7977919586579493,
+      "nll": 0.5869271283976008
+    },
+    "sprsound2022": {
+      "accuracy": 0.912142152023692,
+      "sensitivity": 0.8590308370044053,
+      "specificity": 0.9274809160305344,
+      "average_score": 0.8932558765174698,
+      "harmonic_score": 0.8919445464042692,
+      "score": 0.8926002114608695,
+      "macro_f1": 0.8783327687908309,
+      "uar": 0.8932558765174698,
+      "per_class_recall": {
+        "normal": 0.9274809160305344,
+        "adventitious": 0.8590308370044053
+      },
+      "confusion_matrix": [
+        [
+          729,
+          57
+        ],
+        [
+          32,
+          195
+        ]
+      ],
+      "support": {
+        "normal": 786,
+        "adventitious": 227
+      },
+      "auroc": 0.969252670634787,
+      "nll": 0.21230070946622284
+    }
+  },
+  "finite_audit_passed": true,
+  "data_boundary_audit_passed": true,
+  "exact_mask_audit_passed": true,
+  "protocol_audit": {
+    "selected_rows": 9082,
+    "role_counts": {
+      "train_fit": 7515,
+      "validation_select": 1567
+    },
+    "domain_role_counts": {
+      "icbhi2017:train_fit": 2910,
+      "icbhi2017:validation_select": 554,
+      "sprsound2022:train_fit": 4605,
+      "sprsound2022:validation_select": 1013
+    },
+    "train_validation_patient_overlap": 0,
+    "calibration_selected": false,
+    "locked_selected": false
+  },
+  "elapsed_seconds_this_invocation": 8263.144569166005,
+  "training_seconds_total": 8258.035203333944,
+  "memory": {
+    "peak_process_rss_bytes": 2603057152,
+    "peak_mps_current_allocated_bytes": 3289336064,
+    "peak_mps_driver_allocated_bytes": 9911500800,
+    "measurement": "process ru_maxrss plus MPS allocation samples after every batch"
+  },
+  "disk": {
+    "best_checkpoint_bytes": 361505735,
+    "resume_state_bytes": 1084251931
+  },
+  "freeze_sha256": "b5224677601c520f0f411af8ec002befe366ce10032626f564920daedae1a27c",
+  "configuration_sha256": "dd6e7ee3f35e2db376c9b165a02ea86ffe0b944dcd93911f809543248b2e75a9",
+  "calibration_accessed": false,
+  "locked_tests_accessed": false
+}

@@ -1,0 +1,623 @@
+{
+  "status": "all_24_recorded_path_comparisons_reconstructed_from_source_dtypes",
+  "diagnosed_at": "2026-09-06T03:35:30.726949+08:00",
+  "comparisons": [
+    {
+      "seed": 20260729,
+      "domain": "icbhi2017",
+      "comparison": "training_evaluate_workers4",
+      "recorded_in_memory": {
+        "maximum_absolute_probability_difference": 2.94235229514328e-08,
+        "mean_absolute_probability_difference": 6.4169389210120014e-09,
+        "events_above_1e_6": 0,
+        "changed_0_5_decisions": 0
+      },
+      "csv_read_as_float64": {
+        "maximum_absolute_probability_difference": 0.0,
+        "mean_absolute_probability_difference": 0.0,
+        "events_above_1e_6": 0,
+        "changed_0_5_decisions": 0
+      },
+      "producer_dtype_reconstruction": {
+        "maximum_absolute_probability_difference": 2.94235229514328e-08,
+        "mean_absolute_probability_difference": 6.4169389210120014e-09,
+        "events_above_1e_6": 0,
+        "changed_0_5_decisions": 0
+      },
+      "maximum_absolute_record_reconstruction_error": 0.0
+    },
+    {
+      "seed": 20260729,
+      "domain": "icbhi2017",
+      "comparison": "archival_infer_workers0",
+      "recorded_in_memory": {
+        "maximum_absolute_probability_difference": 0.0029869724388122965,
+        "mean_absolute_probability_difference": 4.078599024737648e-05,
+        "events_above_1e_6": 62,
+        "changed_0_5_decisions": 0
+      },
+      "csv_read_as_float64": {
+        "maximum_absolute_probability_difference": 0.002987000000000073,
+        "mean_absolute_probability_difference": 4.078295848375466e-05,
+        "events_above_1e_6": 62,
+        "changed_0_5_decisions": 0
+      },
+      "producer_dtype_reconstruction": {
+        "maximum_absolute_probability_difference": 0.0029869724388122965,
+        "mean_absolute_probability_difference": 4.078599024737648e-05,
+        "events_above_1e_6": 62,
+        "changed_0_5_decisions": 0
+      },
+      "maximum_absolute_record_reconstruction_error": 0.0
+    },
+    {
+      "seed": 20260729,
+      "domain": "icbhi2017",
+      "comparison": "infer_workers0_threads1",
+      "recorded_in_memory": {
+        "maximum_absolute_probability_difference": 2.94235229514328e-08,
+        "mean_absolute_probability_difference": 6.4169389210120014e-09,
+        "events_above_1e_6": 0,
+        "changed_0_5_decisions": 0
+      },
+      "csv_read_as_float64": {
+        "maximum_absolute_probability_difference": 0.0,
+        "mean_absolute_probability_difference": 0.0,
+        "events_above_1e_6": 0,
+        "changed_0_5_decisions": 0
+      },
+      "producer_dtype_reconstruction": {
+        "maximum_absolute_probability_difference": 2.94235229514328e-08,
+        "mean_absolute_probability_difference": 6.4169389210120014e-09,
+        "events_above_1e_6": 0,
+        "changed_0_5_decisions": 0
+      },
+      "maximum_absolute_record_reconstruction_error": 0.0
+    },
+    {
+      "seed": 20260729,
+      "domain": "icbhi2017",
+      "comparison": "threads1_vs_training_path",
+      "recorded_in_memory": {
+        "maximum_absolute_probability_difference": 0.0,
+        "mean_absolute_probability_difference": 0.0,
+        "events_above_1e_6": 0,
+        "changed_0_5_decisions": 0
+      },
+      "csv_read_as_float64": {
+        "maximum_absolute_probability_difference": 0.0,
+        "mean_absolute_probability_difference": 0.0,
+        "events_above_1e_6": 0,
+        "changed_0_5_decisions": 0
+      },
+      "producer_dtype_reconstruction": {
+        "maximum_absolute_probability_difference": 0.0,
+        "mean_absolute_probability_difference": 0.0,
+        "events_above_1e_6": 0,
+        "changed_0_5_decisions": 0
+      },
+      "maximum_absolute_record_reconstruction_error": 0.0
+    },
+    {
+      "seed": 20260729,
+      "domain": "sprsound2022",
+      "comparison": "training_evaluate_workers4",
+      "recorded_in_memory": {
+        "maximum_absolute_probability_difference": 2.979812618875144e-08,
+        "mean_absolute_probability_difference": 3.3800534405768627e-09,
+        "events_above_1e_6": 0,
+        "changed_0_5_decisions": 0
+      },
+      "csv_read_as_float64": {
+        "maximum_absolute_probability_difference": 0.0,
+        "mean_absolute_probability_difference": 0.0,
+        "events_above_1e_6": 0,
+        "changed_0_5_decisions": 0
+      },
+      "producer_dtype_reconstruction": {
+        "maximum_absolute_probability_difference": 2.979812618875144e-08,
+        "mean_absolute_probability_difference": 3.3800534405768627e-09,
+        "events_above_1e_6": 0,
+        "changed_0_5_decisions": 0
+      },
+      "maximum_absolute_record_reconstruction_error": 0.0
+    },
+    {
+      "seed": 20260729,
+      "domain": "sprsound2022",
+      "comparison": "archival_infer_workers0",
+      "recorded_in_memory": {
+        "maximum_absolute_probability_difference": 9.006065502165095e-06,
+        "mean_absolute_probability_difference": 4.2984505804449876e-08,
+        "events_above_1e_6": 11,
+        "changed_0_5_decisions": 0
+      },
+      "csv_read_as_float64": {
+        "maximum_absolute_probability_difference": 9.005999999991965e-06,
+        "mean_absolute_probability_difference": 3.96624876603214e-08,
+        "events_above_1e_6": 11,
+        "changed_0_5_decisions": 0
+      },
+      "producer_dtype_reconstruction": {
+        "maximum_absolute_probability_difference": 9.006065502165095e-06,
+        "mean_absolute_probability_difference": 4.2984505804449876e-08,
+        "events_above_1e_6": 11,
+        "changed_0_5_decisions": 0
+      },
+      "maximum_absolute_record_reconstruction_error": 0.0
+    },
+    {
+      "seed": 20260729,
+      "domain": "sprsound2022",
+      "comparison": "infer_workers0_threads1",
+      "recorded_in_memory": {
+        "maximum_absolute_probability_difference": 2.979812618875144e-08,
+        "mean_absolute_probability_difference": 3.3800534405768627e-09,
+        "events_above_1e_6": 0,
+        "changed_0_5_decisions": 0
+      },
+      "csv_read_as_float64": {
+        "maximum_absolute_probability_difference": 0.0,
+        "mean_absolute_probability_difference": 0.0,
+        "events_above_1e_6": 0,
+        "changed_0_5_decisions": 0
+      },
+      "producer_dtype_reconstruction": {
+        "maximum_absolute_probability_difference": 2.979812618875144e-08,
+        "mean_absolute_probability_difference": 3.3800534405768627e-09,
+        "events_above_1e_6": 0,
+        "changed_0_5_decisions": 0
+      },
+      "maximum_absolute_record_reconstruction_error": 0.0
+    },
+    {
+      "seed": 20260729,
+      "domain": "sprsound2022",
+      "comparison": "threads1_vs_training_path",
+      "recorded_in_memory": {
+        "maximum_absolute_probability_difference": 0.0,
+        "mean_absolute_probability_difference": 0.0,
+        "events_above_1e_6": 0,
+        "changed_0_5_decisions": 0
+      },
+      "csv_read_as_float64": {
+        "maximum_absolute_probability_difference": 0.0,
+        "mean_absolute_probability_difference": 0.0,
+        "events_above_1e_6": 0,
+        "changed_0_5_decisions": 0
+      },
+      "producer_dtype_reconstruction": {
+        "maximum_absolute_probability_difference": 0.0,
+        "mean_absolute_probability_difference": 0.0,
+        "events_above_1e_6": 0,
+        "changed_0_5_decisions": 0
+      },
+      "maximum_absolute_record_reconstruction_error": 0.0
+    },
+    {
+      "seed": 20260730,
+      "domain": "icbhi2017",
+      "comparison": "training_evaluate_workers4",
+      "recorded_in_memory": {
+        "maximum_absolute_probability_difference": 2.950744626417645e-08,
+        "mean_absolute_probability_difference": 6.69658858932462e-09,
+        "events_above_1e_6": 0,
+        "changed_0_5_decisions": 0
+      },
+      "csv_read_as_float64": {
+        "maximum_absolute_probability_difference": 0.0,
+        "mean_absolute_probability_difference": 0.0,
+        "events_above_1e_6": 0,
+        "changed_0_5_decisions": 0
+      },
+      "producer_dtype_reconstruction": {
+        "maximum_absolute_probability_difference": 2.950744626417645e-08,
+        "mean_absolute_probability_difference": 6.69658858932462e-09,
+        "events_above_1e_6": 0,
+        "changed_0_5_decisions": 0
+      },
+      "maximum_absolute_record_reconstruction_error": 0.0
+    },
+    {
+      "seed": 20260730,
+      "domain": "icbhi2017",
+      "comparison": "archival_infer_workers0",
+      "recorded_in_memory": {
+        "maximum_absolute_probability_difference": 0.0032248234103393614,
+        "mean_absolute_probability_difference": 4.1733823396879205e-05,
+        "events_above_1e_6": 61,
+        "changed_0_5_decisions": 0
+      },
+      "csv_read_as_float64": {
+        "maximum_absolute_probability_difference": 0.003224820000000017,
+        "mean_absolute_probability_difference": 4.17315162454856e-05,
+        "events_above_1e_6": 62,
+        "changed_0_5_decisions": 0
+      },
+      "producer_dtype_reconstruction": {
+        "maximum_absolute_probability_difference": 0.0032248234103393614,
+        "mean_absolute_probability_difference": 4.1733823396879205e-05,
+        "events_above_1e_6": 61,
+        "changed_0_5_decisions": 0
+      },
+      "maximum_absolute_record_reconstruction_error": 0.0
+    },
+    {
+      "seed": 20260730,
+      "domain": "icbhi2017",
+      "comparison": "infer_workers0_threads1",
+      "recorded_in_memory": {
+        "maximum_absolute_probability_difference": 2.950744626417645e-08,
+        "mean_absolute_probability_difference": 6.69658858932462e-09,
+        "events_above_1e_6": 0,
+        "changed_0_5_decisions": 0
+      },
+      "csv_read_as_float64": {
+        "maximum_absolute_probability_difference": 0.0,
+        "mean_absolute_probability_difference": 0.0,
+        "events_above_1e_6": 0,
+        "changed_0_5_decisions": 0
+      },
+      "producer_dtype_reconstruction": {
+        "maximum_absolute_probability_difference": 2.950744626417645e-08,
+        "mean_absolute_probability_difference": 6.69658858932462e-09,
+        "events_above_1e_6": 0,
+        "changed_0_5_decisions": 0
+      },
+      "maximum_absolute_record_reconstruction_error": 0.0
+    },
+    {
+      "seed": 20260730,
+      "domain": "icbhi2017",
+      "comparison": "threads1_vs_training_path",
+      "recorded_in_memory": {
+        "maximum_absolute_probability_difference": 0.0,
+        "mean_absolute_probability_difference": 0.0,
+        "events_above_1e_6": 0,
+        "changed_0_5_decisions": 0
+      },
+      "csv_read_as_float64": {
+        "maximum_absolute_probability_difference": 0.0,
+        "mean_absolute_probability_difference": 0.0,
+        "events_above_1e_6": 0,
+        "changed_0_5_decisions": 0
+      },
+      "producer_dtype_reconstruction": {
+        "maximum_absolute_probability_difference": 0.0,
+        "mean_absolute_probability_difference": 0.0,
+        "events_above_1e_6": 0,
+        "changed_0_5_decisions": 0
+      },
+      "maximum_absolute_record_reconstruction_error": 0.0
+    },
+    {
+      "seed": 20260730,
+      "domain": "sprsound2022",
+      "comparison": "training_evaluate_workers4",
+      "recorded_in_memory": {
+        "maximum_absolute_probability_difference": 2.9783630339785816e-08,
+        "mean_absolute_probability_difference": 3.268618693530537e-09,
+        "events_above_1e_6": 0,
+        "changed_0_5_decisions": 0
+      },
+      "csv_read_as_float64": {
+        "maximum_absolute_probability_difference": 0.0,
+        "mean_absolute_probability_difference": 0.0,
+        "events_above_1e_6": 0,
+        "changed_0_5_decisions": 0
+      },
+      "producer_dtype_reconstruction": {
+        "maximum_absolute_probability_difference": 2.9783630339785816e-08,
+        "mean_absolute_probability_difference": 3.268618693530537e-09,
+        "events_above_1e_6": 0,
+        "changed_0_5_decisions": 0
+      },
+      "maximum_absolute_record_reconstruction_error": 0.0
+    },
+    {
+      "seed": 20260730,
+      "domain": "sprsound2022",
+      "comparison": "archival_infer_workers0",
+      "recorded_in_memory": {
+        "maximum_absolute_probability_difference": 7.741901473998225e-06,
+        "mean_absolute_probability_difference": 3.3164810611220475e-08,
+        "events_above_1e_6": 9,
+        "changed_0_5_decisions": 0
+      },
+      "csv_read_as_float64": {
+        "maximum_absolute_probability_difference": 7.740000000006075e-06,
+        "mean_absolute_probability_difference": 2.9881737413575015e-08,
+        "events_above_1e_6": 9,
+        "changed_0_5_decisions": 0
+      },
+      "producer_dtype_reconstruction": {
+        "maximum_absolute_probability_difference": 7.741901473998225e-06,
+        "mean_absolute_probability_difference": 3.3164810611220475e-08,
+        "events_above_1e_6": 9,
+        "changed_0_5_decisions": 0
+      },
+      "maximum_absolute_record_reconstruction_error": 0.0
+    },
+    {
+      "seed": 20260730,
+      "domain": "sprsound2022",
+      "comparison": "infer_workers0_threads1",
+      "recorded_in_memory": {
+        "maximum_absolute_probability_difference": 2.9783630339785816e-08,
+        "mean_absolute_probability_difference": 3.268618693530537e-09,
+        "events_above_1e_6": 0,
+        "changed_0_5_decisions": 0
+      },
+      "csv_read_as_float64": {
+        "maximum_absolute_probability_difference": 0.0,
+        "mean_absolute_probability_difference": 0.0,
+        "events_above_1e_6": 0,
+        "changed_0_5_decisions": 0
+      },
+      "producer_dtype_reconstruction": {
+        "maximum_absolute_probability_difference": 2.9783630339785816e-08,
+        "mean_absolute_probability_difference": 3.268618693530537e-09,
+        "events_above_1e_6": 0,
+        "changed_0_5_decisions": 0
+      },
+      "maximum_absolute_record_reconstruction_error": 0.0
+    },
+    {
+      "seed": 20260730,
+      "domain": "sprsound2022",
+      "comparison": "threads1_vs_training_path",
+      "recorded_in_memory": {
+        "maximum_absolute_probability_difference": 0.0,
+        "mean_absolute_probability_difference": 0.0,
+        "events_above_1e_6": 0,
+        "changed_0_5_decisions": 0
+      },
+      "csv_read_as_float64": {
+        "maximum_absolute_probability_difference": 0.0,
+        "mean_absolute_probability_difference": 0.0,
+        "events_above_1e_6": 0,
+        "changed_0_5_decisions": 0
+      },
+      "producer_dtype_reconstruction": {
+        "maximum_absolute_probability_difference": 0.0,
+        "mean_absolute_probability_difference": 0.0,
+        "events_above_1e_6": 0,
+        "changed_0_5_decisions": 0
+      },
+      "maximum_absolute_record_reconstruction_error": 0.0
+    },
+    {
+      "seed": 20260731,
+      "domain": "icbhi2017",
+      "comparison": "training_evaluate_workers4",
+      "recorded_in_memory": {
+        "maximum_absolute_probability_difference": 2.9780578558735726e-08,
+        "mean_absolute_probability_difference": 7.128333492947906e-09,
+        "events_above_1e_6": 0,
+        "changed_0_5_decisions": 0
+      },
+      "csv_read_as_float64": {
+        "maximum_absolute_probability_difference": 0.0,
+        "mean_absolute_probability_difference": 0.0,
+        "events_above_1e_6": 0,
+        "changed_0_5_decisions": 0
+      },
+      "producer_dtype_reconstruction": {
+        "maximum_absolute_probability_difference": 2.9780578558735726e-08,
+        "mean_absolute_probability_difference": 7.128333492947906e-09,
+        "events_above_1e_6": 0,
+        "changed_0_5_decisions": 0
+      },
+      "maximum_absolute_record_reconstruction_error": 0.0
+    },
+    {
+      "seed": 20260731,
+      "domain": "icbhi2017",
+      "comparison": "archival_infer_workers0",
+      "recorded_in_memory": {
+        "maximum_absolute_probability_difference": 0.002686384535217301,
+        "mean_absolute_probability_difference": 4.373631144611576e-05,
+        "events_above_1e_6": 63,
+        "changed_0_5_decisions": 0
+      },
+      "csv_read_as_float64": {
+        "maximum_absolute_probability_difference": 0.0026863799999999882,
+        "mean_absolute_probability_difference": 4.373370577617302e-05,
+        "events_above_1e_6": 63,
+        "changed_0_5_decisions": 0
+      },
+      "producer_dtype_reconstruction": {
+        "maximum_absolute_probability_difference": 0.002686384535217301,
+        "mean_absolute_probability_difference": 4.373631144611576e-05,
+        "events_above_1e_6": 63,
+        "changed_0_5_decisions": 0
+      },
+      "maximum_absolute_record_reconstruction_error": 0.0
+    },
+    {
+      "seed": 20260731,
+      "domain": "icbhi2017",
+      "comparison": "infer_workers0_threads1",
+      "recorded_in_memory": {
+        "maximum_absolute_probability_difference": 2.9780578558735726e-08,
+        "mean_absolute_probability_difference": 7.128333492947906e-09,
+        "events_above_1e_6": 0,
+        "changed_0_5_decisions": 0
+      },
+      "csv_read_as_float64": {
+        "maximum_absolute_probability_difference": 0.0,
+        "mean_absolute_probability_difference": 0.0,
+        "events_above_1e_6": 0,
+        "changed_0_5_decisions": 0
+      },
+      "producer_dtype_reconstruction": {
+        "maximum_absolute_probability_difference": 2.9780578558735726e-08,
+        "mean_absolute_probability_difference": 7.128333492947906e-09,
+        "events_above_1e_6": 0,
+        "changed_0_5_decisions": 0
+      },
+      "maximum_absolute_record_reconstruction_error": 0.0
+    },
+    {
+      "seed": 20260731,
+      "domain": "icbhi2017",
+      "comparison": "threads1_vs_training_path",
+      "recorded_in_memory": {
+        "maximum_absolute_probability_difference": 0.0,
+        "mean_absolute_probability_difference": 0.0,
+        "events_above_1e_6": 0,
+        "changed_0_5_decisions": 0
+      },
+      "csv_read_as_float64": {
+        "maximum_absolute_probability_difference": 0.0,
+        "mean_absolute_probability_difference": 0.0,
+        "events_above_1e_6": 0,
+        "changed_0_5_decisions": 0
+      },
+      "producer_dtype_reconstruction": {
+        "maximum_absolute_probability_difference": 0.0,
+        "mean_absolute_probability_difference": 0.0,
+        "events_above_1e_6": 0,
+        "changed_0_5_decisions": 0
+      },
+      "maximum_absolute_record_reconstruction_error": 0.0
+    },
+    {
+      "seed": 20260731,
+      "domain": "sprsound2022",
+      "comparison": "training_evaluate_workers4",
+      "recorded_in_memory": {
+        "maximum_absolute_probability_difference": 2.9712676985482744e-08,
+        "mean_absolute_probability_difference": 3.705697283964668e-09,
+        "events_above_1e_6": 0,
+        "changed_0_5_decisions": 0
+      },
+      "csv_read_as_float64": {
+        "maximum_absolute_probability_difference": 0.0,
+        "mean_absolute_probability_difference": 0.0,
+        "events_above_1e_6": 0,
+        "changed_0_5_decisions": 0
+      },
+      "producer_dtype_reconstruction": {
+        "maximum_absolute_probability_difference": 2.9712676985482744e-08,
+        "mean_absolute_probability_difference": 3.705697283964668e-09,
+        "events_above_1e_6": 0,
+        "changed_0_5_decisions": 0
+      },
+      "maximum_absolute_record_reconstruction_error": 0.0
+    },
+    {
+      "seed": 20260731,
+      "domain": "sprsound2022",
+      "comparison": "archival_infer_workers0",
+      "recorded_in_memory": {
+        "maximum_absolute_probability_difference": 5.671354684828878e-06,
+        "mean_absolute_probability_difference": 4.442437631982198e-08,
+        "events_above_1e_6": 13,
+        "changed_0_5_decisions": 0
+      },
+      "csv_read_as_float64": {
+        "maximum_absolute_probability_difference": 5.669999999999287e-06,
+        "mean_absolute_probability_difference": 4.0809180651618154e-08,
+        "events_above_1e_6": 13,
+        "changed_0_5_decisions": 0
+      },
+      "producer_dtype_reconstruction": {
+        "maximum_absolute_probability_difference": 5.671354684828878e-06,
+        "mean_absolute_probability_difference": 4.442437631982198e-08,
+        "events_above_1e_6": 13,
+        "changed_0_5_decisions": 0
+      },
+      "maximum_absolute_record_reconstruction_error": 0.0
+    },
+    {
+      "seed": 20260731,
+      "domain": "sprsound2022",
+      "comparison": "infer_workers0_threads1",
+      "recorded_in_memory": {
+        "maximum_absolute_probability_difference": 2.9712676985482744e-08,
+        "mean_absolute_probability_difference": 3.705697283964668e-09,
+        "events_above_1e_6": 0,
+        "changed_0_5_decisions": 0
+      },
+      "csv_read_as_float64": {
+        "maximum_absolute_probability_difference": 0.0,
+        "mean_absolute_probability_difference": 0.0,
+        "events_above_1e_6": 0,
+        "changed_0_5_decisions": 0
+      },
+      "producer_dtype_reconstruction": {
+        "maximum_absolute_probability_difference": 2.9712676985482744e-08,
+        "mean_absolute_probability_difference": 3.705697283964668e-09,
+        "events_above_1e_6": 0,
+        "changed_0_5_decisions": 0
+      },
+      "maximum_absolute_record_reconstruction_error": 0.0
+    },
+    {
+      "seed": 20260731,
+      "domain": "sprsound2022",
+      "comparison": "threads1_vs_training_path",
+      "recorded_in_memory": {
+        "maximum_absolute_probability_difference": 0.0,
+        "mean_absolute_probability_difference": 0.0,
+        "events_above_1e_6": 0,
+        "changed_0_5_decisions": 0
+      },
+      "csv_read_as_float64": {
+        "maximum_absolute_probability_difference": 0.0,
+        "mean_absolute_probability_difference": 0.0,
+        "events_above_1e_6": 0,
+        "changed_0_5_decisions": 0
+      },
+      "producer_dtype_reconstruction": {
+        "maximum_absolute_probability_difference": 0.0,
+        "mean_absolute_probability_difference": 0.0,
+        "events_above_1e_6": 0,
+        "changed_0_5_decisions": 0
+      },
+      "maximum_absolute_record_reconstruction_error": 0.0
+    }
+  ],
+  "source_script_sha256": "a1f036dc791d0afe658cdd2e7dddbd92519ac57e7b19a8bd373b111e2a943bd8",
+  "inputs_sha256": {
+    "[user-home]/Documents/njgpt/\u5b66\u672f\u65b9\u5411/Respiratory Sound Classification/artifacts/revision_2026_09_03/analysis_c_validation_replay_2026_09_06/audit_final.json": "14bf3bc6f6e702347d3f33ba8b74f7ea502392c9f9bcd75250e7c6d959031b2d",
+    "[user-home]/Documents/njgpt/\u5b66\u672f\u65b9\u5411/Respiratory Sound Classification/runs/revision_2026_09_03/revision_matched_lora_seed20260729/best_validation_predictions_icbhi2017.csv": "ff54f484a2c0c4782effb1c2eaaf449eda26a9d9adf705343d0914a3455480a9",
+    "[user-home]/Documents/njgpt/\u5b66\u672f\u65b9\u5411/Respiratory Sound Classification/artifacts/revision_2026_09_03/analysis_c_validation_replay_2026_09_06/seed20260729_icbhi2017_training_evaluate_workers4.csv": "ff54f484a2c0c4782effb1c2eaaf449eda26a9d9adf705343d0914a3455480a9",
+    "[user-home]/Documents/njgpt/\u5b66\u672f\u65b9\u5411/Respiratory Sound Classification/artifacts/revision_2026_09_03/analysis_c_validation_replay_2026_09_06/seed20260729_icbhi2017_archival_infer_workers0.csv": "f42f7dffab5a631b96af4cb60c55587a4e0d54925214ddc45698220d73da249d",
+    "[user-home]/Documents/njgpt/\u5b66\u672f\u65b9\u5411/Respiratory Sound Classification/artifacts/revision_2026_09_03/analysis_c_validation_replay_2026_09_06/seed20260729_icbhi2017_infer_workers0_threads1.csv": "b9921872c73879f4869079dc98529b40db1e5f7ef40a0e56934e64c32ab1f41f",
+    "[user-home]/Documents/njgpt/\u5b66\u672f\u65b9\u5411/Respiratory Sound Classification/runs/revision_2026_09_03/revision_matched_lora_seed20260729/best_validation_predictions_sprsound2022.csv": "3513c1765ead4107bd6c34d3745c28dda1740f2687ebe2ffdeba33b27311f166",
+    "[user-home]/Documents/njgpt/\u5b66\u672f\u65b9\u5411/Respiratory Sound Classification/artifacts/revision_2026_09_03/analysis_c_validation_replay_2026_09_06/seed20260729_sprsound2022_training_evaluate_workers4.csv": "3513c1765ead4107bd6c34d3745c28dda1740f2687ebe2ffdeba33b27311f166",
+    "[user-home]/Documents/njgpt/\u5b66\u672f\u65b9\u5411/Respiratory Sound Classification/artifacts/revision_2026_09_03/analysis_c_validation_replay_2026_09_06/seed20260729_sprsound2022_archival_infer_workers0.csv": "ba98eab1ae2c72fbb863b6f58baeae2b9324e8a3bdcd6baf3d0695776001229b",
+    "[user-home]/Documents/njgpt/\u5b66\u672f\u65b9\u5411/Respiratory Sound Classification/artifacts/revision_2026_09_03/analysis_c_validation_replay_2026_09_06/seed20260729_sprsound2022_infer_workers0_threads1.csv": "8489e706d1fddb4220a8edba4b863d97a62a4f3e2b0480d6140966553b08cd5b",
+    "[user-home]/Documents/njgpt/\u5b66\u672f\u65b9\u5411/Respiratory Sound Classification/runs/revision_2026_09_03/revision_matched_lora_seed20260730/best_validation_predictions_icbhi2017.csv": "987ad36d152d2a6273600f4ad592d915751ad2b924692596756b32b7abd9f905",
+    "[user-home]/Documents/njgpt/\u5b66\u672f\u65b9\u5411/Respiratory Sound Classification/artifacts/revision_2026_09_03/analysis_c_validation_replay_2026_09_06/seed20260730_icbhi2017_training_evaluate_workers4.csv": "987ad36d152d2a6273600f4ad592d915751ad2b924692596756b32b7abd9f905",
+    "[user-home]/Documents/njgpt/\u5b66\u672f\u65b9\u5411/Respiratory Sound Classification/artifacts/revision_2026_09_03/analysis_c_validation_replay_2026_09_06/seed20260730_icbhi2017_archival_infer_workers0.csv": "3368286d6ede20a3b8ea346ea9913617a4d1af95c763c68facb86fe247d5caac",
+    "[user-home]/Documents/njgpt/\u5b66\u672f\u65b9\u5411/Respiratory Sound Classification/artifacts/revision_2026_09_03/analysis_c_validation_replay_2026_09_06/seed20260730_icbhi2017_infer_workers0_threads1.csv": "28c3d6d8fd097203f661606a36d689ee7ee75b711392cb91054c660edb8cfbf6",
+    "[user-home]/Documents/njgpt/\u5b66\u672f\u65b9\u5411/Respiratory Sound Classification/runs/revision_2026_09_03/revision_matched_lora_seed20260730/best_validation_predictions_sprsound2022.csv": "94720baef5d4dc2dbe690526d53bc8a41b5aad1fddede4bba08724491a8b35f6",
+    "[user-home]/Documents/njgpt/\u5b66\u672f\u65b9\u5411/Respiratory Sound Classification/artifacts/revision_2026_09_03/analysis_c_validation_replay_2026_09_06/seed20260730_sprsound2022_training_evaluate_workers4.csv": "94720baef5d4dc2dbe690526d53bc8a41b5aad1fddede4bba08724491a8b35f6",
+    "[user-home]/Documents/njgpt/\u5b66\u672f\u65b9\u5411/Respiratory Sound Classification/artifacts/revision_2026_09_03/analysis_c_validation_replay_2026_09_06/seed20260730_sprsound2022_archival_infer_workers0.csv": "e34cd22cafbf90f3be5395f39b25112ae98c55112417d963d5d2f77fc717f974",
+    "[user-home]/Documents/njgpt/\u5b66\u672f\u65b9\u5411/Respiratory Sound Classification/artifacts/revision_2026_09_03/analysis_c_validation_replay_2026_09_06/seed20260730_sprsound2022_infer_workers0_threads1.csv": "b973ddfb7556ee259ada35e981fe0ca01eb262fdb610624a3cd7bdd45993378a",
+    "[user-home]/Documents/njgpt/\u5b66\u672f\u65b9\u5411/Respiratory Sound Classification/runs/revision_2026_09_03/revision_matched_lora_seed20260731/best_validation_predictions_icbhi2017.csv": "f1c4015f125aa0103be226809a71ed75e413fce9d4b08aa2fc7efef4996b64be",
+    "[user-home]/Documents/njgpt/\u5b66\u672f\u65b9\u5411/Respiratory Sound Classification/artifacts/revision_2026_09_03/analysis_c_validation_replay_2026_09_06/seed20260731_icbhi2017_training_evaluate_workers4.csv": "f1c4015f125aa0103be226809a71ed75e413fce9d4b08aa2fc7efef4996b64be",
+    "[user-home]/Documents/njgpt/\u5b66\u672f\u65b9\u5411/Respiratory Sound Classification/artifacts/revision_2026_09_03/analysis_c_validation_replay_2026_09_06/seed20260731_icbhi2017_archival_infer_workers0.csv": "13fced24a1df4352c068abd877c4fb46f2afb7522d6b73d305ba9a0c7d4ee0d9",
+    "[user-home]/Documents/njgpt/\u5b66\u672f\u65b9\u5411/Respiratory Sound Classification/artifacts/revision_2026_09_03/analysis_c_validation_replay_2026_09_06/seed20260731_icbhi2017_infer_workers0_threads1.csv": "3cf2812a223282120ee07d331c4feac6a84c85b7ff3939a59352be5958e709b7",
+    "[user-home]/Documents/njgpt/\u5b66\u672f\u65b9\u5411/Respiratory Sound Classification/runs/revision_2026_09_03/revision_matched_lora_seed20260731/best_validation_predictions_sprsound2022.csv": "89d7b1fefca05a88e8adf9e4ad3e630d096a8e1b1a6c19443969a301ef82b531",
+    "[user-home]/Documents/njgpt/\u5b66\u672f\u65b9\u5411/Respiratory Sound Classification/artifacts/revision_2026_09_03/analysis_c_validation_replay_2026_09_06/seed20260731_sprsound2022_training_evaluate_workers4.csv": "89d7b1fefca05a88e8adf9e4ad3e630d096a8e1b1a6c19443969a301ef82b531",
+    "[user-home]/Documents/njgpt/\u5b66\u672f\u65b9\u5411/Respiratory Sound Classification/artifacts/revision_2026_09_03/analysis_c_validation_replay_2026_09_06/seed20260731_sprsound2022_archival_infer_workers0.csv": "1c4df1fd2b732953f3e7c57e8082dd4fbd60c8949e809bdfec3148d047a95a6b",
+    "[user-home]/Documents/njgpt/\u5b66\u672f\u65b9\u5411/Respiratory Sound Classification/artifacts/revision_2026_09_03/analysis_c_validation_replay_2026_09_06/seed20260731_sprsound2022_infer_workers0_threads1.csv": "682aa64c6f6619664f371e4e748ce30921e25c2879873019eb662b19a1c6ac4a"
+  },
+  "analysis_c_result_unchanged_sha256": "907d0627c2b8142dcfad0f1b49c3d221e57f74f3c1cef07cf354a6508d5bfce0",
+  "frozen_audit_script_unchanged_sha256": "334cf22b6889e9e4efe0475247b5778a17e297b11408f4faa7746a9ee8840005",
+  "no_training_or_inference": true,
+  "validation_only_diagnostic": true,
+  "no_formal_metric_or_interval_change": true,
+  "formal_independent_audit_status": "failed_pending_prospective_implementation_correction",
+  "observed_failed_check": {
+    "location": "audit_analysis_c_final.py:audit_replay, first maximum-difference check",
+    "recorded_value": 2.9423522951432804e-08,
+    "CSV_recomputed_value": 0.0,
+    "tolerance": 1e-14
+  },
+  "conclusion": "audit compared float32 in-memory diagnostics with float64 CSV round-trip values; precision domains differ"
+}

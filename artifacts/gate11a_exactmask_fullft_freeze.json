@@ -1,0 +1,243 @@
+{
+  "schema_version": 1,
+  "gate": "11A",
+  "status": "sealed_before_formal_validation",
+  "created_at": "2026-07-31T17:23:32.598313+08:00",
+  "purpose": "Exact-token-mask BEATs full-finetuning three-seed confirmation",
+  "distribution_packaging": {
+    "source_record_sha256": "b5224677601c520f0f411af8ec002befe366ce10032626f564920daedae1a27c",
+    "omitted_fields": [
+      "user_confirmation"
+    ],
+    "reason": "non-scientific environment-specific workflow metadata"
+  },
+  "development_data_boundary": {
+    "train_role": "train_fit",
+    "validation_role": "validation_select",
+    "calibration_allowed": false,
+    "locked_allowed": false,
+    "protocol_audit": {
+      "selected_rows": 9082,
+      "role_counts": {
+        "train_fit": 7515,
+        "validation_select": 1567
+      },
+      "domain_role_counts": {
+        "icbhi2017:train_fit": 2910,
+        "icbhi2017:validation_select": 554,
+        "sprsound2022:train_fit": 4605,
+        "sprsound2022:validation_select": 1013
+      },
+      "train_validation_patient_overlap": 0,
+      "calibration_selected": false,
+      "locked_selected": false
+    }
+  },
+  "fixed_method": {
+    "model": {
+      "name": "gate9a_beats_iter3_plus_as2m_cpt2",
+      "type": "beats",
+      "checkpoint": "checkpoints/pretrained/beats_as2m_cpt2/BEATs_iter3_plus_AS2M_finetuned_on_AS2M_cpt2.pt",
+      "source_dir": "third_party/beats",
+      "pretraining": "BEATs_iter3_plus_AS2M_then_AudioSet_supervised_cpt2",
+      "num_classes": 2
+    },
+    "data": {
+      "dataset": "cross_domain_binary",
+      "task": "event_or_cycle_binary",
+      "classes": [
+        "normal",
+        "adventitious"
+      ],
+      "sample_rate": 16000,
+      "clip_seconds": 8.0,
+      "duration_fit": "zero_pad",
+      "random_pad_position": true,
+      "feature": {
+        "type": "unused_waveform_only",
+        "n_fft": 512,
+        "win_length": 400,
+        "hop_length": 160,
+        "n_mels": 128,
+        "f_min": 20,
+        "f_max": 8000
+      }
+    },
+    "experiment": {
+      "gate": "11A",
+      "name": "gate11a_beats_exactmask_fullft",
+      "formal_status": "exact_token_mask_full_finetuning_confirmation",
+      "seed": 20260729,
+      "allowed_seeds": [
+        20260729,
+        20260730,
+        20260731
+      ],
+      "train_value": "train_fit",
+      "validation_value": "validation_select",
+      "label_column": "binary_label_id",
+      "batch_size": 8,
+      "samples_per_epoch": 7515,
+      "num_workers": 4,
+      "sampling": {
+        "mode": "domain_class_event"
+      },
+      "augmentation": {
+        "gain_min": 0.8,
+        "gain_max": 1.2,
+        "noise_probability": 0.5,
+        "noise_snr_min_db": 12.0,
+        "noise_snr_max_db": 30.0,
+        "shift_probability": 0.5,
+        "max_shift_fraction": 0.1
+      },
+      "optimizer": {
+        "name": "adamw",
+        "backbone_learning_rate": 1e-05,
+        "head_learning_rate": 0.0001,
+        "weight_decay": 0.01
+      },
+      "schedule": {
+        "name": "warmup_cosine",
+        "warmup_epochs": 3,
+        "max_epochs": 20,
+        "early_stopping_patience": 5
+      },
+      "consistency": {
+        "enabled": true,
+        "name": "jensen_shannon",
+        "max_weight": 0.4,
+        "warmup_epochs": 20
+      },
+      "checkpoint_selection": {
+        "primary": "minimum_domain_average_score",
+        "tie_breaker": "mean_domain_average_score",
+        "tolerance": 1e-12
+      },
+      "classification": {
+        "threshold": 0.5
+      },
+      "data_access": {
+        "calibration_allowed": false,
+        "locked_allowed": false
+      }
+    },
+    "full_backbone_and_binary_head_trainable": true,
+    "exact_token_mask_required": true,
+    "fixed_classification_threshold": 0.5,
+    "checkpoint_selection": {
+      "primary": "minimum_domain_average_score",
+      "tie_breaker": "mean_domain_average_score",
+      "tolerance": 1e-12
+    }
+  },
+  "allowed_seeds": [
+    20260729,
+    20260730,
+    20260731
+  ],
+  "single_seed_thresholds": {
+    "icbhi_average_score": 0.69,
+    "sprsound_average_score": 0.86,
+    "two_domain_mean_average_score": 0.79,
+    "sensitivity_floor": 0.5,
+    "specificity_floor": 0.5
+  },
+  "three_seed_thresholds": {
+    "mean_icbhi_average_score": 0.69,
+    "mean_sprsound_average_score": 0.86,
+    "mean_two_domain_average_score": 0.79,
+    "minimum_individual_seed_passes": 2,
+    "sensitivity_floor_every_seed_domain": 0.5,
+    "specificity_floor_every_seed_domain": 0.5
+  },
+  "stop_rules": {
+    "first_seed_failure_without_reproducible_implementation_error": "stop_route",
+    "nonfinite_loss_gradient_or_output": "abort_and_audit",
+    "data_boundary_violation": "abort_immediately",
+    "exact_mask_assertion_failure": "abort_immediately",
+    "post_hoc_threshold_sampler_augmentation_or_seed_change": "forbidden",
+    "implementation_error": "record_amendment_then_rerun_unchanged_scientific_protocol"
+  },
+  "three_seed_inference_rule": {
+    "gate_decision_uses_individual_seeds_and_arithmetic_means": true,
+    "best_seed_selection_forbidden": true,
+    "post_gate_primary_model": "equal_positive-class-probability ensemble of three checkpoints",
+    "ensemble_weights": [
+      0.3333333333333333,
+      0.3333333333333333,
+      0.3333333333333333
+    ]
+  },
+  "matched_reference": {
+    "method": "exact-mask rank-8 Q/V LoRA, blocks 8-11, domain_class_event, same three seeds",
+    "artifact": "artifacts/gate9d_multiseed_final.json",
+    "purpose": "paired patient-cluster bootstrap; does not replace absolute gate"
+  },
+  "bootstrap": {
+    "iterations": 4000,
+    "seed": 20260729,
+    "confidence": 0.95,
+    "interval": "percentile",
+    "cluster": "patient_id within database",
+    "paired_reference_resampling": true
+  },
+  "exact_token_mask_mapping": {
+    "sample_frame_length": 400,
+    "sample_frame_shift": 160,
+    "fbank_time_frames_before_tail_padding": 798,
+    "fbank_time_frames_after_tail_padding": 800,
+    "patch_size": 16,
+    "frequency_patches": 8,
+    "tokens": 400,
+    "supports_arbitrary_valid_audio_position": true,
+    "nonempty_waveform_must_have_valid_tokens": true
+  },
+  "hashes": {
+    "manifest_sha256": "2dd168129fc0fc159db201f2990c4d7074cb746fc9bc2c13bd5031e47dbd1419",
+    "data_config_sha256": "8e71445ddeab28321de12666d3a42acadd8099f4be568a474a5af0dc8acea29f",
+    "model_config_sha256": "587723548ebd05672f2f2cd4d203bef9285351d8c66c904d8ab4dcd91f72cfe2",
+    "experiment_config_sha256": "80be7b805f95262aabb61b8d5526dffc089f2a545a04602cad822f8ef5a08c79",
+    "upstream_checkpoint_sha256": "e5815275a04b6885e7b8af63d120b29bffae2cd2225cf4915e1ec6d819d3022c",
+    "code:scripts/freeze_gate11a_exactmask_fullft.py": "7bfda96df10997078760326479eeba05af0b6c694b52c0626e4fb7a8eade179e",
+    "code:scripts/smoke_gate11a_exactmask_fullft.py": "5f8dff39040f7a657b5c2b2af6180e756c79859ea3e505cf89a8f7cd55dd7d9b",
+    "code:scripts/train_gate11a_exactmask_fullft.py": "db20043fa02e6711dcf808ddc445059275a9b75d4cc73f19c8bcdb6498e6f29d",
+    "code:scripts/analyze_gate11a_exactmask_fullft.py": "3bf358ee12ca56f92bd56ff452d5b5a9f7e87e3dc6e2adf1236b7523f64011c0",
+    "code:src/respiratory_sound/gate11a.py": "0b77b70aab78f2e4cd7ae0ed007d581aa065946b8777125f3d202c26e10ffbc9",
+    "code:src/respiratory_sound/training_state.py": "2f07b588243b23be4d02154bf9536a04415669f0b67fc5973256fd70bcdb4a3a",
+    "code:src/respiratory_sound/models/pretrained_audio.py": "226848c092f55543d451209c8c52cb1b2d058ebce08c3003c583b5a0417e5c32",
+    "code:src/respiratory_sound/data/audio.py": "ed2d7387d13eef3da84aeee4f3bbd5abeb492b63a3486bb46f191e9cba84aafd",
+    "code:src/respiratory_sound/data/sampling.py": "e7cf79d00ada3c55032eb94d6b73337fad9a6c80ffdbb9e433dc1140aadd9b08",
+    "code:src/respiratory_sound/metrics.py": "b9aae53f7e639cd7bb9568464fd8e1d6c3ad2b8b283415d942ebfbcf84256293",
+    "code:src/respiratory_sound/training.py": "ca9381ecdd34f3f3bfb52d62c0e7b9bfa1640ee4039fb08e8e020483d98bc646",
+    "code:src/respiratory_sound/runtime.py": "a9862c3e885cf7798092687782b80609aeac31e230bf4de71f0daced2d4b5eb3",
+    "evidence:artifacts/gate11a_exactmask_fullft_quality_smoke.json": "36d9e8775c91cf6c6856e767ec6430afc0dafe9cef37b56438b22cac99288536",
+    "evidence:artifacts/gate9b_exact_token_mask_amendment.json": "3156fbf2f3cc6f3be8a37aa28e8f592e5435bfcad3a71f1aec341a4d131906df",
+    "evidence:artifacts/gate9d_multiseed_final.json": "0dac138bcbd3ae79bd27ff33994d12dbbfc1ae235ca93ab43707249a079daa73",
+    "evidence:runs/gate9b_exactmask_lora_qv_r8_seed20260729/summary.json": "903ab4d64515f25c346bafa9c1125a00f0bbb23f8ac0ce42794ad882664e4f2a",
+    "evidence:runs/gate9b_exactmask_lora_qv_r8_seed20260729/best_validation_predictions_icbhi2017.csv": "4549423ff42b4fa19172a8c3f91b67826e301ee2ec42e10d2571c1b3c6ccd25f",
+    "evidence:runs/gate9b_exactmask_lora_qv_r8_seed20260729/best_validation_predictions_sprsound2022.csv": "40856751c5e974deb5c9ff93ca84a6e3a7b55f972b2a22adedc93d93df596cbb",
+    "evidence:runs/gate9d_domain_class_event_lora_qv_r8_seed20260730/summary.json": "2af2c8c89c35b14d39b6cbabd0710ffe01749d01357654cd4a6708b8a131beb0",
+    "evidence:runs/gate9d_domain_class_event_lora_qv_r8_seed20260730/best_validation_predictions_icbhi2017.csv": "b09c2cbbc17cbf80b7fdb161e4a8293a8eb9db4d7218f10a7ddba88554c4efcb",
+    "evidence:runs/gate9d_domain_class_event_lora_qv_r8_seed20260730/best_validation_predictions_sprsound2022.csv": "5627a9603396e3b7b623024d0227a379374c7f4215e43a0b206180c248c6a21f",
+    "evidence:runs/gate9d_domain_class_event_lora_qv_r8_seed20260731/summary.json": "376bb7c050694a0dd351a0ea14764b832b1d59a173ab2f7ac185f0308cf41284",
+    "evidence:runs/gate9d_domain_class_event_lora_qv_r8_seed20260731/best_validation_predictions_icbhi2017.csv": "724a605d66a8251006780d9c978c3e2fd06ab38e176756755189269595d1deed",
+    "evidence:runs/gate9d_domain_class_event_lora_qv_r8_seed20260731/best_validation_predictions_sprsound2022.csv": "dd6ed8be3c8614ca63d3385a1a53704d2967377d7c4b54c5fb456a8837d55922",
+    "beats_source_tree_sha256": "72fb7c2c520c3fab7e84fed29c9e6dd144ca00b62a7e45017806080a08ed433d"
+  },
+  "environment": {
+    "python": "3.12.9",
+    "torch": "2.13.0",
+    "mps_built": true,
+    "mps_available_at_freeze": true,
+    "free_space_bytes": 562957963264,
+    "project_is_git_repository": false
+  },
+  "access_history_at_freeze": {
+    "gate11a_validation_results_exist": false,
+    "calibration_accessed_by_gate11a": false,
+    "locked_tests_accessed_by_gate11a": false,
+    "locked_metadata_and_label_counts_previously_audited": true,
+    "calibration_patients_accessed_by_abandoned_earlier_routes": true
+  }
+}

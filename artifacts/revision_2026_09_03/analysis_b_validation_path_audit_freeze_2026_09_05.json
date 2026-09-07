@@ -1,0 +1,41 @@
+{
+  "status": "frozen_before_extended_validation_only_audit",
+  "frozen_at": "2026-09-05T19:45:50.611825+08:00",
+  "author_authorization": "2026-09-05: CPU-thread numerical difference accepted; proceed with recommended validation audit and prospective implementation correction",
+  "base_execution_freeze_sha256": "16c9dc34ad7aae4c2c055fff35f6c4452f4905c1e8d501a7a6a5f5df7f778f66",
+  "files": {
+    "[user-home]/Documents/njgpt/\u5b66\u672f\u65b9\u5411/Respiratory Sound Classification/scripts/audit_analysis_b_all_validation_paths.py": "6622383ad7ca0f0b2888a937b428f9ff6fcde58b65b3f9d6a4c53965925be6d8",
+    "[user-home]/Documents/njgpt/\u5b66\u672f\u65b9\u5411/Respiratory Sound Classification/artifacts/revision_2026_09_03/analysis_b_replay_diagnostic_2026_09_05/diagnostic.json": "35a79d65d78ededca3cc2e03fdb203484dca7b23f7f621d8f8930c647ca14d2e",
+    "[user-home]/Documents/njgpt/\u5b66\u672f\u65b9\u5411/Respiratory Sound Classification/artifacts/revision_2026_09_03/analysis_b_replay_diagnostic_2026_09_05/archival_infer_workers0.csv": "981eadc57ec0bec0a0d6fa944a971a666555876a324ce2b1d2c844ae95fd1c07",
+    "[user-home]/Documents/njgpt/\u5b66\u672f\u65b9\u5411/Respiratory Sound Classification/artifacts/revision_2026_09_03/analysis_b_replay_diagnostic_2026_09_05/training_evaluate_workers4.csv": "e97cfac53858ee28af4e25dcf002e0cffe76b96a9b3b08138ac2393f8dffcc69",
+    "[user-home]/Documents/njgpt/\u5b66\u672f\u65b9\u5411/Respiratory Sound Classification/artifacts/revision_2026_09_03/analysis_b_replay_diagnostic_2026_09_05/infer_workers0_threads1.csv": "501188d7c646c895bf5bb54feeefa4cfbd804349206ddd0f951aa933acc793b5"
+  },
+  "families": [
+    "exact",
+    "no-js"
+  ],
+  "seeds": [
+    20260729,
+    20260730,
+    20260731
+  ],
+  "domains": [
+    "icbhi2017",
+    "sprsound2022"
+  ],
+  "role": "validation_select",
+  "modes": [
+    "training_evaluate_workers4",
+    "archival_infer_workers0",
+    "infer_workers0_threads1"
+  ],
+  "same_path_tolerance": 1e-06,
+  "same_path_decisions_must_match": true,
+  "classification_threshold": 0.5,
+  "inference_device": "mps",
+  "batch_size": 8,
+  "default_cpu_threads": 12,
+  "calibration_or_heldout_inference_allowed": false,
+  "training_allowed": false,
+  "reuse_first_case": "no-js/20260729/icbhi2017; verified original diagnostic and all CSV hashes"
+}

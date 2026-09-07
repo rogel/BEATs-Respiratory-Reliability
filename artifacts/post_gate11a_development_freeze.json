@@ -1,0 +1,166 @@
+{
+  "schema_version": 1,
+  "stage": "post_gate11a_development",
+  "status": "sealed_before_calibration",
+  "created_at": "2026-08-01T07:38:23.303125+08:00",
+  "gate11a_status": "passed",
+  "classifier": {
+    "primary": "fullft_equal_probability_ensemble",
+    "seeds": [
+      20260729,
+      20260730,
+      20260731
+    ],
+    "weights": [
+      0.3333333333333333,
+      0.3333333333333333,
+      0.3333333333333333
+    ],
+    "classification_threshold": 0.5,
+    "seed_selection_forbidden": true,
+    "fullft_runs": {
+      "20260729": "runs/gate11a_exactmask_fullft_seed20260729",
+      "20260730": "runs/gate11a_exactmask_fullft_seed20260730",
+      "20260731": "runs/gate11a_exactmask_fullft_seed20260731"
+    },
+    "matched_efficiency_reference": "lora_equal_probability_ensemble",
+    "lora_runs": {
+      "20260729": "runs/gate9b_exactmask_lora_qv_r8_seed20260729",
+      "20260730": "runs/gate9d_domain_class_event_lora_qv_r8_seed20260730",
+      "20260731": "runs/gate9d_domain_class_event_lora_qv_r8_seed20260731"
+    },
+    "fullft_superiority_claim_allowed": false,
+    "reason": "paired validation bootstrap 95% intervals cross zero"
+  },
+  "calibration_protocol": {
+    "method": "per-domain scalar temperature scaling of ensemble logits",
+    "objective": "binary negative log likelihood",
+    "classification_threshold_remains": 0.5,
+    "ece": "15-bin equal-frequency ECE",
+    "also_report": [
+      "NLL",
+      "Brier",
+      "reliability_table"
+    ],
+    "fit_roles": {
+      "icbhi2017": "calibration",
+      "sprsound2022": "calibration"
+    },
+    "sanity_role": "validation_select using already frozen predictions",
+    "enable_rule": {
+      "mean_validation_nll_not_worse": true,
+      "maximum_allowed_per_domain_nll_worsening": 0.02,
+      "fixed_0_5_predictions_must_be_identical": true
+    },
+    "failure_action": "temperature=1; no alternative calibrator search"
+  },
+  "selective_protocol": {
+    "uncertainty": "normalized binary predictive entropy after temperature scaling",
+    "target_coverages": [
+      0.8,
+      0.9
+    ],
+    "cutoff_fit": "calibration uncertainty order statistic retaining ceil(target*n)",
+    "classification_threshold": 0.5,
+    "metrics": [
+      "risk-coverage curve",
+      "AURC",
+      "error risk at fixed cutoffs",
+      "balanced error risk at fixed cutoffs",
+      "normal/adventitious coverage"
+    ],
+    "safety": {
+      "minimum_each_class_coverage": "target minus 0.15",
+      "maximum_class_coverage_gap": 0.2,
+      "maximum_error_risk_worsening_vs_full_coverage": 0.02,
+      "must_pass_on": [
+        "calibration",
+        "validation_select"
+      ]
+    },
+    "failure_action": "disable selective locked claim; do not search another score or cutoff"
+  },
+  "efficiency_protocol": {
+    "families": [
+      "fullft",
+      "lora"
+    ],
+    "objects": [
+      "single_seed20260729",
+      "three_seed_ensemble"
+    ],
+    "input": "8.0-second 16-kHz mono waveform with exact all-valid mask",
+    "batch_sizes": [
+      1,
+      8
+    ],
+    "warmup_iterations": 5,
+    "timed_iterations": 20,
+    "report": [
+      "total/trainable parameters",
+      "checkpoint bytes",
+      "median and p95 latency",
+      "events per second",
+      "MPS current and driver allocated memory",
+      "training wall time and peak memory from run summaries"
+    ]
+  },
+  "locked_protocol": {
+    "requires_second_freeze": true,
+    "one_access_episode": true,
+    "primary_independent_roles": {
+      "icbhi2017": "locked_test",
+      "sprsound2022": "locked_inter_test"
+    },
+    "descriptive_only": {
+      "sprsound2022": "locked_intra_test"
+    },
+    "models_in_same_prediction_run": [
+      "three fullft seeds and equal ensemble",
+      "three matched LoRA seeds and equal ensemble"
+    ],
+    "bootstrap": {
+      "patient_cluster_iterations": 4000,
+      "seed": 20260729,
+      "confidence": 0.95
+    },
+    "locked_result_may_not_change": [
+      "model",
+      "threshold",
+      "temperature",
+      "rejection cutoffs",
+      "method"
+    ]
+  },
+  "data_history_disclosure": "Calibration patients were used by earlier abandoned routes and are tuning data, not independent evidence. Locked labels/metadata counts were audited, while locked model predictions and performance remain unevaluated.",
+  "smoke_audit": {
+    "role": "validation_select",
+    "samples": 554,
+    "sample_ids_targets_and_predictions_identical": true,
+    "maximum_probability_absolute_difference": 0.002014700000000036,
+    "calibration_accessed": false,
+    "locked_tests_accessed": false
+  },
+  "hashes": {
+    "manifest": "2dd168129fc0fc159db201f2990c4d7074cb746fc9bc2c13bd5031e47dbd1419",
+    "data_config": "8e71445ddeab28321de12666d3a42acadd8099f4be568a474a5af0dc8acea29f",
+    "upstream_checkpoint": "e5815275a04b6885e7b8af63d120b29bffae2cd2225cf4915e1ec6d819d3022c",
+    "gate11a_final": "075d7f59584cf87ea75618e74775163bd967de6c656b930e8d1da3dd0c23bd01",
+    "code:src/respiratory_sound/calibration.py": "f217590abc5f5c76823c230c59a743df504ea04824ee6190b3764384355978b0",
+    "code:src/respiratory_sound/selective_prediction.py": "c9b5bb07a0647aa490c4b02367e2a57683fc05388a9cd11aff87ee8ed558c3eb",
+    "code:src/respiratory_sound/post_gate11a.py": "e54d06a5b7cdc0b2d6f04eca51aeae91878a9e155d3d877cd2b9ff56311aef0c",
+    "code:src/respiratory_sound/models/pretrained_audio.py": "226848c092f55543d451209c8c52cb1b2d058ebce08c3003c583b5a0417e5c32",
+    "code:src/respiratory_sound/models/beats_adaptation.py": "576dfe8b267ddc3c360e4567f97d4c05ed7a846119106b54825a99b65fa2705c",
+    "code:src/respiratory_sound/data/audio.py": "ed2d7387d13eef3da84aeee4f3bbd5abeb492b63a3486bb46f191e9cba84aafd",
+    "code:scripts/predict_post_gate11a.py": "96ac079729dfa0bb97430e5f895fc9772eafc9fb5ab71899e34d69617e4844c7",
+    "code:scripts/analyze_post_gate11a_calibration.py": "11332c6e115d10116f9156c474dfb5f96fe3ae8e8de30beb2b4f2771d266d17f",
+    "checkpoint:fullft_seed20260729": "3f7942419370cc8822d447c9e1b2789cbfa58d2b150f6466c94da46c5948f6a8",
+    "checkpoint:fullft_seed20260730": "a9ee6200147b9979bcd37a5be62a60156ab5e146707982ed66e035727a47ef47",
+    "checkpoint:fullft_seed20260731": "093519ab419cf1c63c4d62047b858c75b62b6da3c1aaf74ccfca261fd3b23d60",
+    "checkpoint:lora_seed20260729": "787c6bac829181c6aa7842a3ea67312d7342fc2235af59d4c8d646baf18af9d2",
+    "checkpoint:lora_seed20260730": "58aa8e59a11e41fb879dd611b41d955a1d69267f80a25ad0ff464786d74ff9a1",
+    "checkpoint:lora_seed20260731": "9fd79da0a246768357ed05b4c10f38256ccace2c96816ac9eb2fe5e7ca278fd3"
+  },
+  "calibration_accessed": false,
+  "locked_tests_accessed": false
+}

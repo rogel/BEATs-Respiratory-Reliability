@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "stage": "BEATS_seed20260730_epoch6_mask_replay",
+  "status": "zero_legacy_token_view_found",
+  "formal_run_modified": false,
+  "seed": 20260730,
+  "epoch_one_based": 6,
+  "batches_scanned": 920,
+  "views_scanned": 14720,
+  "first_batch_with_zero_legacy_view": [
+    {
+      "batch_index_zero_based": 919,
+      "sample_id": "sprsound2022::64743918_7.0_0_p2_2835__event_001",
+      "target": 1,
+      "view_index_zero_based": 1,
+      "valid_waveform_samples": 2192,
+      "first_valid_sample": 125794,
+      "last_valid_sample_inclusive": 127985,
+      "legacy_valid_tokens": 0,
+      "exact_valid_tokens": 8,
+      "other_view_legacy_valid_tokens": 8
+    }
+  ],
+  "configuration_sha256": "5960983cf1fd3d211dea12ca070d3bc20ac8938ef842e02d5932cbec98982191",
+  "recovery_state_sha256": "281eab012507d7ac5b9e7d0d2a08b001856dd020adc2bd0bd797b1df12366bd7",
+  "manifest_sha256": "2dd168129fc0fc159db201f2990c4d7074cb746fc9bc2c13bd5031e47dbd1419",
+  "revision_config_sha256": "90fc87f6a3e39bb9c5f1fcdf7737fb6e747ea66e3c4e800cbd10b9f78a2ad56f",
+  "analysis_plan_sha256": "18b6e39bba441e5be1ec870591b9dbf2846b7e6ab6293be9d211aab12809be39",
+  "calibration_accessed": false,
+  "locked_tests_accessed": false
+}

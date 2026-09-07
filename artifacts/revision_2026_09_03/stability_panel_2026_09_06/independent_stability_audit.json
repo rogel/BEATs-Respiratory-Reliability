@@ -1,0 +1,16 @@
+{
+  "status": "stability_placement_QA_passed",
+  "audited_at": "2026-09-06T06:55:22.913425+08:00",
+  "event_placements_per_model": 107,
+  "models": 5,
+  "prediction_records_verified": 535,
+  "backward_records_verified": 60,
+  "placement_summary_rows_verified": 130,
+  "expected_legacy_nonfinite_prediction_records": 18,
+  "expected_legacy_nonfinite_backward_records": 9,
+  "exact_all_finite": true,
+  "source_and_checkpoint_hashes_verified": true,
+  "no_patient_role_changes": true,
+  "result_sha256": "1b78ba146ee05de1a416bfd63de4462df1ac59018209d9096647bd30f6aac9ae",
+  "freeze_sha256": "e77b507f52fff1e652dc4c822edeca24afe2a13f9f312cfe87b623a8d6e4f3ee"
+}

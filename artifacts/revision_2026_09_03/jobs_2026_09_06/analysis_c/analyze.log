@@ -1,0 +1,15 @@
+{"stage": "primary_contrast_computed_pending_QA", "contrast": {"icbhi2017": {"role": "locked_test", "fullft_average_score": 0.6619359341579276, "matched_lora_average_score": 0.6145205354569676, "fullft_minus_matched_lora": {"estimate": 0.04741539870096001, "lower": 0.021656183710024875, "upper": 0.07029886949713865, "valid_replicates": 4000, "invalid_replicates": 0, "status": "complete"}}, "sprsound2022": {"role": "locked_inter_test", "fullft_average_score": 0.9111948783863951, "matched_lora_average_score": 0.8797780304528376, "fullft_minus_matched_lora": {"estimate": 0.03141684793355748, "lower": 0.018271309465523744, "upper": 0.04922754426258096, "valid_replicates": 4000, "invalid_replicates": 0, "status": "complete"}}, "equal_database_mean": {"estimate": 0.039416123317258744, "lower": 0.025432688034460835, "upper": 0.054048182383880025, "valid_replicates": 4000, "invalid_replicates": 0, "status": "complete"}}}
+{"stage": "secondary_calibration_complete", "key": "exact/icbhi2017/validation_select"}
+{"stage": "secondary_calibration_complete", "key": "exact/icbhi2017/calibration"}
+{"stage": "secondary_calibration_complete", "key": "exact/icbhi2017/locked_test"}
+{"stage": "secondary_calibration_complete", "key": "exact/sprsound2022/validation_select"}
+{"stage": "secondary_calibration_complete", "key": "exact/sprsound2022/calibration"}
+{"stage": "secondary_calibration_complete", "key": "exact/sprsound2022/locked_inter_test"}
+{"stage": "secondary_calibration_complete", "key": "exact/sprsound2022/locked_intra_test"}
+{"stage": "secondary_calibration_complete", "key": "matched-lora/icbhi2017/validation_select"}
+{"stage": "secondary_calibration_complete", "key": "matched-lora/icbhi2017/calibration"}
+{"stage": "secondary_calibration_complete", "key": "matched-lora/icbhi2017/locked_test"}
+{"stage": "secondary_calibration_complete", "key": "matched-lora/sprsound2022/validation_select"}
+{"stage": "secondary_calibration_complete", "key": "matched-lora/sprsound2022/calibration"}
+{"stage": "secondary_calibration_complete", "key": "matched-lora/sprsound2022/locked_inter_test"}
+{"stage": "secondary_calibration_complete", "key": "matched-lora/sprsound2022/locked_intra_test"}

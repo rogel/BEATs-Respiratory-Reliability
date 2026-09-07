@@ -1,0 +1,382 @@
+{
+  "schema_version": 1,
+  "stage": "BEATS_class_conditional_entropy",
+  "primary_model": "protected exact-mask Full-FT three-seed ensemble",
+  "uncertainty": "normalized binary predictive entropy after frozen temperature scaling",
+  "classification_threshold": 0.5,
+  "selective_prediction_enabled": false,
+  "failure_action": "fail closed; no abstention is applied to held-out predictions",
+  "results": {
+    "icbhi2017/calibration": {
+      "samples": 561,
+      "patients": 12,
+      "temperature": 1.6464554911106857,
+      "entropy_by_class": {
+        "Normal": {
+          "mean": 0.8137251015854936,
+          "sample_sd": 0.1632638061734911,
+          "median": 0.8500130816414622,
+          "q05": 0.5294117054247283,
+          "q10": 0.5799444967181775,
+          "q25": 0.6805456029625806,
+          "q75": 0.958640376269582,
+          "q90": 0.996002042281881,
+          "q95": 0.9987571383025187,
+          "iqr": 0.2780947733070014
+        },
+        "Adventitious": {
+          "mean": 0.7575874117446558,
+          "sample_sd": 0.18564448343715165,
+          "median": 0.7767473273514885,
+          "q05": 0.42705877551607163,
+          "q10": 0.4939328733631309,
+          "q25": 0.6349791395609867,
+          "q75": 0.922803773167387,
+          "q90": 0.9816450159952322,
+          "q95": 0.9963654836009561,
+          "iqr": 0.2878246336064003
+        }
+      },
+      "frozen_operating_points_descriptive_only": {
+        "coverage_80": {
+          "cutoff": 0.9617011052352461,
+          "total": 561,
+          "accepted": 449,
+          "rejected": 112,
+          "overall_coverage": 0.8003565062388592,
+          "accepted_set_error": 0.21380846325167038,
+          "classes": {
+            "Normal": {
+              "total": 281,
+              "accepted": 215,
+              "rejected": 66,
+              "coverage": 0.7651245551601423,
+              "accepted_set_error": 0.21395348837209302,
+              "accepted_composition_fraction": 0.47884187082405344,
+              "rejected_composition_fraction": 0.5892857142857143
+            },
+            "Adventitious": {
+              "total": 280,
+              "accepted": 234,
+              "rejected": 46,
+              "coverage": 0.8357142857142857,
+              "accepted_set_error": 0.21367521367521367,
+              "accepted_composition_fraction": 0.5211581291759465,
+              "rejected_composition_fraction": 0.4107142857142857
+            }
+          }
+        },
+        "coverage_90": {
+          "cutoff": 0.9924170812538704,
+          "total": 561,
+          "accepted": 505,
+          "rejected": 56,
+          "overall_coverage": 0.9001782531194296,
+          "accepted_set_error": 0.22772277227722773,
+          "classes": {
+            "Normal": {
+              "total": 281,
+              "accepted": 244,
+              "rejected": 37,
+              "coverage": 0.8683274021352313,
+              "accepted_set_error": 0.22540983606557377,
+              "accepted_composition_fraction": 0.48316831683168315,
+              "rejected_composition_fraction": 0.6607142857142857
+            },
+            "Adventitious": {
+              "total": 280,
+              "accepted": 261,
+              "rejected": 19,
+              "coverage": 0.9321428571428572,
+              "accepted_set_error": 0.22988505747126436,
+              "accepted_composition_fraction": 0.5168316831683168,
+              "rejected_composition_fraction": 0.3392857142857143
+            }
+          }
+        }
+      }
+    },
+    "icbhi2017/validation_select": {
+      "samples": 554,
+      "patients": 12,
+      "temperature": 1.6464554911106857,
+      "entropy_by_class": {
+        "Normal": {
+          "mean": 0.8327270964696359,
+          "sample_sd": 0.15612881161834727,
+          "median": 0.8767009982296482,
+          "q05": 0.5369222413597592,
+          "q10": 0.5776523751100783,
+          "q25": 0.7382080488965734,
+          "q75": 0.968702745067147,
+          "q90": 0.9952234431712074,
+          "q95": 0.9987563695213092,
+          "iqr": 0.2304946961705736
+        },
+        "Adventitious": {
+          "mean": 0.8224347491638915,
+          "sample_sd": 0.17184891133672348,
+          "median": 0.876365252376466,
+          "q05": 0.47638627098473724,
+          "q10": 0.552768842484077,
+          "q25": 0.7021987566026437,
+          "q75": 0.9696872204435873,
+          "q90": 0.9963462849237343,
+          "q95": 0.9988903778079685,
+          "iqr": 0.2674884638409436
+        }
+      },
+      "frozen_operating_points_descriptive_only": {
+        "coverage_80": {
+          "cutoff": 0.9617011052352461,
+          "total": 554,
+          "accepted": 402,
+          "rejected": 152,
+          "overall_coverage": 0.7256317689530686,
+          "accepted_set_error": 0.19900497512437812,
+          "classes": {
+            "Normal": {
+              "total": 287,
+              "accepted": 207,
+              "rejected": 80,
+              "coverage": 0.7212543554006968,
+              "accepted_set_error": 0.2222222222222222,
+              "accepted_composition_fraction": 0.5149253731343284,
+              "rejected_composition_fraction": 0.5263157894736842
+            },
+            "Adventitious": {
+              "total": 267,
+              "accepted": 195,
+              "rejected": 72,
+              "coverage": 0.7303370786516854,
+              "accepted_set_error": 0.17435897435897435,
+              "accepted_composition_fraction": 0.48507462686567165,
+              "rejected_composition_fraction": 0.47368421052631576
+            }
+          }
+        },
+        "coverage_90": {
+          "cutoff": 0.9924170812538704,
+          "total": 554,
+          "accepted": 484,
+          "rejected": 70,
+          "overall_coverage": 0.8736462093862816,
+          "accepted_set_error": 0.24586776859504134,
+          "classes": {
+            "Normal": {
+              "total": 287,
+              "accepted": 253,
+              "rejected": 34,
+              "coverage": 0.8815331010452961,
+              "accepted_set_error": 0.2885375494071146,
+              "accepted_composition_fraction": 0.5227272727272727,
+              "rejected_composition_fraction": 0.4857142857142857
+            },
+            "Adventitious": {
+              "total": 267,
+              "accepted": 231,
+              "rejected": 36,
+              "coverage": 0.8651685393258427,
+              "accepted_set_error": 0.19913419913419914,
+              "accepted_composition_fraction": 0.4772727272727273,
+              "rejected_composition_fraction": 0.5142857142857142
+            }
+          }
+        }
+      }
+    },
+    "sprsound2022/calibration": {
+      "samples": 1038,
+      "patients": 36,
+      "temperature": 1.0350845956825019,
+      "entropy_by_class": {
+        "Normal": {
+          "mean": 0.23001338167877092,
+          "sample_sd": 0.29342960952518365,
+          "median": 0.07991625750254784,
+          "q05": 0.02054152175811862,
+          "q10": 0.02460774331238648,
+          "q25": 0.03804244630681686,
+          "q75": 0.2943968997295813,
+          "q90": 0.8142929417098317,
+          "q95": 0.9502836661012565,
+          "iqr": 0.2563544534227644
+        },
+        "Adventitious": {
+          "mean": 0.14938864040683225,
+          "sample_sd": 0.21746709099882247,
+          "median": 0.05580795973888392,
+          "q05": 0.02039764547168121,
+          "q10": 0.02347615213955585,
+          "q25": 0.03143781910490355,
+          "q75": 0.14534082163770487,
+          "q90": 0.4069859542961658,
+          "q95": 0.7176892766351018,
+          "iqr": 0.11390300253280132
+        }
+      },
+      "frozen_operating_points_descriptive_only": {
+        "coverage_80": {
+          "cutoff": 0.3546738143918096,
+          "total": 1038,
+          "accepted": 831,
+          "rejected": 207,
+          "overall_coverage": 0.8005780346820809,
+          "accepted_set_error": 0.013237063778580024,
+          "classes": {
+            "Normal": {
+              "total": 802,
+              "accepted": 623,
+              "rejected": 179,
+              "coverage": 0.7768079800498753,
+              "accepted_set_error": 0.009630818619582664,
+              "accepted_composition_fraction": 0.7496991576413959,
+              "rejected_composition_fraction": 0.8647342995169082
+            },
+            "Adventitious": {
+              "total": 236,
+              "accepted": 208,
+              "rejected": 28,
+              "coverage": 0.8813559322033898,
+              "accepted_set_error": 0.02403846153846154,
+              "accepted_composition_fraction": 0.2503008423586041,
+              "rejected_composition_fraction": 0.13526570048309178
+            }
+          }
+        },
+        "coverage_90": {
+          "cutoff": 0.7335435972271017,
+          "total": 1038,
+          "accepted": 935,
+          "rejected": 103,
+          "overall_coverage": 0.9007707129094412,
+          "accepted_set_error": 0.025668449197860963,
+          "classes": {
+            "Normal": {
+              "total": 802,
+              "accepted": 711,
+              "rejected": 91,
+              "coverage": 0.8865336658354115,
+              "accepted_set_error": 0.02390998593530239,
+              "accepted_composition_fraction": 0.760427807486631,
+              "rejected_composition_fraction": 0.883495145631068
+            },
+            "Adventitious": {
+              "total": 236,
+              "accepted": 224,
+              "rejected": 12,
+              "coverage": 0.9491525423728814,
+              "accepted_set_error": 0.03125,
+              "accepted_composition_fraction": 0.23957219251336898,
+              "rejected_composition_fraction": 0.11650485436893204
+            }
+          }
+        }
+      }
+    },
+    "sprsound2022/validation_select": {
+      "samples": 1013,
+      "patients": 36,
+      "temperature": 1.0350845956825019,
+      "entropy_by_class": {
+        "Normal": {
+          "mean": 0.23241520711418562,
+          "sample_sd": 0.2947499157097845,
+          "median": 0.08536256489107788,
+          "q05": 0.021500258539403405,
+          "q10": 0.02548932172495122,
+          "q25": 0.041718891537861055,
+          "q75": 0.266484707504468,
+          "q90": 0.8205829797903197,
+          "q95": 0.9461882749590906,
+          "iqr": 0.22476581596660694
+        },
+        "Adventitious": {
+          "mean": 0.36412470876309,
+          "sample_sd": 0.3230399729326284,
+          "median": 0.23899526577703642,
+          "q05": 0.03434702966610936,
+          "q10": 0.04292276604971108,
+          "q25": 0.08380737641298455,
+          "q75": 0.6497869928245148,
+          "q90": 0.8919562116382164,
+          "q95": 0.9693294098234022,
+          "iqr": 0.5659796164115303
+        }
+      },
+      "frozen_operating_points_descriptive_only": {
+        "coverage_80": {
+          "cutoff": 0.3546738143918096,
+          "total": 1013,
+          "accepted": 751,
+          "rejected": 262,
+          "overall_coverage": 0.7413622902270484,
+          "accepted_set_error": 0.013315579227696404,
+          "classes": {
+            "Normal": {
+              "total": 786,
+              "accepted": 614,
+              "rejected": 172,
+              "coverage": 0.7811704834605598,
+              "accepted_set_error": 0.004885993485342019,
+              "accepted_composition_fraction": 0.8175765645805593,
+              "rejected_composition_fraction": 0.6564885496183206
+            },
+            "Adventitious": {
+              "total": 227,
+              "accepted": 137,
+              "rejected": 90,
+              "coverage": 0.6035242290748899,
+              "accepted_set_error": 0.051094890510948905,
+              "accepted_composition_fraction": 0.18242343541944075,
+              "rejected_composition_fraction": 0.3435114503816794
+            }
+          }
+        },
+        "coverage_90": {
+          "cutoff": 0.7335435972271017,
+          "total": 1013,
+          "accepted": 869,
+          "rejected": 144,
+          "overall_coverage": 0.857847976307996,
+          "accepted_set_error": 0.02531645569620253,
+          "classes": {
+            "Normal": {
+              "total": 786,
+              "accepted": 690,
+              "rejected": 96,
+              "coverage": 0.8778625954198473,
+              "accepted_set_error": 0.007246376811594203,
+              "accepted_composition_fraction": 0.7940161104718066,
+              "rejected_composition_fraction": 0.6666666666666666
+            },
+            "Adventitious": {
+              "total": 227,
+              "accepted": 179,
+              "rejected": 48,
+              "coverage": 0.788546255506608,
+              "accepted_set_error": 0.09497206703910614,
+              "accepted_composition_fraction": 0.20598388952819333,
+              "rejected_composition_fraction": 0.3333333333333333
+            }
+          }
+        }
+      }
+    }
+  },
+  "source_hashes": {
+    "data/manifests/cross_domain_binary.csv": "2dd168129fc0fc159db201f2990c4d7074cb746fc9bc2c13bd5031e47dbd1419",
+    "artifacts/post_gate11a/calibration_analysis/post_gate11a_calibration_final.json": "c332f0edd9578191068e00007728d95cf9d406fd962d70845bf7dcb8ee7e00b9",
+    "artifacts/post_gate11a/calibration_predictions/fullft_ensemble_icbhi2017_calibration.csv": "2a6a3dd243264bc87d2447abde09853b0355053330ba07f2276b799d54f79971",
+    "runs/gate11a_exactmask_fullft_seed20260729/best_validation_predictions_icbhi2017.csv": "bd5fe4b316514c0f9a6b34b7bb370621e380f60e57826091822c1a4fa4b45136",
+    "runs/gate11a_exactmask_fullft_seed20260730/best_validation_predictions_icbhi2017.csv": "6f058455c1c4baece7bb902c2376632d28663e7cf6742422eaae0dc3bf6b81f9",
+    "runs/gate11a_exactmask_fullft_seed20260731/best_validation_predictions_icbhi2017.csv": "5cf597c5580fb7e8efcd9d8d7ad7f90a5815f25cc61629a298eeaeb369e83d2d",
+    "artifacts/post_gate11a/calibration_predictions/fullft_ensemble_sprsound2022_calibration.csv": "8584502cf6b0daf40b3f58be3a151762dece1f0170179bc42bc0ee63953ed277",
+    "runs/gate11a_exactmask_fullft_seed20260729/best_validation_predictions_sprsound2022.csv": "aa6d0a0e1c36cdfd68bd2d59b5b6a307af87113f40747309c56ca5183f0bec3b",
+    "runs/gate11a_exactmask_fullft_seed20260730/best_validation_predictions_sprsound2022.csv": "0402cabae73531aad317d51b46b2cf7bb45fffd652eccde42be7ad759c492e90",
+    "runs/gate11a_exactmask_fullft_seed20260731/best_validation_predictions_sprsound2022.csv": "4c4837933f79c4409b14ef440fffb3ed485193824bddf5fc3a0f572e29f7cb73"
+  },
+  "finite_value_audit_passed": true,
+  "calibration_accessed": true,
+  "locked_tests_accessed": false
+}

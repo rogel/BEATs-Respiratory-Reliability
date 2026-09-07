@@ -1,0 +1,53 @@
+{
+  "gate": "9B",
+  "purpose": "training_only_loss_scale_and_resource_calibration",
+  "validation_accessed": false,
+  "locked_test_accessed": false,
+  "candidate": "beats_lora_qv_r8",
+  "seed": 20260729,
+  "batches": 2,
+  "formal_status": "training_only_exact_token_mask_calibration",
+  "code_audit": {
+    "beats_backbone_source_sha256": "31c0378379a7e0f1d1069f9da444fb86890fe1ea078959a2dcd39640cdcadbaa",
+    "beats_transfer_wrapper_sha256": "226848c092f55543d451209c8c52cb1b2d058ebce08c3003c583b5a0417e5c32",
+    "exact_token_mask_amendment": "artifacts/gate9b_exact_token_mask_amendment.json"
+  },
+  "adaptation_audit": {
+    "strategy": "lora_qv",
+    "total_parameters": 90411634,
+    "trainable_parameters": 99842,
+    "trainable_fraction": 0.0011043047844926683,
+    "trainable_backbone_parameters": 98304,
+    "trainable_classifier_parameters": 1538,
+    "lora_modules": 8,
+    "lora_rank": 8,
+    "lora_alpha": 16.0,
+    "lora_dropout": 0.05,
+    "adapted_layer_indices": [
+      8,
+      9,
+      10,
+      11
+    ]
+  },
+  "rows": [
+    {
+      "step": 1,
+      "classification_loss": 0.6117825508117676,
+      "consistency_loss": 0.00798899494111538,
+      "relative_rms_projection_drift": 0.0,
+      "mps_allocated_gib": 0.4747331142425537,
+      "mps_driver_allocated_gib": 3.4784088134765625
+    },
+    {
+      "step": 2,
+      "classification_loss": 0.7634342312812805,
+      "consistency_loss": 0.009978905320167542,
+      "relative_rms_projection_drift": 6.326988659566268e-05,
+      "mps_allocated_gib": 0.4756584167480469,
+      "mps_driver_allocated_gib": 3.4862213134765625
+    }
+  ],
+  "maximum_observed_projection_drift": 6.326988659566268e-05,
+  "median_nonzero_projection_drift": 6.326988659566268e-05
+}

@@ -1,0 +1,251 @@
+{
+  "gate": "9D-multiseed",
+  "status": "gate_9d_multiseed_failed",
+  "seeds": [
+    20260729,
+    20260730,
+    20260731
+  ],
+  "development_only": true,
+  "calibration_accessed": false,
+  "locked_tests_accessed": false,
+  "balanced_runs": [
+    "runs/gate9b_exactmask_lora_qv_r8_seed20260729",
+    "runs/gate9d_domain_class_event_lora_qv_r8_seed20260730",
+    "runs/gate9d_domain_class_event_lora_qv_r8_seed20260731"
+  ],
+  "event_random_runs": [
+    "runs/gate9d_event_random_lora_qv_r8_seed20260729",
+    "runs/gate9d_event_random_lora_qv_r8_seed20260730",
+    "runs/gate9d_event_random_lora_qv_r8_seed20260731"
+  ],
+  "pairing_audit": {
+    "icbhi2017": {
+      "events": 554,
+      "patients": 12,
+      "three_seeds_identical_samples_and_targets": true,
+      "arms_fully_paired": true,
+      "fixed_threshold_predictions_verified": true
+    },
+    "sprsound2022": {
+      "events": 1013,
+      "patients": 36,
+      "three_seeds_identical_samples_and_targets": true,
+      "arms_fully_paired": true,
+      "fixed_threshold_predictions_verified": true
+    }
+  },
+  "paired_seed_results": [
+    {
+      "seed": 20260729,
+      "balanced": {
+        "domain_metrics": {
+          "icbhi2017": {
+            "average_score": 0.7102010988007151,
+            "sensitivity": 0.7827715355805244,
+            "specificity": 0.6376306620209059,
+            "macro_f1": 0.7069357366771161
+          },
+          "sprsound2022": {
+            "average_score": 0.8918322852563025,
+            "sensitivity": 0.8281938325991189,
+            "specificity": 0.955470737913486,
+            "macro_f1": 0.8943006204173718
+          }
+        },
+        "worst_database_average_score": 0.7102010988007151,
+        "mean_database_average_score": 0.8010166920285089
+      },
+      "event_random": {
+        "domain_metrics": {
+          "icbhi2017": {
+            "average_score": 0.6988803194613005,
+            "sensitivity": 0.7078651685393258,
+            "specificity": 0.6898954703832753,
+            "macro_f1": 0.6984763798132547
+          },
+          "sprsound2022": {
+            "average_score": 0.8482165876405376,
+            "sensitivity": 0.7180616740088106,
+            "specificity": 0.9783715012722646,
+            "macro_f1": 0.8754759588607643
+          }
+        },
+        "worst_database_average_score": 0.6988803194613005,
+        "mean_database_average_score": 0.7735484535509191
+      },
+      "gains": {
+        "icbhi2017": 0.011320779339414666,
+        "sprsound2022": 0.04361569761576489,
+        "worst_database": 0.011320779339414666,
+        "mean_database": 0.027468238477589835
+      }
+    },
+    {
+      "seed": 20260730,
+      "balanced": {
+        "domain_metrics": {
+          "icbhi2017": {
+            "average_score": 0.6761408866095081,
+            "sensitivity": 0.8052434456928839,
+            "specificity": 0.5470383275261324,
+            "macro_f1": 0.6678394476069998
+          },
+          "sprsound2022": {
+            "average_score": 0.8828311531089216,
+            "sensitivity": 0.8458149779735683,
+            "specificity": 0.9198473282442748,
+            "macro_f1": 0.8666044976673188
+          }
+        },
+        "worst_database_average_score": 0.6761408866095081,
+        "mean_database_average_score": 0.7794860198592148
+      },
+      "event_random": {
+        "domain_metrics": {
+          "icbhi2017": {
+            "average_score": 0.6968314867739368,
+            "sensitivity": 0.7490636704119851,
+            "specificity": 0.6445993031358885,
+            "macro_f1": 0.6947220492287025
+          },
+          "sprsound2022": {
+            "average_score": 0.8783698198652632,
+            "sensitivity": 0.788546255506608,
+            "specificity": 0.9681933842239185,
+            "macro_f1": 0.8924292125188198
+          }
+        },
+        "worst_database_average_score": 0.6968314867739368,
+        "mean_database_average_score": 0.7876006533196
+      },
+      "gains": {
+        "icbhi2017": -0.020690600164428696,
+        "sprsound2022": 0.004461333243658383,
+        "worst_database": -0.020690600164428696,
+        "mean_database": -0.008114633460385212
+      }
+    },
+    {
+      "seed": 20260731,
+      "balanced": {
+        "domain_metrics": {
+          "icbhi2017": {
+            "average_score": 0.6837685471557765,
+            "sensitivity": 0.6741573033707865,
+            "specificity": 0.6933797909407665,
+            "macro_f1": 0.6837435370488167
+          },
+          "sprsound2022": {
+            "average_score": 0.9003486117182858,
+            "sensitivity": 0.8414096916299559,
+            "specificity": 0.9592875318066157,
+            "macro_f1": 0.9028708403835308
+          }
+        },
+        "worst_database_average_score": 0.6837685471557765,
+        "mean_database_average_score": 0.7920585794370312
+      },
+      "event_random": {
+        "domain_metrics": {
+          "icbhi2017": {
+            "average_score": 0.7000091349228099,
+            "sensitivity": 0.7902621722846442,
+            "specificity": 0.6097560975609756,
+            "macro_f1": 0.6954649564819056
+          },
+          "sprsound2022": {
+            "average_score": 0.8683822622770734,
+            "sensitivity": 0.7533039647577092,
+            "specificity": 0.9834605597964376,
+            "macro_f1": 0.8946961650584168
+          }
+        },
+        "worst_database_average_score": 0.7000091349228099,
+        "mean_database_average_score": 0.7841956985999416
+      },
+      "gains": {
+        "icbhi2017": -0.01624058776703341,
+        "sprsound2022": 0.03196634944121246,
+        "worst_database": -0.01624058776703341,
+        "mean_database": 0.007862880837089525
+      }
+    }
+  ],
+  "mean_balanced_scores": {
+    "icbhi2017": 0.6900368441886666,
+    "sprsound2022": 0.89167068336117
+  },
+  "mean_paired_gains": {
+    "icbhi2017": -0.008536802864015813,
+    "sprsound2022": 0.026681126766878577,
+    "worst_database": -0.008536802864015813,
+    "mean_database": 0.009072161951431382
+  },
+  "seed_wins": {
+    "worst_database": 1,
+    "mean_database": 2
+  },
+  "patient_cluster_bootstrap": {
+    "method": "paired patient-cluster bootstrap of three-seed probability ensembles within each sampling arm",
+    "per_domain": {
+      "icbhi2017": {
+        "mean_gain": 0.0010793747378700035,
+        "confidence_interval_95": [
+          -0.023312296318020873,
+          0.03659687697859326
+        ],
+        "probability_gain_above_zero": 0.466
+      },
+      "sprsound2022": {
+        "mean_gain": 0.023540433240235973,
+        "confidence_interval_95": [
+          0.0022109569735693072,
+          0.049818240948743174
+        ],
+        "probability_gain_above_zero": 0.987
+      }
+    },
+    "iterations": 4000,
+    "seed": 20260729,
+    "mean_domain": {
+      "mean_gain": 0.01230990398905299,
+      "confidence_interval_95": [
+        -0.004881182213737506,
+        0.03290434012633544
+      ],
+      "probability_gain_above_zero": 0.90725
+    }
+  },
+  "decision": {
+    "thresholds": {
+      "directional_gain": 0.003,
+      "paired_wins": 2,
+      "maximum_database_mean_drop": 0.005,
+      "sensitivity_specificity_floor": 0.5,
+      "bootstrap_probability": 0.8
+    },
+    "weakest_database": "icbhi2017",
+    "branches": {
+      "worst_database": {
+        "direction_passed": false,
+        "wins_passed": false,
+        "bootstrap_passed": false,
+        "passed": false
+      },
+      "mean_database": {
+        "direction_passed": false,
+        "wins_passed": true,
+        "bootstrap_passed": true,
+        "passed": false
+      }
+    },
+    "checks": {
+      "at_least_one_directional_branch": false,
+      "no_database_cross_seed_mean_drop_greater_than_0_005": false,
+      "balanced_sensitivity_specificity_safety_every_seed": true
+    },
+    "passed": false
+  },
+  "freeze": "artifacts/gate9d_multiseed_freeze.json"
+}

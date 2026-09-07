@@ -1,0 +1,21 @@
+./.venv/lib/python3.12/site-packages/torch/nn/utils/weight_norm.py:144: FutureWarning: `torch.nn.utils.weight_norm` is deprecated in favor of `torch.nn.utils.parametrizations.weight_norm`.
+  WeightNorm.apply(module, name, dim)
+{"seed": 20260729, "domain": "icbhi2017", "role": "calibration", "events": 561, "sha256": "88c3d910e2b729d894b3f30641ba4a7a23a03d8f2cab148f00a6661316b34efd"}
+{"seed": 20260729, "domain": "icbhi2017", "role": "locked_test", "events": 2873, "sha256": "d73a8f372f709e869dad90452ce1edf0be776185500d0fd669622f092a2e8c11"}
+{"seed": 20260729, "domain": "sprsound2022", "role": "calibration", "events": 1038, "sha256": "475bdd85ea41666898c971c77058780234664c46230c9ab56a04f7f9e2a91568"}
+{"seed": 20260729, "domain": "sprsound2022", "role": "locked_inter_test", "events": 1429, "sha256": "993c9a41b233f219caab4428f80ba9bf566d5015d296214faf60fe2d7bb5f0d6"}
+{"seed": 20260729, "domain": "sprsound2022", "role": "locked_intra_test", "events": 1004, "sha256": "8a26eed9adcf6cc72355499dbf5d87abf98f51df680dd881223070fb429c37c5"}
+./.venv/lib/python3.12/site-packages/torch/nn/utils/weight_norm.py:144: FutureWarning: `torch.nn.utils.weight_norm` is deprecated in favor of `torch.nn.utils.parametrizations.weight_norm`.
+  WeightNorm.apply(module, name, dim)
+{"seed": 20260730, "domain": "icbhi2017", "role": "calibration", "events": 561, "sha256": "d0148a124bbec14c9b15d1664fefa7ed3e28e45a10be96879d0cb6c66e85f644"}
+{"seed": 20260730, "domain": "icbhi2017", "role": "locked_test", "events": 2873, "sha256": "fb38e2fc2295aa6278248d70d746219838a607115c7718f4ca8b23755d76bb95"}
+{"seed": 20260730, "domain": "sprsound2022", "role": "calibration", "events": 1038, "sha256": "0f1f24739de46eae77bb800a3c653a93e78c46ae83f9ee660abb2f8bf0528d0f"}
+{"seed": 20260730, "domain": "sprsound2022", "role": "locked_inter_test", "events": 1429, "sha256": "282ec79e474be801dd0778b0db2192815550092a99090cc83564ca554c27c3d9"}
+{"seed": 20260730, "domain": "sprsound2022", "role": "locked_intra_test", "events": 1004, "sha256": "498b7cbadc00afa564296e7ff10a769b27fa3f9983d1ef2c106a249f51c14624"}
+./.venv/lib/python3.12/site-packages/torch/nn/utils/weight_norm.py:144: FutureWarning: `torch.nn.utils.weight_norm` is deprecated in favor of `torch.nn.utils.parametrizations.weight_norm`.
+  WeightNorm.apply(module, name, dim)
+{"seed": 20260731, "domain": "icbhi2017", "role": "calibration", "events": 561, "sha256": "8299b1d89466652633e71a450ee62ee0481de117fdc3374fc99a34c59a25863f"}
+{"seed": 20260731, "domain": "icbhi2017", "role": "locked_test", "events": 2873, "sha256": "7aea0568351fd97e2329f66455f1c04fc8a6c6638c4d7fe05ef69d345051b506"}
+{"seed": 20260731, "domain": "sprsound2022", "role": "calibration", "events": 1038, "sha256": "d34bcc1f35e275ac81709de08a0d634b0fdab96c3fdcb6ed912bafc9235d8324"}
+{"seed": 20260731, "domain": "sprsound2022", "role": "locked_inter_test", "events": 1429, "sha256": "8e5dfbf0f2dd61df4930665debce076200d5a04cfebf1002911e96e5a1e15c92"}
+{"seed": 20260731, "domain": "sprsound2022", "role": "locked_intra_test", "events": 1004, "sha256": "6d991b5d5926e25781f36b29c2165ef313925da5c83c0946e521fa83b69bb913"}

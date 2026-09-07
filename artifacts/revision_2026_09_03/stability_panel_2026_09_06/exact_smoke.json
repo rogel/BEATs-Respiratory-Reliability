@@ -1,0 +1,418 @@
+{
+  "first_start": 0,
+  "second_start": 0,
+  "observed": {
+    "frontend": [
+      {
+        "elements": 102400,
+        "nonfinite": 0
+      },
+      {
+        "elements": 102400,
+        "nonfinite": 0
+      }
+    ],
+    "attention_probabilities_0": [
+      {
+        "elements": 1920000,
+        "nonfinite": 0
+      },
+      {
+        "elements": 1920000,
+        "nonfinite": 0
+      }
+    ],
+    "attention_0": [
+      {
+        "elements": 2227200,
+        "nonfinite": 0
+      },
+      {
+        "elements": 2227200,
+        "nonfinite": 0
+      }
+    ],
+    "layer_0": [
+      {
+        "elements": 2227200,
+        "nonfinite": 0
+      },
+      {
+        "elements": 2227200,
+        "nonfinite": 0
+      }
+    ],
+    "attention_probabilities_1": [
+      {
+        "elements": 1920000,
+        "nonfinite": 0
+      },
+      {
+        "elements": 1920000,
+        "nonfinite": 0
+      }
+    ],
+    "attention_1": [
+      {
+        "elements": 2227200,
+        "nonfinite": 0
+      },
+      {
+        "elements": 2227200,
+        "nonfinite": 0
+      }
+    ],
+    "layer_1": [
+      {
+        "elements": 2227200,
+        "nonfinite": 0
+      },
+      {
+        "elements": 2227200,
+        "nonfinite": 0
+      }
+    ],
+    "attention_probabilities_2": [
+      {
+        "elements": 1920000,
+        "nonfinite": 0
+      },
+      {
+        "elements": 1920000,
+        "nonfinite": 0
+      }
+    ],
+    "attention_2": [
+      {
+        "elements": 2227200,
+        "nonfinite": 0
+      },
+      {
+        "elements": 2227200,
+        "nonfinite": 0
+      }
+    ],
+    "layer_2": [
+      {
+        "elements": 2227200,
+        "nonfinite": 0
+      },
+      {
+        "elements": 2227200,
+        "nonfinite": 0
+      }
+    ],
+    "attention_probabilities_3": [
+      {
+        "elements": 1920000,
+        "nonfinite": 0
+      },
+      {
+        "elements": 1920000,
+        "nonfinite": 0
+      }
+    ],
+    "attention_3": [
+      {
+        "elements": 2227200,
+        "nonfinite": 0
+      },
+      {
+        "elements": 2227200,
+        "nonfinite": 0
+      }
+    ],
+    "layer_3": [
+      {
+        "elements": 2227200,
+        "nonfinite": 0
+      },
+      {
+        "elements": 2227200,
+        "nonfinite": 0
+      }
+    ],
+    "attention_probabilities_4": [
+      {
+        "elements": 1920000,
+        "nonfinite": 0
+      },
+      {
+        "elements": 1920000,
+        "nonfinite": 0
+      }
+    ],
+    "attention_4": [
+      {
+        "elements": 2227200,
+        "nonfinite": 0
+      },
+      {
+        "elements": 2227200,
+        "nonfinite": 0
+      }
+    ],
+    "layer_4": [
+      {
+        "elements": 2227200,
+        "nonfinite": 0
+      },
+      {
+        "elements": 2227200,
+        "nonfinite": 0
+      }
+    ],
+    "attention_probabilities_5": [
+      {
+        "elements": 1920000,
+        "nonfinite": 0
+      },
+      {
+        "elements": 1920000,
+        "nonfinite": 0
+      }
+    ],
+    "attention_5": [
+      {
+        "elements": 2227200,
+        "nonfinite": 0
+      },
+      {
+        "elements": 2227200,
+        "nonfinite": 0
+      }
+    ],
+    "layer_5": [
+      {
+        "elements": 2227200,
+        "nonfinite": 0
+      },
+      {
+        "elements": 2227200,
+        "nonfinite": 0
+      }
+    ],
+    "attention_probabilities_6": [
+      {
+        "elements": 1920000,
+        "nonfinite": 0
+      },
+      {
+        "elements": 1920000,
+        "nonfinite": 0
+      }
+    ],
+    "attention_6": [
+      {
+        "elements": 2227200,
+        "nonfinite": 0
+      },
+      {
+        "elements": 2227200,
+        "nonfinite": 0
+      }
+    ],
+    "layer_6": [
+      {
+        "elements": 2227200,
+        "nonfinite": 0
+      },
+      {
+        "elements": 2227200,
+        "nonfinite": 0
+      }
+    ],
+    "attention_probabilities_7": [
+      {
+        "elements": 1920000,
+        "nonfinite": 0
+      },
+      {
+        "elements": 1920000,
+        "nonfinite": 0
+      }
+    ],
+    "attention_7": [
+      {
+        "elements": 2227200,
+        "nonfinite": 0
+      },
+      {
+        "elements": 2227200,
+        "nonfinite": 0
+      }
+    ],
+    "layer_7": [
+      {
+        "elements": 2227200,
+        "nonfinite": 0
+      },
+      {
+        "elements": 2227200,
+        "nonfinite": 0
+      }
+    ],
+    "attention_probabilities_8": [
+      {
+        "elements": 1920000,
+        "nonfinite": 0
+      },
+      {
+        "elements": 1920000,
+        "nonfinite": 0
+      }
+    ],
+    "attention_8": [
+      {
+        "elements": 2227200,
+        "nonfinite": 0
+      },
+      {
+        "elements": 2227200,
+        "nonfinite": 0
+      }
+    ],
+    "layer_8": [
+      {
+        "elements": 2227200,
+        "nonfinite": 0
+      },
+      {
+        "elements": 2227200,
+        "nonfinite": 0
+      }
+    ],
+    "attention_probabilities_9": [
+      {
+        "elements": 1920000,
+        "nonfinite": 0
+      },
+      {
+        "elements": 1920000,
+        "nonfinite": 0
+      }
+    ],
+    "attention_9": [
+      {
+        "elements": 2227200,
+        "nonfinite": 0
+      },
+      {
+        "elements": 2227200,
+        "nonfinite": 0
+      }
+    ],
+    "layer_9": [
+      {
+        "elements": 2227200,
+        "nonfinite": 0
+      },
+      {
+        "elements": 2227200,
+        "nonfinite": 0
+      }
+    ],
+    "attention_probabilities_10": [
+      {
+        "elements": 1920000,
+        "nonfinite": 0
+      },
+      {
+        "elements": 1920000,
+        "nonfinite": 0
+      }
+    ],
+    "attention_10": [
+      {
+        "elements": 2227200,
+        "nonfinite": 0
+      },
+      {
+        "elements": 2227200,
+        "nonfinite": 0
+      }
+    ],
+    "layer_10": [
+      {
+        "elements": 2227200,
+        "nonfinite": 0
+      },
+      {
+        "elements": 2227200,
+        "nonfinite": 0
+      }
+    ],
+    "attention_probabilities_11": [
+      {
+        "elements": 1920000,
+        "nonfinite": 0
+      },
+      {
+        "elements": 1920000,
+        "nonfinite": 0
+      }
+    ],
+    "attention_11": [
+      {
+        "elements": 2227200,
+        "nonfinite": 0
+      },
+      {
+        "elements": 2227200,
+        "nonfinite": 0
+      }
+    ],
+    "layer_11": [
+      {
+        "elements": 2227200,
+        "nonfinite": 0
+      },
+      {
+        "elements": 2227200,
+        "nonfinite": 0
+      }
+    ],
+    "encoder": [
+      {
+        "elements": 307200,
+        "nonfinite": 0
+      },
+      {
+        "elements": 307200,
+        "nonfinite": 0
+      }
+    ],
+    "pooled": [
+      {
+        "elements": 768,
+        "nonfinite": 0
+      },
+      {
+        "elements": 768,
+        "nonfinite": 0
+      }
+    ]
+  },
+  "exception": null,
+  "logits": {
+    "elements": 4,
+    "nonfinite": 0
+  },
+  "ce": {
+    "elements": 1,
+    "nonfinite": 0
+  },
+  "js": {
+    "elements": 1,
+    "nonfinite": 0
+  },
+  "loss": {
+    "elements": 1,
+    "nonfinite": 0
+  },
+  "gradient_tensors_observed": 241,
+  "nonfinite_gradients": {},
+  "gradient_elements_observed": 90313330,
+  "all_required_hooks_observed_twice": true,
+  "all_finite": true
+}

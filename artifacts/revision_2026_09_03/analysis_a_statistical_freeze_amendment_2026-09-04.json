@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "status": "frozen_implementation_only_correction",
+  "frozen_at": "2026-09-04 CST (+0800)",
+  "base_statistical_freeze_sha256": "f7d8327bc5c5d2490c814f338733221e597fceb81312f36514e801436bafd089",
+  "trigger": "The first analysis attempt stopped before creating any result file because the protected Post-Gate-11A ensemble helper requires all three seeds and rejected the amended two-seed matched-completer input.",
+  "correction": "Use an Analysis-A-local ensemble helper that performs the prespecified arithmetic mean of seed-20260729 and seed-20260731 probabilities after a one-to-one sample and metadata merge.",
+  "corrected_analysis_script_sha256": "088fa47fc035fd66aa353daf53263189523d6c48eb00f624abdd31b8a19ab1a7",
+  "method_changed": false,
+  "seed_set_changed": false,
+  "threshold_changed": false,
+  "bootstrap_changed": false,
+  "temperature_scaling_changed": false,
+  "prediction_values_inspected_before_correction": false,
+  "result_files_created_by_failed_attempt": false,
+  "selection_after_locked_access": false
+}

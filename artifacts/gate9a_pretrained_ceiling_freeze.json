@@ -1,0 +1,143 @@
+{
+  "gate": "9A",
+  "title": "AudioSet-pretrained representation ceiling screening",
+  "frozen_at": "2026-07-29",
+  "pre_result_transport_amendment": {
+    "amended_at": "2026-07-29",
+    "scope": "checkpoint packaging and transport only; candidates, weights, optimization and gates are unchanged",
+    "made_before_any_training_result": true
+  },
+  "purpose": "Test whether large-scale generic audio pretraining raises the cross-database binary respiratory-sound ceiling before designing another task-specific module.",
+  "development_only": true,
+  "locked_tests_may_be_accessed": false,
+  "data": {
+    "manifest": "data/manifests/cross_domain_binary.csv",
+    "train_role": "train_fit",
+    "selection_role": "validation_select",
+    "calibration_role_used": false,
+    "training_events": 7515,
+    "training_patients": {
+      "icbhi2017": 53,
+      "sprsound2022": 171
+    },
+    "selection_events": {
+      "icbhi2017": 554,
+      "sprsound2022": 1013
+    },
+    "selection_patients": {
+      "icbhi2017": 12,
+      "sprsound2022": 36
+    },
+    "label": "Normal versus Adventitious",
+    "sampling": "domain_class_event",
+    "samples_per_epoch": 7515,
+    "duration_seconds": 8.0,
+    "duration_fit": "zero_pad_with_padding_mask",
+    "patient_overlap_between_train_and_selection": 0
+  },
+  "candidates": {
+    "panns_cnn6": {
+      "source": "qiuqiangkong/audioset_tagging_cnn",
+      "source_commit": "d2f4b8c18eab44737fcc0de1248ae21eb43f6aa4",
+      "checkpoint": "Cnn6_mAP=0.343.pth (model-only release)",
+      "checkpoint_url": "https://zenodo.org/records/3987831/files/Cnn6_mAP%3D0.343.pth?download=1",
+      "published_md5": "e25e26b84585b14c7754c91e48efc9be",
+      "transport_mirror": {
+        "repo": "nicofarr/panns_Cnn6",
+        "revision": "3ce28ef0b057c37d42945c5c0e6bc776c40a15a8",
+        "file": "model.safetensors",
+        "sha256": "c55ec40fe251b32981b148429d50ea9e3837936aecee9294515b9da6665ba446",
+        "acceptance": "all 36 tensors must match the official model-only checkpoint exactly before a Gate result is considered valid"
+      },
+      "pretraining": "AudioSet supervised tagging",
+      "sample_rate": 32000,
+      "transfer": "load the published AudioSet trunk and fc1, replace only fc_audioset with a two-class head, then fine-tune all parameters",
+      "padding": "mask-aware temporal max-plus-mean pooling; no learnable adaptation module",
+      "batch_size": 32,
+      "optimizer": {
+        "name": "AdamW",
+        "backbone_learning_rate": 0.0001,
+        "head_learning_rate": 0.0005,
+        "weight_decay": 0.0001
+      },
+      "schedule": {
+        "warmup_epochs": 3,
+        "maximum_epochs": 25,
+        "early_stopping_patience": 6
+      }
+    },
+    "beats_iter3_plus_as2m_cpt2": {
+      "source": "microsoft/unilm/beats",
+      "source_commit": "833df7e7832e5064a281131ee64a481afa8e5b95",
+      "checkpoint": "BEATs_iter3_plus_AS2M_finetuned_on_AS2M_cpt2.pt",
+      "checkpoint_url": "https://1drv.ms/u/s!AqeByhGUtINrgcpj8ujXH1YUtxooEg?e=E9Ncea",
+      "transport_mirror": {
+        "repo": "Chengxiang1122/mcl-model-assets-beats-as2m-cpt2",
+        "revision": "5f910a6300912f253873a66ba7cfbfeaef22e626",
+        "file": "BEATs_iter3_plus_AS2M_finetuned_on_AS2M_cpt2.pt",
+        "sha256": "e5815275a04b6885e7b8af63d120b29bffae2cd2225cf4915e1ec6d819d3022c",
+        "acceptance": "strict load of all 252 tensors, finetuned_model=true, predictor_class=527 and 527 labels"
+      },
+      "pretraining": "iterative acoustic-token pretraining plus AudioSet-2M supervised fine-tuning",
+      "sample_rate": 16000,
+      "transfer": "load the published encoder, discard the 527-class predictor, add masked-mean two-class head, then fine-tune all parameters",
+      "padding": "use the official waveform padding mask through the encoder and masked temporal mean",
+      "batch_size": 8,
+      "optimizer": {
+        "name": "AdamW",
+        "backbone_learning_rate": 0.00001,
+        "head_learning_rate": 0.0001,
+        "weight_decay": 0.01
+      },
+      "schedule": {
+        "warmup_epochs": 3,
+        "maximum_epochs": 20,
+        "early_stopping_patience": 5
+      }
+    }
+  },
+  "shared_training": {
+    "seed_screen": 20260729,
+    "seeds_if_extended": [
+      20260729,
+      20260730,
+      20260731
+    ],
+    "waveform_augmentation": {
+      "gain": true,
+      "time_shift": true,
+      "additive_noise": true
+    },
+    "views": 2,
+    "jensen_shannon_consistency_max_weight": 0.4,
+    "jensen_shannon_warmup_epochs": 20,
+    "gradient_clip_norm": 5.0,
+    "checkpoint_selection": "maximize the minimum of ICBHI and SPRSound Average Score; break ties by their mean",
+    "threshold": 0.5
+  },
+  "single_seed_gate_per_candidate": {
+    "icbhi_average_score_at_least": 0.70,
+    "sprsound_average_score_at_least": 0.88,
+    "two_domain_mean_average_score_at_least": 0.79,
+    "two_domain_mean_gain_over_gate5a_at_least": 0.01,
+    "gate5a_mean_anchor": 0.7740732347541495,
+    "sensitivity_each_domain_at_least": 0.50,
+    "specificity_each_domain_at_least": 0.50,
+    "all_conditions_required": true
+  },
+  "extension_rule": {
+    "run_three_seeds_only_for_candidates_passing_the_single_seed_gate": true,
+    "three_seed_success": {
+      "mean_icbhi_average_score_at_least": 0.70,
+      "mean_sprsound_average_score_at_least": 0.88,
+      "mean_two_domain_average_score_at_least": 0.79,
+      "single_seed_gate_passes_at_least": 2,
+      "all_seed_domain_sensitivity_and_specificity_at_least": 0.50
+    }
+  },
+  "stop_rule": {
+    "if_neither_candidate_passes": "stop the pretrained-backbone route and do not construct Gate 9B",
+    "if_one_or_more_candidates_pass": "extend only passing candidates to three seeds; Gate 9B may be frozen only after three-seed success",
+    "no_post_hoc_model_or_hyperparameter_substitution": true
+  }
+}

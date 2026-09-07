@@ -1,0 +1,15 @@
+{
+  "stage": "post_gate11a_locked_analysis",
+  "created_at": "2026-08-01T08:02:38+08:00",
+  "classification": "non-scientific serialization-only implementation amendment",
+  "failure": "json.dumps rejected numpy.bool_ values in locked_robustness_checks after all calculations completed",
+  "change": "wrap the three locked robustness threshold comparisons in built-in bool()",
+  "scientific_state_changed": false,
+  "model_inference_rerun": false,
+  "predictions_changed": false,
+  "models_thresholds_temperatures_rejection_rules_or_statistics_changed": false,
+  "frozen_analyzer_sha256": "6f2ccf2ad814802a3c3ec25e50124f94408d64860aedb1b09c9edca5c82992d7",
+  "amended_analyzer_sha256": "fee49e0de54cd34a735c79bcae3630dbfff7020321ea38d1d4a1a72a0e0fe808",
+  "locked_access_status_before_retry": "predictions_complete",
+  "retry_scope": "analysis of the same hash-verified frozen prediction files only"
+}

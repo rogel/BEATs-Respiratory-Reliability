@@ -1,0 +1,90 @@
+{
+  "schema_version": 1,
+  "stage": "BEATS_revision",
+  "family": "matched-lora",
+  "seed": 20260729,
+  "epochs_completed": 7,
+  "best_epoch": 7,
+  "best_worst_domain_average_score": 0.6683044278275849,
+  "best_mean_domain_average_score": 0.7664391516232678,
+  "best_validation_metrics": {
+    "icbhi2017": {
+      "accuracy": 0.6660649819494585,
+      "sensitivity": 0.7303370786516854,
+      "specificity": 0.6062717770034843,
+      "average_score": 0.6683044278275849,
+      "harmonic_score": 0.6625464983450983,
+      "score": 0.6654254630863417,
+      "macro_f1": 0.6655844685537156,
+      "uar": 0.6683044278275849,
+      "per_class_recall": {
+        "normal": 0.6062717770034843,
+        "adventitious": 0.7303370786516854
+      },
+      "confusion_matrix": [
+        [
+          174,
+          113
+        ],
+        [
+          72,
+          195
+        ]
+      ],
+      "support": {
+        "normal": 287,
+        "adventitious": 267
+      },
+      "auroc": 0.7113886387660024,
+      "nll": 0.6700303119872881
+    },
+    "sprsound2022": {
+      "accuracy": 0.8943731490621916,
+      "sensitivity": 0.8105726872246696,
+      "specificity": 0.9185750636132316,
+      "average_score": 0.8645738754189506,
+      "harmonic_score": 0.8612009672045067,
+      "score": 0.8628874213117286,
+      "macro_f1": 0.8528745461332248,
+      "uar": 0.8645738754189506,
+      "per_class_recall": {
+        "normal": 0.9185750636132316,
+        "adventitious": 0.8105726872246696
+      },
+      "confusion_matrix": [
+        [
+          722,
+          64
+        ],
+        [
+          43,
+          184
+        ]
+      ],
+      "support": {
+        "normal": 786,
+        "adventitious": 227
+      },
+      "auroc": 0.945970788355696,
+      "nll": 0.2477883441927167
+    }
+  },
+  "fixed_prefix": true,
+  "training_seconds_total": 4359.055299084168,
+  "wall_seconds_this_invocation": 4359.32387924986,
+  "memory": {
+    "peak_process_rss_bytes": 1674772480,
+    "peak_mps_current_allocated_bytes": 550509568,
+    "peak_mps_driver_allocated_bytes": 3772891136,
+    "measurement": "process ru_maxrss plus MPS allocation samples after every batch"
+  },
+  "trainable_parameters": 99842,
+  "total_parameters": 90411634,
+  "best_checkpoint_bytes": 406893,
+  "best_checkpoint_sha256": "aa03b086d0d900d9c124d3cc2c182dd0eb4f8f6958345aa2d5b26417a0cc5f9e",
+  "configuration_sha256": "0ff57a2002ce48542ca4f9aa5acc54079fc46902aa6ef58f7bed8a9adc85960c",
+  "finite_audit_passed": true,
+  "data_boundary_audit_passed": true,
+  "calibration_accessed": false,
+  "locked_tests_accessed": false
+}

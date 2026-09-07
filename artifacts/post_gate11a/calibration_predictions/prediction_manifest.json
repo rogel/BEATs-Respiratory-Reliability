@@ -1,0 +1,33 @@
+{
+  "stage": "calibration",
+  "device": "mps",
+  "batch_size": 8,
+  "families": [
+    "fullft"
+  ],
+  "seeds": [
+    20260729,
+    20260730,
+    20260731
+  ],
+  "roles": {
+    "icbhi2017": [
+      "calibration"
+    ],
+    "sprsound2022": [
+      "calibration"
+    ]
+  },
+  "files": {
+    "fullft_seed20260729_icbhi2017_calibration.csv": "2e1b5a97c78c5411e035ea4ec929868b8a1a0a02173e4278ae1b6302e1ce03a8",
+    "fullft_seed20260729_sprsound2022_calibration.csv": "94e0f83e964dab7225cb2e6a3f9791935b2d116c4a7cf10c47e676557f7c8874",
+    "fullft_seed20260730_icbhi2017_calibration.csv": "3de8af1a2cd64ca55080cee5c039f6b1fe3fb508d76ef09a4132fca1867645a1",
+    "fullft_seed20260730_sprsound2022_calibration.csv": "aa87492fc3d47c90e3f3cb1cccacb9d03644126159b6b325783419068fefc086",
+    "fullft_seed20260731_icbhi2017_calibration.csv": "3edd2eadfbf327a1aa311766527b90c2b91cccbd40a1da516ab1070c7d714a9e",
+    "fullft_seed20260731_sprsound2022_calibration.csv": "8a7cbcfa7e60b36500950ec33f93abd1763354f00e74297b456854ee462dc16e",
+    "fullft_ensemble_icbhi2017_calibration.csv": "2a6a3dd243264bc87d2447abde09853b0355053330ba07f2276b799d54f79971",
+    "fullft_ensemble_sprsound2022_calibration.csv": "8584502cf6b0daf40b3f58be3a151762dece1f0170179bc42bc0ee63953ed277"
+  },
+  "calibration_accessed": true,
+  "locked_tests_accessed": false
+}

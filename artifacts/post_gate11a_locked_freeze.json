@@ -1,0 +1,96 @@
+{
+  "schema_version": 1,
+  "stage": "post_gate11a_locked",
+  "status": "sealed_before_locked_access",
+  "created_at": "2026-08-01T07:45:46.669703+08:00",
+  "primary_model": {
+    "object": "equal-weight probability ensemble of all three full-FT seeds",
+    "weights": [
+      0.3333333333333333,
+      0.3333333333333333,
+      0.3333333333333333
+    ],
+    "classification_threshold": 0.5
+  },
+  "matched_reference": {
+    "object": "equal-weight probability ensemble of all three matched LoRA seeds",
+    "purpose": "performance-efficiency trade-off; no preauthorized superiority claim"
+  },
+  "fitted_postprocessing": {
+    "icbhi2017": {
+      "temperature": 1.6464554911106857,
+      "selective_enabled": false,
+      "uncertainty_cutoffs": {}
+    },
+    "sprsound2022": {
+      "temperature": 1.0350845956825019,
+      "selective_enabled": false,
+      "uncertainty_cutoffs": {}
+    }
+  },
+  "calibration_claim_rule_on_locked": {
+    "classification_predictions_must_remain_identical": true,
+    "mean_nll_must_not_worsen": true,
+    "maximum_per_domain_nll_worsening": 0.02,
+    "failed_rule_action": "report calibration as unsupported; no refit or rerun"
+  },
+  "selective_prediction": {
+    "enabled": false,
+    "reason": "SPRSound validation Adventitious coverage at the calibration-fitted 80% target cutoff was 0.6035, below the frozen 0.65 floor",
+    "allowed_locked_output": "descriptive risk-coverage curve and AURC only",
+    "alternative_search_forbidden": true
+  },
+  "locked_roles": {
+    "primary_independent": {
+      "icbhi2017": "locked_test",
+      "sprsound2022": "locked_inter_test"
+    },
+    "descriptive_same_patient_only": {
+      "sprsound2022": "locked_intra_test"
+    }
+  },
+  "locked_robustness_thresholds": {
+    "icbhi_average_score": 0.64,
+    "sprsound_inter_average_score": 0.82,
+    "two_domain_equal_mean_average_score": 0.75,
+    "sensitivity_floor_each_primary_domain": 0.5,
+    "specificity_floor_each_primary_domain": 0.5,
+    "basis": "no more than about 0.08 absolute AS degradation from development ensemble"
+  },
+  "statistics": {
+    "patient_cluster_bootstrap_iterations": 4000,
+    "seed": 20260729,
+    "confidence": 0.95,
+    "report": [
+      "three seed metrics and mean plus sample SD",
+      "full-FT ensemble absolute intervals",
+      "paired full-FT minus LoRA intervals",
+      "per-domain and equal-domain-mean results"
+    ]
+  },
+  "one_time_execution": {
+    "prediction_command": ".venv/bin/python scripts/predict_post_gate11a.py --project-root . --stage locked --device mps --batch-size 8 --output-root artifacts/post_gate11a/locked_predictions",
+    "analysis_command": ".venv/bin/python scripts/analyze_post_gate11a_locked.py",
+    "same_run_models": [
+      "full-FT seeds 20260729/20260730/20260731 and ensemble",
+      "LoRA seeds 20260729/20260730/20260731 and ensemble"
+    ],
+    "resume_rule": "only the same freeze-bound access episode may reuse hash-verified completed prediction files after interruption",
+    "after_result": "never alter or rerun model, threshold, temperature, rejection rule, or method"
+  },
+  "hashes": {
+    "code:predict_locked": "96ac079729dfa0bb97430e5f895fc9772eafc9fb5ab71899e34d69617e4844c7",
+    "code:analyze_locked": "6f2ccf2ad814802a3c3ec25e50124f94408d64860aedb1b09c9edca5c82992d7",
+    "code:post_gate_module": "e54d06a5b7cdc0b2d6f04eca51aeae91878a9e155d3d877cd2b9ff56311aef0c",
+    "code:calibration_module": "f217590abc5f5c76823c230c59a743df504ea04824ee6190b3764384355978b0",
+    "code:selective_module": "c9b5bb07a0647aa490c4b02367e2a57683fc05388a9cd11aff87ee8ed558c3eb",
+    "evidence:development_freeze": "5e9e2faa24ead873a673d79eec1ea0c814b128e04f19ed205d6ec416b70b99c9",
+    "evidence:calibration_prediction_manifest": "9a2cdf1983b12a1f69a399cdf0943b5e4d26767bde84688b1b432bb67f909472",
+    "evidence:calibration_final": "c332f0edd9578191068e00007728d95cf9d406fd962d70845bf7dcb8ee7e00b9",
+    "evidence:efficiency_final": "c2f911edcc538383d17b5392b69a814230a943862420ebe75c2bb488f1c69045",
+    "evidence:gate11a_final": "075d7f59584cf87ea75618e74775163bd967de6c656b930e8d1da3dd0c23bd01",
+    "evidence:gate9d_lora_reference": "0dac138bcbd3ae79bd27ff33994d12dbbfc1ae235ca93ab43707249a079daa73"
+  },
+  "calibration_accessed": true,
+  "locked_tests_accessed": false
+}

@@ -1,0 +1,27 @@
+{
+  "family": "no-js",
+  "seed": 20260731,
+  "started_at": "2026-09-05T16:04:40.142428+08:00",
+  "supervisor_pid": 48912,
+  "launcher_sha256": "34fc338025ac535257eab5ca9a876b27c38786ab4fae035b57fa2710bc779d38",
+  "run_dir": "[user-home]/Documents/njgpt/\u5b66\u672f\u65b9\u5411/Respiratory Sound Classification/runs/revision_2026_09_03/revision_no_js_seed20260731",
+  "status": "completed_pending_audit",
+  "training_process_pid": 48915,
+  "command": [
+    "/usr/bin/caffeinate",
+    "-i",
+    "[user-home]/Documents/njgpt/\u5b66\u672f\u65b9\u5411/Respiratory Sound Classification/.venv/bin/python",
+    "-u",
+    "[user-home]/Documents/njgpt/\u5b66\u672f\u65b9\u5411/Respiratory Sound Classification/scripts/train_revision_ablation.py",
+    "--family",
+    "no-js",
+    "--seed",
+    "20260731",
+    "--device",
+    "mps"
+  ],
+  "exit_code": 0,
+  "ended_at": "2026-09-05T18:32:04.666582+08:00",
+  "training_log_sha256": "93e40f0ff7f9187cf922647de2cb7a9e53231ff7a8ed4fcbc1bc6515a3c0a3a2",
+  "summary_sha256": "cde9175e33b20fcc0bfea4c2db3885afcb00c106c6df9d7a18cf1bd0dafc0330"
+}

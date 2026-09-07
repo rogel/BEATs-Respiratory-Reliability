@@ -1,0 +1,85 @@
+{
+  "annotation_bound_errors": [],
+  "checks": {
+    "all_annotations_present": true,
+    "all_split_entries_present": true,
+    "annotation_bounds_valid": true,
+    "cycle_count_matches": true,
+    "development_patient_disjoint": true,
+    "label_counts_match": true,
+    "official_overlap_matches_documented": true,
+    "official_recording_counts_match": true,
+    "recording_count_matches": true,
+    "split_aliases_match_documented": true,
+    "strict_patient_disjoint": true
+  },
+  "cycle_count": 6898,
+  "data_gate_passed": true,
+  "development_cycle_counts": {
+    "test": 2873,
+    "train": 3147,
+    "validation": 878
+  },
+  "development_label_counts": {
+    "test": {
+      "both": 206,
+      "crackle": 678,
+      "normal": 1589,
+      "wheeze": 400
+    },
+    "train": {
+      "both": 241,
+      "crackle": 868,
+      "normal": 1644,
+      "wheeze": 394
+    },
+    "validation": {
+      "both": 59,
+      "crackle": 318,
+      "normal": 409,
+      "wheeze": 92
+    }
+  },
+  "development_overlapping_patients": [],
+  "development_patient_counts": {
+    "test": 49,
+    "train": 61,
+    "validation": 16
+  },
+  "development_recording_counts": {
+    "test": 394,
+    "train": 404,
+    "validation": 122
+  },
+  "label_counts": {
+    "both": 506,
+    "crackle": 1864,
+    "normal": 3642,
+    "wheeze": 886
+  },
+  "missing_annotations": [],
+  "missing_split_entries": [],
+  "official_overlapping_patients": [
+    "156",
+    "218"
+  ],
+  "official_recording_counts": {
+    "test": 381,
+    "train": 539
+  },
+  "official_test_patient_count": 49,
+  "official_train_patient_count": 79,
+  "recording_count": 920,
+  "sample_rate_counts": {
+    "4000": 90,
+    "10000": 6,
+    "44100": 824
+  },
+  "split_aliases": {
+    "226_1b1_Pl_sc_Meditron": "226_1b1_Pl_sc_LittC2SE"
+  },
+  "split_entries_without_wav": [],
+  "strict_patient_overlap_count": 0,
+  "strict_test_patient_count": 49,
+  "strict_train_patient_count": 77
+}

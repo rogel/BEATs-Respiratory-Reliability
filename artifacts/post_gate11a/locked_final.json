@@ -1,0 +1,990 @@
+{
+  "stage": "post_gate11a_one_time_locked_evaluation",
+  "status": "locked_robustness_passed",
+  "locked_freeze": "artifacts/post_gate11a_locked_freeze.json",
+  "locked_freeze_sha256": "22dd790dba0926080574619aa6112cb5db9c107bb963c19668788085dd966abb",
+  "prediction_manifest_sha256": "839a3523dffba6e810385a8ca0cfcbb1396405c70a8b193ec1b66c85bdf656ec",
+  "families": {
+    "fullft": {
+      "icbhi2017": {
+        "role": "locked_test",
+        "independent_primary": true,
+        "seed_metrics": {
+          "20260729": {
+            "accuracy": 0.6783849634528367,
+            "sensitivity": 0.6238317757009346,
+            "specificity": 0.7224669603524229,
+            "average_score": 0.6731493680266787,
+            "harmonic_score": 0.6695361656256451,
+            "score": 0.6713427668261619,
+            "macro_f1": 0.6736238768976557,
+            "uar": 0.6731493680266787,
+            "per_class_recall": {
+              "normal": 0.7224669603524229,
+              "adventitious": 0.6238317757009346
+            },
+            "confusion_matrix": [
+              [
+                1148,
+                441
+              ],
+              [
+                483,
+                801
+              ]
+            ],
+            "support": {
+              "normal": 1589,
+              "adventitious": 1284
+            },
+            "auroc": 0.7230041425767887,
+            "negative_log_likelihood": 0.6914618548931433,
+            "brier_score": 0.2250139436715885,
+            "equal_frequency_ece": 0.1119776129778977
+          },
+          "20260730": {
+            "accuracy": 0.6568047337278107,
+            "sensitivity": 0.6417445482866043,
+            "specificity": 0.6689741976085588,
+            "average_score": 0.6553593729475815,
+            "harmonic_score": 0.6550765304977736,
+            "score": 0.6552179517226775,
+            "macro_f1": 0.6544131712449226,
+            "uar": 0.6553593729475815,
+            "per_class_recall": {
+              "normal": 0.6689741976085588,
+              "adventitious": 0.6417445482866043
+            },
+            "confusion_matrix": [
+              [
+                1063,
+                526
+              ],
+              [
+                460,
+                824
+              ]
+            ],
+            "support": {
+              "normal": 1589,
+              "adventitious": 1284
+            },
+            "auroc": 0.6989919501087108,
+            "negative_log_likelihood": 0.94161733598262,
+            "brier_score": 0.26687576240223765,
+            "equal_frequency_ece": 0.2092015401327915
+          },
+          "20260731": {
+            "accuracy": 0.6306996171249565,
+            "sensitivity": 0.6534267912772586,
+            "specificity": 0.6123348017621145,
+            "average_score": 0.6328807965196865,
+            "harmonic_score": 0.6322137863925037,
+            "score": 0.6325472914560951,
+            "macro_f1": 0.6298944910457807,
+            "uar": 0.6328807965196865,
+            "per_class_recall": {
+              "normal": 0.6123348017621145,
+              "adventitious": 0.6534267912772586
+            },
+            "confusion_matrix": [
+              [
+                973,
+                616
+              ],
+              [
+                445,
+                839
+              ]
+            ],
+            "support": {
+              "normal": 1589,
+              "adventitious": 1284
+            },
+            "auroc": 0.670549474678916,
+            "negative_log_likelihood": 0.775368523685832,
+            "brier_score": 0.25472451600345203,
+            "equal_frequency_ece": 0.140244707959276
+          }
+        },
+        "seed_average_score_mean": 0.6537965124979822,
+        "seed_average_score_sample_sd": 0.02017972651926002,
+        "ensemble_metrics": {
+          "accuracy": 0.663418029933867,
+          "sensitivity": 0.6479750778816199,
+          "specificity": 0.6758967904342353,
+          "average_score": 0.6619359341579276,
+          "harmonic_score": 0.6616414864660741,
+          "score": 0.6617887103120008,
+          "macro_f1": 0.6610128770865706,
+          "uar": 0.6619359341579276,
+          "per_class_recall": {
+            "normal": 0.6758967904342353,
+            "adventitious": 0.6479750778816199
+          },
+          "confusion_matrix": [
+            [
+              1074,
+              515
+            ],
+            [
+              452,
+              832
+            ]
+          ],
+          "support": {
+            "normal": 1589,
+            "adventitious": 1284
+          },
+          "auroc": 0.7135877694978522,
+          "negative_log_likelihood": 0.7009519571616052,
+          "brier_score": 0.2324706963365918,
+          "equal_frequency_ece": 0.12483455205337167
+        }
+      },
+      "sprsound2022": {
+        "role": "locked_inter_test",
+        "independent_primary": true,
+        "seed_metrics": {
+          "20260729": {
+            "accuracy": 0.8600419874037789,
+            "sensitivity": 0.9820051413881749,
+            "specificity": 0.8144230769230769,
+            "average_score": 0.8982141091556259,
+            "harmonic_score": 0.8903975573880344,
+            "score": 0.8943058332718301,
+            "macro_f1": 0.8434672497119096,
+            "uar": 0.8982141091556259,
+            "per_class_recall": {
+              "normal": 0.8144230769230769,
+              "adventitious": 0.9820051413881749
+            },
+            "confusion_matrix": [
+              [
+                847,
+                193
+              ],
+              [
+                7,
+                382
+              ]
+            ],
+            "support": {
+              "normal": 1040,
+              "adventitious": 389
+            },
+            "auroc": 0.973942060510184,
+            "negative_log_likelihood": 0.4103973098289204,
+            "brier_score": 0.1121651245075593,
+            "equal_frequency_ece": 0.1378064010396221
+          },
+          "20260730": {
+            "accuracy": 0.9104268719384184,
+            "sensitivity": 0.961439588688946,
+            "specificity": 0.8913461538461539,
+            "average_score": 0.92639287126755,
+            "harmonic_score": 0.9250670057086596,
+            "score": 0.9257299384881048,
+            "macro_f1": 0.8946500237295476,
+            "uar": 0.92639287126755,
+            "per_class_recall": {
+              "normal": 0.8913461538461539,
+              "adventitious": 0.961439588688946
+            },
+            "confusion_matrix": [
+              [
+                927,
+                113
+              ],
+              [
+                15,
+                374
+              ]
+            ],
+            "support": {
+              "normal": 1040,
+              "adventitious": 389
+            },
+            "auroc": 0.9764287126754992,
+            "negative_log_likelihood": 0.2626935972769877,
+            "brier_score": 0.06886081160213393,
+            "equal_frequency_ece": 0.06997474223871797
+          },
+          "20260731": {
+            "accuracy": 0.8439468159552135,
+            "sensitivity": 0.9845758354755784,
+            "specificity": 0.7913461538461538,
+            "average_score": 0.8879609946608661,
+            "harmonic_score": 0.8774487902715087,
+            "score": 0.8827048924661873,
+            "macro_f1": 0.8276022875493456,
+            "uar": 0.8879609946608661,
+            "per_class_recall": {
+              "normal": 0.7913461538461538,
+              "adventitious": 0.9845758354755784
+            },
+            "confusion_matrix": [
+              [
+                823,
+                217
+              ],
+              [
+                6,
+                383
+              ]
+            ],
+            "support": {
+              "normal": 1040,
+              "adventitious": 389
+            },
+            "auroc": 0.9747083250939291,
+            "negative_log_likelihood": 0.4124810110061268,
+            "brier_score": 0.12086544788855569,
+            "equal_frequency_ece": 0.15810031518509446
+          }
+        },
+        "seed_average_score_mean": 0.904189325028014,
+        "seed_average_score_sample_sd": 0.019900494677747915,
+        "ensemble_metrics": {
+          "accuracy": 0.8789363191042687,
+          "sensitivity": 0.9820051413881749,
+          "specificity": 0.8403846153846154,
+          "average_score": 0.9111948783863951,
+          "harmonic_score": 0.9056921111240719,
+          "score": 0.9084434947552336,
+          "macro_f1": 0.862655467264304,
+          "uar": 0.9111948783863951,
+          "per_class_recall": {
+            "normal": 0.8403846153846154,
+            "adventitious": 0.9820051413881749
+          },
+          "confusion_matrix": [
+            [
+              874,
+              166
+            ],
+            [
+              7,
+              382
+            ]
+          ],
+          "support": {
+            "normal": 1040,
+            "adventitious": 389
+          },
+          "auroc": 0.9814613407158393,
+          "negative_log_likelihood": 0.300433636617983,
+          "brier_score": 0.0899567632370034,
+          "equal_frequency_ece": 0.12156471039721202
+        }
+      },
+      "sprsound2022_intra": {
+        "role": "locked_intra_test",
+        "independent_primary": false,
+        "seed_metrics": {
+          "20260729": {
+            "accuracy": 0.849601593625498,
+            "sensitivity": 0.9367088607594937,
+            "specificity": 0.809593023255814,
+            "average_score": 0.8731509420076538,
+            "harmonic_score": 0.8685244692619712,
+            "score": 0.8708377056348124,
+            "macro_f1": 0.8387011315093708,
+            "uar": 0.8731509420076538,
+            "per_class_recall": {
+              "normal": 0.809593023255814,
+              "adventitious": 0.9367088607594937
+            },
+            "confusion_matrix": [
+              [
+                557,
+                131
+              ],
+              [
+                20,
+                296
+              ]
+            ],
+            "support": {
+              "normal": 688,
+              "adventitious": 316
+            },
+            "auroc": 0.9584559905799234,
+            "negative_log_likelihood": 0.38240540052750116,
+            "brier_score": 0.11459220890303647,
+            "equal_frequency_ece": 0.12000204500693226
+          },
+          "20260730": {
+            "accuracy": 0.9163346613545816,
+            "sensitivity": 0.8734177215189873,
+            "specificity": 0.936046511627907,
+            "average_score": 0.9047321165734472,
+            "harmonic_score": 0.903648269410664,
+            "score": 0.9041901929920556,
+            "macro_f1": 0.9033500192529842,
+            "uar": 0.9047321165734472,
+            "per_class_recall": {
+              "normal": 0.936046511627907,
+              "adventitious": 0.8734177215189873
+            },
+            "confusion_matrix": [
+              [
+                644,
+                44
+              ],
+              [
+                40,
+                276
+              ]
+            ],
+            "support": {
+              "normal": 688,
+              "adventitious": 316
+            },
+            "auroc": 0.9690305784515748,
+            "negative_log_likelihood": 0.24173498485982434,
+            "brier_score": 0.06573643962100367,
+            "equal_frequency_ece": 0.037674343922920364
+          },
+          "20260731": {
+            "accuracy": 0.8217131474103586,
+            "sensitivity": 0.9240506329113924,
+            "specificity": 0.7747093023255814,
+            "average_score": 0.849379967618487,
+            "harmonic_score": 0.8428155224139239,
+            "score": 0.8460977450162055,
+            "macro_f1": 0.8108123187375977,
+            "uar": 0.849379967618487,
+            "per_class_recall": {
+              "normal": 0.7747093023255814,
+              "adventitious": 0.9240506329113924
+            },
+            "confusion_matrix": [
+              [
+                533,
+                155
+              ],
+              [
+                24,
+                292
+              ]
+            ],
+            "support": {
+              "normal": 688,
+              "adventitious": 316
+            },
+            "auroc": 0.9460507433029143,
+            "negative_log_likelihood": 0.42038306492816657,
+            "brier_score": 0.13214429639113578,
+            "equal_frequency_ece": 0.1388412238694223
+          }
+        },
+        "seed_average_score_mean": 0.8757543420665294,
+        "seed_average_score_sample_sd": 0.0277677576945446,
+        "ensemble_metrics": {
+          "accuracy": 0.8774900398406374,
+          "sensitivity": 0.9208860759493671,
+          "specificity": 0.8575581395348837,
+          "average_score": 0.8892221077421254,
+          "harmonic_score": 0.8880945976702324,
+          "score": 0.8886583527061789,
+          "macro_f1": 0.8655671853823419,
+          "uar": 0.8892221077421254,
+          "per_class_recall": {
+            "normal": 0.8575581395348837,
+            "adventitious": 0.9208860759493671
+          },
+          "confusion_matrix": [
+            [
+              590,
+              98
+            ],
+            [
+              25,
+              291
+            ]
+          ],
+          "support": {
+            "normal": 688,
+            "adventitious": 316
+          },
+          "auroc": 0.9620253164556962,
+          "negative_log_likelihood": 0.2832960308490424,
+          "brier_score": 0.08658031781130492,
+          "equal_frequency_ece": 0.09416247808174301
+        }
+      }
+    },
+    "lora": {
+      "icbhi2017": {
+        "role": "locked_test",
+        "independent_primary": true,
+        "seed_metrics": {
+          "20260729": {
+            "accuracy": 0.6181691611555865,
+            "sensitivity": 0.6845794392523364,
+            "specificity": 0.5645059786028949,
+            "average_score": 0.6245427089276157,
+            "harmonic_score": 0.6187714319011457,
+            "score": 0.6216570704143807,
+            "macro_f1": 0.6181541725301241,
+            "uar": 0.6245427089276157,
+            "per_class_recall": {
+              "normal": 0.5645059786028949,
+              "adventitious": 0.6845794392523364
+            },
+            "confusion_matrix": [
+              [
+                897,
+                692
+              ],
+              [
+                405,
+                879
+              ]
+            ],
+            "support": {
+              "normal": 1589,
+              "adventitious": 1284
+            },
+            "auroc": 0.678998331598274,
+            "negative_log_likelihood": 0.8039034113981608,
+            "brier_score": 0.26220102777120613,
+            "equal_frequency_ece": 0.17532997846870868
+          },
+          "20260730": {
+            "accuracy": 0.6219979115906717,
+            "sensitivity": 0.7429906542056075,
+            "specificity": 0.5242290748898678,
+            "average_score": 0.6336098645477377,
+            "harmonic_score": 0.6147273347520265,
+            "score": 0.624168599649882,
+            "macro_f1": 0.6213262280374703,
+            "uar": 0.6336098645477377,
+            "per_class_recall": {
+              "normal": 0.5242290748898678,
+              "adventitious": 0.7429906542056075
+            },
+            "confusion_matrix": [
+              [
+                833,
+                756
+              ],
+              [
+                330,
+                954
+              ]
+            ],
+            "support": {
+              "normal": 1589,
+              "adventitious": 1284
+            },
+            "auroc": 0.6682390029584233,
+            "negative_log_likelihood": 0.8379546426132616,
+            "brier_score": 0.2683767024249529,
+            "equal_frequency_ece": 0.168267879872259
+          },
+          "20260731": {
+            "accuracy": 0.6529759832927253,
+            "sensitivity": 0.572429906542056,
+            "specificity": 0.7180616740088106,
+            "average_score": 0.6452457902754334,
+            "harmonic_score": 0.6370285294985604,
+            "score": 0.6411371598869968,
+            "macro_f1": 0.6459046544611501,
+            "uar": 0.6452457902754334,
+            "per_class_recall": {
+              "normal": 0.7180616740088106,
+              "adventitious": 0.572429906542056
+            },
+            "confusion_matrix": [
+              [
+                1141,
+                448
+              ],
+              [
+                549,
+                735
+              ]
+            ],
+            "support": {
+              "normal": 1589,
+              "adventitious": 1284
+            },
+            "auroc": 0.6886254604769159,
+            "negative_log_likelihood": 0.7474655996885003,
+            "brier_score": 0.24402660426594655,
+            "equal_frequency_ece": 0.14140956307772362
+          }
+        },
+        "seed_average_score_mean": 0.6344661212502622,
+        "seed_average_score_sample_sd": 0.0103780670637192,
+        "ensemble_metrics": {
+          "accuracy": 0.6327880264531848,
+          "sensitivity": 0.6705607476635514,
+          "specificity": 0.6022655758338578,
+          "average_score": 0.6364131617487045,
+          "harmonic_score": 0.6345809280774087,
+          "score": 0.6354970449130566,
+          "macro_f1": 0.6323775642023148,
+          "uar": 0.6364131617487045,
+          "per_class_recall": {
+            "normal": 0.6022655758338578,
+            "adventitious": 0.6705607476635514
+          },
+          "confusion_matrix": [
+            [
+              957,
+              632
+            ],
+            [
+              423,
+              861
+            ]
+          ],
+          "support": {
+            "normal": 1589,
+            "adventitious": 1284
+          },
+          "auroc": 0.6891151001139062,
+          "negative_log_likelihood": 0.7304994900528397,
+          "brier_score": 0.24481914036794541,
+          "equal_frequency_ece": 0.13240489688431376
+        }
+      },
+      "sprsound2022": {
+        "role": "locked_inter_test",
+        "independent_primary": true,
+        "seed_metrics": {
+          "20260729": {
+            "accuracy": 0.8628411476557033,
+            "sensitivity": 0.9768637532133676,
+            "specificity": 0.8201923076923077,
+            "average_score": 0.8985280304528376,
+            "harmonic_score": 0.8916985435003583,
+            "score": 0.8951132869765979,
+            "macro_f1": 0.8459648289182494,
+            "uar": 0.8985280304528376,
+            "per_class_recall": {
+              "normal": 0.8201923076923077,
+              "adventitious": 0.9768637532133676
+            },
+            "confusion_matrix": [
+              [
+                853,
+                187
+              ],
+              [
+                9,
+                380
+              ]
+            ],
+            "support": {
+              "normal": 1040,
+              "adventitious": 389
+            },
+            "auroc": 0.9757934546173621,
+            "negative_log_likelihood": 0.38385502307351305,
+            "brier_score": 0.10530299376373332,
+            "equal_frequency_ece": 0.13512576115142055
+          },
+          "20260730": {
+            "accuracy": 0.8390482855143457,
+            "sensitivity": 0.9820051413881749,
+            "specificity": 0.7855769230769231,
+            "average_score": 0.883791032232549,
+            "harmonic_score": 0.8728766747821612,
+            "score": 0.878333853507355,
+            "macro_f1": 0.8226105560401034,
+            "uar": 0.883791032232549,
+            "per_class_recall": {
+              "normal": 0.7855769230769231,
+              "adventitious": 0.9820051413881749
+            },
+            "confusion_matrix": [
+              [
+                817,
+                223
+              ],
+              [
+                7,
+                382
+              ]
+            ],
+            "support": {
+              "normal": 1040,
+              "adventitious": 389
+            },
+            "auroc": 0.9713713664227803,
+            "negative_log_likelihood": 0.4524505961851909,
+            "brier_score": 0.12831953933582782,
+            "equal_frequency_ece": 0.1767182200207138
+          },
+          "20260731": {
+            "accuracy": 0.8761371588523443,
+            "sensitivity": 0.974293059125964,
+            "specificity": 0.8394230769230769,
+            "average_score": 0.9068580680245204,
+            "harmonic_score": 0.9018435258539272,
+            "score": 0.9043507969392238,
+            "macro_f1": 0.8593257527092528,
+            "uar": 0.9068580680245204,
+            "per_class_recall": {
+              "normal": 0.8394230769230769,
+              "adventitious": 0.974293059125964
+            },
+            "confusion_matrix": [
+              [
+                873,
+                167
+              ],
+              [
+                10,
+                379
+              ]
+            ],
+            "support": {
+              "normal": 1040,
+              "adventitious": 389
+            },
+            "auroc": 0.9752521257662645,
+            "negative_log_likelihood": 0.30044755980008936,
+            "brier_score": 0.08953300499619117,
+            "equal_frequency_ece": 0.11995079885648004
+          }
+        },
+        "seed_average_score_mean": 0.8963923769033023,
+        "seed_average_score_sample_sd": 0.011680873131737836,
+        "ensemble_metrics": {
+          "accuracy": 0.8670398880335899,
+          "sensitivity": 0.9794344473007712,
+          "specificity": 0.825,
+          "average_score": 0.9022172236503856,
+          "harmonic_score": 0.8956085051821775,
+          "score": 0.8989128644162816,
+          "macro_f1": 0.850367481725114,
+          "uar": 0.9022172236503856,
+          "per_class_recall": {
+            "normal": 0.825,
+            "adventitious": 0.9794344473007712
+          },
+          "confusion_matrix": [
+            [
+              858,
+              182
+            ],
+            [
+              8,
+              381
+            ]
+          ],
+          "support": {
+            "normal": 1040,
+            "adventitious": 389
+          },
+          "auroc": 0.976480620921495,
+          "negative_log_likelihood": 0.35015210122460466,
+          "brier_score": 0.10313038929565238,
+          "equal_frequency_ece": 0.14393159334287145
+        }
+      },
+      "sprsound2022_intra": {
+        "role": "locked_intra_test",
+        "independent_primary": false,
+        "seed_metrics": {
+          "20260729": {
+            "accuracy": 0.8774900398406374,
+            "sensitivity": 0.9113924050632911,
+            "specificity": 0.8619186046511628,
+            "average_score": 0.8866555048572269,
+            "harmonic_score": 0.8859653673365635,
+            "score": 0.8863104360968952,
+            "macro_f1": 0.8650347380466037,
+            "uar": 0.8866555048572269,
+            "per_class_recall": {
+              "normal": 0.8619186046511628,
+              "adventitious": 0.9113924050632911
+            },
+            "confusion_matrix": [
+              [
+                593,
+                95
+              ],
+              [
+                28,
+                288
+              ]
+            ],
+            "support": {
+              "normal": 688,
+              "adventitious": 316
+            },
+            "auroc": 0.961307771563144,
+            "negative_log_likelihood": 0.2844681421197291,
+            "brier_score": 0.08869106900136157,
+            "equal_frequency_ece": 0.07995467438661355
+          },
+          "20260730": {
+            "accuracy": 0.8276892430278885,
+            "sensitivity": 0.9272151898734177,
+            "specificity": 0.7819767441860465,
+            "average_score": 0.8545959670297321,
+            "harmonic_score": 0.8484251544704945,
+            "score": 0.8515105607501132,
+            "macro_f1": 0.8167788512760141,
+            "uar": 0.8545959670297321,
+            "per_class_recall": {
+              "normal": 0.7819767441860465,
+              "adventitious": 0.9272151898734177
+            },
+            "confusion_matrix": [
+              [
+                538,
+                150
+              ],
+              [
+                23,
+                293
+              ]
+            ],
+            "support": {
+              "normal": 688,
+              "adventitious": 316
+            },
+            "auroc": 0.9531158007065057,
+            "negative_log_likelihood": 0.3854876993285152,
+            "brier_score": 0.12287966708429524,
+            "equal_frequency_ece": 0.14257830515537848
+          },
+          "20260731": {
+            "accuracy": 0.8725099601593626,
+            "sensitivity": 0.9082278481012658,
+            "specificity": 0.8561046511627907,
+            "average_score": 0.8821662496320282,
+            "harmonic_score": 0.8813963188904531,
+            "score": 0.8817812842612407,
+            "macro_f1": 0.8598273146512043,
+            "uar": 0.8821662496320282,
+            "per_class_recall": {
+              "normal": 0.8561046511627907,
+              "adventitious": 0.9082278481012658
+            },
+            "confusion_matrix": [
+              [
+                589,
+                99
+              ],
+              [
+                29,
+                287
+              ]
+            ],
+            "support": {
+              "normal": 688,
+              "adventitious": 316
+            },
+            "auroc": 0.9590171474830732,
+            "negative_log_likelihood": 0.2735372866966283,
+            "brier_score": 0.08566187846754941,
+            "equal_frequency_ece": 0.0790041305208964
+          }
+        },
+        "seed_average_score_mean": 0.8744725738396624,
+        "seed_average_score_sample_sd": 0.017359377201578097,
+        "ensemble_metrics": {
+          "accuracy": 0.8585657370517928,
+          "sensitivity": 0.9145569620253164,
+          "specificity": 0.8328488372093024,
+          "average_score": 0.8737028996173094,
+          "harmonic_score": 0.8717925769939459,
+          "score": 0.8727477383056277,
+          "macro_f1": 0.8462646652864044,
+          "uar": 0.8737028996173094,
+          "per_class_recall": {
+            "normal": 0.8328488372093024,
+            "adventitious": 0.9145569620253164
+          },
+          "confusion_matrix": [
+            [
+              573,
+              115
+            ],
+            [
+              27,
+              289
+            ]
+          ],
+          "support": {
+            "normal": 688,
+            "adventitious": 316
+          },
+          "auroc": 0.9607742125404769,
+          "negative_log_likelihood": 0.29322797234366926,
+          "brier_score": 0.09297292111992529,
+          "equal_frequency_ece": 0.09810858073610225
+        }
+      }
+    }
+  },
+  "primary_fullft_reliability": {
+    "icbhi2017": {
+      "temperature": 1.6464554911106857,
+      "raw_probability_metrics": {
+        "negative_log_likelihood": 0.7009519571616052,
+        "brier_score": 0.2324706963365918,
+        "equal_frequency_ece": 0.12483455205337167
+      },
+      "temperature_probability_metrics": {
+        "negative_log_likelihood": 0.6321376407416179,
+        "brier_score": 0.21824762307243611,
+        "equal_frequency_ece": 0.0550705055468357
+      },
+      "temperature_minus_raw_nll": -0.06881431641998725,
+      "classification_predictions_unchanged": true,
+      "risk_coverage_descriptive_only": {
+        "aurc": 0.2654700101967815,
+        "full_coverage_error_risk": 0.33658197006613294
+      },
+      "selective_operating_claim_enabled": false
+    },
+    "sprsound2022": {
+      "temperature": 1.0350845956825019,
+      "raw_probability_metrics": {
+        "negative_log_likelihood": 0.300433636617983,
+        "brier_score": 0.0899567632370034,
+        "equal_frequency_ece": 0.12156471039721202
+      },
+      "temperature_probability_metrics": {
+        "negative_log_likelihood": 0.29668714255248496,
+        "brier_score": 0.08948276022094724,
+        "equal_frequency_ece": 0.12223135124872454
+      },
+      "temperature_minus_raw_nll": -0.0037464940654980405,
+      "classification_predictions_unchanged": true,
+      "risk_coverage_descriptive_only": {
+        "aurc": 0.02977806670514552,
+        "full_coverage_error_risk": 0.12106368089573127
+      },
+      "selective_operating_claim_enabled": false
+    }
+  },
+  "patient_cluster_absolute_bootstrap": {
+    "icbhi2017": {
+      "sensitivity": {
+        "estimate": 0.6479750778816199,
+        "lower": 0.5469082491022743,
+        "upper": 0.7282642243692968
+      },
+      "specificity": {
+        "estimate": 0.6758967904342353,
+        "lower": 0.5615469224761054,
+        "upper": 0.7789143965423212
+      },
+      "average_score": {
+        "estimate": 0.6619359341579276,
+        "lower": 0.6002224528365601,
+        "upper": 0.7152404818024369
+      },
+      "harmonic_score": {
+        "estimate": 0.6616414864660741,
+        "lower": 0.5955822957504743,
+        "upper": 0.7117794783334418
+      },
+      "score": {
+        "estimate": 0.6617887103120008,
+        "lower": 0.5984563436560558,
+        "upper": 0.7131750712928894
+      },
+      "macro_f1": {
+        "estimate": 0.6610128770865706,
+        "lower": 0.5935363973053328,
+        "upper": 0.7141502407445778
+      },
+      "uar": {
+        "estimate": 0.6619359341579276,
+        "lower": 0.6002224528365601,
+        "upper": 0.7152404818024369
+      }
+    },
+    "sprsound2022": {
+      "sensitivity": {
+        "estimate": 0.9820051413881749,
+        "lower": 0.9636339962121212,
+        "upper": 0.9926477321697911
+      },
+      "specificity": {
+        "estimate": 0.8403846153846154,
+        "lower": 0.7783563058731346,
+        "upper": 0.8916355136867924
+      },
+      "average_score": {
+        "estimate": 0.9111948783863951,
+        "lower": 0.8798863769095052,
+        "upper": 0.9361969902599783
+      },
+      "harmonic_score": {
+        "estimate": 0.9056921111240719,
+        "lower": 0.8683381239555882,
+        "upper": 0.9338521059911911
+      },
+      "score": {
+        "estimate": 0.9084434947552336,
+        "lower": 0.8741126231044596,
+        "upper": 0.9348542717981279
+      },
+      "macro_f1": {
+        "estimate": 0.862655467264304,
+        "lower": 0.7786822841681554,
+        "upper": 0.901684093889166
+      },
+      "uar": {
+        "estimate": 0.9111948783863951,
+        "lower": 0.8798863769095052,
+        "upper": 0.9361969902599783
+      }
+    }
+  },
+  "paired_fullft_minus_lora_bootstrap": {
+    "icbhi2017": {
+      "estimate": 0.02552277240922307,
+      "lower": 0.0028887221543875377,
+      "upper": 0.04435099211452654,
+      "probability_a_greater_than_b": 0.98175
+    },
+    "sprsound2022": {
+      "estimate": 0.008977654736009533,
+      "lower": -0.001542642921518358,
+      "upper": 0.021065370469624565,
+      "probability_a_greater_than_b": 0.94925
+    },
+    "two_domain_mean": {
+      "estimate": 0.017250213572616302,
+      "lower": 0.005486982848229312,
+      "upper": 0.028213221890280072,
+      "probability_fullft_greater_than_lora": 0.99725
+    }
+  },
+  "locked_robustness_checks": {
+    "icbhi_average_score_at_least_0_64": true,
+    "sprsound_inter_average_score_at_least_0_82": true,
+    "two_domain_mean_at_least_0_75": true,
+    "sensitivity_and_specificity_each_at_least_0_50": true
+  },
+  "calibration_claim_checks": {
+    "classification_predictions_unchanged": true,
+    "mean_locked_nll_not_worse": true,
+    "no_domain_locked_nll_worsens_more_than_0_02": true
+  },
+  "calibration_claim_supported_on_locked": true,
+  "selective_claim_supported": false,
+  "sprsound_locked_intra_interpretation": "descriptive same-patient result only; not independent generalization evidence",
+  "bootstrap": {
+    "iterations": 4000,
+    "seed": 20260729,
+    "confidence": 0.95,
+    "cluster": "patient"
+  },
+  "calibration_accessed": true,
+  "locked_tests_accessed": true,
+  "no_return_rule": "These results may not be used to alter or rerun any model, threshold, temperature, rejection rule, or method."
+}

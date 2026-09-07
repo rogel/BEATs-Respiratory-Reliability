@@ -1,0 +1,771 @@
+{
+  "point_fits": {
+    "exact/icbhi2017/validation_select/raw": {
+      "calibration_intercept": -0.10126202486108085,
+      "calibration_slope": 0.7242045413916047,
+      "converged_by_verified_criteria": true,
+      "optimizer_success": true,
+      "optimizer_message": "Optimization terminated successfully.",
+      "method": "trust-exact",
+      "iterations": 5,
+      "standardized_gradient_infinity_norm": 1.2115048813693828e-14,
+      "newton_decrement_squared": 1.4021534111259381e-27,
+      "standardized_hessian_min_eigenvalue": 0.11378037726344943,
+      "independent_BFGS_check_passed": true
+    },
+    "exact/icbhi2017/validation_select/temperature": {
+      "calibration_intercept": -0.10126202486108109,
+      "calibration_slope": 1.1923705438615035,
+      "converged_by_verified_criteria": true,
+      "optimizer_success": true,
+      "optimizer_message": "Optimization terminated successfully.",
+      "method": "trust-exact",
+      "iterations": 5,
+      "standardized_gradient_infinity_norm": 1.2099187322772264e-14,
+      "newton_decrement_squared": 1.3983849913049567e-27,
+      "standardized_hessian_min_eigenvalue": 0.11378037726344942,
+      "independent_BFGS_check_passed": true
+    },
+    "exact/icbhi2017/calibration/raw": {
+      "calibration_intercept": -0.07064108199490411,
+      "calibration_slope": 0.6084711161929377,
+      "converged_by_verified_criteria": true,
+      "optimizer_success": true,
+      "optimizer_message": "Optimization terminated successfully.",
+      "method": "trust-exact",
+      "iterations": 5,
+      "standardized_gradient_infinity_norm": 1.4798988251471525e-16,
+      "newton_decrement_squared": 1.7016027358918628e-31,
+      "standardized_hessian_min_eigenvalue": 0.13031537109374355,
+      "independent_BFGS_check_passed": true
+    },
+    "exact/icbhi2017/calibration/temperature": {
+      "calibration_intercept": -0.0706410819949041,
+      "calibration_slope": 1.0018206104381102,
+      "converged_by_verified_criteria": true,
+      "optimizer_success": true,
+      "optimizer_message": "Optimization terminated successfully.",
+      "method": "trust-exact",
+      "iterations": 5,
+      "standardized_gradient_infinity_norm": 1.4692682678378715e-16,
+      "newton_decrement_squared": 1.6699478419497935e-31,
+      "standardized_hessian_min_eigenvalue": 0.13031537109374358,
+      "independent_BFGS_check_passed": true
+    },
+    "exact/icbhi2017/locked_test/raw": {
+      "calibration_intercept": -0.20862720318209996,
+      "calibration_slope": 0.42991355163819933,
+      "converged_by_verified_criteria": true,
+      "optimizer_success": true,
+      "optimizer_message": "Optimization terminated successfully.",
+      "method": "trust-exact",
+      "iterations": 4,
+      "standardized_gradient_infinity_norm": 1.0094853029981526e-12,
+      "newton_decrement_squared": 6.235781758554493e-24,
+      "standardized_hessian_min_eigenvalue": 0.17397092310222648,
+      "independent_BFGS_check_passed": true
+    },
+    "exact/icbhi2017/locked_test/temperature": {
+      "calibration_intercept": -0.20862720318209993,
+      "calibration_slope": 0.7078335277976108,
+      "converged_by_verified_criteria": true,
+      "optimizer_success": true,
+      "optimizer_message": "Optimization terminated successfully.",
+      "method": "trust-exact",
+      "iterations": 4,
+      "standardized_gradient_infinity_norm": 1.009461578475801e-12,
+      "newton_decrement_squared": 6.235502613885743e-24,
+      "standardized_hessian_min_eigenvalue": 0.17397092310222645,
+      "independent_BFGS_check_passed": true
+    },
+    "exact/sprsound2022/validation_select/raw": {
+      "calibration_intercept": -0.343584802188762,
+      "calibration_slope": 0.9852364391298235,
+      "converged_by_verified_criteria": true,
+      "optimizer_success": true,
+      "optimizer_message": "Optimization terminated successfully.",
+      "method": "trust-exact",
+      "iterations": 8,
+      "standardized_gradient_infinity_norm": 5.925356355943729e-14,
+      "newton_decrement_squared": 4.471809651023303e-25,
+      "standardized_hessian_min_eigenvalue": 0.009889565348754162,
+      "independent_BFGS_check_passed": true
+    },
+    "exact/sprsound2022/validation_select/temperature": {
+      "calibration_intercept": -0.343584802188762,
+      "calibration_slope": 1.0198030612483613,
+      "converged_by_verified_criteria": true,
+      "optimizer_success": true,
+      "optimizer_message": "Optimization terminated successfully.",
+      "method": "trust-exact",
+      "iterations": 8,
+      "standardized_gradient_infinity_norm": 5.926906897217046e-14,
+      "newton_decrement_squared": 4.471807780567373e-25,
+      "standardized_hessian_min_eigenvalue": 0.009889565348754162,
+      "independent_BFGS_check_passed": true
+    },
+    "exact/sprsound2022/calibration/raw": {
+      "calibration_intercept": -1.5848805149686425,
+      "calibration_slope": 1.002635077580445,
+      "converged_by_verified_criteria": true,
+      "optimizer_success": true,
+      "optimizer_message": "Optimization terminated successfully.",
+      "method": "trust-exact",
+      "iterations": 9,
+      "standardized_gradient_infinity_norm": 2.2006451854281998e-17,
+      "newton_decrement_squared": 4.2809563213218487e-32,
+      "standardized_hessian_min_eigenvalue": 0.005054811579622533,
+      "independent_BFGS_check_passed": true
+    },
+    "exact/sprsound2022/calibration/temperature": {
+      "calibration_intercept": -1.584880514968642,
+      "calibration_slope": 1.0378121238944484,
+      "converged_by_verified_criteria": true,
+      "optimizer_success": true,
+      "optimizer_message": "Optimization terminated successfully.",
+      "method": "trust-exact",
+      "iterations": 9,
+      "standardized_gradient_infinity_norm": 1.771946351531853e-17,
+      "newton_decrement_squared": 8.069505862328062e-32,
+      "standardized_hessian_min_eigenvalue": 0.005054811579622535,
+      "independent_BFGS_check_passed": true
+    },
+    "exact/sprsound2022/locked_inter_test/raw": {
+      "calibration_intercept": -2.5004468186218913,
+      "calibration_slope": 1.0390339574711733,
+      "converged_by_verified_criteria": true,
+      "optimizer_success": true,
+      "optimizer_message": "Optimization terminated successfully.",
+      "method": "trust-exact",
+      "iterations": 8,
+      "standardized_gradient_infinity_norm": 3.132220275992263e-11,
+      "newton_decrement_squared": 2.740767860264684e-19,
+      "standardized_hessian_min_eigenvalue": 0.00540482007183088,
+      "independent_BFGS_check_passed": true
+    },
+    "exact/sprsound2022/locked_inter_test/temperature": {
+      "calibration_intercept": -2.5004468186218913,
+      "calibration_slope": 1.0754880437694392,
+      "converged_by_verified_criteria": true,
+      "optimizer_success": true,
+      "optimizer_message": "Optimization terminated successfully.",
+      "method": "trust-exact",
+      "iterations": 8,
+      "standardized_gradient_infinity_norm": 3.132222631183885e-11,
+      "newton_decrement_squared": 2.740767296749258e-19,
+      "standardized_hessian_min_eigenvalue": 0.005404820071830882,
+      "independent_BFGS_check_passed": true
+    },
+    "exact/sprsound2022/locked_intra_test/raw": {
+      "calibration_intercept": -1.2478232229369959,
+      "calibration_slope": 0.8929642285687079,
+      "converged_by_verified_criteria": true,
+      "optimizer_success": false,
+      "optimizer_message": "A bad approximation caused failure to predict improvement.",
+      "method": "trust-exact",
+      "iterations": 7,
+      "standardized_gradient_infinity_norm": 2.108045885746479e-10,
+      "newton_decrement_squared": 2.9965050640017625e-18,
+      "standardized_hessian_min_eigenvalue": 0.01501355699397096,
+      "independent_BFGS_check_passed": true
+    },
+    "exact/sprsound2022/locked_intra_test/temperature": {
+      "calibration_intercept": -1.2478232229369957,
+      "calibration_slope": 0.9242935174869781,
+      "converged_by_verified_criteria": true,
+      "optimizer_success": false,
+      "optimizer_message": "A bad approximation caused failure to predict improvement.",
+      "method": "trust-exact",
+      "iterations": 7,
+      "standardized_gradient_infinity_norm": 2.1080457769018736e-10,
+      "newton_decrement_squared": 2.9965048971584957e-18,
+      "standardized_hessian_min_eigenvalue": 0.015013556993970974,
+      "independent_BFGS_check_passed": true
+    },
+    "no-js/icbhi2017/validation_select/raw": {
+      "calibration_intercept": -0.10238865108429887,
+      "calibration_slope": 0.7227144500872712,
+      "converged_by_verified_criteria": true,
+      "optimizer_success": true,
+      "optimizer_message": "Optimization terminated successfully.",
+      "method": "trust-exact",
+      "iterations": 5,
+      "standardized_gradient_infinity_norm": 1.2144565314683632e-14,
+      "newton_decrement_squared": 1.4100743113324774e-27,
+      "standardized_hessian_min_eigenvalue": 0.11373084656863892,
+      "independent_BFGS_check_passed": true
+    },
+    "no-js/icbhi2017/validation_select/temperature": {
+      "calibration_intercept": -0.10238865108429845,
+      "calibration_slope": 1.1923280323587933,
+      "converged_by_verified_criteria": true,
+      "optimizer_success": true,
+      "optimizer_message": "Optimization terminated successfully.",
+      "method": "trust-exact",
+      "iterations": 5,
+      "standardized_gradient_infinity_norm": 1.2145886862735714e-14,
+      "newton_decrement_squared": 1.4195133034727243e-27,
+      "standardized_hessian_min_eigenvalue": 0.11373084656863894,
+      "independent_BFGS_check_passed": true
+    },
+    "no-js/icbhi2017/calibration/raw": {
+      "calibration_intercept": -0.07217059304852817,
+      "calibration_slope": 0.6073201145769277,
+      "converged_by_verified_criteria": true,
+      "optimizer_success": true,
+      "optimizer_message": "Optimization terminated successfully.",
+      "method": "trust-exact",
+      "iterations": 5,
+      "standardized_gradient_infinity_norm": 2.0029352186372563e-16,
+      "newton_decrement_squared": 3.068254737196134e-31,
+      "standardized_hessian_min_eigenvalue": 0.13034646701022642,
+      "independent_BFGS_check_passed": true
+    },
+    "no-js/icbhi2017/calibration/temperature": {
+      "calibration_intercept": -0.07217059545309146,
+      "calibration_slope": 1.0019514188000107,
+      "converged_by_verified_criteria": true,
+      "optimizer_success": false,
+      "optimizer_message": "A bad approximation caused failure to predict improvement.",
+      "method": "trust-exact",
+      "iterations": 18,
+      "standardized_gradient_infinity_norm": 6.62488155620137e-09,
+      "newton_decrement_squared": 3.414970973051455e-16,
+      "standardized_hessian_min_eigenvalue": 0.13034647244228734,
+      "independent_BFGS_check_passed": true
+    },
+    "no-js/icbhi2017/locked_test/raw": {
+      "calibration_intercept": -0.2089300665767026,
+      "calibration_slope": 0.43012393439247937,
+      "converged_by_verified_criteria": true,
+      "optimizer_success": true,
+      "optimizer_message": "Optimization terminated successfully.",
+      "method": "trust-exact",
+      "iterations": 4,
+      "standardized_gradient_infinity_norm": 1.0549084215045586e-12,
+      "newton_decrement_squared": 6.818474543747288e-24,
+      "standardized_hessian_min_eigenvalue": 0.17376765237270664,
+      "independent_BFGS_check_passed": true
+    },
+    "no-js/icbhi2017/locked_test/temperature": {
+      "calibration_intercept": -0.20893006657670266,
+      "calibration_slope": 0.7096147369167431,
+      "converged_by_verified_criteria": true,
+      "optimizer_success": true,
+      "optimizer_message": "Optimization terminated successfully.",
+      "method": "trust-exact",
+      "iterations": 4,
+      "standardized_gradient_infinity_norm": 1.054903397870963e-12,
+      "newton_decrement_squared": 6.818288577006232e-24,
+      "standardized_hessian_min_eigenvalue": 0.1737676523727067,
+      "independent_BFGS_check_passed": true
+    },
+    "no-js/sprsound2022/validation_select/raw": {
+      "calibration_intercept": -0.3443699615048361,
+      "calibration_slope": 0.9835857659899006,
+      "converged_by_verified_criteria": true,
+      "optimizer_success": true,
+      "optimizer_message": "Optimization terminated successfully.",
+      "method": "trust-exact",
+      "iterations": 8,
+      "standardized_gradient_infinity_norm": 5.870477807545821e-14,
+      "newton_decrement_squared": 4.377138604269324e-25,
+      "standardized_hessian_min_eigenvalue": 0.009899489490350806,
+      "independent_BFGS_check_passed": true
+    },
+    "no-js/sprsound2022/validation_select/temperature": {
+      "calibration_intercept": -0.3443699615048361,
+      "calibration_slope": 1.0196155907783373,
+      "converged_by_verified_criteria": true,
+      "optimizer_success": true,
+      "optimizer_message": "Optimization terminated successfully.",
+      "method": "trust-exact",
+      "iterations": 8,
+      "standardized_gradient_infinity_norm": 5.870139353944433e-14,
+      "newton_decrement_squared": 4.376479447105614e-25,
+      "standardized_hessian_min_eigenvalue": 0.009899489490350827,
+      "independent_BFGS_check_passed": true
+    },
+    "no-js/sprsound2022/calibration/raw": {
+      "calibration_intercept": -1.5855036009887122,
+      "calibration_slope": 1.0007285032180522,
+      "converged_by_verified_criteria": true,
+      "optimizer_success": false,
+      "optimizer_message": "A bad approximation caused failure to predict improvement.",
+      "method": "trust-exact",
+      "iterations": 22,
+      "standardized_gradient_infinity_norm": 4.5927510294980183e-10,
+      "newton_decrement_squared": 5.310844633403932e-17,
+      "standardized_hessian_min_eigenvalue": 0.005069777409296737,
+      "independent_BFGS_check_passed": true
+    },
+    "no-js/sprsound2022/calibration/temperature": {
+      "calibration_intercept": -1.585503632397959,
+      "calibration_slope": 1.0373863037402493,
+      "converged_by_verified_criteria": true,
+      "optimizer_success": true,
+      "optimizer_message": "Optimization terminated successfully.",
+      "method": "trust-exact",
+      "iterations": 9,
+      "standardized_gradient_infinity_norm": 2.9513908960467575e-17,
+      "newton_decrement_squared": 8.0985590674392e-32,
+      "standardized_hessian_min_eigenvalue": 0.0050697770880263875,
+      "independent_BFGS_check_passed": true
+    },
+    "no-js/sprsound2022/locked_inter_test/raw": {
+      "calibration_intercept": -2.4933906973279316,
+      "calibration_slope": 1.036522817933164,
+      "converged_by_verified_criteria": true,
+      "optimizer_success": true,
+      "optimizer_message": "Optimization terminated successfully.",
+      "method": "trust-exact",
+      "iterations": 8,
+      "standardized_gradient_infinity_norm": 2.922523662806796e-11,
+      "newton_decrement_squared": 2.375121450944033e-19,
+      "standardized_hessian_min_eigenvalue": 0.005438770674861771,
+      "independent_BFGS_check_passed": true
+    },
+    "no-js/sprsound2022/locked_inter_test/temperature": {
+      "calibration_intercept": -2.493390697327931,
+      "calibration_slope": 1.074491784962453,
+      "converged_by_verified_criteria": true,
+      "optimizer_success": true,
+      "optimizer_message": "Optimization terminated successfully.",
+      "method": "trust-exact",
+      "iterations": 8,
+      "standardized_gradient_infinity_norm": 2.922521618729982e-11,
+      "newton_decrement_squared": 2.3751227855397586e-19,
+      "standardized_hessian_min_eigenvalue": 0.005438770674861764,
+      "independent_BFGS_check_passed": true
+    },
+    "no-js/sprsound2022/locked_intra_test/raw": {
+      "calibration_intercept": -1.246239922246922,
+      "calibration_slope": 0.8904161788669044,
+      "converged_by_verified_criteria": true,
+      "optimizer_success": false,
+      "optimizer_message": "A bad approximation caused failure to predict improvement.",
+      "method": "trust-exact",
+      "iterations": 7,
+      "standardized_gradient_infinity_norm": 2.0039195901745947e-10,
+      "newton_decrement_squared": 2.692287385943606e-18,
+      "standardized_hessian_min_eigenvalue": 0.015082078263553289,
+      "independent_BFGS_check_passed": true
+    },
+    "no-js/sprsound2022/locked_intra_test/temperature": {
+      "calibration_intercept": -1.246239922246922,
+      "calibration_slope": 0.9230330995490336,
+      "converged_by_verified_criteria": true,
+      "optimizer_success": false,
+      "optimizer_message": "A bad approximation caused failure to predict improvement.",
+      "method": "trust-exact",
+      "iterations": 7,
+      "standardized_gradient_infinity_norm": 2.0039196691155505e-10,
+      "newton_decrement_squared": 2.6922873570467173e-18,
+      "standardized_hessian_min_eigenvalue": 0.01508207826355326,
+      "independent_BFGS_check_passed": true
+    }
+  },
+  "primary_exact_coefficient_intervals": {
+    "exact/icbhi2017/validation_select": {
+      "nonestimable_replicates": [],
+      "raw": {
+        "calibration_intercept": {
+          "estimate": -0.10126202486108085,
+          "lower": -1.136509776584812,
+          "upper": 1.1152294374589633,
+          "valid_replicates": 4000,
+          "invalid_replicates": 0,
+          "status": "complete"
+        },
+        "calibration_slope": {
+          "estimate": 0.7242045413916047,
+          "lower": 0.4889785499995197,
+          "upper": 1.0739051140611762,
+          "valid_replicates": 4000,
+          "invalid_replicates": 0,
+          "status": "complete"
+        }
+      },
+      "temperature": {
+        "calibration_intercept": {
+          "estimate": -0.10126202486108085,
+          "lower": -1.136509776584812,
+          "upper": 1.1152294374589633,
+          "valid_replicates": 4000,
+          "invalid_replicates": 0,
+          "status": "complete"
+        },
+        "calibration_slope": {
+          "estimate": 1.1923705438615035,
+          "lower": 0.8050814186820502,
+          "upper": 1.7681369719778708,
+          "valid_replicates": 4000,
+          "invalid_replicates": 0,
+          "status": "complete"
+        }
+      },
+      "raw_minus_temperature": {
+        "calibration_intercept": {
+          "estimate": -0.0,
+          "lower": 0.0,
+          "upper": 0.0,
+          "valid_replicates": 4000,
+          "invalid_replicates": 0,
+          "status": "complete"
+        },
+        "calibration_slope": {
+          "estimate": -0.4681660024698987,
+          "lower": -0.6942318579166944,
+          "upper": -0.31610286868253046,
+          "valid_replicates": 4000,
+          "invalid_replicates": 0,
+          "status": "complete"
+        }
+      }
+    },
+    "exact/icbhi2017/calibration": {
+      "nonestimable_replicates": [],
+      "raw": {
+        "calibration_intercept": {
+          "estimate": -0.07064108199490411,
+          "lower": -1.4656395772669844,
+          "upper": 0.7938941406854667,
+          "valid_replicates": 4000,
+          "invalid_replicates": 0,
+          "status": "complete"
+        },
+        "calibration_slope": {
+          "estimate": 0.6084711161929377,
+          "lower": 0.06562528819166914,
+          "upper": 0.9040684873918979,
+          "valid_replicates": 4000,
+          "invalid_replicates": 0,
+          "status": "complete"
+        }
+      },
+      "temperature": {
+        "calibration_intercept": {
+          "estimate": -0.07064108199490411,
+          "lower": -1.4656395772669844,
+          "upper": 0.7938941406854667,
+          "valid_replicates": 4000,
+          "invalid_replicates": 0,
+          "status": "complete"
+        },
+        "calibration_slope": {
+          "estimate": 1.0018206104381104,
+          "lower": 0.10804911609889489,
+          "upper": 1.4885085254065222,
+          "valid_replicates": 4000,
+          "invalid_replicates": 0,
+          "status": "complete"
+        }
+      },
+      "raw_minus_temperature": {
+        "calibration_intercept": {
+          "estimate": -0.0,
+          "lower": 0.0,
+          "upper": 0.0,
+          "valid_replicates": 4000,
+          "invalid_replicates": 0,
+          "status": "complete"
+        },
+        "calibration_slope": {
+          "estimate": -0.3933494942451726,
+          "lower": -0.5844400380146241,
+          "upper": -0.04242382790722572,
+          "valid_replicates": 4000,
+          "invalid_replicates": 0,
+          "status": "complete"
+        }
+      }
+    },
+    "exact/icbhi2017/locked_test": {
+      "nonestimable_replicates": [],
+      "raw": {
+        "calibration_intercept": {
+          "estimate": -0.20862720318209996,
+          "lower": -0.6169558307891908,
+          "upper": 0.19871513542726332,
+          "valid_replicates": 4000,
+          "invalid_replicates": 0,
+          "status": "complete"
+        },
+        "calibration_slope": {
+          "estimate": 0.42991355163819933,
+          "lower": 0.2765331868791314,
+          "upper": 0.6042270932421687,
+          "valid_replicates": 4000,
+          "invalid_replicates": 0,
+          "status": "complete"
+        }
+      },
+      "temperature": {
+        "calibration_intercept": {
+          "estimate": -0.20862720318209996,
+          "lower": -0.6169558307891908,
+          "upper": 0.19871513542726332,
+          "valid_replicates": 4000,
+          "invalid_replicates": 0,
+          "status": "complete"
+        },
+        "calibration_slope": {
+          "estimate": 0.7078335277976107,
+          "lower": 0.4552995840114833,
+          "upper": 0.994833015546417,
+          "valid_replicates": 4000,
+          "invalid_replicates": 0,
+          "status": "complete"
+        }
+      },
+      "raw_minus_temperature": {
+        "calibration_intercept": {
+          "estimate": -0.0,
+          "lower": 0.0,
+          "upper": 0.0,
+          "valid_replicates": 4000,
+          "invalid_replicates": 0,
+          "status": "complete"
+        },
+        "calibration_slope": {
+          "estimate": -0.2779199761594113,
+          "lower": -0.39060592230424823,
+          "upper": -0.1787663971323519,
+          "valid_replicates": 4000,
+          "invalid_replicates": 0,
+          "status": "complete"
+        }
+      }
+    },
+    "exact/sprsound2022/validation_select": {
+      "nonestimable_replicates": [],
+      "raw": {
+        "calibration_intercept": {
+          "estimate": -0.343584802188762,
+          "lower": -1.0413590844823488,
+          "upper": 0.12297145591843547,
+          "valid_replicates": 4000,
+          "invalid_replicates": 0,
+          "status": "complete"
+        },
+        "calibration_slope": {
+          "estimate": 0.9852364391298235,
+          "lower": 0.8410072494311434,
+          "upper": 1.196630164877546,
+          "valid_replicates": 4000,
+          "invalid_replicates": 0,
+          "status": "complete"
+        }
+      },
+      "temperature": {
+        "calibration_intercept": {
+          "estimate": -0.343584802188762,
+          "lower": -1.0413590844823488,
+          "upper": 0.12297145591843547,
+          "valid_replicates": 4000,
+          "invalid_replicates": 0,
+          "status": "complete"
+        },
+        "calibration_slope": {
+          "estimate": 1.0198030612483613,
+          "lower": 0.8705136487434881,
+          "upper": 1.23861345039376,
+          "valid_replicates": 4000,
+          "invalid_replicates": 0,
+          "status": "complete"
+        }
+      },
+      "raw_minus_temperature": {
+        "calibration_intercept": {
+          "estimate": -0.0,
+          "lower": 0.0,
+          "upper": 0.0,
+          "valid_replicates": 4000,
+          "invalid_replicates": 0,
+          "status": "complete"
+        },
+        "calibration_slope": {
+          "estimate": -0.03456662211853773,
+          "lower": -0.04198328551621426,
+          "upper": -0.02950639931234468,
+          "valid_replicates": 4000,
+          "invalid_replicates": 0,
+          "status": "complete"
+        }
+      }
+    },
+    "exact/sprsound2022/calibration": {
+      "nonestimable_replicates": [],
+      "raw": {
+        "calibration_intercept": {
+          "estimate": -1.5848805149686425,
+          "lower": -2.564878697312229,
+          "upper": -1.0417595132442128,
+          "valid_replicates": 4000,
+          "invalid_replicates": 0,
+          "status": "complete"
+        },
+        "calibration_slope": {
+          "estimate": 1.002635077580445,
+          "lower": 0.6125750793487748,
+          "upper": 1.2814240412290954,
+          "valid_replicates": 4000,
+          "invalid_replicates": 0,
+          "status": "complete"
+        }
+      },
+      "temperature": {
+        "calibration_intercept": {
+          "estimate": -1.5848805149686425,
+          "lower": -2.564878697312229,
+          "upper": -1.0417595132442128,
+          "valid_replicates": 4000,
+          "invalid_replicates": 0,
+          "status": "complete"
+        },
+        "calibration_slope": {
+          "estimate": 1.0378121238944487,
+          "lower": 0.634067028332903,
+          "upper": 1.3263822856134557,
+          "valid_replicates": 4000,
+          "invalid_replicates": 0,
+          "status": "complete"
+        }
+      },
+      "raw_minus_temperature": {
+        "calibration_intercept": {
+          "estimate": -0.0,
+          "lower": -0.0,
+          "upper": 0.0,
+          "valid_replicates": 4000,
+          "invalid_replicates": 0,
+          "status": "complete"
+        },
+        "calibration_slope": {
+          "estimate": -0.03517704631400382,
+          "lower": -0.04495824438436043,
+          "upper": -0.021491948984128262,
+          "valid_replicates": 4000,
+          "invalid_replicates": 0,
+          "status": "complete"
+        }
+      }
+    },
+    "exact/sprsound2022/locked_inter_test": {
+      "nonestimable_replicates": [],
+      "raw": {
+        "calibration_intercept": {
+          "estimate": -2.5004468186218913,
+          "lower": -3.385019002565566,
+          "upper": -1.868494569885246,
+          "valid_replicates": 4000,
+          "invalid_replicates": 0,
+          "status": "complete"
+        },
+        "calibration_slope": {
+          "estimate": 1.0390339574711733,
+          "lower": 0.8974138217638326,
+          "upper": 1.1755615597983489,
+          "valid_replicates": 4000,
+          "invalid_replicates": 0,
+          "status": "complete"
+        }
+      },
+      "temperature": {
+        "calibration_intercept": {
+          "estimate": -2.5004468186218913,
+          "lower": -3.385019002565566,
+          "upper": -1.868494569885246,
+          "valid_replicates": 4000,
+          "invalid_replicates": 0,
+          "status": "complete"
+        },
+        "calibration_slope": {
+          "estimate": 1.0754880437694394,
+          "lower": 0.9288992228603055,
+          "upper": 1.216805661823765,
+          "valid_replicates": 4000,
+          "invalid_replicates": 0,
+          "status": "complete"
+        }
+      },
+      "raw_minus_temperature": {
+        "calibration_intercept": {
+          "estimate": -0.0,
+          "lower": -0.0,
+          "upper": 0.0,
+          "valid_replicates": 4000,
+          "invalid_replicates": 0,
+          "status": "complete"
+        },
+        "calibration_slope": {
+          "estimate": -0.03645408629826598,
+          "lower": -0.04124410202541633,
+          "upper": -0.03148540109647288,
+          "valid_replicates": 4000,
+          "invalid_replicates": 0,
+          "status": "complete"
+        }
+      }
+    },
+    "exact/sprsound2022/locked_intra_test": {
+      "nonestimable_replicates": [],
+      "raw": {
+        "calibration_intercept": {
+          "estimate": -1.2478232229369959,
+          "lower": -1.7508352090210104,
+          "upper": -0.8144277517056048,
+          "valid_replicates": 4000,
+          "invalid_replicates": 0,
+          "status": "complete"
+        },
+        "calibration_slope": {
+          "estimate": 0.8929642285687079,
+          "lower": 0.7709833395789563,
+          "upper": 1.0755907952221904,
+          "valid_replicates": 4000,
+          "invalid_replicates": 0,
+          "status": "complete"
+        }
+      },
+      "temperature": {
+        "calibration_intercept": {
+          "estimate": -1.2478232229369959,
+          "lower": -1.7508352090210104,
+          "upper": -0.8144277517056048,
+          "valid_replicates": 4000,
+          "invalid_replicates": 0,
+          "status": "complete"
+        },
+        "calibration_slope": {
+          "estimate": 0.9242935174869783,
+          "lower": 0.7980329783260289,
+          "upper": 1.1133274633923815,
+          "valid_replicates": 4000,
+          "invalid_replicates": 0,
+          "status": "complete"
+        }
+      },
+      "raw_minus_temperature": {
+        "calibration_intercept": {
+          "estimate": -0.0,
+          "lower": -0.0,
+          "upper": 0.0,
+          "valid_replicates": 4000,
+          "invalid_replicates": 0,
+          "status": "complete"
+        },
+        "calibration_slope": {
+          "estimate": -0.03132928891827032,
+          "lower": -0.03773666817019122,
+          "upper": -0.02704963874707273,
+          "valid_replicates": 4000,
+          "invalid_replicates": 0,
+          "status": "complete"
+        }
+      }
+    }
+  },
+  "no_js_coefficient_intervals": "secondary point estimates only",
+  "regression": "unpenalized joint intercept/slope, not fixed-slope calibration-in-the-large; never applied to predictions"
+}

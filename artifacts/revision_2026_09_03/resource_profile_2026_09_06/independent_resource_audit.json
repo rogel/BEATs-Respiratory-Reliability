@@ -1,0 +1,12 @@
+{
+  "status": "resource_QA_passed",
+  "audited_at": "2026-09-06T06:43:51.363157+08:00",
+  "settings": 20,
+  "timed_iterations_verified": 400,
+  "timing_cells_recomputed": 80,
+  "training_records": 15,
+  "no_patient_data_in_timing": true,
+  "all_inputs_and_outputs_hashed": true,
+  "result_sha256": "8f364d690bcd2216a5d366f804d99adfcb87cdab738b26ec52ada0850b15624f",
+  "freeze_sha256": "b4b61a549ed8a093f645f1744da67bdaf40a6154fddeecc8ce45fa398b422273"
+}

@@ -1,0 +1,131 @@
+{
+  "status": "post_training_audit_passed",
+  "family": "no-js",
+  "seed": 20260730,
+  "audited_at": "2026-09-05T15:59:07.953009+08:00",
+  "epochs_completed": 9,
+  "selected_epoch": 4,
+  "final_stale_epochs": 5,
+  "optimizer_steps": 8460,
+  "selected_checkpoint_finite_tensors": 241,
+  "recovery_finite_tensors": 967,
+  "maximum_learning_rate_difference": 1.3552527156068805e-20,
+  "patient_overlap_audit": {
+    "pairwise_overlap_counts": {
+      "icbhi2017/train_fit__icbhi2017/validation_select": 0,
+      "icbhi2017/train_fit__icbhi2017/calibration": 0,
+      "icbhi2017/train_fit__icbhi2017/locked_test": 0,
+      "icbhi2017/validation_select__icbhi2017/calibration": 0,
+      "icbhi2017/validation_select__icbhi2017/locked_test": 0,
+      "icbhi2017/calibration__icbhi2017/locked_test": 0,
+      "sprsound2022/train_fit__sprsound2022/validation_select": 0,
+      "sprsound2022/train_fit__sprsound2022/calibration": 0,
+      "sprsound2022/train_fit__sprsound2022/locked_inter_test": 0,
+      "sprsound2022/train_fit__sprsound2022/locked_intra_test": 111,
+      "sprsound2022/validation_select__sprsound2022/calibration": 0,
+      "sprsound2022/validation_select__sprsound2022/locked_inter_test": 0,
+      "sprsound2022/validation_select__sprsound2022/locked_intra_test": 19,
+      "sprsound2022/calibration__sprsound2022/locked_inter_test": 0,
+      "sprsound2022/calibration__sprsound2022/locked_intra_test": 26,
+      "sprsound2022/locked_inter_test__sprsound2022/locked_intra_test": 0
+    },
+    "expected_descriptive_intra_overlap": {
+      "sprsound2022/train_fit__sprsound2022/locked_intra_test": 111,
+      "sprsound2022/validation_select__sprsound2022/locked_intra_test": 19,
+      "sprsound2022/calibration__sprsound2022/locked_intra_test": 26,
+      "sprsound2022/locked_inter_test__sprsound2022/locked_intra_test": 0
+    },
+    "prohibited_overlap": {},
+    "primary_patient_disjoint_roles_passed": true
+  },
+  "validation_predictions": {
+    "icbhi2017": {
+      "events": 554,
+      "patients": 12,
+      "metrics_recomputed": {
+        "accuracy": 0.7129963898916968,
+        "sensitivity": 0.7415730337078652,
+        "specificity": 0.686411149825784,
+        "average_score": 0.7139920917668245,
+        "harmonic_score": 0.712926662097327,
+        "score": 0.7134593769320758,
+        "macro_f1": 0.7129954547676067,
+        "uar": 0.7139920917668245,
+        "per_class_recall": {
+          "normal": 0.686411149825784,
+          "adventitious": 0.7415730337078652
+        },
+        "confusion_matrix": [
+          [
+            197,
+            90
+          ],
+          [
+            69,
+            198
+          ]
+        ],
+        "support": {
+          "normal": 287,
+          "adventitious": 267
+        },
+        "auroc": 0.7819232927481764
+      },
+      "sha256": "ddbe27b6d58e7437277b8fe38bdcc989ec821020c667bc1895989b8bec0b0bd0"
+    },
+    "sprsound2022": {
+      "events": 1013,
+      "patients": 36,
+      "metrics_recomputed": {
+        "accuracy": 0.9427443237907206,
+        "sensitivity": 0.7709251101321586,
+        "specificity": 0.9923664122137404,
+        "average_score": 0.8816457611729496,
+        "harmonic_score": 0.8677410126823686,
+        "score": 0.8746933869276591,
+        "macro_f1": 0.9109982064519256,
+        "uar": 0.8816457611729496,
+        "per_class_recall": {
+          "normal": 0.9923664122137404,
+          "adventitious": 0.7709251101321586
+        },
+        "confusion_matrix": [
+          [
+            780,
+            6
+          ],
+          [
+            52,
+            175
+          ]
+        ],
+        "support": {
+          "normal": 786,
+          "adventitious": 227
+        },
+        "auroc": 0.9750142919595117
+      },
+      "sha256": "1ec3d8daf5b9eb6d1cdaecc7932d0363f7d90c2813353a4367c89d06b6b05598"
+    }
+  },
+  "training_seconds_total": 12088.440999040147,
+  "memory": {
+    "peak_process_rss_bytes": 2580561920,
+    "peak_mps_current_allocated_bytes": 3284489472,
+    "peak_mps_driver_allocated_bytes": 9903112192,
+    "measurement": "process ru_maxrss plus MPS allocation samples after every batch"
+  },
+  "calibration_accessed": false,
+  "locked_tests_accessed": false,
+  "claim_scope": "single-seed development QA only; no JS or adaptation superiority conclusion",
+  "audit_script_sha256": "280c3f7d2929b8ca512fc8d65ab27de64a1728f6326b584a60a61a1441d21c64",
+  "run_files_sha256": {
+    "summary.json": "3004aef093d200f84dcd5408b497eebcf0f45c7eee272c4ecb2b98492bc162ec",
+    "history.csv": "43c80f4860031db3692e85d663717eb52deb67501996fef4a6544a6fe8c08666",
+    "best.pt": "5acc274f8413e7ae6af6392011a58191388953826ddfc5db72d390ceff47be92",
+    "best_validation_predictions_sprsound2022.csv": "1ec3d8daf5b9eb6d1cdaecc7932d0363f7d90c2813353a4367c89d06b6b05598",
+    "configuration.json": "53d1a1ae2f56b8cba6c225532d68aaa5fc72e1a5b3d442ef48a46c346ece44ba",
+    "resume_state.pt": "1c1b40eeb92e2bb5b0242b0764408b8b6844aff6085c6f4a810be0bf59fcf71c",
+    "best_validation_predictions_icbhi2017.csv": "ddbe27b6d58e7437277b8fe38bdcc989ec821020c667bc1895989b8bec0b0bd0"
+  }
+}

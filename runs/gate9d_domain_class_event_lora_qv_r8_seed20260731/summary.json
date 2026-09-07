@@ -1,0 +1,75 @@
+{
+  "gate": "9D",
+  "candidate": "beats_lora_qv_r8",
+  "strategy": "lora_qv",
+  "seed": 20260731,
+  "selection_metric": "minimum_domain_average_score",
+  "best_epoch": 3,
+  "best_worst_domain_average_score": 0.6837685471557765,
+  "best_mean_domain_average_score": 0.7920585794370312,
+  "epochs_completed": 7,
+  "training_parameters": 99842,
+  "total_parameters": 90411634,
+  "trainable_fraction": 0.0011043047844926683,
+  "best_train_projection_drift": 0.3269547367825153,
+  "best_projection_drift_anchor_weight": 0.0,
+  "best_validation_metrics": {
+    "icbhi2017": {
+      "accuracy": 0.6841155234657039,
+      "sensitivity": 0.6741573033707865,
+      "specificity": 0.6933797909407665,
+      "average_score": 0.6837685471557765,
+      "harmonic_score": 0.683633448799061,
+      "score": 0.6837009979774187,
+      "macro_f1": 0.6837435370488167,
+      "uar": 0.6837685471557765,
+      "per_class_recall": {
+        "normal": 0.6933797909407665,
+        "adventitious": 0.6741573033707865
+      },
+      "confusion_matrix": [
+        [
+          199,
+          88
+        ],
+        [
+          87,
+          180
+        ]
+      ],
+      "support": {
+        "normal": 287,
+        "adventitious": 267
+      }
+    },
+    "sprsound2022": {
+      "accuracy": 0.932872655478776,
+      "sensitivity": 0.8414096916299559,
+      "specificity": 0.9592875318066157,
+      "average_score": 0.9003486117182858,
+      "harmonic_score": 0.8964903325406804,
+      "score": 0.8984194721294831,
+      "macro_f1": 0.9028708403835308,
+      "uar": 0.9003486117182858,
+      "per_class_recall": {
+        "normal": 0.9592875318066157,
+        "adventitious": 0.8414096916299559
+      },
+      "confusion_matrix": [
+        [
+          754,
+          32
+        ],
+        [
+          36,
+          191
+        ]
+      ],
+      "support": {
+        "normal": 786,
+        "adventitious": 227
+      }
+    }
+  },
+  "locked_test_accessed": false
+}

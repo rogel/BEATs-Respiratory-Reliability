@@ -1,0 +1,795 @@
+{
+  "created_at": "2026-09-05T07:50:27.408102+08:00",
+  "scope": "review-only diagnosis; no training, model selection, new calibrator, or formal output replacement",
+  "analysis_readiness": "Analysis A calibration regression requires audited implementation correction; AS and probability predictions unaffected",
+  "source_manifest_sha256": "2dd168129fc0fc159db201f2990c4d7074cb746fc9bc2c13bd5031e47dbd1419",
+  "formal_analysis_a_sha256": "8f2d39a665e2678ee20a00afe96ae1b5a81422b18471360cbee566220df1caa9",
+  "audit_script_sha256": "cc20fdf049edad8758666d2795c3fd6125b54ce989459b336ae298baa094fda9",
+  "scipy_version": "1.18.0",
+  "patient_overlap_audit": {
+    "pairwise_overlap_counts": {
+      "icbhi2017/train_fit__icbhi2017/validation_select": 0,
+      "icbhi2017/train_fit__icbhi2017/calibration": 0,
+      "icbhi2017/train_fit__icbhi2017/locked_test": 0,
+      "icbhi2017/validation_select__icbhi2017/calibration": 0,
+      "icbhi2017/validation_select__icbhi2017/locked_test": 0,
+      "icbhi2017/calibration__icbhi2017/locked_test": 0,
+      "sprsound2022/train_fit__sprsound2022/validation_select": 0,
+      "sprsound2022/train_fit__sprsound2022/calibration": 0,
+      "sprsound2022/train_fit__sprsound2022/locked_inter_test": 0,
+      "sprsound2022/train_fit__sprsound2022/locked_intra_test": 111,
+      "sprsound2022/validation_select__sprsound2022/calibration": 0,
+      "sprsound2022/validation_select__sprsound2022/locked_inter_test": 0,
+      "sprsound2022/validation_select__sprsound2022/locked_intra_test": 19,
+      "sprsound2022/calibration__sprsound2022/locked_inter_test": 0,
+      "sprsound2022/calibration__sprsound2022/locked_intra_test": 26,
+      "sprsound2022/locked_inter_test__sprsound2022/locked_intra_test": 0
+    },
+    "expected_descriptive_intra_overlap": {
+      "sprsound2022/train_fit__sprsound2022/locked_intra_test": 111,
+      "sprsound2022/validation_select__sprsound2022/locked_intra_test": 19,
+      "sprsound2022/calibration__sprsound2022/locked_intra_test": 26,
+      "sprsound2022/locked_inter_test__sprsound2022/locked_intra_test": 0
+    },
+    "prohibited_overlap": {},
+    "primary_patient_disjoint_roles_passed": true
+  },
+  "prediction_audits": [
+    {
+      "family": "exact",
+      "seed": 20260729,
+      "dataset": "icbhi2017",
+      "role": "validation_select",
+      "events": 554,
+      "metadata_and_values_passed": true
+    },
+    {
+      "family": "exact",
+      "seed": 20260731,
+      "dataset": "icbhi2017",
+      "role": "validation_select",
+      "events": 554,
+      "metadata_and_values_passed": true
+    },
+    {
+      "family": "exact",
+      "seed": 20260729,
+      "dataset": "icbhi2017",
+      "role": "calibration",
+      "events": 561,
+      "metadata_and_values_passed": true
+    },
+    {
+      "family": "exact",
+      "seed": 20260731,
+      "dataset": "icbhi2017",
+      "role": "calibration",
+      "events": 561,
+      "metadata_and_values_passed": true
+    },
+    {
+      "family": "exact",
+      "seed": 20260729,
+      "dataset": "icbhi2017",
+      "role": "locked_test",
+      "events": 2873,
+      "metadata_and_values_passed": true
+    },
+    {
+      "family": "exact",
+      "seed": 20260731,
+      "dataset": "icbhi2017",
+      "role": "locked_test",
+      "events": 2873,
+      "metadata_and_values_passed": true
+    },
+    {
+      "family": "exact",
+      "seed": 20260729,
+      "dataset": "sprsound2022",
+      "role": "validation_select",
+      "events": 1013,
+      "metadata_and_values_passed": true
+    },
+    {
+      "family": "exact",
+      "seed": 20260731,
+      "dataset": "sprsound2022",
+      "role": "validation_select",
+      "events": 1013,
+      "metadata_and_values_passed": true
+    },
+    {
+      "family": "exact",
+      "seed": 20260729,
+      "dataset": "sprsound2022",
+      "role": "calibration",
+      "events": 1038,
+      "metadata_and_values_passed": true
+    },
+    {
+      "family": "exact",
+      "seed": 20260731,
+      "dataset": "sprsound2022",
+      "role": "calibration",
+      "events": 1038,
+      "metadata_and_values_passed": true
+    },
+    {
+      "family": "exact",
+      "seed": 20260729,
+      "dataset": "sprsound2022",
+      "role": "locked_inter_test",
+      "events": 1429,
+      "metadata_and_values_passed": true
+    },
+    {
+      "family": "exact",
+      "seed": 20260731,
+      "dataset": "sprsound2022",
+      "role": "locked_inter_test",
+      "events": 1429,
+      "metadata_and_values_passed": true
+    },
+    {
+      "family": "exact",
+      "seed": 20260729,
+      "dataset": "sprsound2022",
+      "role": "locked_intra_test",
+      "events": 1004,
+      "metadata_and_values_passed": true
+    },
+    {
+      "family": "exact",
+      "seed": 20260731,
+      "dataset": "sprsound2022",
+      "role": "locked_intra_test",
+      "events": 1004,
+      "metadata_and_values_passed": true
+    },
+    {
+      "family": "legacy-mask",
+      "seed": 20260729,
+      "dataset": "icbhi2017",
+      "role": "validation_select",
+      "events": 554,
+      "metadata_and_values_passed": true
+    },
+    {
+      "family": "legacy-mask",
+      "seed": 20260731,
+      "dataset": "icbhi2017",
+      "role": "validation_select",
+      "events": 554,
+      "metadata_and_values_passed": true
+    },
+    {
+      "family": "legacy-mask",
+      "seed": 20260729,
+      "dataset": "icbhi2017",
+      "role": "calibration",
+      "events": 561,
+      "metadata_and_values_passed": true
+    },
+    {
+      "family": "legacy-mask",
+      "seed": 20260731,
+      "dataset": "icbhi2017",
+      "role": "calibration",
+      "events": 561,
+      "metadata_and_values_passed": true
+    },
+    {
+      "family": "legacy-mask",
+      "seed": 20260729,
+      "dataset": "icbhi2017",
+      "role": "locked_test",
+      "events": 2873,
+      "metadata_and_values_passed": true
+    },
+    {
+      "family": "legacy-mask",
+      "seed": 20260731,
+      "dataset": "icbhi2017",
+      "role": "locked_test",
+      "events": 2873,
+      "metadata_and_values_passed": true
+    },
+    {
+      "family": "legacy-mask",
+      "seed": 20260729,
+      "dataset": "sprsound2022",
+      "role": "validation_select",
+      "events": 1013,
+      "metadata_and_values_passed": true
+    },
+    {
+      "family": "legacy-mask",
+      "seed": 20260731,
+      "dataset": "sprsound2022",
+      "role": "validation_select",
+      "events": 1013,
+      "metadata_and_values_passed": true
+    },
+    {
+      "family": "legacy-mask",
+      "seed": 20260729,
+      "dataset": "sprsound2022",
+      "role": "calibration",
+      "events": 1038,
+      "metadata_and_values_passed": true
+    },
+    {
+      "family": "legacy-mask",
+      "seed": 20260731,
+      "dataset": "sprsound2022",
+      "role": "calibration",
+      "events": 1038,
+      "metadata_and_values_passed": true
+    },
+    {
+      "family": "legacy-mask",
+      "seed": 20260729,
+      "dataset": "sprsound2022",
+      "role": "locked_inter_test",
+      "events": 1429,
+      "metadata_and_values_passed": true
+    },
+    {
+      "family": "legacy-mask",
+      "seed": 20260731,
+      "dataset": "sprsound2022",
+      "role": "locked_inter_test",
+      "events": 1429,
+      "metadata_and_values_passed": true
+    },
+    {
+      "family": "legacy-mask",
+      "seed": 20260729,
+      "dataset": "sprsound2022",
+      "role": "locked_intra_test",
+      "events": 1004,
+      "metadata_and_values_passed": true
+    },
+    {
+      "family": "legacy-mask",
+      "seed": 20260731,
+      "dataset": "sprsound2022",
+      "role": "locked_intra_test",
+      "events": 1004,
+      "metadata_and_values_passed": true
+    }
+  ],
+  "prediction_sha256": {
+    "runs/gate11a_exactmask_fullft_seed20260729/best_validation_predictions_icbhi2017.csv": "bd5fe4b316514c0f9a6b34b7bb370621e380f60e57826091822c1a4fa4b45136",
+    "runs/gate11a_exactmask_fullft_seed20260731/best_validation_predictions_icbhi2017.csv": "5cf597c5580fb7e8efcd9d8d7ad7f90a5815f25cc61629a298eeaeb369e83d2d",
+    "artifacts/post_gate11a/calibration_predictions/fullft_seed20260729_icbhi2017_calibration.csv": "2e1b5a97c78c5411e035ea4ec929868b8a1a0a02173e4278ae1b6302e1ce03a8",
+    "artifacts/post_gate11a/calibration_predictions/fullft_seed20260731_icbhi2017_calibration.csv": "3edd2eadfbf327a1aa311766527b90c2b91cccbd40a1da516ab1070c7d714a9e",
+    "artifacts/post_gate11a/locked_predictions/fullft_seed20260729_icbhi2017_locked_test.csv": "519e77edbaee73c198e4f661881384721987559d12654a54d21952bca7d7f0a2",
+    "artifacts/post_gate11a/locked_predictions/fullft_seed20260731_icbhi2017_locked_test.csv": "911c02dbac5ce50e6b332e138af01312c8debf1bccee01fdae1f62c95b901346",
+    "runs/gate11a_exactmask_fullft_seed20260729/best_validation_predictions_sprsound2022.csv": "aa6d0a0e1c36cdfd68bd2d59b5b6a307af87113f40747309c56ca5183f0bec3b",
+    "runs/gate11a_exactmask_fullft_seed20260731/best_validation_predictions_sprsound2022.csv": "4c4837933f79c4409b14ef440fffb3ed485193824bddf5fc3a0f572e29f7cb73",
+    "artifacts/post_gate11a/calibration_predictions/fullft_seed20260729_sprsound2022_calibration.csv": "94e0f83e964dab7225cb2e6a3f9791935b2d116c4a7cf10c47e676557f7c8874",
+    "artifacts/post_gate11a/calibration_predictions/fullft_seed20260731_sprsound2022_calibration.csv": "8a7cbcfa7e60b36500950ec33f93abd1763354f00e74297b456854ee462dc16e",
+    "artifacts/post_gate11a/locked_predictions/fullft_seed20260729_sprsound2022_locked_inter_test.csv": "b15ed25a5ef97e521e09d2de2338b06e77dc962c8524b611fc9224d2e44164ce",
+    "artifacts/post_gate11a/locked_predictions/fullft_seed20260731_sprsound2022_locked_inter_test.csv": "6d0820fcb5d14626887081b643d899c70d514ae5d5f0649b520a9bf7b365c287",
+    "artifacts/post_gate11a/locked_predictions/fullft_seed20260729_sprsound2022_locked_intra_test.csv": "b2969a10e3d673981932b06619032b8b8b8a69169373671b710c70f5d4eb5a7b",
+    "artifacts/post_gate11a/locked_predictions/fullft_seed20260731_sprsound2022_locked_intra_test.csv": "cf3fcb54e3b9fee20b705bc3b257665a75df4d6942d7837628b4c57b0ff10e2f",
+    "artifacts/revision_2026_09_03/predictions/legacy_mask/seed20260729_icbhi2017_validation_select.csv": "030a3abb6ab7f39db8c9406074b434e2e4fb144b5992288f762a0a1d80d055fa",
+    "artifacts/revision_2026_09_03/predictions/legacy_mask/seed20260731_icbhi2017_validation_select.csv": "8aee65a3d774f11ca19804cead5fd6b07da11e604390064afbdbcd2ad4746a23",
+    "artifacts/revision_2026_09_03/predictions/legacy_mask/seed20260729_icbhi2017_calibration.csv": "361802dc234075d397dc60d0474ccd29c685f88411fef62212f0d2b213ffa407",
+    "artifacts/revision_2026_09_03/predictions/legacy_mask/seed20260731_icbhi2017_calibration.csv": "75ebb92c7ba3d86ba374100cb56f06381bb04e62179b3359d85a427d6b720c92",
+    "artifacts/revision_2026_09_03/predictions/legacy_mask/seed20260729_icbhi2017_locked_test.csv": "8b792ae6578f93251589dc48f1c3620db81e1637df0e96efae169a42ac7912f4",
+    "artifacts/revision_2026_09_03/predictions/legacy_mask/seed20260731_icbhi2017_locked_test.csv": "00264a9f260a8c22999098b0883b685e81996018502a4f726d8b80716adf28d4",
+    "artifacts/revision_2026_09_03/predictions/legacy_mask/seed20260729_sprsound2022_validation_select.csv": "172ccbc59b55c1c415d6c29259780ccf9f9ee42c00b5f12c7c211ff4fcb11f08",
+    "artifacts/revision_2026_09_03/predictions/legacy_mask/seed20260731_sprsound2022_validation_select.csv": "6c460914f2722b7c4305a23204ca5854a629ad6f3c3ca1606aa49db1af5d73a6",
+    "artifacts/revision_2026_09_03/predictions/legacy_mask/seed20260729_sprsound2022_calibration.csv": "d3b3b465fc904bfaa363682a5d54c3acb83a565f7166d8840d7f3884643191f6",
+    "artifacts/revision_2026_09_03/predictions/legacy_mask/seed20260731_sprsound2022_calibration.csv": "4b6c76e5e0ab3d346d5bf8bc3a53aab9a49515925e0756be3c543ca1f85a9cb7",
+    "artifacts/revision_2026_09_03/predictions/legacy_mask/seed20260729_sprsound2022_locked_inter_test.csv": "0e4324728de98d0f47a93114ccd26ffdf5ab83faa9ed0ec172f1e77d531387d1",
+    "artifacts/revision_2026_09_03/predictions/legacy_mask/seed20260731_sprsound2022_locked_inter_test.csv": "f65541da880fbee1303aca3bb8a574f67f4a8375e1d181d92e7fb0ff13bb3d47",
+    "artifacts/revision_2026_09_03/predictions/legacy_mask/seed20260729_sprsound2022_locked_intra_test.csv": "51aafdb214fca58d65850fce6c2e965a4a942b771c7b3946c77aca109d070489",
+    "artifacts/revision_2026_09_03/predictions/legacy_mask/seed20260731_sprsound2022_locked_intra_test.csv": "2bf79833b848f82c87211b30b2513d13fe5e27a3d39b7b573a6aee7aaac61714"
+  },
+  "reproduced_classification_points": {
+    "exact/icbhi2017": 0.659300506402075,
+    "exact/sprsound2022": 0.8988617263199525,
+    "legacy-mask/icbhi2017": 0.6719857999603975,
+    "legacy-mask/sprsound2022": 0.8937401127150484
+  },
+  "calibration_regression_diagnosis": {
+    "exact": {
+      "raw": {
+        "model": "unpenalized joint logistic regression: logit Pr(Y=1) = a + b logit(p)",
+        "interpretation": "diagnostic only; never apply fitted probabilities to evaluation",
+        "stored_solver_result": {
+          "calibration_intercept": -58517054.27787432,
+          "calibration_slope": 23902406.56361022
+        },
+        "independently_verified_intercept": -3.018683566766293,
+        "independently_verified_slope": 1.0691087276218498,
+        "maximum_coefficient_spread": 5.56886763369846e-08,
+        "class_logit_ranges": {
+          "0": [
+            -6.870070022827017,
+            5.506375676549805
+          ],
+          "1": [
+            -1.2950270258523777,
+            7.182116800838116
+          ]
+        },
+        "fits": [
+          {
+            "method": "BFGS",
+            "start": [
+              0.0,
+              0.0
+            ],
+            "optimizer_success": true,
+            "optimizer_message": "Optimization terminated successfully.",
+            "intercept": -3.0186835666683938,
+            "slope": 1.0691087276064821,
+            "gradient_infinity_norm": 5.789391307920448e-12,
+            "hessian_eigenvalues": [
+              0.011655958965774522,
+              0.6776500009624017
+            ]
+          },
+          {
+            "method": "BFGS",
+            "start": [
+              0.0,
+              1.0
+            ],
+            "optimizer_success": true,
+            "optimizer_message": "Optimization terminated successfully.",
+            "intercept": -3.018683566040369,
+            "slope": 1.069108727479211,
+            "gradient_infinity_norm": 2.465127406915717e-11,
+            "hessian_eigenvalues": [
+              0.011655958971056458,
+              0.6776500009750688
+            ]
+          },
+          {
+            "method": "BFGS",
+            "start": [
+              -3.0,
+              1.0
+            ],
+            "optimizer_success": true,
+            "optimizer_message": "Optimization terminated successfully.",
+            "intercept": -3.0186835659364677,
+            "slope": 1.0691087273063764,
+            "gradient_infinity_norm": 6.893456876383736e-11,
+            "hessian_eigenvalues": [
+              0.01165595897336484,
+              0.6776500012561943
+            ]
+          },
+          {
+            "method": "trust-exact",
+            "start": [
+              0.0,
+              0.0
+            ],
+            "optimizer_success": true,
+            "optimizer_message": "Optimization terminated successfully.",
+            "intercept": -3.0186835667641088,
+            "slope": 1.0691087276212248,
+            "gradient_infinity_norm": 5.0772832764476485e-14,
+            "hessian_eigenvalues": [
+              0.011655958965013499,
+              0.6776500009690275
+            ]
+          },
+          {
+            "method": "trust-exact",
+            "start": [
+              0.0,
+              1.0
+            ],
+            "optimizer_success": false,
+            "optimizer_message": "A bad approximation caused failure to predict improvement.",
+            "intercept": -3.0186835110776165,
+            "slope": 1.0691087116828837,
+            "gradient_infinity_norm": 1.2924531653710984e-09,
+            "hessian_eigenvalues": [
+              0.011655959477340173,
+              0.6776500106468478
+            ]
+          },
+          {
+            "method": "trust-exact",
+            "start": [
+              -3.0,
+              1.0
+            ],
+            "optimizer_success": true,
+            "optimizer_message": "Optimization terminated successfully.",
+            "intercept": -3.018683566766293,
+            "slope": 1.0691087276218498,
+            "gradient_infinity_norm": 1.147177744081322e-16,
+            "hessian_eigenvalues": [
+              0.011655958964993416,
+              0.6776500009686481
+            ]
+          }
+        ]
+      },
+      "temperature_scaled": {
+        "model": "unpenalized joint logistic regression: logit Pr(Y=1) = a + b logit(p)",
+        "interpretation": "diagnostic only; never apply fitted probabilities to evaluation",
+        "stored_solver_result": {
+          "calibration_intercept": -3.018683566766294,
+          "calibration_slope": 1.2732642085743546
+        },
+        "independently_verified_intercept": -3.0186835667662884,
+        "independently_verified_slope": 1.2732642085743526,
+        "maximum_coefficient_spread": 5.492264421036452e-10,
+        "class_logit_ranges": {
+          "0": [
+            -5.768521388818016,
+            4.623482112919446
+          ],
+          "1": [
+            -1.087382089688334,
+            6.030534513471469
+          ]
+        },
+        "fits": [
+          {
+            "method": "BFGS",
+            "start": [
+              0.0,
+              0.0
+            ],
+            "optimizer_success": true,
+            "optimizer_message": "Optimization terminated successfully.",
+            "intercept": -3.01868356659709,
+            "slope": 1.2732642085266015,
+            "gradient_infinity_norm": 2.4428056964681966e-12,
+            "hessian_eigenvalues": [
+              0.011364885656511739,
+              0.48999886031077733
+            ]
+          },
+          {
+            "method": "BFGS",
+            "start": [
+              0.0,
+              1.0
+            ],
+            "optimizer_success": true,
+            "optimizer_message": "Optimization terminated successfully.",
+            "intercept": -3.0186835667745187,
+            "slope": 1.2732642085739985,
+            "gradient_infinity_norm": 1.2591041651824475e-12,
+            "hessian_eigenvalues": [
+              0.011364885655018909,
+              0.4899988603031888
+            ]
+          },
+          {
+            "method": "BFGS",
+            "start": [
+              -3.0,
+              1.0
+            ],
+            "optimizer_success": true,
+            "optimizer_message": "Optimization terminated successfully.",
+            "intercept": -3.018683566704408,
+            "slope": 1.2732642085581556,
+            "gradient_infinity_norm": 1.0627093637864014e-12,
+            "hessian_eigenvalues": [
+              0.011364885655585553,
+              0.4899988603030051
+            ]
+          },
+          {
+            "method": "trust-exact",
+            "start": [
+              0.0,
+              0.0
+            ],
+            "optimizer_success": true,
+            "optimizer_message": "Optimization terminated successfully.",
+            "intercept": -3.0186835667641088,
+            "slope": 1.2732642085736097,
+            "gradient_infinity_norm": 4.262582078532985e-14,
+            "hessian_eigenvalues": [
+              0.011364885655087257,
+              0.4899988603009964
+            ]
+          },
+          {
+            "method": "trust-exact",
+            "start": [
+              0.0,
+              1.0
+            ],
+            "optimizer_success": true,
+            "optimizer_message": "Optimization terminated successfully.",
+            "intercept": -3.018683566225292,
+            "slope": 1.273264208390062,
+            "gradient_infinity_norm": 1.0489092860123764e-11,
+            "hessian_eigenvalues": [
+              0.011364885659939537,
+              0.48999886036772095
+            ]
+          },
+          {
+            "method": "trust-exact",
+            "start": [
+              -3.0,
+              1.0
+            ],
+            "optimizer_success": true,
+            "optimizer_message": "Optimization terminated successfully.",
+            "intercept": -3.0186835667662884,
+            "slope": 1.2732642085743526,
+            "gradient_infinity_norm": 1.5206455558632424e-16,
+            "hessian_eigenvalues": [
+              0.011364885655067613,
+              0.4899988603007259
+            ]
+          }
+        ]
+      },
+      "rescaling_invariance_passed": true,
+      "raw_probability_metrics": {
+        "negative_log_likelihood": 0.3814624536832548,
+        "brier_score": 0.11203461104148837,
+        "equal_frequency_ece": 0.14809094313685092
+      }
+    },
+    "legacy-mask": {
+      "raw": {
+        "model": "unpenalized joint logistic regression: logit Pr(Y=1) = a + b logit(p)",
+        "interpretation": "diagnostic only; never apply fitted probabilities to evaluation",
+        "stored_solver_result": {
+          "calibration_intercept": -108969350.21231186,
+          "calibration_slope": 50005095.11223219
+        },
+        "independently_verified_intercept": -3.3831912021206505,
+        "independently_verified_slope": 1.1443016602935066,
+        "maximum_coefficient_spread": 4.444003165460231e-09,
+        "class_logit_ranges": {
+          "0": [
+            -6.901871183353959,
+            5.459696470375065
+          ],
+          "1": [
+            -1.6030119369601779,
+            7.114495593311428
+          ]
+        },
+        "fits": [
+          {
+            "method": "BFGS",
+            "start": [
+              0.0,
+              0.0
+            ],
+            "optimizer_success": true,
+            "optimizer_message": "Optimization terminated successfully.",
+            "intercept": -3.3831912020314605,
+            "slope": 1.1443016602600053,
+            "gradient_infinity_norm": 6.944982330556657e-12,
+            "hessian_eigenvalues": [
+              0.009392441905940435,
+              0.6710772648211187
+            ]
+          },
+          {
+            "method": "BFGS",
+            "start": [
+              0.0,
+              1.0
+            ],
+            "optimizer_success": false,
+            "optimizer_message": "Desired error not necessarily achieved due to precision loss.",
+            "intercept": -3.383191201504782,
+            "slope": 1.1443016647040085,
+            "gradient_infinity_norm": 2.878240731972971e-09,
+            "hessian_eigenvalues": [
+              0.009392441877372464,
+              0.67107725686602
+            ]
+          },
+          {
+            "method": "BFGS",
+            "start": [
+              -3.0,
+              1.0
+            ],
+            "optimizer_success": true,
+            "optimizer_message": "Optimization terminated successfully.",
+            "intercept": -3.3831912020623793,
+            "slope": 1.144301660283736,
+            "gradient_infinity_norm": 3.10004423675794e-12,
+            "hessian_eigenvalues": [
+              0.009392441905626226,
+              0.6710772647898674
+            ]
+          },
+          {
+            "method": "trust-exact",
+            "start": [
+              0.0,
+              0.0
+            ],
+            "optimizer_success": true,
+            "optimizer_message": "Optimization terminated successfully.",
+            "intercept": -3.3831912020939927,
+            "slope": 1.1443016602859466,
+            "gradient_infinity_norm": 5.312562250640791e-13,
+            "hessian_eigenvalues": [
+              0.009392441905459254,
+              0.6710772647965204
+            ]
+          },
+          {
+            "method": "trust-exact",
+            "start": [
+              0.0,
+              1.0
+            ],
+            "optimizer_success": true,
+            "optimizer_message": "Optimization terminated successfully.",
+            "intercept": -3.3831912021206505,
+            "slope": 1.1443016602935066,
+            "gradient_infinity_norm": 2.706903125836717e-15,
+            "hessian_eigenvalues": [
+              0.009392441905278612,
+              0.6710772647921592
+            ]
+          },
+          {
+            "method": "trust-exact",
+            "start": [
+              -3.0,
+              1.0
+            ],
+            "optimizer_success": true,
+            "optimizer_message": "Optimization terminated successfully.",
+            "intercept": -3.3831912021190442,
+            "slope": 1.1443016602930265,
+            "gradient_infinity_norm": 5.002670124781307e-14,
+            "hessian_eigenvalues": [
+              0.009392441905289668,
+              0.6710772647924649
+            ]
+          }
+        ]
+      },
+      "temperature_scaled": {
+        "model": "unpenalized joint logistic regression: logit Pr(Y=1) = a + b logit(p)",
+        "interpretation": "diagnostic only; never apply fitted probabilities to evaluation",
+        "stored_solver_result": {
+          "calibration_intercept": -3.3831912021207873,
+          "calibration_slope": 1.358467742807496
+        },
+        "independently_verified_intercept": -3.3831912021207398,
+        "independently_verified_slope": 1.3584677428074785,
+        "maximum_coefficient_spread": 1.884447087263652e-08,
+        "class_logit_ranges": {
+          "0": [
+            -5.813772683274737,
+            4.598960681125514
+          ],
+          "1": [
+            -1.350292806469561,
+            5.992876284829819
+          ]
+        },
+        "fits": [
+          {
+            "method": "BFGS",
+            "start": [
+              0.0,
+              0.0
+            ],
+            "optimizer_success": true,
+            "optimizer_message": "Optimization terminated successfully.",
+            "intercept": -3.3831912007910607,
+            "slope": 1.3584677424566205,
+            "gradient_infinity_norm": 2.109194281397595e-11,
+            "hessian_eigenvalues": [
+              0.009160648428802867,
+              0.4882106207788792
+            ]
+          },
+          {
+            "method": "BFGS",
+            "start": [
+              0.0,
+              1.0
+            ],
+            "optimizer_success": true,
+            "optimizer_message": "Optimization terminated successfully.",
+            "intercept": -3.3831912021280224,
+            "slope": 1.358467742804627,
+            "gradient_infinity_norm": 2.2520140712696866e-12,
+            "hessian_eigenvalues": [
+              0.009160648420548138,
+              0.4882106207295803
+            ]
+          },
+          {
+            "method": "BFGS",
+            "start": [
+              -3.0,
+              1.0
+            ],
+            "optimizer_success": true,
+            "optimizer_message": "Optimization terminated successfully.",
+            "intercept": -3.383191201995678,
+            "slope": 1.3584677427806418,
+            "gradient_infinity_norm": 4.739062142364005e-12,
+            "hessian_eigenvalues": [
+              0.009160648421302531,
+              0.4882106207233735
+            ]
+          },
+          {
+            "method": "trust-exact",
+            "start": [
+              0.0,
+              0.0
+            ],
+            "optimizer_success": true,
+            "optimizer_message": "Optimization terminated successfully.",
+            "intercept": -3.3831912020939927,
+            "slope": 1.3584677427984753,
+            "gradient_infinity_norm": 4.4746727836356846e-13,
+            "hessian_eigenvalues": [
+              0.00916064842074204,
+              0.48821062072796784
+            ]
+          },
+          {
+            "method": "trust-exact",
+            "start": [
+              0.0,
+              1.0
+            ],
+            "optimizer_success": false,
+            "optimizer_message": "A bad approximation caused failure to predict improvement.",
+            "intercept": -3.3831911832835515,
+            "slope": 1.3584677364750586,
+            "gradient_infinity_norm": 3.103539246269418e-10,
+            "hessian_eigenvalues": [
+              0.009160648545439389,
+              0.48821062293373174
+            ]
+          },
+          {
+            "method": "trust-exact",
+            "start": [
+              -3.0,
+              1.0
+            ],
+            "optimizer_success": true,
+            "optimizer_message": "Optimization terminated successfully.",
+            "intercept": -3.3831912021207398,
+            "slope": 1.3584677428074785,
+            "gradient_infinity_norm": 1.5345610023339245e-15,
+            "hessian_eigenvalues": [
+              0.009160648420564653,
+              0.48821062072481897
+            ]
+          }
+        ]
+      },
+      "rescaling_invariance_passed": true,
+      "raw_probability_metrics": {
+        "negative_log_likelihood": 0.40055022582175887,
+        "brier_score": 0.11817255715591445,
+        "equal_frequency_ece": 0.1595919133429356
+      }
+    }
+  },
+  "confidence_intervals_recomputed_in_this_diagnostic": false,
+  "warning": "Do not interpret solver failure as separation or use finite-value checks as a convergence certificate."
+}

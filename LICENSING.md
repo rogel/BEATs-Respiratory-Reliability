@@ -1,6 +1,6 @@
 # Licensing
 
-No general open-source licence is currently granted for the project-authored code or configurations. Public repository access does not by itself grant additional reuse rights; contact the repository owner for permission where needed.
+No general open-source licence is currently granted for the project-authored code, configurations or derived analysis outputs. Public repository access does not by itself grant additional reuse rights; contact the repository owner for permission where needed.
 
 Third-party materials retain their own terms:
 

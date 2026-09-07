@@ -1,0 +1,130 @@
+{
+  "annotation_bound_errors": [],
+  "audio_subtype_counts": {
+    "PCM_16": 2683
+  },
+  "channel_counts": {
+    "1": 2683
+  },
+  "checks": {
+    "all_audio_format_valid": true,
+    "all_classes_in_development_train_and_validation": true,
+    "all_json_have_wav": true,
+    "all_json_valid": true,
+    "all_wav_have_json": true,
+    "annotation_bounds_valid": true,
+    "development_testing_2_disjoint": true,
+    "development_train_validation_disjoint": true,
+    "event_counts_match": true,
+    "label_counts_match": true,
+    "patient_counts_match": true,
+    "recording_counts_match": true,
+    "testing_1_is_intra_subject": true,
+    "testing_2_is_inter_subject": true
+  },
+  "data_gate_passed": true,
+  "development_event_counts": {
+    "testing_1": 1004,
+    "testing_2": 1429,
+    "train": 5324,
+    "validation": 1332
+  },
+  "development_label_counts": {
+    "testing_1": {
+      "coarse_crackle": 14,
+      "fine_crackle": 175,
+      "normal": 688,
+      "rhonchi": 14,
+      "stridor": 2,
+      "wheeze": 108,
+      "wheeze_crackle": 3
+    },
+    "testing_2": {
+      "coarse_crackle": 3,
+      "fine_crackle": 80,
+      "normal": 1040,
+      "wheeze": 305,
+      "wheeze_crackle": 1
+    },
+    "train": {
+      "coarse_crackle": 37,
+      "fine_crackle": 730,
+      "normal": 4127,
+      "rhonchi": 32,
+      "stridor": 14,
+      "wheeze": 359,
+      "wheeze_crackle": 25
+    },
+    "validation": {
+      "coarse_crackle": 12,
+      "fine_crackle": 182,
+      "normal": 1032,
+      "rhonchi": 7,
+      "stridor": 1,
+      "wheeze": 93,
+      "wheeze_crackle": 5
+    }
+  },
+  "development_patient_counts": {
+    "testing_2": 41,
+    "train": 203,
+    "validation": 48
+  },
+  "development_recording_counts": {
+    "testing_1": 379,
+    "testing_2": 355,
+    "train": 1594,
+    "validation": 355
+  },
+  "event_count": 9089,
+  "event_counts": {
+    "testing_1": 1004,
+    "testing_2": 1429,
+    "train": 6656
+  },
+  "invalid_audio": [],
+  "label_counts": {
+    "coarse_crackle": 66,
+    "fine_crackle": 1167,
+    "normal": 6887,
+    "rhonchi": 53,
+    "stridor": 17,
+    "wheeze": 865,
+    "wheeze_crackle": 34
+  },
+  "malformed_json": [],
+  "missing_wav": [],
+  "patient_counts": {
+    "testing_1": 162,
+    "testing_2": 41,
+    "train": 251
+  },
+  "patient_overlaps": {
+    "testing_1_testing_2": 0,
+    "train_testing_1": 162,
+    "train_testing_2": 0
+  },
+  "record_annotation_counts": {
+    "CAS": 233,
+    "CAS & DAS": 131,
+    "DAS": 347,
+    "Normal": 1785,
+    "Poor Quality": 187
+  },
+  "recording_count": 2683,
+  "recording_counts": {
+    "testing_1": 379,
+    "testing_2": 355,
+    "train": 1949
+  },
+  "sample_rate_counts": {
+    "8000": 2683
+  },
+  "unmatched_wav": [],
+  "validation_selection": {
+    "fold_index": 3,
+    "score": 0.009585928075511514,
+    "search_seed": 20260729,
+    "validation_patient_fraction": 0.19753086419753085
+  }
+}

@@ -12,9 +12,10 @@ build/
 dist/
 .coverage
 htmlcov/
-data/
-runs/
-artifacts/
+data/raw/
+data/private/
+checkpoints/
+outputs/
 *.pt
 *.pth
 *.safetensors

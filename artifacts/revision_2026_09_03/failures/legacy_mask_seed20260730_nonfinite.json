@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "stage": "BEATS_revision_formal_training",
+  "family": "legacy-mask",
+  "seed": 20260730,
+  "status": "reproducible_fail_closed_numerical_failure",
+  "planned_fixed_prefix_epochs": 9,
+  "completed_epochs": 5,
+  "failed_epoch_one_based": 6,
+  "selected_epoch_within_completed_history": 4,
+  "failure_signature": "FloatingPointError: Gate 11A produced non-finite logits",
+  "first_attempt": "failed during epoch 6 after five complete finite epochs",
+  "deterministic_resume_attempt": "restored the hashed epoch-5 model, optimiser, scheduler, DataLoader-generator and RNG states; failed again during epoch 6 with the same signature",
+  "formal_completeness": false,
+  "checkpoint_use": "diagnostic only; not counted as a completed nine-epoch fixed-prefix member",
+  "corrective_substitution_applied": false,
+  "calibration_accessed": false,
+  "locked_tests_accessed": false,
+  "analysis_plan_sha256": "18b6e39bba441e5be1ec870591b9dbf2846b7e6ab6293be9d211aab12809be39",
+  "implementation_freeze_sha256": "5a974c1cd98918c9774f8ce0dc7992f889c703944e70006eecbad31b520e6b5d",
+  "files": {
+    "configuration.json": "5960983cf1fd3d211dea12ca070d3bc20ac8938ef842e02d5932cbec98982191",
+    "history.csv": "a20f0c236f6b6b2eebeb927e52eb3426cd7e9dd7e87b917430f446548673cf1e",
+    "best.pt": "43d9c9540bd9eca88e84ea79ad49705df6efa18c4624eaeb545becd335e8eb22",
+    "resume_state.pt": "281eab012507d7ac5b9e7d0d2a08b001856dd020adc2bd0bd797b1df12366bd7"
+  },
+  "reporting_rule": "Retain the failure with equal prominence; do not patch, skip, or replace the zero-token Legacy behavior to improve the result."
+}

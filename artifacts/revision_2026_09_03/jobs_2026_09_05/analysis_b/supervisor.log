@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "./scripts/run_revision_analysis_b.py", line 412, in <module>
+    globals()[arguments.stage]()
+  File "./scripts/run_revision_analysis_b.py", line 398, in worker
+    raise RuntimeError(f"{stage} exited {code}; no automatic retry")
+RuntimeError: predict exited 1; no automatic retry

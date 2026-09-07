@@ -1,0 +1,1500 @@
+{
+  "created_at": "2026-09-05T19:23:18.518114+08:00",
+  "seed": 20260729,
+  "domain": "icbhi2017",
+  "role": "validation_select",
+  "model_audit": {
+    "run": "runs/revision_2026_09_03/revision_no_js_seed20260729",
+    "summary_sha256": "74f4be964eb82057774aeaa7ce524b031330650030f784dad751c5dba2343bbf",
+    "configuration_sha256": "324a42fe57970ac5efd843c9de4b9a616fc663e11f2a048103708a457ab48511",
+    "checkpoint_sha256": "c53e261d5e0b6561b5ba0e510517998b2c42e2b537dd0f1295717827ec4c5e35",
+    "best_epoch": 2,
+    "epochs_completed": 7
+  },
+  "runtime_python": "3.12.9 | packaged by Anaconda, Inc. | (main, Feb  6 2025, 12:55:12) [Clang 14.0.6 ]",
+  "default_cpu_threads": 12,
+  "probability_results": {
+    "training_evaluate_workers4": {
+      "maximum_absolute_difference_from_saved": 2.975845336816718e-08,
+      "mean_absolute_difference": 5.535847719367956e-09,
+      "changed_classification_decisions": 0,
+      "above_1e_6": 0,
+      "process_threads": 12
+    },
+    "archival_infer_workers0": {
+      "maximum_absolute_difference_from_saved": 0.0020305696670531725,
+      "mean_absolute_difference": 3.072643758671316e-05,
+      "changed_classification_decisions": 0,
+      "above_1e_6": 56,
+      "process_threads": 12
+    },
+    "infer_workers0_threads1": {
+      "maximum_absolute_difference_from_saved": 2.975845336816718e-08,
+      "mean_absolute_difference": 5.535847719367956e-09,
+      "changed_classification_decisions": 0,
+      "above_1e_6": 0,
+      "process_threads": 1
+    }
+  },
+  "pairwise_max_difference": {
+    "archival_infer_workers0__training_evaluate_workers4": 0.0020305514335632324,
+    "archival_infer_workers0__infer_workers0_threads1": 0.0020305514335632324,
+    "infer_workers0_threads1__training_evaluate_workers4": 0.0
+  },
+  "waveform_difference_count": 361,
+  "waveform_differences": [
+    {
+      "sample_id": "icbhi2017::110_1b1_Pr_sc_Meditron__cycle_000",
+      "max_absolute_waveform_difference": 1.4901161193847656e-08
+    },
+    {
+      "sample_id": "icbhi2017::110_1b1_Pr_sc_Meditron__cycle_001",
+      "max_absolute_waveform_difference": 1.1920928955078125e-07
+    },
+    {
+      "sample_id": "icbhi2017::110_1b1_Pr_sc_Meditron__cycle_003",
+      "max_absolute_waveform_difference": 5.960464477539063e-08
+    },
+    {
+      "sample_id": "icbhi2017::110_1b1_Pr_sc_Meditron__cycle_007",
+      "max_absolute_waveform_difference": 1.4901161193847656e-08
+    },
+    {
+      "sample_id": "icbhi2017::110_1b1_Pr_sc_Meditron__cycle_009",
+      "max_absolute_waveform_difference": 1.862645149230957e-09
+    },
+    {
+      "sample_id": "icbhi2017::110_1b1_Pr_sc_Meditron__cycle_010",
+      "max_absolute_waveform_difference": 5.960464477539063e-08
+    },
+    {
+      "sample_id": "icbhi2017::110_1b1_Pr_sc_Meditron__cycle_011",
+      "max_absolute_waveform_difference": 1.4901161193847656e-08
+    },
+    {
+      "sample_id": "icbhi2017::110_1b1_Pr_sc_Meditron__cycle_012",
+      "max_absolute_waveform_difference": 5.960464477539063e-08
+    },
+    {
+      "sample_id": "icbhi2017::110_1p1_Al_sc_Meditron__cycle_000",
+      "max_absolute_waveform_difference": 1.4901161193847656e-08
+    },
+    {
+      "sample_id": "icbhi2017::110_1p1_Al_sc_Meditron__cycle_001",
+      "max_absolute_waveform_difference": 1.4901161193847656e-08
+    },
+    {
+      "sample_id": "icbhi2017::110_1p1_Al_sc_Meditron__cycle_003",
+      "max_absolute_waveform_difference": 1.4901161193847656e-08
+    },
+    {
+      "sample_id": "icbhi2017::110_1p1_Al_sc_Meditron__cycle_004",
+      "max_absolute_waveform_difference": 2.384185791015625e-07
+    },
+    {
+      "sample_id": "icbhi2017::110_1p1_Al_sc_Meditron__cycle_006",
+      "max_absolute_waveform_difference": 1.4901161193847656e-08
+    },
+    {
+      "sample_id": "icbhi2017::110_1p1_Ll_sc_Meditron__cycle_000",
+      "max_absolute_waveform_difference": 1.1920928955078125e-07
+    },
+    {
+      "sample_id": "icbhi2017::110_1p1_Ll_sc_Meditron__cycle_002",
+      "max_absolute_waveform_difference": 5.960464477539063e-08
+    },
+    {
+      "sample_id": "icbhi2017::110_1p1_Ll_sc_Meditron__cycle_005",
+      "max_absolute_waveform_difference": 1.1920928955078125e-07
+    },
+    {
+      "sample_id": "icbhi2017::110_1p1_Lr_sc_Meditron__cycle_000",
+      "max_absolute_waveform_difference": 7.450580596923828e-09
+    },
+    {
+      "sample_id": "icbhi2017::110_1p1_Lr_sc_Meditron__cycle_002",
+      "max_absolute_waveform_difference": 7.450580596923828e-09
+    },
+    {
+      "sample_id": "icbhi2017::110_1p1_Lr_sc_Meditron__cycle_004",
+      "max_absolute_waveform_difference": 3.725290298461914e-09
+    },
+    {
+      "sample_id": "icbhi2017::110_1p1_Lr_sc_Meditron__cycle_005",
+      "max_absolute_waveform_difference": 1.4901161193847656e-08
+    },
+    {
+      "sample_id": "icbhi2017::110_1p1_Pr_sc_Meditron__cycle_000",
+      "max_absolute_waveform_difference": 1.4901161193847656e-08
+    },
+    {
+      "sample_id": "icbhi2017::110_1p1_Pr_sc_Meditron__cycle_001",
+      "max_absolute_waveform_difference": 2.9802322387695312e-08
+    },
+    {
+      "sample_id": "icbhi2017::110_1p1_Pr_sc_Meditron__cycle_002",
+      "max_absolute_waveform_difference": 7.450580596923828e-09
+    },
+    {
+      "sample_id": "icbhi2017::110_1p1_Pr_sc_Meditron__cycle_003",
+      "max_absolute_waveform_difference": 1.4901161193847656e-08
+    },
+    {
+      "sample_id": "icbhi2017::110_1p1_Pr_sc_Meditron__cycle_004",
+      "max_absolute_waveform_difference": 7.450580596923828e-09
+    },
+    {
+      "sample_id": "icbhi2017::110_1p1_Pr_sc_Meditron__cycle_005",
+      "max_absolute_waveform_difference": 5.960464477539063e-08
+    },
+    {
+      "sample_id": "icbhi2017::110_1p1_Pr_sc_Meditron__cycle_006",
+      "max_absolute_waveform_difference": 9.313225746154785e-10
+    },
+    {
+      "sample_id": "icbhi2017::110_1p1_Pr_sc_Meditron__cycle_009",
+      "max_absolute_waveform_difference": 7.450580596923828e-09
+    },
+    {
+      "sample_id": "icbhi2017::110_1p1_Pr_sc_Meditron__cycle_013",
+      "max_absolute_waveform_difference": 1.4901161193847656e-08
+    },
+    {
+      "sample_id": "icbhi2017::110_1p1_Pr_sc_Meditron__cycle_015",
+      "max_absolute_waveform_difference": 5.960464477539063e-08
+    },
+    {
+      "sample_id": "icbhi2017::112_1b1_Ar_sc_Meditron__cycle_000",
+      "max_absolute_waveform_difference": 3.725290298461914e-09
+    },
+    {
+      "sample_id": "icbhi2017::112_1b1_Ar_sc_Meditron__cycle_001",
+      "max_absolute_waveform_difference": 7.450580596923828e-09
+    },
+    {
+      "sample_id": "icbhi2017::112_1b1_Ar_sc_Meditron__cycle_004",
+      "max_absolute_waveform_difference": 7.450580596923828e-09
+    },
+    {
+      "sample_id": "icbhi2017::112_1b1_Ar_sc_Meditron__cycle_005",
+      "max_absolute_waveform_difference": 1.1920928955078125e-07
+    },
+    {
+      "sample_id": "icbhi2017::112_1b1_Ar_sc_Meditron__cycle_007",
+      "max_absolute_waveform_difference": 1.4901161193847656e-08
+    },
+    {
+      "sample_id": "icbhi2017::112_1b1_Ar_sc_Meditron__cycle_009",
+      "max_absolute_waveform_difference": 1.4901161193847656e-08
+    },
+    {
+      "sample_id": "icbhi2017::112_1b1_Ar_sc_Meditron__cycle_012",
+      "max_absolute_waveform_difference": 1.4901161193847656e-08
+    },
+    {
+      "sample_id": "icbhi2017::112_1b1_Ar_sc_Meditron__cycle_014",
+      "max_absolute_waveform_difference": 7.450580596923828e-09
+    },
+    {
+      "sample_id": "icbhi2017::112_1b1_Lr_sc_Meditron__cycle_001",
+      "max_absolute_waveform_difference": 5.960464477539063e-08
+    },
+    {
+      "sample_id": "icbhi2017::112_1b1_Lr_sc_Meditron__cycle_006",
+      "max_absolute_waveform_difference": 1.4901161193847656e-08
+    },
+    {
+      "sample_id": "icbhi2017::112_1b1_Lr_sc_Meditron__cycle_007",
+      "max_absolute_waveform_difference": 2.9802322387695312e-08
+    },
+    {
+      "sample_id": "icbhi2017::112_1b1_Lr_sc_Meditron__cycle_008",
+      "max_absolute_waveform_difference": 1.4901161193847656e-08
+    },
+    {
+      "sample_id": "icbhi2017::112_1b1_Lr_sc_Meditron__cycle_009",
+      "max_absolute_waveform_difference": 3.725290298461914e-09
+    },
+    {
+      "sample_id": "icbhi2017::112_1b1_Lr_sc_Meditron__cycle_010",
+      "max_absolute_waveform_difference": 5.960464477539063e-08
+    },
+    {
+      "sample_id": "icbhi2017::112_1p1_Ll_sc_Litt3200__cycle_002",
+      "max_absolute_waveform_difference": 1.862645149230957e-09
+    },
+    {
+      "sample_id": "icbhi2017::112_1p1_Ll_sc_Litt3200__cycle_004",
+      "max_absolute_waveform_difference": 1.4901161193847656e-08
+    },
+    {
+      "sample_id": "icbhi2017::112_1p1_Ll_sc_Litt3200__cycle_008",
+      "max_absolute_waveform_difference": 1.1920928955078125e-07
+    },
+    {
+      "sample_id": "icbhi2017::112_1p1_Pl_sc_Litt3200__cycle_002",
+      "max_absolute_waveform_difference": 1.4901161193847656e-08
+    },
+    {
+      "sample_id": "icbhi2017::112_1p1_Pl_sc_Litt3200__cycle_003",
+      "max_absolute_waveform_difference": 2.9802322387695312e-08
+    },
+    {
+      "sample_id": "icbhi2017::112_1p1_Pl_sc_Litt3200__cycle_005",
+      "max_absolute_waveform_difference": 5.960464477539063e-08
+    },
+    {
+      "sample_id": "icbhi2017::112_1p1_Pl_sc_Litt3200__cycle_006",
+      "max_absolute_waveform_difference": 1.1920928955078125e-07
+    },
+    {
+      "sample_id": "icbhi2017::112_1p1_Pl_sc_Litt3200__cycle_008",
+      "max_absolute_waveform_difference": 1.1920928955078125e-07
+    },
+    {
+      "sample_id": "icbhi2017::112_1p1_Pr_sc_Litt3200__cycle_000",
+      "max_absolute_waveform_difference": 1.4901161193847656e-08
+    },
+    {
+      "sample_id": "icbhi2017::112_1p1_Pr_sc_Litt3200__cycle_004",
+      "max_absolute_waveform_difference": 5.960464477539063e-08
+    },
+    {
+      "sample_id": "icbhi2017::112_1p1_Pr_sc_Litt3200__cycle_007",
+      "max_absolute_waveform_difference": 1.1920928955078125e-07
+    },
+    {
+      "sample_id": "icbhi2017::112_1p1_Pr_sc_Litt3200__cycle_008",
+      "max_absolute_waveform_difference": 1.1920928955078125e-07
+    },
+    {
+      "sample_id": "icbhi2017::114_1b4_Al_mc_AKGC417L__cycle_000",
+      "max_absolute_waveform_difference": 7.450580596923828e-09
+    },
+    {
+      "sample_id": "icbhi2017::114_1b4_Al_mc_AKGC417L__cycle_002",
+      "max_absolute_waveform_difference": 4.656612873077393e-10
+    },
+    {
+      "sample_id": "icbhi2017::114_1b4_Al_mc_AKGC417L__cycle_003",
+      "max_absolute_waveform_difference": 9.313225746154785e-10
+    },
+    {
+      "sample_id": "icbhi2017::114_1b4_Al_mc_AKGC417L__cycle_004",
+      "max_absolute_waveform_difference": 1.1641532182693481e-10
+    },
+    {
+      "sample_id": "icbhi2017::114_1b4_Al_mc_AKGC417L__cycle_005",
+      "max_absolute_waveform_difference": 1.862645149230957e-09
+    },
+    {
+      "sample_id": "icbhi2017::114_1b4_Ar_mc_AKGC417L__cycle_000",
+      "max_absolute_waveform_difference": 9.313225746154785e-10
+    },
+    {
+      "sample_id": "icbhi2017::114_1b4_Ar_mc_AKGC417L__cycle_001",
+      "max_absolute_waveform_difference": 9.313225746154785e-10
+    },
+    {
+      "sample_id": "icbhi2017::114_1b4_Ar_mc_AKGC417L__cycle_002",
+      "max_absolute_waveform_difference": 5.820766091346741e-11
+    },
+    {
+      "sample_id": "icbhi2017::114_1b4_Ar_mc_AKGC417L__cycle_003",
+      "max_absolute_waveform_difference": 4.656612873077393e-10
+    },
+    {
+      "sample_id": "icbhi2017::114_1b4_Ar_mc_AKGC417L__cycle_005",
+      "max_absolute_waveform_difference": 4.656612873077393e-10
+    },
+    {
+      "sample_id": "icbhi2017::114_1b4_Lr_mc_AKGC417L__cycle_000",
+      "max_absolute_waveform_difference": 4.656612873077393e-10
+    },
+    {
+      "sample_id": "icbhi2017::114_1b4_Lr_mc_AKGC417L__cycle_002",
+      "max_absolute_waveform_difference": 4.656612873077393e-10
+    },
+    {
+      "sample_id": "icbhi2017::114_1b4_Lr_mc_AKGC417L__cycle_003",
+      "max_absolute_waveform_difference": 9.313225746154785e-10
+    },
+    {
+      "sample_id": "icbhi2017::114_1b4_Pl_mc_AKGC417L__cycle_002",
+      "max_absolute_waveform_difference": 4.656612873077393e-10
+    },
+    {
+      "sample_id": "icbhi2017::114_1b4_Pl_mc_AKGC417L__cycle_003",
+      "max_absolute_waveform_difference": 1.1641532182693481e-10
+    },
+    {
+      "sample_id": "icbhi2017::114_1b4_Pl_mc_AKGC417L__cycle_004",
+      "max_absolute_waveform_difference": 1.1641532182693481e-10
+    },
+    {
+      "sample_id": "icbhi2017::114_1b4_Pl_mc_AKGC417L__cycle_005",
+      "max_absolute_waveform_difference": 1.862645149230957e-09
+    },
+    {
+      "sample_id": "icbhi2017::114_1b4_Pr_mc_AKGC417L__cycle_000",
+      "max_absolute_waveform_difference": 4.656612873077393e-10
+    },
+    {
+      "sample_id": "icbhi2017::114_1b4_Pr_mc_AKGC417L__cycle_001",
+      "max_absolute_waveform_difference": 9.313225746154785e-10
+    },
+    {
+      "sample_id": "icbhi2017::114_1b4_Pr_mc_AKGC417L__cycle_002",
+      "max_absolute_waveform_difference": 4.656612873077393e-10
+    },
+    {
+      "sample_id": "icbhi2017::114_1b4_Pr_mc_AKGC417L__cycle_003",
+      "max_absolute_waveform_difference": 9.313225746154785e-10
+    },
+    {
+      "sample_id": "icbhi2017::114_1b4_Pr_mc_AKGC417L__cycle_005",
+      "max_absolute_waveform_difference": 2.3283064365386963e-10
+    },
+    {
+      "sample_id": "icbhi2017::127_1b1_Ar_sc_Meditron__cycle_000",
+      "max_absolute_waveform_difference": 2.9802322387695312e-08
+    },
+    {
+      "sample_id": "icbhi2017::127_1b1_Ar_sc_Meditron__cycle_003",
+      "max_absolute_waveform_difference": 7.450580596923828e-09
+    },
+    {
+      "sample_id": "icbhi2017::132_2b1_Lr_mc_LittC2SE__cycle_001",
+      "max_absolute_waveform_difference": 1.862645149230957e-09
+    },
+    {
+      "sample_id": "icbhi2017::132_2b1_Lr_mc_LittC2SE__cycle_002",
+      "max_absolute_waveform_difference": 3.725290298461914e-09
+    },
+    {
+      "sample_id": "icbhi2017::132_2b1_Lr_mc_LittC2SE__cycle_003",
+      "max_absolute_waveform_difference": 1.862645149230957e-09
+    },
+    {
+      "sample_id": "icbhi2017::132_2b1_Lr_mc_LittC2SE__cycle_005",
+      "max_absolute_waveform_difference": 2.9802322387695312e-08
+    },
+    {
+      "sample_id": "icbhi2017::132_2b1_Lr_mc_LittC2SE__cycle_006",
+      "max_absolute_waveform_difference": 1.1641532182693481e-10
+    },
+    {
+      "sample_id": "icbhi2017::132_2b1_Lr_mc_LittC2SE__cycle_007",
+      "max_absolute_waveform_difference": 3.725290298461914e-09
+    },
+    {
+      "sample_id": "icbhi2017::132_2b2_Lr_mc_LittC2SE__cycle_001",
+      "max_absolute_waveform_difference": 5.960464477539063e-08
+    },
+    {
+      "sample_id": "icbhi2017::132_2b2_Lr_mc_LittC2SE__cycle_002",
+      "max_absolute_waveform_difference": 1.4901161193847656e-08
+    },
+    {
+      "sample_id": "icbhi2017::132_2b2_Lr_mc_LittC2SE__cycle_003",
+      "max_absolute_waveform_difference": 1.862645149230957e-09
+    },
+    {
+      "sample_id": "icbhi2017::132_2b2_Lr_mc_LittC2SE__cycle_004",
+      "max_absolute_waveform_difference": 9.313225746154785e-10
+    },
+    {
+      "sample_id": "icbhi2017::132_2b2_Lr_mc_LittC2SE__cycle_005",
+      "max_absolute_waveform_difference": 2.9802322387695312e-08
+    },
+    {
+      "sample_id": "icbhi2017::137_1b1_Ar_sc_Meditron__cycle_001",
+      "max_absolute_waveform_difference": 2.9802322387695312e-08
+    },
+    {
+      "sample_id": "icbhi2017::137_1b1_Ar_sc_Meditron__cycle_003",
+      "max_absolute_waveform_difference": 7.450580596923828e-09
+    },
+    {
+      "sample_id": "icbhi2017::137_1b1_Ar_sc_Meditron__cycle_005",
+      "max_absolute_waveform_difference": 1.862645149230957e-09
+    },
+    {
+      "sample_id": "icbhi2017::137_1b1_Ar_sc_Meditron__cycle_006",
+      "max_absolute_waveform_difference": 3.725290298461914e-09
+    },
+    {
+      "sample_id": "icbhi2017::137_1b1_Ll_sc_Meditron__cycle_001",
+      "max_absolute_waveform_difference": 9.313225746154785e-10
+    },
+    {
+      "sample_id": "icbhi2017::137_1b1_Ll_sc_Meditron__cycle_003",
+      "max_absolute_waveform_difference": 3.725290298461914e-09
+    },
+    {
+      "sample_id": "icbhi2017::137_1b1_Ll_sc_Meditron__cycle_005",
+      "max_absolute_waveform_difference": 7.450580596923828e-09
+    },
+    {
+      "sample_id": "icbhi2017::137_1b1_Ll_sc_Meditron__cycle_007",
+      "max_absolute_waveform_difference": 1.862645149230957e-09
+    },
+    {
+      "sample_id": "icbhi2017::137_1b1_Ll_sc_Meditron__cycle_008",
+      "max_absolute_waveform_difference": 1.862645149230957e-09
+    },
+    {
+      "sample_id": "icbhi2017::138_1p2_Al_mc_AKGC417L__cycle_000",
+      "max_absolute_waveform_difference": 9.313225746154785e-10
+    },
+    {
+      "sample_id": "icbhi2017::138_1p2_Al_mc_AKGC417L__cycle_001",
+      "max_absolute_waveform_difference": 3.725290298461914e-09
+    },
+    {
+      "sample_id": "icbhi2017::138_1p2_Al_mc_AKGC417L__cycle_002",
+      "max_absolute_waveform_difference": 9.313225746154785e-10
+    },
+    {
+      "sample_id": "icbhi2017::138_1p2_Al_mc_AKGC417L__cycle_003",
+      "max_absolute_waveform_difference": 4.656612873077393e-10
+    },
+    {
+      "sample_id": "icbhi2017::138_1p2_Al_mc_AKGC417L__cycle_004",
+      "max_absolute_waveform_difference": 1.862645149230957e-09
+    },
+    {
+      "sample_id": "icbhi2017::138_1p2_Ar_mc_AKGC417L__cycle_000",
+      "max_absolute_waveform_difference": 4.656612873077393e-10
+    },
+    {
+      "sample_id": "icbhi2017::138_1p2_Ar_mc_AKGC417L__cycle_001",
+      "max_absolute_waveform_difference": 3.725290298461914e-09
+    },
+    {
+      "sample_id": "icbhi2017::138_1p2_Ar_mc_AKGC417L__cycle_002",
+      "max_absolute_waveform_difference": 5.960464477539063e-08
+    },
+    {
+      "sample_id": "icbhi2017::138_1p2_Ar_mc_AKGC417L__cycle_003",
+      "max_absolute_waveform_difference": 4.656612873077393e-10
+    },
+    {
+      "sample_id": "icbhi2017::138_1p2_Ar_mc_AKGC417L__cycle_004",
+      "max_absolute_waveform_difference": 4.656612873077393e-10
+    },
+    {
+      "sample_id": "icbhi2017::138_1p2_Ll_mc_AKGC417L__cycle_000",
+      "max_absolute_waveform_difference": 9.313225746154785e-10
+    },
+    {
+      "sample_id": "icbhi2017::138_1p2_Ll_mc_AKGC417L__cycle_001",
+      "max_absolute_waveform_difference": 9.313225746154785e-10
+    },
+    {
+      "sample_id": "icbhi2017::138_1p2_Ll_mc_AKGC417L__cycle_002",
+      "max_absolute_waveform_difference": 7.450580596923828e-09
+    },
+    {
+      "sample_id": "icbhi2017::138_1p2_Ll_mc_AKGC417L__cycle_003",
+      "max_absolute_waveform_difference": 9.313225746154785e-10
+    },
+    {
+      "sample_id": "icbhi2017::138_1p2_Ll_mc_AKGC417L__cycle_004",
+      "max_absolute_waveform_difference": 9.313225746154785e-10
+    },
+    {
+      "sample_id": "icbhi2017::138_1p2_Lr_mc_AKGC417L__cycle_000",
+      "max_absolute_waveform_difference": 1.4901161193847656e-08
+    },
+    {
+      "sample_id": "icbhi2017::138_1p2_Lr_mc_AKGC417L__cycle_001",
+      "max_absolute_waveform_difference": 7.450580596923828e-09
+    },
+    {
+      "sample_id": "icbhi2017::138_1p2_Lr_mc_AKGC417L__cycle_002",
+      "max_absolute_waveform_difference": 9.313225746154785e-10
+    },
+    {
+      "sample_id": "icbhi2017::138_1p2_Lr_mc_AKGC417L__cycle_003",
+      "max_absolute_waveform_difference": 9.313225746154785e-10
+    },
+    {
+      "sample_id": "icbhi2017::138_1p2_Lr_mc_AKGC417L__cycle_004",
+      "max_absolute_waveform_difference": 4.656612873077393e-10
+    },
+    {
+      "sample_id": "icbhi2017::138_1p2_Pl_mc_AKGC417L__cycle_000",
+      "max_absolute_waveform_difference": 1.862645149230957e-09
+    },
+    {
+      "sample_id": "icbhi2017::138_1p2_Pl_mc_AKGC417L__cycle_002",
+      "max_absolute_waveform_difference": 2.9802322387695312e-08
+    },
+    {
+      "sample_id": "icbhi2017::138_1p2_Pl_mc_AKGC417L__cycle_003",
+      "max_absolute_waveform_difference": 9.313225746154785e-10
+    },
+    {
+      "sample_id": "icbhi2017::138_1p2_Pl_mc_AKGC417L__cycle_004",
+      "max_absolute_waveform_difference": 1.862645149230957e-09
+    },
+    {
+      "sample_id": "icbhi2017::138_1p2_Pr_mc_AKGC417L__cycle_000",
+      "max_absolute_waveform_difference": 1.862645149230957e-09
+    },
+    {
+      "sample_id": "icbhi2017::138_1p2_Pr_mc_AKGC417L__cycle_001",
+      "max_absolute_waveform_difference": 7.450580596923828e-09
+    },
+    {
+      "sample_id": "icbhi2017::138_1p2_Pr_mc_AKGC417L__cycle_002",
+      "max_absolute_waveform_difference": 9.313225746154785e-10
+    },
+    {
+      "sample_id": "icbhi2017::138_1p2_Pr_mc_AKGC417L__cycle_003",
+      "max_absolute_waveform_difference": 2.9103830456733704e-11
+    },
+    {
+      "sample_id": "icbhi2017::138_1p2_Pr_mc_AKGC417L__cycle_004",
+      "max_absolute_waveform_difference": 4.656612873077393e-10
+    },
+    {
+      "sample_id": "icbhi2017::138_1p2_Tc_mc_AKGC417L__cycle_000",
+      "max_absolute_waveform_difference": 9.313225746154785e-10
+    },
+    {
+      "sample_id": "icbhi2017::138_1p2_Tc_mc_AKGC417L__cycle_001",
+      "max_absolute_waveform_difference": 4.656612873077393e-10
+    },
+    {
+      "sample_id": "icbhi2017::138_1p2_Tc_mc_AKGC417L__cycle_002",
+      "max_absolute_waveform_difference": 2.3283064365386963e-10
+    },
+    {
+      "sample_id": "icbhi2017::138_1p2_Tc_mc_AKGC417L__cycle_003",
+      "max_absolute_waveform_difference": 4.656612873077393e-10
+    },
+    {
+      "sample_id": "icbhi2017::138_1p2_Tc_mc_AKGC417L__cycle_004",
+      "max_absolute_waveform_difference": 1.862645149230957e-09
+    },
+    {
+      "sample_id": "icbhi2017::138_1p3_Al_mc_AKGC417L__cycle_000",
+      "max_absolute_waveform_difference": 1.862645149230957e-09
+    },
+    {
+      "sample_id": "icbhi2017::138_1p3_Al_mc_AKGC417L__cycle_001",
+      "max_absolute_waveform_difference": 9.313225746154785e-10
+    },
+    {
+      "sample_id": "icbhi2017::138_1p3_Al_mc_AKGC417L__cycle_003",
+      "max_absolute_waveform_difference": 9.313225746154785e-10
+    },
+    {
+      "sample_id": "icbhi2017::138_1p3_Al_mc_AKGC417L__cycle_004",
+      "max_absolute_waveform_difference": 4.656612873077393e-10
+    },
+    {
+      "sample_id": "icbhi2017::138_1p3_Ar_mc_AKGC417L__cycle_000",
+      "max_absolute_waveform_difference": 7.450580596923828e-09
+    },
+    {
+      "sample_id": "icbhi2017::138_1p3_Ar_mc_AKGC417L__cycle_001",
+      "max_absolute_waveform_difference": 1.862645149230957e-09
+    },
+    {
+      "sample_id": "icbhi2017::138_1p3_Ar_mc_AKGC417L__cycle_002",
+      "max_absolute_waveform_difference": 1.862645149230957e-09
+    },
+    {
+      "sample_id": "icbhi2017::138_1p3_Ar_mc_AKGC417L__cycle_003",
+      "max_absolute_waveform_difference": 3.725290298461914e-09
+    },
+    {
+      "sample_id": "icbhi2017::138_1p3_Ar_mc_AKGC417L__cycle_004",
+      "max_absolute_waveform_difference": 1.862645149230957e-09
+    },
+    {
+      "sample_id": "icbhi2017::138_1p3_Ll_mc_AKGC417L__cycle_000",
+      "max_absolute_waveform_difference": 9.313225746154785e-10
+    },
+    {
+      "sample_id": "icbhi2017::138_1p3_Ll_mc_AKGC417L__cycle_001",
+      "max_absolute_waveform_difference": 3.725290298461914e-09
+    },
+    {
+      "sample_id": "icbhi2017::138_1p3_Ll_mc_AKGC417L__cycle_003",
+      "max_absolute_waveform_difference": 4.656612873077393e-10
+    },
+    {
+      "sample_id": "icbhi2017::138_1p3_Ll_mc_AKGC417L__cycle_004",
+      "max_absolute_waveform_difference": 9.313225746154785e-10
+    },
+    {
+      "sample_id": "icbhi2017::138_1p3_Lr_mc_AKGC417L__cycle_000",
+      "max_absolute_waveform_difference": 3.725290298461914e-09
+    },
+    {
+      "sample_id": "icbhi2017::138_1p3_Lr_mc_AKGC417L__cycle_001",
+      "max_absolute_waveform_difference": 2.3283064365386963e-10
+    },
+    {
+      "sample_id": "icbhi2017::138_1p3_Lr_mc_AKGC417L__cycle_002",
+      "max_absolute_waveform_difference": 1.1641532182693481e-10
+    },
+    {
+      "sample_id": "icbhi2017::138_1p3_Lr_mc_AKGC417L__cycle_003",
+      "max_absolute_waveform_difference": 1.862645149230957e-09
+    },
+    {
+      "sample_id": "icbhi2017::138_1p3_Lr_mc_AKGC417L__cycle_004",
+      "max_absolute_waveform_difference": 3.725290298461914e-09
+    },
+    {
+      "sample_id": "icbhi2017::138_1p3_Pl_mc_AKGC417L__cycle_000",
+      "max_absolute_waveform_difference": 1.862645149230957e-09
+    },
+    {
+      "sample_id": "icbhi2017::138_1p3_Pl_mc_AKGC417L__cycle_001",
+      "max_absolute_waveform_difference": 9.313225746154785e-10
+    },
+    {
+      "sample_id": "icbhi2017::138_1p3_Pl_mc_AKGC417L__cycle_002",
+      "max_absolute_waveform_difference": 7.450580596923828e-09
+    },
+    {
+      "sample_id": "icbhi2017::138_1p3_Pl_mc_AKGC417L__cycle_003",
+      "max_absolute_waveform_difference": 1.4901161193847656e-08
+    },
+    {
+      "sample_id": "icbhi2017::138_1p3_Pl_mc_AKGC417L__cycle_004",
+      "max_absolute_waveform_difference": 4.656612873077393e-10
+    },
+    {
+      "sample_id": "icbhi2017::138_1p3_Pr_mc_AKGC417L__cycle_000",
+      "max_absolute_waveform_difference": 1.862645149230957e-09
+    },
+    {
+      "sample_id": "icbhi2017::138_1p3_Pr_mc_AKGC417L__cycle_001",
+      "max_absolute_waveform_difference": 2.3283064365386963e-10
+    },
+    {
+      "sample_id": "icbhi2017::138_1p3_Pr_mc_AKGC417L__cycle_002",
+      "max_absolute_waveform_difference": 4.656612873077393e-10
+    },
+    {
+      "sample_id": "icbhi2017::138_1p3_Pr_mc_AKGC417L__cycle_003",
+      "max_absolute_waveform_difference": 3.725290298461914e-09
+    },
+    {
+      "sample_id": "icbhi2017::138_1p3_Tc_mc_AKGC417L__cycle_000",
+      "max_absolute_waveform_difference": 7.450580596923828e-09
+    },
+    {
+      "sample_id": "icbhi2017::138_1p3_Tc_mc_AKGC417L__cycle_001",
+      "max_absolute_waveform_difference": 4.656612873077393e-10
+    },
+    {
+      "sample_id": "icbhi2017::138_1p3_Tc_mc_AKGC417L__cycle_002",
+      "max_absolute_waveform_difference": 9.313225746154785e-10
+    },
+    {
+      "sample_id": "icbhi2017::138_1p3_Tc_mc_AKGC417L__cycle_003",
+      "max_absolute_waveform_difference": 1.862645149230957e-09
+    },
+    {
+      "sample_id": "icbhi2017::138_1p3_Tc_mc_AKGC417L__cycle_004",
+      "max_absolute_waveform_difference": 3.725290298461914e-09
+    },
+    {
+      "sample_id": "icbhi2017::138_1p4_Ar_mc_AKGC417L__cycle_000",
+      "max_absolute_waveform_difference": 7.450580596923828e-09
+    },
+    {
+      "sample_id": "icbhi2017::138_1p4_Ar_mc_AKGC417L__cycle_001",
+      "max_absolute_waveform_difference": 9.313225746154785e-10
+    },
+    {
+      "sample_id": "icbhi2017::138_1p4_Ar_mc_AKGC417L__cycle_002",
+      "max_absolute_waveform_difference": 1.862645149230957e-09
+    },
+    {
+      "sample_id": "icbhi2017::138_1p4_Ar_mc_AKGC417L__cycle_003",
+      "max_absolute_waveform_difference": 9.313225746154785e-10
+    },
+    {
+      "sample_id": "icbhi2017::138_1p4_Ll_mc_AKGC417L__cycle_000",
+      "max_absolute_waveform_difference": 9.313225746154785e-10
+    },
+    {
+      "sample_id": "icbhi2017::138_1p4_Ll_mc_AKGC417L__cycle_001",
+      "max_absolute_waveform_difference": 9.313225746154785e-10
+    },
+    {
+      "sample_id": "icbhi2017::138_1p4_Lr_mc_AKGC417L__cycle_001",
+      "max_absolute_waveform_difference": 9.313225746154785e-10
+    },
+    {
+      "sample_id": "icbhi2017::138_1p4_Lr_mc_AKGC417L__cycle_002",
+      "max_absolute_waveform_difference": 1.862645149230957e-09
+    },
+    {
+      "sample_id": "icbhi2017::138_1p4_Lr_mc_AKGC417L__cycle_003",
+      "max_absolute_waveform_difference": 1.862645149230957e-09
+    },
+    {
+      "sample_id": "icbhi2017::138_1p4_Pl_mc_AKGC417L__cycle_001",
+      "max_absolute_waveform_difference": 1.4901161193847656e-08
+    },
+    {
+      "sample_id": "icbhi2017::138_1p4_Pl_mc_AKGC417L__cycle_002",
+      "max_absolute_waveform_difference": 3.725290298461914e-09
+    },
+    {
+      "sample_id": "icbhi2017::138_1p4_Pr_mc_AKGC417L__cycle_001",
+      "max_absolute_waveform_difference": 1.862645149230957e-09
+    },
+    {
+      "sample_id": "icbhi2017::138_1p4_Pr_mc_AKGC417L__cycle_002",
+      "max_absolute_waveform_difference": 9.313225746154785e-10
+    },
+    {
+      "sample_id": "icbhi2017::138_1p4_Pr_mc_AKGC417L__cycle_003",
+      "max_absolute_waveform_difference": 3.725290298461914e-09
+    },
+    {
+      "sample_id": "icbhi2017::138_1p4_Tc_mc_AKGC417L__cycle_000",
+      "max_absolute_waveform_difference": 4.656612873077393e-10
+    },
+    {
+      "sample_id": "icbhi2017::138_1p4_Tc_mc_AKGC417L__cycle_001",
+      "max_absolute_waveform_difference": 9.313225746154785e-10
+    },
+    {
+      "sample_id": "icbhi2017::138_1p4_Tc_mc_AKGC417L__cycle_002",
+      "max_absolute_waveform_difference": 9.313225746154785e-10
+    },
+    {
+      "sample_id": "icbhi2017::138_2p2_Al_mc_AKGC417L__cycle_001",
+      "max_absolute_waveform_difference": 9.313225746154785e-10
+    },
+    {
+      "sample_id": "icbhi2017::138_2p2_Al_mc_AKGC417L__cycle_002",
+      "max_absolute_waveform_difference": 3.725290298461914e-09
+    },
+    {
+      "sample_id": "icbhi2017::138_2p2_Al_mc_AKGC417L__cycle_003",
+      "max_absolute_waveform_difference": 3.725290298461914e-09
+    },
+    {
+      "sample_id": "icbhi2017::138_2p2_Al_mc_AKGC417L__cycle_004",
+      "max_absolute_waveform_difference": 3.725290298461914e-09
+    },
+    {
+      "sample_id": "icbhi2017::138_2p2_Ar_mc_AKGC417L__cycle_001",
+      "max_absolute_waveform_difference": 4.656612873077393e-10
+    },
+    {
+      "sample_id": "icbhi2017::138_2p2_Ar_mc_AKGC417L__cycle_002",
+      "max_absolute_waveform_difference": 9.313225746154785e-10
+    },
+    {
+      "sample_id": "icbhi2017::138_2p2_Ar_mc_AKGC417L__cycle_003",
+      "max_absolute_waveform_difference": 7.450580596923828e-09
+    },
+    {
+      "sample_id": "icbhi2017::138_2p2_Ar_mc_AKGC417L__cycle_004",
+      "max_absolute_waveform_difference": 9.313225746154785e-10
+    },
+    {
+      "sample_id": "icbhi2017::138_2p2_Ar_mc_AKGC417L__cycle_005",
+      "max_absolute_waveform_difference": 1.862645149230957e-09
+    },
+    {
+      "sample_id": "icbhi2017::138_2p2_Ll_mc_AKGC417L__cycle_001",
+      "max_absolute_waveform_difference": 4.656612873077393e-10
+    },
+    {
+      "sample_id": "icbhi2017::138_2p2_Ll_mc_AKGC417L__cycle_002",
+      "max_absolute_waveform_difference": 7.450580596923828e-09
+    },
+    {
+      "sample_id": "icbhi2017::138_2p2_Ll_mc_AKGC417L__cycle_004",
+      "max_absolute_waveform_difference": 4.656612873077393e-10
+    },
+    {
+      "sample_id": "icbhi2017::138_2p2_Ll_mc_AKGC417L__cycle_005",
+      "max_absolute_waveform_difference": 9.313225746154785e-10
+    },
+    {
+      "sample_id": "icbhi2017::138_2p2_Lr_mc_AKGC417L__cycle_001",
+      "max_absolute_waveform_difference": 1.862645149230957e-09
+    },
+    {
+      "sample_id": "icbhi2017::138_2p2_Lr_mc_AKGC417L__cycle_003",
+      "max_absolute_waveform_difference": 1.1920928955078125e-07
+    },
+    {
+      "sample_id": "icbhi2017::138_2p2_Lr_mc_AKGC417L__cycle_004",
+      "max_absolute_waveform_difference": 4.656612873077393e-10
+    },
+    {
+      "sample_id": "icbhi2017::138_2p2_Lr_mc_AKGC417L__cycle_005",
+      "max_absolute_waveform_difference": 4.656612873077393e-10
+    },
+    {
+      "sample_id": "icbhi2017::138_2p2_Pl_mc_AKGC417L__cycle_001",
+      "max_absolute_waveform_difference": 4.656612873077393e-10
+    },
+    {
+      "sample_id": "icbhi2017::138_2p2_Pl_mc_AKGC417L__cycle_003",
+      "max_absolute_waveform_difference": 7.450580596923828e-09
+    },
+    {
+      "sample_id": "icbhi2017::138_2p2_Pl_mc_AKGC417L__cycle_004",
+      "max_absolute_waveform_difference": 1.862645149230957e-09
+    },
+    {
+      "sample_id": "icbhi2017::138_2p2_Pr_mc_AKGC417L__cycle_001",
+      "max_absolute_waveform_difference": 9.313225746154785e-10
+    },
+    {
+      "sample_id": "icbhi2017::138_2p2_Pr_mc_AKGC417L__cycle_002",
+      "max_absolute_waveform_difference": 3.725290298461914e-09
+    },
+    {
+      "sample_id": "icbhi2017::138_2p2_Pr_mc_AKGC417L__cycle_003",
+      "max_absolute_waveform_difference": 1.862645149230957e-09
+    },
+    {
+      "sample_id": "icbhi2017::138_2p2_Pr_mc_AKGC417L__cycle_005",
+      "max_absolute_waveform_difference": 3.725290298461914e-09
+    },
+    {
+      "sample_id": "icbhi2017::138_2p2_Tc_mc_AKGC417L__cycle_001",
+      "max_absolute_waveform_difference": 1.4901161193847656e-08
+    },
+    {
+      "sample_id": "icbhi2017::138_2p2_Tc_mc_AKGC417L__cycle_002",
+      "max_absolute_waveform_difference": 1.862645149230957e-09
+    },
+    {
+      "sample_id": "icbhi2017::138_2p2_Tc_mc_AKGC417L__cycle_003",
+      "max_absolute_waveform_difference": 9.313225746154785e-10
+    },
+    {
+      "sample_id": "icbhi2017::138_2p2_Tc_mc_AKGC417L__cycle_004",
+      "max_absolute_waveform_difference": 1.862645149230957e-09
+    },
+    {
+      "sample_id": "icbhi2017::138_2p2_Tc_mc_AKGC417L__cycle_005",
+      "max_absolute_waveform_difference": 9.313225746154785e-10
+    },
+    {
+      "sample_id": "icbhi2017::180_1b4_Al_mc_AKGC417L__cycle_000",
+      "max_absolute_waveform_difference": 4.656612873077393e-10
+    },
+    {
+      "sample_id": "icbhi2017::180_1b4_Al_mc_AKGC417L__cycle_002",
+      "max_absolute_waveform_difference": 4.656612873077393e-10
+    },
+    {
+      "sample_id": "icbhi2017::180_1b4_Al_mc_AKGC417L__cycle_003",
+      "max_absolute_waveform_difference": 9.313225746154785e-10
+    },
+    {
+      "sample_id": "icbhi2017::180_1b4_Al_mc_AKGC417L__cycle_004",
+      "max_absolute_waveform_difference": 3.725290298461914e-09
+    },
+    {
+      "sample_id": "icbhi2017::180_1b4_Ar_mc_AKGC417L__cycle_000",
+      "max_absolute_waveform_difference": 3.725290298461914e-09
+    },
+    {
+      "sample_id": "icbhi2017::180_1b4_Ar_mc_AKGC417L__cycle_002",
+      "max_absolute_waveform_difference": 9.313225746154785e-10
+    },
+    {
+      "sample_id": "icbhi2017::180_1b4_Ar_mc_AKGC417L__cycle_003",
+      "max_absolute_waveform_difference": 1.862645149230957e-09
+    },
+    {
+      "sample_id": "icbhi2017::180_1b4_Ar_mc_AKGC417L__cycle_004",
+      "max_absolute_waveform_difference": 4.656612873077393e-10
+    },
+    {
+      "sample_id": "icbhi2017::180_1b4_Lr_mc_AKGC417L__cycle_000",
+      "max_absolute_waveform_difference": 1.4901161193847656e-08
+    },
+    {
+      "sample_id": "icbhi2017::180_1b4_Lr_mc_AKGC417L__cycle_001",
+      "max_absolute_waveform_difference": 4.656612873077393e-10
+    },
+    {
+      "sample_id": "icbhi2017::180_1b4_Lr_mc_AKGC417L__cycle_003",
+      "max_absolute_waveform_difference": 1.862645149230957e-09
+    },
+    {
+      "sample_id": "icbhi2017::180_1b4_Lr_mc_AKGC417L__cycle_004",
+      "max_absolute_waveform_difference": 9.313225746154785e-10
+    },
+    {
+      "sample_id": "icbhi2017::180_1b4_Pl_mc_AKGC417L__cycle_000",
+      "max_absolute_waveform_difference": 7.450580596923828e-09
+    },
+    {
+      "sample_id": "icbhi2017::180_1b4_Pl_mc_AKGC417L__cycle_001",
+      "max_absolute_waveform_difference": 9.313225746154785e-10
+    },
+    {
+      "sample_id": "icbhi2017::180_1b4_Pl_mc_AKGC417L__cycle_002",
+      "max_absolute_waveform_difference": 4.656612873077393e-10
+    },
+    {
+      "sample_id": "icbhi2017::180_1b4_Pr_mc_AKGC417L__cycle_000",
+      "max_absolute_waveform_difference": 2.3283064365386963e-10
+    },
+    {
+      "sample_id": "icbhi2017::180_1b4_Pr_mc_AKGC417L__cycle_001",
+      "max_absolute_waveform_difference": 1.1641532182693481e-10
+    },
+    {
+      "sample_id": "icbhi2017::180_1b4_Pr_mc_AKGC417L__cycle_002",
+      "max_absolute_waveform_difference": 4.656612873077393e-10
+    },
+    {
+      "sample_id": "icbhi2017::180_1b4_Pr_mc_AKGC417L__cycle_003",
+      "max_absolute_waveform_difference": 9.313225746154785e-10
+    },
+    {
+      "sample_id": "icbhi2017::180_1b4_Pr_mc_AKGC417L__cycle_004",
+      "max_absolute_waveform_difference": 2.3283064365386963e-10
+    },
+    {
+      "sample_id": "icbhi2017::191_2b1_Pl_mc_LittC2SE__cycle_000",
+      "max_absolute_waveform_difference": 3.725290298461914e-09
+    },
+    {
+      "sample_id": "icbhi2017::191_2b1_Pl_mc_LittC2SE__cycle_001",
+      "max_absolute_waveform_difference": 4.656612873077393e-10
+    },
+    {
+      "sample_id": "icbhi2017::191_2b1_Pl_mc_LittC2SE__cycle_002",
+      "max_absolute_waveform_difference": 1.4901161193847656e-08
+    },
+    {
+      "sample_id": "icbhi2017::191_2b1_Pl_mc_LittC2SE__cycle_003",
+      "max_absolute_waveform_difference": 3.725290298461914e-09
+    },
+    {
+      "sample_id": "icbhi2017::191_2b1_Pl_mc_LittC2SE__cycle_006",
+      "max_absolute_waveform_difference": 7.450580596923828e-09
+    },
+    {
+      "sample_id": "icbhi2017::191_2b1_Pr_mc_LittC2SE__cycle_000",
+      "max_absolute_waveform_difference": 3.725290298461914e-09
+    },
+    {
+      "sample_id": "icbhi2017::191_2b1_Pr_mc_LittC2SE__cycle_001",
+      "max_absolute_waveform_difference": 1.862645149230957e-09
+    },
+    {
+      "sample_id": "icbhi2017::191_2b1_Pr_mc_LittC2SE__cycle_002",
+      "max_absolute_waveform_difference": 7.450580596923828e-09
+    },
+    {
+      "sample_id": "icbhi2017::191_2b1_Pr_mc_LittC2SE__cycle_003",
+      "max_absolute_waveform_difference": 1.4901161193847656e-08
+    },
+    {
+      "sample_id": "icbhi2017::191_2b1_Pr_mc_LittC2SE__cycle_004",
+      "max_absolute_waveform_difference": 7.450580596923828e-09
+    },
+    {
+      "sample_id": "icbhi2017::191_2b1_Pr_mc_LittC2SE__cycle_005",
+      "max_absolute_waveform_difference": 1.862645149230957e-09
+    },
+    {
+      "sample_id": "icbhi2017::191_2b2_Tc_mc_LittC2SE__cycle_001",
+      "max_absolute_waveform_difference": 7.450580596923828e-09
+    },
+    {
+      "sample_id": "icbhi2017::191_2b2_Tc_mc_LittC2SE__cycle_004",
+      "max_absolute_waveform_difference": 9.313225746154785e-10
+    },
+    {
+      "sample_id": "icbhi2017::196_1b1_Pr_sc_Meditron__cycle_000",
+      "max_absolute_waveform_difference": 4.656612873077393e-10
+    },
+    {
+      "sample_id": "icbhi2017::196_1b1_Pr_sc_Meditron__cycle_001",
+      "max_absolute_waveform_difference": 9.313225746154785e-10
+    },
+    {
+      "sample_id": "icbhi2017::196_1b1_Pr_sc_Meditron__cycle_002",
+      "max_absolute_waveform_difference": 4.656612873077393e-10
+    },
+    {
+      "sample_id": "icbhi2017::196_1b1_Pr_sc_Meditron__cycle_003",
+      "max_absolute_waveform_difference": 3.725290298461914e-09
+    },
+    {
+      "sample_id": "icbhi2017::196_1b1_Pr_sc_Meditron__cycle_004",
+      "max_absolute_waveform_difference": 1.862645149230957e-09
+    },
+    {
+      "sample_id": "icbhi2017::196_1b1_Pr_sc_Meditron__cycle_005",
+      "max_absolute_waveform_difference": 4.656612873077393e-10
+    },
+    {
+      "sample_id": "icbhi2017::213_1p2_Al_mc_AKGC417L__cycle_000",
+      "max_absolute_waveform_difference": 4.656612873077393e-10
+    },
+    {
+      "sample_id": "icbhi2017::213_1p2_Al_mc_AKGC417L__cycle_003",
+      "max_absolute_waveform_difference": 1.862645149230957e-09
+    },
+    {
+      "sample_id": "icbhi2017::213_1p2_Al_mc_AKGC417L__cycle_004",
+      "max_absolute_waveform_difference": 9.313225746154785e-10
+    },
+    {
+      "sample_id": "icbhi2017::213_1p2_Al_mc_AKGC417L__cycle_005",
+      "max_absolute_waveform_difference": 7.450580596923828e-09
+    },
+    {
+      "sample_id": "icbhi2017::213_1p2_Ar_mc_AKGC417L__cycle_000",
+      "max_absolute_waveform_difference": 4.656612873077393e-10
+    },
+    {
+      "sample_id": "icbhi2017::213_1p2_Ar_mc_AKGC417L__cycle_001",
+      "max_absolute_waveform_difference": 9.313225746154785e-10
+    },
+    {
+      "sample_id": "icbhi2017::213_1p2_Ar_mc_AKGC417L__cycle_003",
+      "max_absolute_waveform_difference": 1.862645149230957e-09
+    },
+    {
+      "sample_id": "icbhi2017::213_1p2_Lr_mc_AKGC417L__cycle_000",
+      "max_absolute_waveform_difference": 4.656612873077393e-10
+    },
+    {
+      "sample_id": "icbhi2017::213_1p2_Lr_mc_AKGC417L__cycle_001",
+      "max_absolute_waveform_difference": 4.656612873077393e-10
+    },
+    {
+      "sample_id": "icbhi2017::213_1p2_Lr_mc_AKGC417L__cycle_002",
+      "max_absolute_waveform_difference": 1.862645149230957e-09
+    },
+    {
+      "sample_id": "icbhi2017::213_1p2_Lr_mc_AKGC417L__cycle_004",
+      "max_absolute_waveform_difference": 4.656612873077393e-10
+    },
+    {
+      "sample_id": "icbhi2017::213_1p2_Lr_mc_AKGC417L__cycle_005",
+      "max_absolute_waveform_difference": 4.656612873077393e-10
+    },
+    {
+      "sample_id": "icbhi2017::213_1p2_Pl_mc_AKGC417L__cycle_000",
+      "max_absolute_waveform_difference": 5.820766091346741e-11
+    },
+    {
+      "sample_id": "icbhi2017::213_1p2_Pl_mc_AKGC417L__cycle_001",
+      "max_absolute_waveform_difference": 4.656612873077393e-10
+    },
+    {
+      "sample_id": "icbhi2017::213_1p2_Pl_mc_AKGC417L__cycle_003",
+      "max_absolute_waveform_difference": 2.9802322387695312e-08
+    },
+    {
+      "sample_id": "icbhi2017::213_1p2_Pl_mc_AKGC417L__cycle_004",
+      "max_absolute_waveform_difference": 9.313225746154785e-10
+    },
+    {
+      "sample_id": "icbhi2017::213_1p2_Pr_mc_AKGC417L__cycle_000",
+      "max_absolute_waveform_difference": 9.313225746154785e-10
+    },
+    {
+      "sample_id": "icbhi2017::213_1p2_Pr_mc_AKGC417L__cycle_001",
+      "max_absolute_waveform_difference": 9.313225746154785e-10
+    },
+    {
+      "sample_id": "icbhi2017::213_1p2_Pr_mc_AKGC417L__cycle_002",
+      "max_absolute_waveform_difference": 5.960464477539063e-08
+    },
+    {
+      "sample_id": "icbhi2017::213_1p2_Pr_mc_AKGC417L__cycle_003",
+      "max_absolute_waveform_difference": 7.450580596923828e-09
+    },
+    {
+      "sample_id": "icbhi2017::213_1p2_Pr_mc_AKGC417L__cycle_004",
+      "max_absolute_waveform_difference": 9.313225746154785e-10
+    },
+    {
+      "sample_id": "icbhi2017::213_1p2_Pr_mc_AKGC417L__cycle_005",
+      "max_absolute_waveform_difference": 4.656612873077393e-10
+    },
+    {
+      "sample_id": "icbhi2017::213_1p2_Tc_mc_AKGC417L__cycle_000",
+      "max_absolute_waveform_difference": 2.3283064365386963e-10
+    },
+    {
+      "sample_id": "icbhi2017::213_1p2_Tc_mc_AKGC417L__cycle_002",
+      "max_absolute_waveform_difference": 2.3283064365386963e-10
+    },
+    {
+      "sample_id": "icbhi2017::213_1p2_Tc_mc_AKGC417L__cycle_003",
+      "max_absolute_waveform_difference": 4.656612873077393e-10
+    },
+    {
+      "sample_id": "icbhi2017::213_1p3_Al_mc_AKGC417L__cycle_000",
+      "max_absolute_waveform_difference": 1.862645149230957e-09
+    },
+    {
+      "sample_id": "icbhi2017::213_1p3_Al_mc_AKGC417L__cycle_002",
+      "max_absolute_waveform_difference": 1.4901161193847656e-08
+    },
+    {
+      "sample_id": "icbhi2017::213_1p3_Al_mc_AKGC417L__cycle_003",
+      "max_absolute_waveform_difference": 1.4901161193847656e-08
+    },
+    {
+      "sample_id": "icbhi2017::213_1p3_Al_mc_AKGC417L__cycle_004",
+      "max_absolute_waveform_difference": 1.862645149230957e-09
+    },
+    {
+      "sample_id": "icbhi2017::213_1p3_Al_mc_AKGC417L__cycle_005",
+      "max_absolute_waveform_difference": 1.862645149230957e-09
+    },
+    {
+      "sample_id": "icbhi2017::213_1p3_Ar_mc_AKGC417L__cycle_000",
+      "max_absolute_waveform_difference": 1.862645149230957e-09
+    },
+    {
+      "sample_id": "icbhi2017::213_1p3_Ar_mc_AKGC417L__cycle_001",
+      "max_absolute_waveform_difference": 9.313225746154785e-10
+    },
+    {
+      "sample_id": "icbhi2017::213_1p3_Ar_mc_AKGC417L__cycle_002",
+      "max_absolute_waveform_difference": 7.450580596923828e-09
+    },
+    {
+      "sample_id": "icbhi2017::213_1p3_Ar_mc_AKGC417L__cycle_003",
+      "max_absolute_waveform_difference": 3.725290298461914e-09
+    },
+    {
+      "sample_id": "icbhi2017::213_1p3_Ar_mc_AKGC417L__cycle_004",
+      "max_absolute_waveform_difference": 9.313225746154785e-10
+    },
+    {
+      "sample_id": "icbhi2017::213_1p3_Pl_mc_AKGC417L__cycle_000",
+      "max_absolute_waveform_difference": 7.450580596923828e-09
+    },
+    {
+      "sample_id": "icbhi2017::213_1p3_Pl_mc_AKGC417L__cycle_001",
+      "max_absolute_waveform_difference": 3.725290298461914e-09
+    },
+    {
+      "sample_id": "icbhi2017::213_1p3_Pl_mc_AKGC417L__cycle_002",
+      "max_absolute_waveform_difference": 3.725290298461914e-09
+    },
+    {
+      "sample_id": "icbhi2017::213_1p3_Pl_mc_AKGC417L__cycle_005",
+      "max_absolute_waveform_difference": 1.862645149230957e-09
+    },
+    {
+      "sample_id": "icbhi2017::213_1p3_Pr_mc_AKGC417L__cycle_000",
+      "max_absolute_waveform_difference": 1.862645149230957e-09
+    },
+    {
+      "sample_id": "icbhi2017::213_1p3_Pr_mc_AKGC417L__cycle_001",
+      "max_absolute_waveform_difference": 1.862645149230957e-09
+    },
+    {
+      "sample_id": "icbhi2017::213_1p3_Pr_mc_AKGC417L__cycle_002",
+      "max_absolute_waveform_difference": 1.862645149230957e-09
+    },
+    {
+      "sample_id": "icbhi2017::213_1p3_Pr_mc_AKGC417L__cycle_003",
+      "max_absolute_waveform_difference": 2.9802322387695312e-08
+    },
+    {
+      "sample_id": "icbhi2017::213_1p3_Pr_mc_AKGC417L__cycle_004",
+      "max_absolute_waveform_difference": 1.862645149230957e-09
+    },
+    {
+      "sample_id": "icbhi2017::213_1p3_Pr_mc_AKGC417L__cycle_005",
+      "max_absolute_waveform_difference": 9.313225746154785e-10
+    },
+    {
+      "sample_id": "icbhi2017::213_1p5_Al_mc_AKGC417L__cycle_001",
+      "max_absolute_waveform_difference": 1.862645149230957e-09
+    },
+    {
+      "sample_id": "icbhi2017::213_1p5_Al_mc_AKGC417L__cycle_002",
+      "max_absolute_waveform_difference": 1.862645149230957e-09
+    },
+    {
+      "sample_id": "icbhi2017::213_1p5_Al_mc_AKGC417L__cycle_003",
+      "max_absolute_waveform_difference": 9.313225746154785e-10
+    },
+    {
+      "sample_id": "icbhi2017::213_1p5_Al_mc_AKGC417L__cycle_004",
+      "max_absolute_waveform_difference": 1.862645149230957e-09
+    },
+    {
+      "sample_id": "icbhi2017::213_1p5_Ar_mc_AKGC417L__cycle_000",
+      "max_absolute_waveform_difference": 1.862645149230957e-09
+    },
+    {
+      "sample_id": "icbhi2017::213_1p5_Ar_mc_AKGC417L__cycle_001",
+      "max_absolute_waveform_difference": 2.3283064365386963e-10
+    },
+    {
+      "sample_id": "icbhi2017::213_1p5_Ar_mc_AKGC417L__cycle_002",
+      "max_absolute_waveform_difference": 1.862645149230957e-09
+    },
+    {
+      "sample_id": "icbhi2017::213_1p5_Ar_mc_AKGC417L__cycle_003",
+      "max_absolute_waveform_difference": 1.862645149230957e-09
+    },
+    {
+      "sample_id": "icbhi2017::213_1p5_Ar_mc_AKGC417L__cycle_005",
+      "max_absolute_waveform_difference": 1.862645149230957e-09
+    },
+    {
+      "sample_id": "icbhi2017::213_1p5_Pl_mc_AKGC417L__cycle_001",
+      "max_absolute_waveform_difference": 9.313225746154785e-10
+    },
+    {
+      "sample_id": "icbhi2017::213_1p5_Pl_mc_AKGC417L__cycle_003",
+      "max_absolute_waveform_difference": 2.3283064365386963e-10
+    },
+    {
+      "sample_id": "icbhi2017::213_1p5_Pl_mc_AKGC417L__cycle_004",
+      "max_absolute_waveform_difference": 1.4901161193847656e-08
+    },
+    {
+      "sample_id": "icbhi2017::213_1p5_Pl_mc_AKGC417L__cycle_005",
+      "max_absolute_waveform_difference": 7.450580596923828e-09
+    },
+    {
+      "sample_id": "icbhi2017::213_1p5_Pr_mc_AKGC417L__cycle_000",
+      "max_absolute_waveform_difference": 2.384185791015625e-07
+    },
+    {
+      "sample_id": "icbhi2017::213_1p5_Pr_mc_AKGC417L__cycle_001",
+      "max_absolute_waveform_difference": 3.725290298461914e-09
+    },
+    {
+      "sample_id": "icbhi2017::213_1p5_Pr_mc_AKGC417L__cycle_002",
+      "max_absolute_waveform_difference": 1.862645149230957e-09
+    },
+    {
+      "sample_id": "icbhi2017::213_1p5_Pr_mc_AKGC417L__cycle_003",
+      "max_absolute_waveform_difference": 3.725290298461914e-09
+    },
+    {
+      "sample_id": "icbhi2017::213_1p5_Pr_mc_AKGC417L__cycle_004",
+      "max_absolute_waveform_difference": 3.725290298461914e-09
+    },
+    {
+      "sample_id": "icbhi2017::213_1p5_Tc_mc_AKGC417L__cycle_000",
+      "max_absolute_waveform_difference": 3.725290298461914e-09
+    },
+    {
+      "sample_id": "icbhi2017::213_1p5_Tc_mc_AKGC417L__cycle_001",
+      "max_absolute_waveform_difference": 9.313225746154785e-10
+    },
+    {
+      "sample_id": "icbhi2017::213_1p5_Tc_mc_AKGC417L__cycle_002",
+      "max_absolute_waveform_difference": 2.9802322387695312e-08
+    },
+    {
+      "sample_id": "icbhi2017::213_1p5_Tc_mc_AKGC417L__cycle_003",
+      "max_absolute_waveform_difference": 9.313225746154785e-10
+    },
+    {
+      "sample_id": "icbhi2017::213_1p5_Tc_mc_AKGC417L__cycle_004",
+      "max_absolute_waveform_difference": 1.862645149230957e-09
+    },
+    {
+      "sample_id": "icbhi2017::213_2p2_Al_mc_AKGC417L__cycle_000",
+      "max_absolute_waveform_difference": 2.9802322387695312e-08
+    },
+    {
+      "sample_id": "icbhi2017::213_2p2_Al_mc_AKGC417L__cycle_001",
+      "max_absolute_waveform_difference": 4.656612873077393e-10
+    },
+    {
+      "sample_id": "icbhi2017::213_2p2_Al_mc_AKGC417L__cycle_002",
+      "max_absolute_waveform_difference": 1.862645149230957e-09
+    },
+    {
+      "sample_id": "icbhi2017::213_2p2_Al_mc_AKGC417L__cycle_004",
+      "max_absolute_waveform_difference": 3.725290298461914e-09
+    },
+    {
+      "sample_id": "icbhi2017::213_2p2_Al_mc_AKGC417L__cycle_005",
+      "max_absolute_waveform_difference": 1.4901161193847656e-08
+    },
+    {
+      "sample_id": "icbhi2017::213_2p2_Ar_mc_AKGC417L__cycle_000",
+      "max_absolute_waveform_difference": 9.313225746154785e-10
+    },
+    {
+      "sample_id": "icbhi2017::213_2p2_Ar_mc_AKGC417L__cycle_001",
+      "max_absolute_waveform_difference": 4.656612873077393e-10
+    },
+    {
+      "sample_id": "icbhi2017::213_2p2_Ar_mc_AKGC417L__cycle_002",
+      "max_absolute_waveform_difference": 1.862645149230957e-09
+    },
+    {
+      "sample_id": "icbhi2017::213_2p2_Ar_mc_AKGC417L__cycle_003",
+      "max_absolute_waveform_difference": 7.450580596923828e-09
+    },
+    {
+      "sample_id": "icbhi2017::213_2p2_Ar_mc_AKGC417L__cycle_004",
+      "max_absolute_waveform_difference": 3.725290298461914e-09
+    },
+    {
+      "sample_id": "icbhi2017::213_2p2_Ar_mc_AKGC417L__cycle_005",
+      "max_absolute_waveform_difference": 1.4901161193847656e-08
+    },
+    {
+      "sample_id": "icbhi2017::213_2p2_Ar_mc_AKGC417L__cycle_006",
+      "max_absolute_waveform_difference": 9.313225746154785e-10
+    },
+    {
+      "sample_id": "icbhi2017::213_2p2_Pl_mc_AKGC417L__cycle_001",
+      "max_absolute_waveform_difference": 3.725290298461914e-09
+    },
+    {
+      "sample_id": "icbhi2017::213_2p2_Pl_mc_AKGC417L__cycle_003",
+      "max_absolute_waveform_difference": 1.862645149230957e-09
+    },
+    {
+      "sample_id": "icbhi2017::213_2p2_Pl_mc_AKGC417L__cycle_004",
+      "max_absolute_waveform_difference": 9.313225746154785e-10
+    },
+    {
+      "sample_id": "icbhi2017::213_2p2_Pl_mc_AKGC417L__cycle_005",
+      "max_absolute_waveform_difference": 3.725290298461914e-09
+    },
+    {
+      "sample_id": "icbhi2017::213_2p2_Pr_mc_AKGC417L__cycle_000",
+      "max_absolute_waveform_difference": 1.862645149230957e-09
+    },
+    {
+      "sample_id": "icbhi2017::213_2p2_Pr_mc_AKGC417L__cycle_001",
+      "max_absolute_waveform_difference": 9.313225746154785e-10
+    },
+    {
+      "sample_id": "icbhi2017::213_2p2_Pr_mc_AKGC417L__cycle_002",
+      "max_absolute_waveform_difference": 1.862645149230957e-09
+    },
+    {
+      "sample_id": "icbhi2017::213_2p2_Pr_mc_AKGC417L__cycle_004",
+      "max_absolute_waveform_difference": 1.4901161193847656e-08
+    },
+    {
+      "sample_id": "icbhi2017::213_2p2_Pr_mc_AKGC417L__cycle_005",
+      "max_absolute_waveform_difference": 1.862645149230957e-09
+    },
+    {
+      "sample_id": "icbhi2017::213_2p2_Pr_mc_AKGC417L__cycle_006",
+      "max_absolute_waveform_difference": 1.862645149230957e-09
+    },
+    {
+      "sample_id": "icbhi2017::213_2p2_Tc_mc_AKGC417L__cycle_001",
+      "max_absolute_waveform_difference": 1.862645149230957e-09
+    },
+    {
+      "sample_id": "icbhi2017::213_2p2_Tc_mc_AKGC417L__cycle_002",
+      "max_absolute_waveform_difference": 7.450580596923828e-09
+    },
+    {
+      "sample_id": "icbhi2017::213_2p2_Tc_mc_AKGC417L__cycle_005",
+      "max_absolute_waveform_difference": 3.725290298461914e-09
+    },
+    {
+      "sample_id": "icbhi2017::213_2p2_Tc_mc_AKGC417L__cycle_006",
+      "max_absolute_waveform_difference": 1.1641532182693481e-10
+    },
+    {
+      "sample_id": "icbhi2017::219_2b1_Ar_mc_LittC2SE__cycle_000",
+      "max_absolute_waveform_difference": 3.725290298461914e-09
+    },
+    {
+      "sample_id": "icbhi2017::219_2b1_Ar_mc_LittC2SE__cycle_001",
+      "max_absolute_waveform_difference": 1.862645149230957e-09
+    },
+    {
+      "sample_id": "icbhi2017::219_2b1_Ar_mc_LittC2SE__cycle_002",
+      "max_absolute_waveform_difference": 1.862645149230957e-09
+    },
+    {
+      "sample_id": "icbhi2017::219_2b1_Ar_mc_LittC2SE__cycle_003",
+      "max_absolute_waveform_difference": 1.1920928955078125e-07
+    },
+    {
+      "sample_id": "icbhi2017::219_2b1_Tc_mc_LittC2SE__cycle_001",
+      "max_absolute_waveform_difference": 9.313225746154785e-10
+    },
+    {
+      "sample_id": "icbhi2017::219_2b1_Tc_mc_LittC2SE__cycle_002",
+      "max_absolute_waveform_difference": 3.725290298461914e-09
+    },
+    {
+      "sample_id": "icbhi2017::219_2b1_Tc_mc_LittC2SE__cycle_003",
+      "max_absolute_waveform_difference": 1.862645149230957e-09
+    },
+    {
+      "sample_id": "icbhi2017::219_2b2_Ar_mc_LittC2SE__cycle_001",
+      "max_absolute_waveform_difference": 4.656612873077393e-10
+    },
+    {
+      "sample_id": "icbhi2017::219_2b2_Ar_mc_LittC2SE__cycle_003",
+      "max_absolute_waveform_difference": 3.725290298461914e-09
+    },
+    {
+      "sample_id": "icbhi2017::219_2b2_Tc_mc_LittC2SE__cycle_001",
+      "max_absolute_waveform_difference": 9.313225746154785e-10
+    },
+    {
+      "sample_id": "icbhi2017::219_2b2_Tc_mc_LittC2SE__cycle_002",
+      "max_absolute_waveform_difference": 9.313225746154785e-10
+    },
+    {
+      "sample_id": "icbhi2017::219_2b2_Tc_mc_LittC2SE__cycle_004",
+      "max_absolute_waveform_difference": 3.725290298461914e-09
+    },
+    {
+      "sample_id": "icbhi2017::219_2b3_Tc_mc_LittC2SE__cycle_001",
+      "max_absolute_waveform_difference": 9.313225746154785e-10
+    },
+    {
+      "sample_id": "icbhi2017::219_2b3_Tc_mc_LittC2SE__cycle_002",
+      "max_absolute_waveform_difference": 9.313225746154785e-10
+    },
+    {
+      "sample_id": "icbhi2017::219_2b3_Tc_mc_LittC2SE__cycle_003",
+      "max_absolute_waveform_difference": 9.313225746154785e-10
+    },
+    {
+      "sample_id": "icbhi2017::219_2b3_Tc_mc_LittC2SE__cycle_004",
+      "max_absolute_waveform_difference": 7.450580596923828e-09
+    }
+  ],
+  "calibration_accessed": false,
+  "locked_tests_accessed": false,
+  "training_performed": false,
+  "source_sha256": "0f168c025442ecdbcbc5304d4f44c37955eaa35d3f5200ac967dc2508ecf2840",
+  "files": {
+    "archival_infer_workers0.csv": "981eadc57ec0bec0a0d6fa944a971a666555876a324ce2b1d2c844ae95fd1c07",
+    "training_evaluate_workers4.csv": "e97cfac53858ee28af4e25dcf002e0cffe76b96a9b3b08138ac2393f8dffcc69",
+    "infer_workers0_threads1.csv": "501188d7c646c895bf5bb54feeefa4cfbd804349206ddd0f951aa933acc793b5"
+  }
+}

@@ -1,0 +1,141 @@
+{
+  "schema_version": 1,
+  "stage": "BEATS_revision",
+  "analysis": "matched_budget_learning_rate_trace",
+  "analysis_plan_sha256": "18b6e39bba441e5be1ec870591b9dbf2846b7e6ab6293be9d211aab12809be39",
+  "config_sha256": "90fc87f6a3e39bb9c5f1fcdf7737fb6e747ea66e3c4e800cbd10b9f78a2ad56f",
+  "traces": {
+    "20260729": {
+      "epochs": 7,
+      "trace": [
+        {
+          "epoch": 1,
+          "backbone_or_adapter_learning_rate": 3.3333333333333333e-06,
+          "head_learning_rate": 3.3333333333333335e-05
+        },
+        {
+          "epoch": 2,
+          "backbone_or_adapter_learning_rate": 6.666666666666667e-06,
+          "head_learning_rate": 6.666666666666667e-05
+        },
+        {
+          "epoch": 3,
+          "backbone_or_adapter_learning_rate": 1e-05,
+          "head_learning_rate": 0.0001
+        },
+        {
+          "epoch": 4,
+          "backbone_or_adapter_learning_rate": 1e-05,
+          "head_learning_rate": 0.0001
+        },
+        {
+          "epoch": 5,
+          "backbone_or_adapter_learning_rate": 9.91486549841951e-06,
+          "head_learning_rate": 9.91486549841951e-05
+        },
+        {
+          "epoch": 6,
+          "backbone_or_adapter_learning_rate": 9.66236114702178e-06,
+          "head_learning_rate": 9.662361147021779e-05
+        },
+        {
+          "epoch": 7,
+          "backbone_or_adapter_learning_rate": 9.251085678648072e-06,
+          "head_learning_rate": 9.251085678648072e-05
+        }
+      ],
+      "maximum_absolute_difference_from_gate11a_history": 1.3552527156068805e-20,
+      "passed_tolerance_1e-15": true
+    },
+    "20260730": {
+      "epochs": 9,
+      "trace": [
+        {
+          "epoch": 1,
+          "backbone_or_adapter_learning_rate": 3.3333333333333333e-06,
+          "head_learning_rate": 3.3333333333333335e-05
+        },
+        {
+          "epoch": 2,
+          "backbone_or_adapter_learning_rate": 6.666666666666667e-06,
+          "head_learning_rate": 6.666666666666667e-05
+        },
+        {
+          "epoch": 3,
+          "backbone_or_adapter_learning_rate": 1e-05,
+          "head_learning_rate": 0.0001
+        },
+        {
+          "epoch": 4,
+          "backbone_or_adapter_learning_rate": 1e-05,
+          "head_learning_rate": 0.0001
+        },
+        {
+          "epoch": 5,
+          "backbone_or_adapter_learning_rate": 9.91486549841951e-06,
+          "head_learning_rate": 9.91486549841951e-05
+        },
+        {
+          "epoch": 6,
+          "backbone_or_adapter_learning_rate": 9.66236114702178e-06,
+          "head_learning_rate": 9.662361147021779e-05
+        },
+        {
+          "epoch": 7,
+          "backbone_or_adapter_learning_rate": 9.251085678648072e-06,
+          "head_learning_rate": 9.251085678648072e-05
+        },
+        {
+          "epoch": 8,
+          "backbone_or_adapter_learning_rate": 8.695044586103297e-06,
+          "head_learning_rate": 8.695044586103296e-05
+        },
+        {
+          "epoch": 9,
+          "backbone_or_adapter_learning_rate": 8.013173181896283e-06,
+          "head_learning_rate": 8.013173181896283e-05
+        }
+      ],
+      "maximum_absolute_difference_from_gate11a_history": 1.3552527156068805e-20,
+      "passed_tolerance_1e-15": true
+    },
+    "20260731": {
+      "epochs": 6,
+      "trace": [
+        {
+          "epoch": 1,
+          "backbone_or_adapter_learning_rate": 3.3333333333333333e-06,
+          "head_learning_rate": 3.3333333333333335e-05
+        },
+        {
+          "epoch": 2,
+          "backbone_or_adapter_learning_rate": 6.666666666666667e-06,
+          "head_learning_rate": 6.666666666666667e-05
+        },
+        {
+          "epoch": 3,
+          "backbone_or_adapter_learning_rate": 1e-05,
+          "head_learning_rate": 0.0001
+        },
+        {
+          "epoch": 4,
+          "backbone_or_adapter_learning_rate": 1e-05,
+          "head_learning_rate": 0.0001
+        },
+        {
+          "epoch": 5,
+          "backbone_or_adapter_learning_rate": 9.91486549841951e-06,
+          "head_learning_rate": 9.91486549841951e-05
+        },
+        {
+          "epoch": 6,
+          "backbone_or_adapter_learning_rate": 9.66236114702178e-06,
+          "head_learning_rate": 9.662361147021779e-05
+        }
+      ],
+      "maximum_absolute_difference_from_gate11a_history": 1.3552527156068805e-20,
+      "passed_tolerance_1e-15": true
+    }
+  },
+  "all_passed": true
+}

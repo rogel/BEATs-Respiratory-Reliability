@@ -1,0 +1,527 @@
+{
+  "status": "complete_pending_independent_QA_and_author_pause_rule",
+  "completed_at": "2026-09-05T20:17:35.401661+08:00",
+  "families": [
+    "exact",
+    "no-js"
+  ],
+  "seeds": [
+    20260729,
+    20260730,
+    20260731
+  ],
+  "threshold": 0.5,
+  "primary_contrast": {
+    "icbhi2017": {
+      "role": "locked_test",
+      "js_on_average_score": 0.6619359341579276,
+      "no_js_average_score": 0.6625652607784437,
+      "js_on_minus_no_js": {
+        "estimate": -0.0006293266205160686,
+        "lower": -0.0016779652596493693,
+        "upper": 0.0,
+        "valid_replicates": 4000,
+        "invalid_replicates": 0,
+        "status": "complete"
+      }
+    },
+    "sprsound2022": {
+      "role": "locked_inter_test",
+      "js_on_average_score": 0.9111948783863951,
+      "no_js_average_score": 0.9111948783863951,
+      "js_on_minus_no_js": {
+        "estimate": 0.0,
+        "lower": 0.0,
+        "upper": 0.0,
+        "valid_replicates": 4000,
+        "invalid_replicates": 0,
+        "status": "complete"
+      }
+    },
+    "equal_database_mean": {
+      "estimate": -0.0003146633102580343,
+      "lower": -0.0008389826298246846,
+      "upper": 0.0,
+      "valid_replicates": 4000,
+      "invalid_replicates": 0,
+      "status": "complete"
+    }
+  },
+  "temperatures": {
+    "exact/icbhi2017": 1.6464554911106857,
+    "exact/sprsound2022": 1.0350845956825019,
+    "no-js/icbhi2017": 1.649791327978587,
+    "no-js/sprsound2022": 1.0366310961730678
+  },
+  "raw_minus_temperature_probability_intervals": {
+    "exact/icbhi2017/validation_select": {
+      "negative_log_likelihood": {
+        "estimate": 0.010931467830023411,
+        "lower": -0.025618773938736288,
+        "upper": 0.04357360061593754,
+        "valid_replicates": 4000,
+        "invalid_replicates": 0,
+        "status": "complete"
+      },
+      "brier_score": {
+        "estimate": 0.0025120885369913637,
+        "lower": -0.008387877286398681,
+        "upper": 0.013438282203258422,
+        "valid_replicates": 4000,
+        "invalid_replicates": 0,
+        "status": "complete"
+      },
+      "equal_frequency_ece": {
+        "estimate": 0.011512528919615309,
+        "lower": -0.03729865674939664,
+        "upper": 0.029827902828027934,
+        "valid_replicates": 4000,
+        "invalid_replicates": 0,
+        "status": "complete"
+      }
+    },
+    "exact/icbhi2017/calibration": {
+      "negative_log_likelihood": {
+        "estimate": 0.036284688438442014,
+        "lower": -0.015633714151884238,
+        "upper": 0.13354791161768315,
+        "valid_replicates": 4000,
+        "invalid_replicates": 0,
+        "status": "complete"
+      },
+      "brier_score": {
+        "estimate": 0.004725366614132753,
+        "lower": -0.0044448712912687795,
+        "upper": 0.021833650505593816,
+        "valid_replicates": 4000,
+        "invalid_replicates": 0,
+        "status": "complete"
+      },
+      "equal_frequency_ece": {
+        "estimate": 0.03371469949899129,
+        "lower": -0.026025398637751263,
+        "upper": 0.05067239528690545,
+        "valid_replicates": 4000,
+        "invalid_replicates": 0,
+        "status": "complete"
+      }
+    },
+    "exact/icbhi2017/locked_test": {
+      "negative_log_likelihood": {
+        "estimate": 0.06881431641998725,
+        "lower": 0.030246924371853803,
+        "upper": 0.11650962148895685,
+        "valid_replicates": 4000,
+        "invalid_replicates": 0,
+        "status": "complete"
+      },
+      "brier_score": {
+        "estimate": 0.014223073264155672,
+        "lower": 0.005440874576094518,
+        "upper": 0.024866123112489747,
+        "valid_replicates": 4000,
+        "invalid_replicates": 0,
+        "status": "complete"
+      },
+      "equal_frequency_ece": {
+        "estimate": 0.06976404650653595,
+        "lower": 0.016800852269680477,
+        "upper": 0.07760643429675,
+        "valid_replicates": 4000,
+        "invalid_replicates": 0,
+        "status": "complete"
+      }
+    },
+    "exact/sprsound2022/validation_select": {
+      "negative_log_likelihood": {
+        "estimate": -0.0003053459129125635,
+        "lower": -0.0013389888597500523,
+        "upper": 0.0009456830518312167,
+        "valid_replicates": 4000,
+        "invalid_replicates": 0,
+        "status": "complete"
+      },
+      "brier_score": {
+        "estimate": -3.231440593252227e-05,
+        "lower": -0.00018851759342688144,
+        "upper": 0.00014214773855528805,
+        "valid_replicates": 4000,
+        "invalid_replicates": 0,
+        "status": "complete"
+      },
+      "equal_frequency_ece": {
+        "estimate": 3.040498825439275e-05,
+        "lower": -0.002032473116104291,
+        "upper": 0.0010252030828951028,
+        "valid_replicates": 4000,
+        "invalid_replicates": 0,
+        "status": "complete"
+      }
+    },
+    "exact/sprsound2022/calibration": {
+      "negative_log_likelihood": {
+        "estimate": 0.00011988009368982255,
+        "lower": -0.0009125296790333609,
+        "upper": 0.001595774931892021,
+        "valid_replicates": 4000,
+        "invalid_replicates": 0,
+        "status": "complete"
+      },
+      "brier_score": {
+        "estimate": -2.6311443118848254e-06,
+        "lower": -0.00012193450876131643,
+        "upper": 0.00013677389265908673,
+        "valid_replicates": 4000,
+        "invalid_replicates": 0,
+        "status": "complete"
+      },
+      "equal_frequency_ece": {
+        "estimate": -0.0009991165629720453,
+        "lower": -0.0015800377317106865,
+        "upper": -0.0002081724439789361,
+        "valid_replicates": 4000,
+        "invalid_replicates": 0,
+        "status": "complete"
+      }
+    },
+    "exact/sprsound2022/locked_inter_test": {
+      "negative_log_likelihood": {
+        "estimate": 0.003746494065498096,
+        "lower": 0.0015231160990855142,
+        "upper": 0.006562385244400759,
+        "valid_replicates": 4000,
+        "invalid_replicates": 0,
+        "status": "complete"
+      },
+      "brier_score": {
+        "estimate": 0.00047400301605612927,
+        "lower": 0.0001425359732124468,
+        "upper": 0.0009192125136359665,
+        "valid_replicates": 4000,
+        "invalid_replicates": 0,
+        "status": "complete"
+      },
+      "equal_frequency_ece": {
+        "estimate": -0.0006666408515125233,
+        "lower": -0.001390534127066328,
+        "upper": -0.0001444334681654813,
+        "valid_replicates": 4000,
+        "invalid_replicates": 0,
+        "status": "complete"
+      }
+    },
+    "exact/sprsound2022/locked_intra_test": {
+      "negative_log_likelihood": {
+        "estimate": 0.0017476594775704957,
+        "lower": 0.00021093187953843062,
+        "upper": 0.0035639848660342557,
+        "valid_replicates": 4000,
+        "invalid_replicates": 0,
+        "status": "complete"
+      },
+      "brier_score": {
+        "estimate": 0.00020432696278975537,
+        "lower": 1.329857151940832e-05,
+        "upper": 0.000412154805752149,
+        "valid_replicates": 4000,
+        "invalid_replicates": 0,
+        "status": "complete"
+      },
+      "equal_frequency_ece": {
+        "estimate": 0.00038583433822880764,
+        "lower": -0.0008538279130949636,
+        "upper": 0.0007847714433730561,
+        "valid_replicates": 4000,
+        "invalid_replicates": 0,
+        "status": "complete"
+      }
+    },
+    "no-js/icbhi2017/validation_select": {
+      "negative_log_likelihood": {
+        "estimate": 0.011137346063506914,
+        "lower": -0.025552888780832467,
+        "upper": 0.043894184097537266,
+        "valid_replicates": 4000,
+        "invalid_replicates": 0,
+        "status": "complete"
+      },
+      "brier_score": {
+        "estimate": 0.0025264676976083644,
+        "lower": -0.008420788963656837,
+        "upper": 0.013459232828196535,
+        "valid_replicates": 4000,
+        "invalid_replicates": 0,
+        "status": "complete"
+      },
+      "equal_frequency_ece": {
+        "estimate": 0.011742549615830586,
+        "lower": -0.03691799175255906,
+        "upper": 0.030034698353034295,
+        "valid_replicates": 4000,
+        "invalid_replicates": 0,
+        "status": "complete"
+      }
+    },
+    "no-js/icbhi2017/calibration": {
+      "negative_log_likelihood": {
+        "estimate": 0.036616111301805865,
+        "lower": -0.01563110116290738,
+        "upper": 0.13403453837017545,
+        "valid_replicates": 4000,
+        "invalid_replicates": 0,
+        "status": "complete"
+      },
+      "brier_score": {
+        "estimate": 0.004776993926445983,
+        "lower": -0.004459201452989311,
+        "upper": 0.02190245811155418,
+        "valid_replicates": 4000,
+        "invalid_replicates": 0,
+        "status": "complete"
+      },
+      "equal_frequency_ece": {
+        "estimate": 0.03392386948520247,
+        "lower": -0.02632679120585758,
+        "upper": 0.050979001560006586,
+        "valid_replicates": 4000,
+        "invalid_replicates": 0,
+        "status": "complete"
+      }
+    },
+    "no-js/icbhi2017/locked_test": {
+      "negative_log_likelihood": {
+        "estimate": 0.06900908591874466,
+        "lower": 0.03029602741324119,
+        "upper": 0.11678219827935454,
+        "valid_replicates": 4000,
+        "invalid_replicates": 0,
+        "status": "complete"
+      },
+      "brier_score": {
+        "estimate": 0.014248589339859563,
+        "lower": 0.005452688069843588,
+        "upper": 0.024929392791935314,
+        "valid_replicates": 4000,
+        "invalid_replicates": 0,
+        "status": "complete"
+      },
+      "equal_frequency_ece": {
+        "estimate": 0.06931533991028618,
+        "lower": 0.017269454690882917,
+        "upper": 0.07784396607255434,
+        "valid_replicates": 4000,
+        "invalid_replicates": 0,
+        "status": "complete"
+      }
+    },
+    "no-js/sprsound2022/validation_select": {
+      "negative_log_likelihood": {
+        "estimate": -0.0003134535558469431,
+        "lower": -0.001391752128951946,
+        "upper": 0.000993181223416339,
+        "valid_replicates": 4000,
+        "invalid_replicates": 0,
+        "status": "complete"
+      },
+      "brier_score": {
+        "estimate": -3.363277973222889e-05,
+        "lower": -0.00019798935374631347,
+        "upper": 0.00014897541677865486,
+        "valid_replicates": 4000,
+        "invalid_replicates": 0,
+        "status": "complete"
+      },
+      "equal_frequency_ece": {
+        "estimate": 2.2697429033682187e-05,
+        "lower": -0.0021244470117087995,
+        "upper": 0.00108214142102467,
+        "valid_replicates": 4000,
+        "invalid_replicates": 0,
+        "status": "complete"
+      }
+    },
+    "no-js/sprsound2022/calibration": {
+      "negative_log_likelihood": {
+        "estimate": 0.00013049028096287496,
+        "lower": -0.0009450892141281499,
+        "upper": 0.0016703206233326176,
+        "valid_replicates": 4000,
+        "invalid_replicates": 0,
+        "status": "complete"
+      },
+      "brier_score": {
+        "estimate": -3.1022977679609487e-06,
+        "lower": -0.00012762159944364028,
+        "upper": 0.0001426132137585282,
+        "valid_replicates": 4000,
+        "invalid_replicates": 0,
+        "status": "complete"
+      },
+      "equal_frequency_ece": {
+        "estimate": -0.0010423699122023358,
+        "lower": -0.001647189024617828,
+        "upper": -0.00022306055033598877,
+        "valid_replicates": 4000,
+        "invalid_replicates": 0,
+        "status": "complete"
+      }
+    },
+    "no-js/sprsound2022/locked_inter_test": {
+      "negative_log_likelihood": {
+        "estimate": 0.003892119535371996,
+        "lower": 0.0015819197929598636,
+        "upper": 0.006820842759366735,
+        "valid_replicates": 4000,
+        "invalid_replicates": 0,
+        "status": "complete"
+      },
+      "brier_score": {
+        "estimate": 0.0004901053282408557,
+        "lower": 0.0001451855268995668,
+        "upper": 0.000954172153271397,
+        "valid_replicates": 4000,
+        "invalid_replicates": 0,
+        "status": "complete"
+      },
+      "equal_frequency_ece": {
+        "estimate": -0.0006970939634673851,
+        "lower": -0.0014519017136539545,
+        "upper": -0.00015335451519209165,
+        "valid_replicates": 4000,
+        "invalid_replicates": 0,
+        "status": "complete"
+      }
+    },
+    "no-js/sprsound2022/locked_intra_test": {
+      "negative_log_likelihood": {
+        "estimate": 0.0018391164199227927,
+        "lower": 0.00023264749877405095,
+        "upper": 0.0037370044251614468,
+        "valid_replicates": 4000,
+        "invalid_replicates": 0,
+        "status": "complete"
+      },
+      "brier_score": {
+        "estimate": 0.00021265915281698522,
+        "lower": 1.3133647188107865e-05,
+        "upper": 0.00042925263523989387,
+        "valid_replicates": 4000,
+        "invalid_replicates": 0,
+        "status": "complete"
+      },
+      "equal_frequency_ece": {
+        "estimate": 0.00040051010959037125,
+        "lower": -0.0008946127700734611,
+        "upper": 0.0008171946211446728,
+        "valid_replicates": 4000,
+        "invalid_replicates": 0,
+        "status": "complete"
+      }
+    }
+  },
+  "bootstrap": {
+    "iterations": 4000,
+    "seed": 20260729,
+    "cluster": "patient",
+    "confidence": 0.95,
+    "primary_streams": "independent SeedSequence children per database; both arms paired; same draws for equal mean",
+    "scope": "conditional on frozen models/temperatures; no seed-population uncertainty, equivalence or multiplicity adjustment"
+  },
+  "primary_archived_ensemble_reproduced": {
+    "icbhi2017/calibration": true,
+    "icbhi2017/locked_test": true,
+    "sprsound2022/calibration": true,
+    "sprsound2022/locked_inter_test": true,
+    "sprsound2022/locked_intra_test": true
+  },
+  "patient_overlap_audit": {
+    "pairwise_overlap_counts": {
+      "icbhi2017/train_fit__icbhi2017/validation_select": 0,
+      "icbhi2017/train_fit__icbhi2017/calibration": 0,
+      "icbhi2017/train_fit__icbhi2017/locked_test": 0,
+      "icbhi2017/validation_select__icbhi2017/calibration": 0,
+      "icbhi2017/validation_select__icbhi2017/locked_test": 0,
+      "icbhi2017/calibration__icbhi2017/locked_test": 0,
+      "sprsound2022/train_fit__sprsound2022/validation_select": 0,
+      "sprsound2022/train_fit__sprsound2022/calibration": 0,
+      "sprsound2022/train_fit__sprsound2022/locked_inter_test": 0,
+      "sprsound2022/train_fit__sprsound2022/locked_intra_test": 111,
+      "sprsound2022/validation_select__sprsound2022/calibration": 0,
+      "sprsound2022/validation_select__sprsound2022/locked_inter_test": 0,
+      "sprsound2022/validation_select__sprsound2022/locked_intra_test": 19,
+      "sprsound2022/calibration__sprsound2022/locked_inter_test": 0,
+      "sprsound2022/calibration__sprsound2022/locked_intra_test": 26,
+      "sprsound2022/locked_inter_test__sprsound2022/locked_intra_test": 0
+    },
+    "expected_descriptive_intra_overlap": {
+      "sprsound2022/train_fit__sprsound2022/locked_intra_test": 111,
+      "sprsound2022/validation_select__sprsound2022/locked_intra_test": 19,
+      "sprsound2022/calibration__sprsound2022/locked_intra_test": 26,
+      "sprsound2022/locked_inter_test__sprsound2022/locked_intra_test": 0
+    },
+    "prohibited_overlap": {},
+    "primary_patient_disjoint_roles_passed": true
+  },
+  "freeze_sha256": "16c9dc34ad7aae4c2c055fff35f6c4452f4905c1e8d501a7a6a5f5df7f778f66",
+  "prediction_manifest_sha256": "ced549d2f646a44c256b57a3210fa407d2d2a8baf2fb11fa0145c0c085a607b1",
+  "input_prediction_hashes": {
+    "runs/gate11a_exactmask_fullft_seed20260729/best_validation_predictions_icbhi2017.csv": "bd5fe4b316514c0f9a6b34b7bb370621e380f60e57826091822c1a4fa4b45136",
+    "runs/gate11a_exactmask_fullft_seed20260730/best_validation_predictions_icbhi2017.csv": "6f058455c1c4baece7bb902c2376632d28663e7cf6742422eaae0dc3bf6b81f9",
+    "runs/gate11a_exactmask_fullft_seed20260731/best_validation_predictions_icbhi2017.csv": "5cf597c5580fb7e8efcd9d8d7ad7f90a5815f25cc61629a298eeaeb369e83d2d",
+    "artifacts/post_gate11a/calibration_predictions/fullft_seed20260729_icbhi2017_calibration.csv": "2e1b5a97c78c5411e035ea4ec929868b8a1a0a02173e4278ae1b6302e1ce03a8",
+    "artifacts/post_gate11a/calibration_predictions/fullft_seed20260730_icbhi2017_calibration.csv": "3de8af1a2cd64ca55080cee5c039f6b1fe3fb508d76ef09a4132fca1867645a1",
+    "artifacts/post_gate11a/calibration_predictions/fullft_seed20260731_icbhi2017_calibration.csv": "3edd2eadfbf327a1aa311766527b90c2b91cccbd40a1da516ab1070c7d714a9e",
+    "artifacts/post_gate11a/locked_predictions/fullft_seed20260729_icbhi2017_locked_test.csv": "519e77edbaee73c198e4f661881384721987559d12654a54d21952bca7d7f0a2",
+    "artifacts/post_gate11a/locked_predictions/fullft_seed20260730_icbhi2017_locked_test.csv": "bdbc9e0e4fb1118f847366067f8dce04c81817904f8b2e93fa4aac24c08e69aa",
+    "artifacts/post_gate11a/locked_predictions/fullft_seed20260731_icbhi2017_locked_test.csv": "911c02dbac5ce50e6b332e138af01312c8debf1bccee01fdae1f62c95b901346",
+    "runs/gate11a_exactmask_fullft_seed20260729/best_validation_predictions_sprsound2022.csv": "aa6d0a0e1c36cdfd68bd2d59b5b6a307af87113f40747309c56ca5183f0bec3b",
+    "runs/gate11a_exactmask_fullft_seed20260730/best_validation_predictions_sprsound2022.csv": "0402cabae73531aad317d51b46b2cf7bb45fffd652eccde42be7ad759c492e90",
+    "runs/gate11a_exactmask_fullft_seed20260731/best_validation_predictions_sprsound2022.csv": "4c4837933f79c4409b14ef440fffb3ed485193824bddf5fc3a0f572e29f7cb73",
+    "artifacts/post_gate11a/calibration_predictions/fullft_seed20260729_sprsound2022_calibration.csv": "94e0f83e964dab7225cb2e6a3f9791935b2d116c4a7cf10c47e676557f7c8874",
+    "artifacts/post_gate11a/calibration_predictions/fullft_seed20260730_sprsound2022_calibration.csv": "aa87492fc3d47c90e3f3cb1cccacb9d03644126159b6b325783419068fefc086",
+    "artifacts/post_gate11a/calibration_predictions/fullft_seed20260731_sprsound2022_calibration.csv": "8a7cbcfa7e60b36500950ec33f93abd1763354f00e74297b456854ee462dc16e",
+    "artifacts/post_gate11a/locked_predictions/fullft_seed20260729_sprsound2022_locked_inter_test.csv": "b15ed25a5ef97e521e09d2de2338b06e77dc962c8524b611fc9224d2e44164ce",
+    "artifacts/post_gate11a/locked_predictions/fullft_seed20260730_sprsound2022_locked_inter_test.csv": "285f99e19281bc0a25d387e45c24894ec7297c499e943253b4251d3ea138eec9",
+    "artifacts/post_gate11a/locked_predictions/fullft_seed20260731_sprsound2022_locked_inter_test.csv": "6d0820fcb5d14626887081b643d899c70d514ae5d5f0649b520a9bf7b365c287",
+    "artifacts/post_gate11a/locked_predictions/fullft_seed20260729_sprsound2022_locked_intra_test.csv": "b2969a10e3d673981932b06619032b8b8b8a69169373671b710c70f5d4eb5a7b",
+    "artifacts/post_gate11a/locked_predictions/fullft_seed20260730_sprsound2022_locked_intra_test.csv": "ba835d2121866bc19ef06757f4d83cd25bb79cc2837cdaf13147526123afef3d",
+    "artifacts/post_gate11a/locked_predictions/fullft_seed20260731_sprsound2022_locked_intra_test.csv": "cf3fcb54e3b9fee20b705bc3b257665a75df4d6942d7837628b4c57b0ff10e2f",
+    "artifacts/revision_2026_09_03/predictions/no_js_path_corrected_2026_09_05/seed20260729_icbhi2017_validation_select.csv": "e97cfac53858ee28af4e25dcf002e0cffe76b96a9b3b08138ac2393f8dffcc69",
+    "artifacts/revision_2026_09_03/predictions/no_js_path_corrected_2026_09_05/seed20260730_icbhi2017_validation_select.csv": "ddbe27b6d58e7437277b8fe38bdcc989ec821020c667bc1895989b8bec0b0bd0",
+    "artifacts/revision_2026_09_03/predictions/no_js_path_corrected_2026_09_05/seed20260731_icbhi2017_validation_select.csv": "b46d34bb49d4b5254bd93b17388cbee87880684fbbfce91b35a507017928ae6f",
+    "artifacts/revision_2026_09_03/predictions/no_js_path_corrected_2026_09_05/seed20260729_icbhi2017_calibration.csv": "88c3d910e2b729d894b3f30641ba4a7a23a03d8f2cab148f00a6661316b34efd",
+    "artifacts/revision_2026_09_03/predictions/no_js_path_corrected_2026_09_05/seed20260730_icbhi2017_calibration.csv": "d0148a124bbec14c9b15d1664fefa7ed3e28e45a10be96879d0cb6c66e85f644",
+    "artifacts/revision_2026_09_03/predictions/no_js_path_corrected_2026_09_05/seed20260731_icbhi2017_calibration.csv": "8299b1d89466652633e71a450ee62ee0481de117fdc3374fc99a34c59a25863f",
+    "artifacts/revision_2026_09_03/predictions/no_js_path_corrected_2026_09_05/seed20260729_icbhi2017_locked_test.csv": "d73a8f372f709e869dad90452ce1edf0be776185500d0fd669622f092a2e8c11",
+    "artifacts/revision_2026_09_03/predictions/no_js_path_corrected_2026_09_05/seed20260730_icbhi2017_locked_test.csv": "fb38e2fc2295aa6278248d70d746219838a607115c7718f4ca8b23755d76bb95",
+    "artifacts/revision_2026_09_03/predictions/no_js_path_corrected_2026_09_05/seed20260731_icbhi2017_locked_test.csv": "7aea0568351fd97e2329f66455f1c04fc8a6c6638c4d7fe05ef69d345051b506",
+    "artifacts/revision_2026_09_03/predictions/no_js_path_corrected_2026_09_05/seed20260729_sprsound2022_validation_select.csv": "da2a84670d4a7d13e1f228afab9a26148894682d3ff25898403291a421bd8597",
+    "artifacts/revision_2026_09_03/predictions/no_js_path_corrected_2026_09_05/seed20260730_sprsound2022_validation_select.csv": "1ec3d8daf5b9eb6d1cdaecc7932d0363f7d90c2813353a4367c89d06b6b05598",
+    "artifacts/revision_2026_09_03/predictions/no_js_path_corrected_2026_09_05/seed20260731_sprsound2022_validation_select.csv": "cb431b4631ed1eeb95e1cd10aaa6362ecb204d3cfbb3503863cbdf57362b6ca0",
+    "artifacts/revision_2026_09_03/predictions/no_js_path_corrected_2026_09_05/seed20260729_sprsound2022_calibration.csv": "475bdd85ea41666898c971c77058780234664c46230c9ab56a04f7f9e2a91568",
+    "artifacts/revision_2026_09_03/predictions/no_js_path_corrected_2026_09_05/seed20260730_sprsound2022_calibration.csv": "0f1f24739de46eae77bb800a3c653a93e78c46ae83f9ee660abb2f8bf0528d0f",
+    "artifacts/revision_2026_09_03/predictions/no_js_path_corrected_2026_09_05/seed20260731_sprsound2022_calibration.csv": "d34bcc1f35e275ac81709de08a0d634b0fdab96c3fdcb6ed912bafc9235d8324",
+    "artifacts/revision_2026_09_03/predictions/no_js_path_corrected_2026_09_05/seed20260729_sprsound2022_locked_inter_test.csv": "993c9a41b233f219caab4428f80ba9bf566d5015d296214faf60fe2d7bb5f0d6",
+    "artifacts/revision_2026_09_03/predictions/no_js_path_corrected_2026_09_05/seed20260730_sprsound2022_locked_inter_test.csv": "282ec79e474be801dd0778b0db2192815550092a99090cc83564ca554c27c3d9",
+    "artifacts/revision_2026_09_03/predictions/no_js_path_corrected_2026_09_05/seed20260731_sprsound2022_locked_inter_test.csv": "8e5dfbf0f2dd61df4930665debce076200d5a04cfebf1002911e96e5a1e15c92",
+    "artifacts/revision_2026_09_03/predictions/no_js_path_corrected_2026_09_05/seed20260729_sprsound2022_locked_intra_test.csv": "8a26eed9adcf6cc72355499dbf5d87abf98f51df680dd881223070fb429c37c5",
+    "artifacts/revision_2026_09_03/predictions/no_js_path_corrected_2026_09_05/seed20260730_sprsound2022_locked_intra_test.csv": "498b7cbadc00afa564296e7ff10a769b27fa3f9983d1ef2c106a249f51c14624",
+    "artifacts/revision_2026_09_03/predictions/no_js_path_corrected_2026_09_05/seed20260731_sprsound2022_locked_intra_test.csv": "6d991b5d5926e25781f36b29c2165ef313925da5c83c0946e521fa83b69bb913"
+  },
+  "selection_after_locked_access": false,
+  "output_hashes": {
+    "exact_coefficients_sprsound2022_locked_intra_test.npz": "cd27a35208f31c9716f26ce9426cafbcbf7401e4df966b55d6feb9f24489a7a4",
+    "exact_coefficients_sprsound2022_validation_select.npz": "3719972abe4bfe3f022cfbc46bcc5cc1332d32e400a1d8d181e19bbe7e2e0dd0",
+    "classification_bootstrap_draws.npz": "f703add56a1b32598c446fc880a73915e43f16acaf394ca11d706bb09cd99be1",
+    "exact_coefficients_icbhi2017_validation_select.npz": "78feb622e8f25a49aabb30ac6a890c740e78f45fd18bdff39c28ccb9dc1e61e0",
+    "exact_coefficients_icbhi2017_calibration.npz": "65eccf4690f22612f70e07cf8a57f34ccb505d660f891feedbfb0cf19e771db0",
+    "exact_coefficients_sprsound2022_calibration.npz": "0fa733429c6c28fe6e4974c2c22ca20bc1cd8532d642104a65a992c4c23a1b93",
+    "exact_coefficients_icbhi2017_locked_test.npz": "b08bbf0c87bccd7a474a38afb383319b2506625e5990027ef80c59503b9c0660",
+    "classification_metrics.csv": "9d072ee2742be94ce2b70d0f3d9d39ca79765b92876f8b324730628790f345ef",
+    "calibration_regression_diagnostics.sha256": "4e742d8f320bf06c79ffba670cea41d66a4d5fc8b07d980a29a4e4652b014b9b",
+    "exact_coefficients_sprsound2022_locked_inter_test.npz": "70fda02616bc48050654c3faefe48d7e57886590852d0416e2e28c18d6e9bacc",
+    "calibration_metrics.csv": "25f4cbb2d7ed27f398f60954f17ae33dcfd50c8b19d56946d65b67d427cc75cb",
+    "calibration_regression_diagnostics.json": "a07b3a8c812d8dd95ab46049ecc89830fda2ee80ea50058b746685fd9dae772f",
+    "exact_validation_threshold_sensitivity.csv": "47469addfdc55704659299e1b1d9e37ef6c401275e93da8646fe6e96f35b10bc"
+  }
+}

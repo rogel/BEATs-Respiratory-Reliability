@@ -1,0 +1,20 @@
+{
+  "status": "independent_analysis_b_QA_passed",
+  "audited_at": "2026-09-05T20:38:38.639231+08:00",
+  "classification_rows": 56,
+  "classification_cells_recomputed": 336,
+  "primary_bootstrap_draws_independently_reproduced": 12000,
+  "primary_intervals_reproduced": 3,
+  "calibration_point_cells_recomputed": 84,
+  "independent_joint_regression_point_checks": 28,
+  "raw_minus_temperature_intervals_independently_reproduced": 42,
+  "all_prediction_hashes_and_patient_metadata_verified": true,
+  "original_freezes_verified": true,
+  "result_sha256": "93d4be2e39ce59fd47349e9940175de0c2632e521398d4defc83bc12e6cc3a13",
+  "path_amendment_sha256": "0697b1e1d8854c91aeb352a3d0a0c2b4851664a0a3d9fa33ed2d4506b180dad3",
+  "audit_source_sha256": "c450db1ef870a0ca7bde8cf2f41b441400f3ab017d17a3be0b3cb25a420097c7",
+  "primary_coefficient_intervals_recomputed_from_all_stored_draws": 42,
+  "primary_coefficient_draws_independently_refitted": 21,
+  "validation_threshold_rows_independently_recomputed": 34,
+  "scientific_conclusion_review": "required before proceeding to matched-budget LoRA"
+}

@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "status": "frozen_role_audit_correction",
+  "frozen_at": "2026-09-04 CST (+0800)",
+  "base_statistical_freeze_sha256": "f7d8327bc5c5d2490c814f338733221e597fceb81312f36514e801436bafd089",
+  "previous_amendment_sha256": "128cb041b42a8c2eda8ab0d183845db5bb2fa01d71c8ac9ad08e95746b04fd16",
+  "trigger": "The corrected analysis reached its final patient-overlap audit and stopped because the audit treated the intentionally within-patient SPRSound locked_intra_test role as if it were an independent patient-disjoint role.",
+  "authoritative_role_definition": "The frozen plan and prior data audit define SPRSound locked_intra_test as descriptive only and intentionally overlapping development patients; train_fit, validation_select, calibration, and locked_inter_test remain mutually patient-disjoint.",
+  "correction": "Audit train_fit plus every evaluation role; allow overlap only for a pair containing SPRSound locked_intra_test; assert the previously frozen overlap counts of 111 train, 19 validation, 26 calibration, and 0 locked_inter_test patients.",
+  "corrected_analysis_script_sha256": "c0c914e8ec5fc0cf03cb74cbdf62dd98cfc3c4ad6c43cc62eb2f756d4db86371",
+  "failed_attempt_outputs_preserved_at": "artifacts/revision_2026_09_03/analysis_a_failed_attempt2_before_expected_intra_overlap_fix",
+  "method_changed": false,
+  "primary_role_changed": false,
+  "seed_set_changed": false,
+  "threshold_changed": false,
+  "bootstrap_changed": false,
+  "temperature_scaling_changed": false,
+  "result_values_inspected_before_correction": false,
+  "final_result_json_created_by_failed_attempt": false,
+  "selection_after_locked_access": false
+}

@@ -1,0 +1,27 @@
+{
+  "family": "matched-lora",
+  "seed": 20260729,
+  "started_at": "2026-09-05T20:53:56.366108+08:00",
+  "supervisor_pid": 63362,
+  "launcher_sha256": "34fc338025ac535257eab5ca9a876b27c38786ab4fae035b57fa2710bc779d38",
+  "run_dir": "[user-home]/Documents/njgpt/\u5b66\u672f\u65b9\u5411/Respiratory Sound Classification/runs/revision_2026_09_03/revision_matched_lora_seed20260729",
+  "status": "completed_pending_audit",
+  "training_process_pid": 63365,
+  "command": [
+    "/usr/bin/caffeinate",
+    "-i",
+    "[user-home]/Documents/njgpt/\u5b66\u672f\u65b9\u5411/Respiratory Sound Classification/.venv/bin/python",
+    "-u",
+    "[user-home]/Documents/njgpt/\u5b66\u672f\u65b9\u5411/Respiratory Sound Classification/scripts/train_revision_ablation.py",
+    "--family",
+    "matched-lora",
+    "--seed",
+    "20260729",
+    "--device",
+    "mps"
+  ],
+  "exit_code": 0,
+  "ended_at": "2026-09-05T22:06:39.409938+08:00",
+  "training_log_sha256": "f515d89a72f45bfe224936add0ef1cadd5919b9ac4b5fcb0672c8c350b4cfa20",
+  "summary_sha256": "8ffc9bbdf69b5a94b2942c15b9ea928b154a197c87ac63218de85ef511c94101"
+}

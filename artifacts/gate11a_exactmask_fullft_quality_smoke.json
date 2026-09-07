@@ -1,0 +1,76 @@
+{
+  "schema_version": 1,
+  "gate": "11A",
+  "status": "pre_freeze_quality_smoke_passed",
+  "formal_validation_accessed": false,
+  "selected_role": "train_fit",
+  "selected_samples": 7515,
+  "actual_beats_fullft_step": {
+    "passed": true,
+    "total_parameters": 90313330,
+    "trainable_parameters": 90313330,
+    "trainable_fraction": 1.0,
+    "metrics": {
+      "loss": 0.8422223329544067,
+      "classification_loss": 0.8421920537948608,
+      "consistency_loss": 0.0015138224698603153,
+      "gradient_norm_before_clip": 5.287528991699219
+    },
+    "memory": {
+      "peak_process_rss_bytes": 1442217984,
+      "peak_mps_current_allocated_bytes": 2927218432,
+      "peak_mps_driver_allocated_bytes": 7726022656,
+      "measurement": "process ru_maxrss plus MPS allocation samples after every batch"
+    }
+  },
+  "exact_token_mask": {
+    "passed": true,
+    "fbank_frames": 798,
+    "patch_size": 16,
+    "frequency_patches": 8,
+    "total_tokens": 400,
+    "valid_token_count_min": 40,
+    "valid_token_count_max": 136,
+    "all_counts_finite_and_nonzero": true
+  },
+  "epoch_boundary_recovery": {
+    "first_epoch_metrics": {
+      "loss": 0.7701820731163025,
+      "classification_loss": 0.7701820731163025,
+      "consistency_loss": 9.646026910559158e-08,
+      "gradient_norm_before_clip": 0.288915753364563
+    },
+    "first_epoch_sample_ids": [
+      "sprsound2022::64743918_7.0_0_p3_2649__event_003",
+      "sprsound2022::64540514_7.2_1_p1_1654__event_000",
+      "icbhi2017::106_2b1_Pl_mc_LittC2SE__cycle_003",
+      "sprsound2022::41161556_1.7_0_p3_3080__event_002",
+      "sprsound2022::65099422_0.5_0_p4_2565__event_009",
+      "icbhi2017::107_2b5_Ar_mc_AKGC417L__cycle_000",
+      "icbhi2017::188_1b1_Tc_sc_Meditron__cycle_002",
+      "icbhi2017::206_1b1_Ar_sc_Meditron__cycle_004"
+    ],
+    "next_epoch_metrics_exact": true,
+    "next_epoch_sample_ids_exact": true,
+    "next_epoch_parameters_exact": true,
+    "next_epoch_sample_ids": [
+      "icbhi2017::215_1b3_Tc_sc_Meditron__cycle_001",
+      "icbhi2017::203_2p3_Ar_mc_AKGC417L__cycle_002",
+      "sprsound2022::64913238_0.6_1_p1_2980__event_002",
+      "sprsound2022::41056352_4.3_0_p4_3216__event_000",
+      "sprsound2022::41017156_1.6_0_p4_3036__event_001",
+      "sprsound2022::64743918_7.0_0_p4_2235__event_002",
+      "icbhi2017::203_1p3_Tc_mc_AKGC417L__cycle_005",
+      "icbhi2017::130_3p4_Tc_mc_AKGC417L__cycle_007"
+    ]
+  },
+  "inputs": {
+    "manifest_sha256": "2dd168129fc0fc159db201f2990c4d7074cb746fc9bc2c13bd5031e47dbd1419",
+    "checkpoint_sha256": "e5815275a04b6885e7b8af63d120b29bffae2cd2225cf4915e1ec6d819d3022c",
+    "data_config_sha256": "8e71445ddeab28321de12666d3a42acadd8099f4be568a474a5af0dc8acea29f",
+    "model_config_sha256": "587723548ebd05672f2f2cd4d203bef9285351d8c66c904d8ab4dcd91f72cfe2",
+    "experiment_config_sha256": "80be7b805f95262aabb61b8d5526dffc089f2a545a04602cad822f8ef5a08c79"
+  },
+  "calibration_accessed": false,
+  "locked_tests_accessed": false
+}

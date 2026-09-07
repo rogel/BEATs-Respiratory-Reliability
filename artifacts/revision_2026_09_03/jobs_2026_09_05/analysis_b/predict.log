@@ -1,0 +1,9 @@
+./.venv/lib/python3.12/site-packages/torch/nn/utils/weight_norm.py:144: FutureWarning: `torch.nn.utils.weight_norm` is deprecated in favor of `torch.nn.utils.parametrizations.weight_norm`.
+  WeightNorm.apply(module, name, dim)
+Traceback (most recent call last):
+  File "./scripts/run_revision_analysis_b.py", line 412, in <module>
+    globals()[arguments.stage]()
+  File "./scripts/run_revision_analysis_b.py", line 208, in predict
+    assert error <= 1e-6 and np.array_equal(old.prediction, frame.prediction), (seed, domain, error)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: (20260729, 'icbhi2017', 0.0020305696670531725)

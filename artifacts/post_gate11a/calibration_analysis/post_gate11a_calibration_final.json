@@ -1,0 +1,547 @@
+{
+  "stage": "post_gate11a_calibration_and_selective_sanity",
+  "development_freeze": "artifacts/post_gate11a_development_freeze.json",
+  "development_freeze_sha256": "5e9e2faa24ead873a673d79eec1ea0c814b128e04f19ed205d6ec416b70b99c9",
+  "primary_classifier": "equal-weight three-seed full-FT probability ensemble",
+  "classification_threshold": 0.5,
+  "ece_bins": 15,
+  "uncertainty_score": "normalized binary predictive entropy",
+  "target_coverages": [
+    0.8,
+    0.9
+  ],
+  "domains": {
+    "icbhi2017": {
+      "calibration_samples": 561,
+      "calibration_patients": 12,
+      "validation_samples": 554,
+      "validation_patients": 12,
+      "temperature": 1.6464554911106857,
+      "classification_predictions_unchanged": true,
+      "classification": {
+        "calibration_raw": {
+          "accuracy": 0.732620320855615,
+          "sensitivity": 0.7392857142857143,
+          "specificity": 0.7259786476868327,
+          "average_score": 0.7326321809862735,
+          "harmonic_score": 0.7325717557053267,
+          "score": 0.7326019683458,
+          "macro_f1": 0.7326126744452071,
+          "uar": 0.7326321809862735,
+          "per_class_recall": {
+            "normal": 0.7259786476868327,
+            "adventitious": 0.7392857142857143
+          },
+          "confusion_matrix": [
+            [
+              204,
+              77
+            ],
+            [
+              73,
+              207
+            ]
+          ],
+          "support": {
+            "normal": 281,
+            "adventitious": 280
+          },
+          "auroc": 0.8004829689883071
+        },
+        "calibration_temperature": {
+          "accuracy": 0.732620320855615,
+          "sensitivity": 0.7392857142857143,
+          "specificity": 0.7259786476868327,
+          "average_score": 0.7326321809862735,
+          "harmonic_score": 0.7325717557053267,
+          "score": 0.7326019683458,
+          "macro_f1": 0.7326126744452071,
+          "uar": 0.7326321809862735,
+          "per_class_recall": {
+            "normal": 0.7259786476868327,
+            "adventitious": 0.7392857142857143
+          },
+          "confusion_matrix": [
+            [
+              204,
+              77
+            ],
+            [
+              73,
+              207
+            ]
+          ],
+          "support": {
+            "normal": 281,
+            "adventitious": 280
+          },
+          "auroc": 0.8004829689883071
+        },
+        "validation_raw": {
+          "accuracy": 0.7166064981949458,
+          "sensitivity": 0.7528089887640449,
+          "specificity": 0.6829268292682927,
+          "average_score": 0.7178679090161688,
+          "harmonic_score": 0.716167207482344,
+          "score": 0.7170175582492564,
+          "macro_f1": 0.7165834123516167,
+          "uar": 0.7178679090161688,
+          "per_class_recall": {
+            "normal": 0.6829268292682927,
+            "adventitious": 0.7528089887640449
+          },
+          "confusion_matrix": [
+            [
+              196,
+              91
+            ],
+            [
+              66,
+              201
+            ]
+          ],
+          "support": {
+            "normal": 287,
+            "adventitious": 267
+          },
+          "auroc": 0.8022941706142581
+        },
+        "validation_temperature": {
+          "accuracy": 0.7166064981949458,
+          "sensitivity": 0.7528089887640449,
+          "specificity": 0.6829268292682927,
+          "average_score": 0.7178679090161688,
+          "harmonic_score": 0.716167207482344,
+          "score": 0.7170175582492564,
+          "macro_f1": 0.7165834123516167,
+          "uar": 0.7178679090161688,
+          "per_class_recall": {
+            "normal": 0.6829268292682927,
+            "adventitious": 0.7528089887640449
+          },
+          "confusion_matrix": [
+            [
+              196,
+              91
+            ],
+            [
+              66,
+              201
+            ]
+          ],
+          "support": {
+            "normal": 287,
+            "adventitious": 267
+          },
+          "auroc": 0.8022941706142581
+        }
+      },
+      "probability_metrics": {
+        "calibration": {
+          "raw": {
+            "negative_log_likelihood": 0.580894790513366,
+            "brier_score": 0.18486751822069838,
+            "equal_frequency_ece": 0.08888626630409983
+          },
+          "temperature": {
+            "negative_log_likelihood": 0.5446101020749239,
+            "brier_score": 0.18014215160656563,
+            "equal_frequency_ece": 0.055171566805108554
+          }
+        },
+        "validation_select": {
+          "raw": {
+            "negative_log_likelihood": 0.5538751520319435,
+            "brier_score": 0.1845360164532782,
+            "equal_frequency_ece": 0.09137240106582428
+          },
+          "temperature": {
+            "negative_log_likelihood": 0.5429436842019201,
+            "brier_score": 0.18202392791628683,
+            "equal_frequency_ece": 0.07985987214620897
+          }
+        }
+      },
+      "validation_temperature_minus_raw_nll": -0.010931467830023411,
+      "selective": {
+        "coverage_80": {
+          "target": 0.8,
+          "uncertainty_cutoff": 0.9617011052352461,
+          "calibration": {
+            "accepted": 449,
+            "total": 561,
+            "coverage": 0.8003565062388592,
+            "normal_coverage": 0.7651245551601423,
+            "adventitious_coverage": 0.8357142857142857,
+            "class_coverage_gap": 0.07058973055414342,
+            "selective_error_risk": 0.21380846325167038,
+            "sensitivity": 0.7863247863247863,
+            "specificity": 0.786046511627907,
+            "average_score": 0.7861856489763466,
+            "balanced_error_risk": 0.21381435102365343,
+            "uncertainty_cutoff": 0.9617011052352461
+          },
+          "validation_select": {
+            "accepted": 402,
+            "total": 554,
+            "coverage": 0.7256317689530686,
+            "normal_coverage": 0.7212543554006968,
+            "adventitious_coverage": 0.7303370786516854,
+            "class_coverage_gap": 0.009082723250988578,
+            "selective_error_risk": 0.19900497512437812,
+            "sensitivity": 0.8256410256410256,
+            "specificity": 0.7777777777777778,
+            "average_score": 0.8017094017094017,
+            "balanced_error_risk": 0.19829059829059825,
+            "uncertainty_cutoff": 0.9617011052352461
+          },
+          "checks": {
+            "calibration": {
+              "normal_coverage_at_least_target_minus_0_15": true,
+              "adventitious_coverage_at_least_target_minus_0_15": true,
+              "class_coverage_gap_at_most_0_20": true,
+              "selective_error_not_worse_by_more_than_0_02": true
+            },
+            "validation_select": {
+              "normal_coverage_at_least_target_minus_0_15": true,
+              "adventitious_coverage_at_least_target_minus_0_15": true,
+              "class_coverage_gap_at_most_0_20": true,
+              "selective_error_not_worse_by_more_than_0_02": true
+            }
+          },
+          "passed": true
+        },
+        "coverage_90": {
+          "target": 0.9,
+          "uncertainty_cutoff": 0.9924170812538704,
+          "calibration": {
+            "accepted": 505,
+            "total": 561,
+            "coverage": 0.9001782531194296,
+            "normal_coverage": 0.8683274021352313,
+            "adventitious_coverage": 0.9321428571428572,
+            "class_coverage_gap": 0.06381545500762587,
+            "selective_error_risk": 0.22772277227722773,
+            "sensitivity": 0.7701149425287356,
+            "specificity": 0.7745901639344263,
+            "average_score": 0.7723525532315809,
+            "balanced_error_risk": 0.22764744676841908,
+            "uncertainty_cutoff": 0.9924170812538704
+          },
+          "validation_select": {
+            "accepted": 484,
+            "total": 554,
+            "coverage": 0.8736462093862816,
+            "normal_coverage": 0.8815331010452961,
+            "adventitious_coverage": 0.8651685393258427,
+            "class_coverage_gap": 0.01636456171945344,
+            "selective_error_risk": 0.24586776859504134,
+            "sensitivity": 0.8008658008658008,
+            "specificity": 0.7114624505928854,
+            "average_score": 0.7561641257293431,
+            "balanced_error_risk": 0.2438358742706569,
+            "uncertainty_cutoff": 0.9924170812538704
+          },
+          "checks": {
+            "calibration": {
+              "normal_coverage_at_least_target_minus_0_15": true,
+              "adventitious_coverage_at_least_target_minus_0_15": true,
+              "class_coverage_gap_at_most_0_20": true,
+              "selective_error_not_worse_by_more_than_0_02": true
+            },
+            "validation_select": {
+              "normal_coverage_at_least_target_minus_0_15": true,
+              "adventitious_coverage_at_least_target_minus_0_15": true,
+              "class_coverage_gap_at_most_0_20": true,
+              "selective_error_not_worse_by_more_than_0_02": true
+            }
+          },
+          "passed": true
+        }
+      },
+      "risk_coverage": {
+        "aurc": 0.15905695068653822,
+        "full_coverage_error_risk": 0.2833935018050541
+      }
+    },
+    "sprsound2022": {
+      "calibration_samples": 1038,
+      "calibration_patients": 36,
+      "validation_samples": 1013,
+      "validation_patients": 36,
+      "temperature": 1.0350845956825019,
+      "classification_predictions_unchanged": true,
+      "classification": {
+        "calibration_raw": {
+          "accuracy": 0.9421965317919075,
+          "sensitivity": 0.9576271186440678,
+          "specificity": 0.9376558603491272,
+          "average_score": 0.9476414894965974,
+          "harmonic_score": 0.9475362674368039,
+          "score": 0.9475888784667006,
+          "macro_f1": 0.9222246643222507,
+          "uar": 0.9476414894965974,
+          "per_class_recall": {
+            "normal": 0.9376558603491272,
+            "adventitious": 0.9576271186440678
+          },
+          "confusion_matrix": [
+            [
+              752,
+              50
+            ],
+            [
+              10,
+              226
+            ]
+          ],
+          "support": {
+            "normal": 802,
+            "adventitious": 236
+          },
+          "auroc": 0.9851536413204278
+        },
+        "calibration_temperature": {
+          "accuracy": 0.9421965317919075,
+          "sensitivity": 0.9576271186440678,
+          "specificity": 0.9376558603491272,
+          "average_score": 0.9476414894965974,
+          "harmonic_score": 0.9475362674368039,
+          "score": 0.9475888784667006,
+          "macro_f1": 0.9222246643222507,
+          "uar": 0.9476414894965974,
+          "per_class_recall": {
+            "normal": 0.9376558603491272,
+            "adventitious": 0.9576271186440678
+          },
+          "confusion_matrix": [
+            [
+              752,
+              50
+            ],
+            [
+              10,
+              226
+            ]
+          ],
+          "support": {
+            "normal": 802,
+            "adventitious": 236
+          },
+          "auroc": 0.9851536413204278
+        },
+        "validation_raw": {
+          "accuracy": 0.9318854886475815,
+          "sensitivity": 0.8458149779735683,
+          "specificity": 0.9567430025445293,
+          "average_score": 0.9012789902590488,
+          "harmonic_score": 0.8978657778219988,
+          "score": 0.8995723840405239,
+          "macro_f1": 0.9019084467609453,
+          "uar": 0.9012789902590488,
+          "per_class_recall": {
+            "normal": 0.9567430025445293,
+            "adventitious": 0.8458149779735683
+          },
+          "confusion_matrix": [
+            [
+              752,
+              34
+            ],
+            [
+              35,
+              192
+            ]
+          ],
+          "support": {
+            "normal": 786,
+            "adventitious": 227
+          },
+          "auroc": 0.9728284628577194
+        },
+        "validation_temperature": {
+          "accuracy": 0.9318854886475815,
+          "sensitivity": 0.8458149779735683,
+          "specificity": 0.9567430025445293,
+          "average_score": 0.9012789902590488,
+          "harmonic_score": 0.8978657778219988,
+          "score": 0.8995723840405239,
+          "macro_f1": 0.9019084467609453,
+          "uar": 0.9012789902590488,
+          "per_class_recall": {
+            "normal": 0.9567430025445293,
+            "adventitious": 0.8458149779735683
+          },
+          "confusion_matrix": [
+            [
+              752,
+              34
+            ],
+            [
+              35,
+              192
+            ]
+          ],
+          "support": {
+            "normal": 786,
+            "adventitious": 227
+          },
+          "auroc": 0.9728284628577194
+        }
+      },
+      "probability_metrics": {
+        "calibration": {
+          "raw": {
+            "negative_log_likelihood": 0.14684701712683673,
+            "brier_score": 0.041688087632790374,
+            "equal_frequency_ece": 0.05899158678933106
+          },
+          "temperature": {
+            "negative_log_likelihood": 0.14672713703314688,
+            "brier_score": 0.04169071877710226,
+            "equal_frequency_ece": 0.05999070335230312
+          }
+        },
+        "validation_select": {
+          "raw": {
+            "negative_log_likelihood": 0.16885218678432667,
+            "brier_score": 0.05008839315473353,
+            "equal_frequency_ece": 0.02058070506008523
+          },
+          "temperature": {
+            "negative_log_likelihood": 0.16915753269723924,
+            "brier_score": 0.050120707560666056,
+            "equal_frequency_ece": 0.020550300071830837
+          }
+        }
+      },
+      "validation_temperature_minus_raw_nll": 0.0003053459129125635,
+      "selective": {
+        "coverage_80": {
+          "target": 0.8,
+          "uncertainty_cutoff": 0.3546738143918096,
+          "calibration": {
+            "accepted": 831,
+            "total": 1038,
+            "coverage": 0.8005780346820809,
+            "normal_coverage": 0.7768079800498753,
+            "adventitious_coverage": 0.8813559322033898,
+            "class_coverage_gap": 0.10454795215351453,
+            "selective_error_risk": 0.013237063778580024,
+            "sensitivity": 0.9759615384615384,
+            "specificity": 0.9903691813804173,
+            "average_score": 0.9831653599209779,
+            "balanced_error_risk": 0.016834640079022134,
+            "uncertainty_cutoff": 0.3546738143918096
+          },
+          "validation_select": {
+            "accepted": 751,
+            "total": 1013,
+            "coverage": 0.7413622902270484,
+            "normal_coverage": 0.7811704834605598,
+            "adventitious_coverage": 0.6035242290748899,
+            "class_coverage_gap": 0.17764625438566994,
+            "selective_error_risk": 0.013315579227696404,
+            "sensitivity": 0.948905109489051,
+            "specificity": 0.995114006514658,
+            "average_score": 0.9720095580018545,
+            "balanced_error_risk": 0.027990441998145488,
+            "uncertainty_cutoff": 0.3546738143918096
+          },
+          "checks": {
+            "calibration": {
+              "normal_coverage_at_least_target_minus_0_15": true,
+              "adventitious_coverage_at_least_target_minus_0_15": true,
+              "class_coverage_gap_at_most_0_20": true,
+              "selective_error_not_worse_by_more_than_0_02": true
+            },
+            "validation_select": {
+              "normal_coverage_at_least_target_minus_0_15": true,
+              "adventitious_coverage_at_least_target_minus_0_15": false,
+              "class_coverage_gap_at_most_0_20": true,
+              "selective_error_not_worse_by_more_than_0_02": true
+            }
+          },
+          "passed": false
+        },
+        "coverage_90": {
+          "target": 0.9,
+          "uncertainty_cutoff": 0.7335435972271017,
+          "calibration": {
+            "accepted": 935,
+            "total": 1038,
+            "coverage": 0.9007707129094412,
+            "normal_coverage": 0.8865336658354115,
+            "adventitious_coverage": 0.9491525423728814,
+            "class_coverage_gap": 0.06261887653746989,
+            "selective_error_risk": 0.025668449197860963,
+            "sensitivity": 0.96875,
+            "specificity": 0.9760900140646976,
+            "average_score": 0.9724200070323488,
+            "balanced_error_risk": 0.027579992967651235,
+            "uncertainty_cutoff": 0.7335435972271017
+          },
+          "validation_select": {
+            "accepted": 869,
+            "total": 1013,
+            "coverage": 0.857847976307996,
+            "normal_coverage": 0.8778625954198473,
+            "adventitious_coverage": 0.788546255506608,
+            "class_coverage_gap": 0.0893163399132394,
+            "selective_error_risk": 0.02531645569620253,
+            "sensitivity": 0.9050279329608939,
+            "specificity": 0.9927536231884058,
+            "average_score": 0.9488907780746498,
+            "balanced_error_risk": 0.05110922192535017,
+            "uncertainty_cutoff": 0.7335435972271017
+          },
+          "checks": {
+            "calibration": {
+              "normal_coverage_at_least_target_minus_0_15": true,
+              "adventitious_coverage_at_least_target_minus_0_15": true,
+              "class_coverage_gap_at_most_0_20": true,
+              "selective_error_not_worse_by_more_than_0_02": true
+            },
+            "validation_select": {
+              "normal_coverage_at_least_target_minus_0_15": true,
+              "adventitious_coverage_at_least_target_minus_0_15": true,
+              "class_coverage_gap_at_most_0_20": true,
+              "selective_error_not_worse_by_more_than_0_02": true
+            }
+          },
+          "passed": true
+        }
+      },
+      "risk_coverage": {
+        "aurc": 0.010065757018628232,
+        "full_coverage_error_risk": 0.06811451135241856
+      }
+    }
+  },
+  "decision": {
+    "temperature_checks": {
+      "classification_predictions_unchanged": true,
+      "mean_validation_nll_not_worse": true,
+      "no_domain_validation_nll_worsens_more_than_0_02": true
+    },
+    "temperature_enabled_for_locked": true,
+    "selective_all_domain_target_checks_passed": false,
+    "selective_enabled_for_locked": false,
+    "failure_action": "do not search alternative calibration/rejection methods; fall back to raw fixed-threshold classification and report negative result"
+  },
+  "locked_parameters": {
+    "icbhi2017": {
+      "temperature": 1.6464554911106857,
+      "selective_enabled": false,
+      "uncertainty_cutoffs": {}
+    },
+    "sprsound2022": {
+      "temperature": 1.0350845956825019,
+      "selective_enabled": false,
+      "uncertainty_cutoffs": {}
+    }
+  },
+  "calibration_history_disclosure": "These calibration patients were used in earlier abandoned routes and are treated only as tuning/calibration data, never as independent evidence.",
+  "calibration_accessed": true,
+  "locked_tests_accessed": false
+}

@@ -1,0 +1,28 @@
+{
+  "status": "analysis_complete",
+  "freeze": "artifacts/post_gate11a_locked_freeze.json",
+  "freeze_sha256": "22dd790dba0926080574619aa6112cb5db9c107bb963c19668788085dd966abb",
+  "completed_prediction_files": {
+    "fullft_seed20260729_icbhi2017_locked_test.csv": "519e77edbaee73c198e4f661881384721987559d12654a54d21952bca7d7f0a2",
+    "fullft_seed20260729_sprsound2022_locked_inter_test.csv": "b15ed25a5ef97e521e09d2de2338b06e77dc962c8524b611fc9224d2e44164ce",
+    "fullft_seed20260729_sprsound2022_locked_intra_test.csv": "b2969a10e3d673981932b06619032b8b8b8a69169373671b710c70f5d4eb5a7b",
+    "fullft_seed20260730_icbhi2017_locked_test.csv": "bdbc9e0e4fb1118f847366067f8dce04c81817904f8b2e93fa4aac24c08e69aa",
+    "fullft_seed20260730_sprsound2022_locked_inter_test.csv": "285f99e19281bc0a25d387e45c24894ec7297c499e943253b4251d3ea138eec9",
+    "fullft_seed20260730_sprsound2022_locked_intra_test.csv": "ba835d2121866bc19ef06757f4d83cd25bb79cc2837cdaf13147526123afef3d",
+    "fullft_seed20260731_icbhi2017_locked_test.csv": "911c02dbac5ce50e6b332e138af01312c8debf1bccee01fdae1f62c95b901346",
+    "fullft_seed20260731_sprsound2022_locked_inter_test.csv": "6d0820fcb5d14626887081b643d899c70d514ae5d5f0649b520a9bf7b365c287",
+    "fullft_seed20260731_sprsound2022_locked_intra_test.csv": "cf3fcb54e3b9fee20b705bc3b257665a75df4d6942d7837628b4c57b0ff10e2f",
+    "lora_seed20260729_icbhi2017_locked_test.csv": "a4671c516d6c7d0e134c1b2cec346f21031635a43b20afa77827f73e1cae71c1",
+    "lora_seed20260729_sprsound2022_locked_inter_test.csv": "1e3ff52a2be91501619635f410fe67110a77ef825c74722ab753cde1deef8a68",
+    "lora_seed20260729_sprsound2022_locked_intra_test.csv": "9b70228c22406b126ef60698dcadcba0d4777dfc7e3248fa5d8f7b198e3cbac6",
+    "lora_seed20260730_icbhi2017_locked_test.csv": "27647e2243e3d56d5c4d39981af102c620a53f1955b571e8049cabac6592e63e",
+    "lora_seed20260730_sprsound2022_locked_inter_test.csv": "ab6158982fdc8bdc84cc6b2e3e84fecfd58c0f821cc30608a86508a78d039ab4",
+    "lora_seed20260730_sprsound2022_locked_intra_test.csv": "0a94b0edb910d1543f694c9b1d9cdd74a5abcfe0a35b8b7029b9a383d8e0d70a",
+    "lora_seed20260731_icbhi2017_locked_test.csv": "c244ec9fc67aeaa51afe0dbe514b8023a90854af7b94c56454d4dc91dfc0de0b",
+    "lora_seed20260731_sprsound2022_locked_inter_test.csv": "8ae0bb4d324ff3f2fa9394a58c3fd0680c2d6c0353c2fd5e694dfdf61fbad02a",
+    "lora_seed20260731_sprsound2022_locked_intra_test.csv": "1bbcfafef4d85c73eb4b35e22bd90074ce49405fe6f042e48b7872d7af50ca4a"
+  },
+  "rule": "resume may reuse completed files but may not delete or regenerate them",
+  "prediction_manifest_sha256": "839a3523dffba6e810385a8ca0cfcbb1396405c70a8b193ec1b66c85bdf656ec",
+  "locked_result_sha256": "4e9036d6587ea850711a7b60c50c0edc993e1f69dd6667be4a325e5bf048529a"
+}

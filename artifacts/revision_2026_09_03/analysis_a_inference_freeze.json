@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "status": "frozen_before_analysis_a_calibration_and_heldout_inference",
+  "analysis_plan_sha256": "18b6e39bba441e5be1ec870591b9dbf2846b7e6ab6293be9d211aab12809be39",
+  "legacy_failure_amendment_sha256": "9b2b7e19ae0f14fc8e3107b579d45987e9a729753507f858a2ca12ce94aa91e4",
+  "manifest_sha256": "2dd168129fc0fc159db201f2990c4d7074cb746fc9bc2c13bd5031e47dbd1419",
+  "inference_script_sha256": "4c24dfea740ee87bebe9b35e797e7f2197d1ebfa7cbaa697d1a8473454a647b9",
+  "matched_completed_seeds": [20260729, 20260731],
+  "legacy_checkpoints": {
+    "20260729": "55be055282fcd7d73f4f5e03e71cc79a578139f785db74734987169dc692aef9",
+    "20260731": "eba81e3d10d732307f77f8e451b50730d502f9891240d2b2f42f757ef9a1053e"
+  },
+  "matching_exact_checkpoints": {
+    "20260729": "3f7942419370cc8822d447c9e1b2789cbfa58d2b150f6466c94da46c5948f6a8",
+    "20260731": "093519ab419cf1c63c4d62047b858c75b62b6da3c1aaf74ccfca261fd3b23d60"
+  },
+  "roles": {
+    "icbhi2017": ["validation_select", "calibration", "locked_test"],
+    "sprsound2022": ["validation_select", "calibration", "locked_inter_test", "locked_intra_test"]
+  },
+  "classification_threshold": 0.5,
+  "batch_size": 8,
+  "device": "mps",
+  "selection_after_locked_access": false
+}

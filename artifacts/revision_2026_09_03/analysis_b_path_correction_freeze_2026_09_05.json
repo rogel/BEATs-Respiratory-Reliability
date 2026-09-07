@@ -1,0 +1,41 @@
+{
+  "status": "prospective_author_approved_implementation_path_correction",
+  "frozen_at": "2026-09-05T20:04:23.113426+08:00",
+  "author_authorization": "2026-09-05 approved report11 recommended thread-path audit and correction",
+  "base_execution_freeze_sha256": "16c9dc34ad7aae4c2c055fff35f6c4452f4905c1e8d501a7a6a5f5df7f778f66",
+  "validated_case_count": 12,
+  "files": {
+    "[user-home]/Documents/njgpt/学术方向/Respiratory Sound Classification/scripts/run_revision_analysis_b_path_corrected.py": "5ea4d219f453cbbef299a1ba3b97f399f6b86cb7189a15970b7190024f52e2af",
+    "[user-home]/Documents/njgpt/学术方向/Respiratory Sound Classification/scripts/audit_analysis_b_all_validation_paths.py": "6622383ad7ca0f0b2888a937b428f9ff6fcde58b65b3f9d6a4c53965925be6d8",
+    "[user-home]/Documents/njgpt/学术方向/Respiratory Sound Classification/tests/test_revision_analysis_b_path_correction.py": "665c0f039ddd751fe226b95c3dd3156bba6ab6eb612c6b26c3c5104da64e2320",
+    "[user-home]/Documents/njgpt/学术方向/experiment_plans/2026-09-03/13_ANALYSIS_B_PATH_AMENDMENT_2026-09-05.md": "a012c22d18afa2e7793ea871685d63d5e54b43f1398d71253b51941e2cc96c03",
+    "[user-home]/Documents/njgpt/学术方向/Respiratory Sound Classification/artifacts/revision_2026_09_03/analysis_b_validation_path_audit_freeze_2026_09_05.json": "81611928829f29535de7061cb1a2f2b7cc02801b74ddc2f54322396272a6584c",
+    "[user-home]/Documents/njgpt/学术方向/Respiratory Sound Classification/artifacts/revision_2026_09_03/analysis_b_all_validation_paths_2026_09_05/audit_final.json": "8fc73f0324675eaa40d9431104f5cc63edc869234d6b15454c70794910c6410e",
+    "[user-home]/Documents/njgpt/学术方向/Respiratory Sound Classification/artifacts/revision_2026_09_03/analysis_b_execution_freeze_2026_09_05.json": "16c9dc34ad7aae4c2c055fff35f6c4452f4905c1e8d501a7a6a5f5df7f778f66",
+    "[user-home]/Documents/njgpt/学术方向/Respiratory Sound Classification/scripts/audit_analysis_b_final.py": "c450db1ef870a0ca7bde8cf2f41b441400f3ab017d17a3be0b3cb25a420097c7",
+    "[user-home]/Documents/njgpt/学术方向/Respiratory Sound Classification/tests/test_analysis_b_independent_audit.py": "1082f0cfed5efbec9e4028fb87e1fa1f5204bfd9dc2ac9ecd7ce3e817554310f"
+  },
+  "changes": [
+    "training-path validation replay proven by extended audit",
+    "reuse original selection-validation CSVs in both arms",
+    "new additive output paths; original failed entry/artifacts retained"
+  ],
+  "calibration_and_test_path": {
+    "batch_size": 8,
+    "workers": 0,
+    "cpu_threads": 12,
+    "device": "mps"
+  },
+  "statistical_implementation": "unchanged original.run_revision_analysis_b.analyze, with additive PRED/OUTPUT paths only",
+  "preserved": [
+    "selected models",
+    "seeds",
+    "patient roles",
+    "threshold0.5",
+    "primary predictions/results/temperatures",
+    "all estimators/metrics/bootstrap",
+    "no held-out selection"
+  ],
+  "no_js_prediction_root": "[user-home]/Documents/njgpt/学术方向/Respiratory Sound Classification/artifacts/revision_2026_09_03/predictions/no_js_path_corrected_2026_09_05",
+  "output_root": "[user-home]/Documents/njgpt/学术方向/Respiratory Sound Classification/artifacts/revision_2026_09_03/analysis_b_path_corrected_2026_09_05"
+}

@@ -1,0 +1,43 @@
+{
+  "status": "smoke_passed",
+  "family": "matched-lora",
+  "seed": 20260731,
+  "batches": 1,
+  "mask_mode": "exact",
+  "adaptation": "lora",
+  "trainable_parameters": 99842,
+  "trainable_parameter_names": [
+    "backbone.encoder.layers.8.self_attn.v_proj.lora_a.weight",
+    "backbone.encoder.layers.8.self_attn.v_proj.lora_b.weight",
+    "backbone.encoder.layers.8.self_attn.q_proj.lora_a.weight",
+    "backbone.encoder.layers.8.self_attn.q_proj.lora_b.weight",
+    "backbone.encoder.layers.9.self_attn.v_proj.lora_a.weight",
+    "backbone.encoder.layers.9.self_attn.v_proj.lora_b.weight",
+    "backbone.encoder.layers.9.self_attn.q_proj.lora_a.weight",
+    "backbone.encoder.layers.9.self_attn.q_proj.lora_b.weight",
+    "backbone.encoder.layers.10.self_attn.v_proj.lora_a.weight",
+    "backbone.encoder.layers.10.self_attn.v_proj.lora_b.weight",
+    "backbone.encoder.layers.10.self_attn.q_proj.lora_a.weight",
+    "backbone.encoder.layers.10.self_attn.q_proj.lora_b.weight",
+    "backbone.encoder.layers.11.self_attn.v_proj.lora_a.weight",
+    "backbone.encoder.layers.11.self_attn.v_proj.lora_b.weight",
+    "backbone.encoder.layers.11.self_attn.q_proj.lora_a.weight",
+    "backbone.encoder.layers.11.self_attn.q_proj.lora_b.weight",
+    "classifier.weight",
+    "classifier.bias"
+  ],
+  "metrics": {
+    "loss": 0.7906630039215088,
+    "classification_loss": 0.7904983758926392,
+    "consistency_loss": 0.008232085965573788,
+    "gradient_norm_before_clip": 2.5193774700164795
+  },
+  "memory": {
+    "peak_process_rss_bytes": 1386315776,
+    "peak_mps_current_allocated_bytes": 551450112,
+    "peak_mps_driver_allocated_bytes": 3755868160,
+    "measurement": "process ru_maxrss plus MPS allocation samples after every batch"
+  },
+  "analysis_plan_sha256": "18b6e39bba441e5be1ec870591b9dbf2846b7e6ab6293be9d211aab12809be39",
+  "manifest_sha256": "2dd168129fc0fc159db201f2990c4d7074cb746fc9bc2c13bd5031e47dbd1419"
+}

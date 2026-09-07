@@ -1,6 +1,6 @@
 # BEATs Respiratory Reliability
 
-Python tools for respiratory-sound classification, audio-model adaptation and predictive reliability.
+Python tools and verification data for respiratory-sound classification, audio-model adaptation and predictive reliability.
 
 ## Features
 
@@ -31,10 +31,25 @@ Dependencies are declared in `pyproject.toml`. `constraints-lock.txt` records a 
 | `scripts/` | Command-line preparation, training, evaluation and analysis tools |
 | `tests/` | Unit and synthetic-data regression tests |
 | `third_party/beats/` | Vendored BEATs runtime code and its original licence |
+| `data/manifests/` | Event identifiers, labels and data-role assignments |
+| `artifacts/` | Predictions, statistical outputs, diagnostics and resource measurements |
+| `runs/` | Saved validation predictions, configurations and execution records |
+
+## Verify the supplied results
+
+See [Data and result guide](DATA_GUIDE.md) for the file index, schema, comparison definitions and verification scope. The read-only checks require Python with NumPy, pandas and SciPy, and do not need source recordings, model weights or training:
+
+```sh
+python -m pip install numpy pandas scipy
+python -B scripts/verify_reference_results.py
+python -B scripts/verify_ablation_results.py
+```
+
+`DATA_MANIFEST.json` records SHA-256 checksums for every supplied data/result file. The ablation verifier checks these hashes before independently reconstructing the metrics. Run the commands from the repository root. Preserve the supplied files and use separate output paths for new experiments.
 
 ## Getting started
 
-Obtain the datasets and pretrained weights separately, following [Data sources and licences](DATA_SOURCES_AND_LICENCES.md). This repository contains software and configuration files; datasets, trained weights, predictions and run outputs are not bundled.
+Obtain the datasets and pretrained weights separately, following [Data sources and licences](DATA_SOURCES_AND_LICENCES.md). The repository includes derived predictions, data-role assignments and statistical outputs. Source recordings, original annotation files and model weights are obtained from the original providers and are not redistributed.
 
 Inspect the available data preparation and training arguments:
 
@@ -50,7 +65,7 @@ After obtaining the ICBHI source files, generate a manifest:
 python scripts/prepare_icbhi.py \
   --audio-dir /path/to/ICBHI_final_database \
   --split-file /path/to/ICBHI_challenge_train_test.txt \
-  --output-dir data/manifests
+  --output-dir outputs/manifests
 ```
 
 Review the selected data/model/training configuration before starting a run. Some experiment drivers use fixed seeds, checksums, saved manifests, checkpoint identities or external plan files; they require those inputs and are not one-command demonstrations. Keep their integrity guards enabled, and use a separate output directory for new experiments. Scripts bearing `gate` or `revision` names are experiment-stage utilities, not generic CLI entry points.

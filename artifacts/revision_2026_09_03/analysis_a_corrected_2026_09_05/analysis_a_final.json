@@ -1,0 +1,555 @@
+{
+  "schema_version": 2,
+  "stage": "BEATS_revision_analysis_a_matched_completers",
+  "status": "complete_with_audited_calibration_solver_correction",
+  "analysis_scope": "diagnostic two-seed matched-completer comparison conditional on Legacy fixed-prefix completion; not the protected three-seed Exact primary",
+  "families": [
+    "exact",
+    "legacy-mask"
+  ],
+  "matched_completed_seeds": [
+    20260729,
+    20260731
+  ],
+  "failed_legacy_seed_retained": 20260730,
+  "failed_seed_used_for_classification_or_calibration": false,
+  "threshold": 0.5,
+  "temperature_positive_and_decision_invariant": true,
+  "temperatures": {
+    "exact": {
+      "icbhi2017": 1.551703890686541,
+      "sprsound2022": 1.190958576689045
+    },
+    "legacy-mask": {
+      "icbhi2017": 1.5422992637002977,
+      "sprsound2022": 1.1871587623660453
+    }
+  },
+  "exact_minus_legacy": {
+    "icbhi2017": {
+      "role": "locked_test",
+      "ensemble_scope": "diagnostic_two_seed_20260729_20260731",
+      "exact_average_score": 0.659300506402075,
+      "legacy_average_score": 0.6719857999603975,
+      "exact_minus_legacy_average_score": {
+        "estimate": -0.012685293558322486,
+        "lower": -0.020912119133730502,
+        "upper": -0.00475581458561572,
+        "probability_greater_than_zero": 0.00025
+      },
+      "raw_probability_metric_intervals": {
+        "negative_log_likelihood": {
+          "estimate": -4.86814468474428e-05,
+          "lower": -0.007875440091510843,
+          "upper": 0.007591056789363848,
+          "probability_greater_than_zero": 0.4925
+        },
+        "brier_score": {
+          "estimate": 0.0010499256100957033,
+          "lower": -0.0015583142336867025,
+          "upper": 0.003681965465872684,
+          "probability_greater_than_zero": 0.78575
+        },
+        "equal_frequency_ece": {
+          "estimate": 0.001101277162443473,
+          "lower": -0.009791142478171954,
+          "upper": 0.012033838800163347,
+          "probability_greater_than_zero": 0.57875
+        }
+      },
+      "temperature_probability_metric_intervals": {
+        "negative_log_likelihood": {
+          "estimate": -0.0006012469292926426,
+          "lower": -0.005721924521008394,
+          "upper": 0.0042807932750729616,
+          "probability_greater_than_zero": 0.40575
+        },
+        "brier_score": {
+          "estimate": 0.0002686983076257976,
+          "lower": -0.0017491629599175132,
+          "upper": 0.0022940711472314,
+          "probability_greater_than_zero": 0.59925
+        },
+        "equal_frequency_ece": {
+          "estimate": -0.0198073306336291,
+          "lower": -0.018356927328893182,
+          "upper": 0.008892570005440147,
+          "probability_greater_than_zero": 0.197
+        }
+      }
+    },
+    "sprsound2022": {
+      "role": "locked_inter_test",
+      "ensemble_scope": "diagnostic_two_seed_20260729_20260731",
+      "exact_average_score": 0.8988617263199525,
+      "legacy_average_score": 0.8937401127150484,
+      "exact_minus_legacy_average_score": {
+        "estimate": 0.005121613604904152,
+        "lower": -0.002689858272542261,
+        "upper": 0.012238081485869155,
+        "probability_greater_than_zero": 0.9195
+      },
+      "raw_probability_metric_intervals": {
+        "negative_log_likelihood": {
+          "estimate": -0.019087772138504044,
+          "lower": -0.03317496648186217,
+          "upper": -0.009167624385453836,
+          "probability_greater_than_zero": 0.0
+        },
+        "brier_score": {
+          "estimate": -0.006137946114426071,
+          "lower": -0.009870626235573096,
+          "upper": -0.003227287239197243,
+          "probability_greater_than_zero": 0.0
+        },
+        "equal_frequency_ece": {
+          "estimate": -0.011500970206084676,
+          "lower": -0.016465712733763415,
+          "upper": -0.007761350064369168,
+          "probability_greater_than_zero": 0.0
+        }
+      },
+      "temperature_probability_metric_intervals": {
+        "negative_log_likelihood": {
+          "estimate": -0.01783254680077989,
+          "lower": -0.030342928269788037,
+          "upper": -0.00896582432310539,
+          "probability_greater_than_zero": 0.0
+        },
+        "brier_score": {
+          "estimate": -0.0059036758585363225,
+          "lower": -0.009536913150666198,
+          "upper": -0.0031361536374719503,
+          "probability_greater_than_zero": 0.0
+        },
+        "equal_frequency_ece": {
+          "estimate": -0.011707793183791226,
+          "lower": -0.01668645690627172,
+          "upper": -0.008252519010420421,
+          "probability_greater_than_zero": 0.0
+        }
+      }
+    },
+    "equal_database_mean": {
+      "estimate": -0.003781839976709167,
+      "lower": -0.00930265117827654,
+      "upper": 0.0015734229605552101,
+      "probability_greater_than_zero": 0.088
+    }
+  },
+  "raw_minus_temperature_probability_intervals": {
+    "exact/icbhi2017/validation_select": {
+      "negative_log_likelihood": {
+        "estimate": 0.00963746953152056,
+        "lower": -0.025544432146354983,
+        "upper": 0.04405600026446349,
+        "probability_greater_than_zero": 0.6945
+      },
+      "brier_score": {
+        "estimate": 0.002489220489805627,
+        "lower": -0.007358727558610426,
+        "upper": 0.011634782980433944,
+        "probability_greater_than_zero": 0.66225
+      },
+      "equal_frequency_ece": {
+        "estimate": 0.015980230694825674,
+        "lower": -0.03869185426356863,
+        "upper": 0.030257322715818533,
+        "probability_greater_than_zero": 0.51725
+      }
+    },
+    "exact/icbhi2017/calibration": {
+      "negative_log_likelihood": {
+        "estimate": 0.02641343320311229,
+        "lower": -0.02116447124763703,
+        "upper": 0.11451033372727823,
+        "probability_greater_than_zero": 0.82475
+      },
+      "brier_score": {
+        "estimate": 0.0026391097154206677,
+        "lower": -0.006510283256117751,
+        "upper": 0.01946027465274192,
+        "probability_greater_than_zero": 0.67475
+      },
+      "equal_frequency_ece": {
+        "estimate": 0.012486760995385815,
+        "lower": -0.032232632365536154,
+        "upper": 0.03604790939945199,
+        "probability_greater_than_zero": 0.50925
+      }
+    },
+    "exact/icbhi2017/locked_test": {
+      "negative_log_likelihood": {
+        "estimate": 0.05009025798699529,
+        "lower": 0.01936608551787596,
+        "upper": 0.08893758142085739,
+        "probability_greater_than_zero": 0.99975
+      },
+      "brier_score": {
+        "estimate": 0.010177292808400157,
+        "lower": 0.002773229735754033,
+        "upper": 0.01885863125967785,
+        "probability_greater_than_zero": 0.99625
+      },
+      "equal_frequency_ece": {
+        "estimate": 0.05901798285040583,
+        "lower": 0.003540835387057951,
+        "upper": 0.06234626901228106,
+        "probability_greater_than_zero": 0.9815
+      }
+    },
+    "exact/sprsound2022/validation_select": {
+      "negative_log_likelihood": {
+        "estimate": 0.0018658516920780632,
+        "lower": -0.003398614363930697,
+        "upper": 0.007611517767054497,
+        "probability_greater_than_zero": 0.74775
+      },
+      "brier_score": {
+        "estimate": 0.0009361740523926854,
+        "lower": -1.2841394855193919e-05,
+        "upper": 0.0018718314585354707,
+        "probability_greater_than_zero": 0.97375
+      },
+      "equal_frequency_ece": {
+        "estimate": -0.002909805295851643,
+        "lower": -0.0095607417534162,
+        "upper": 0.005009100660769722,
+        "probability_greater_than_zero": 0.2315
+      }
+    },
+    "exact/sprsound2022/calibration": {
+      "negative_log_likelihood": {
+        "estimate": 0.004017924574309051,
+        "lower": -0.0029228037599626274,
+        "upper": 0.012978897028022537,
+        "probability_greater_than_zero": 0.861
+      },
+      "brier_score": {
+        "estimate": 0.0009821483669231398,
+        "lower": 5.388029508624304e-05,
+        "upper": 0.002027904926997219,
+        "probability_greater_than_zero": 0.98125
+      },
+      "equal_frequency_ece": {
+        "estimate": -0.005322823358391446,
+        "lower": -0.009130244255584093,
+        "upper": -0.002069285086856332,
+        "probability_greater_than_zero": 0.0015
+      }
+    },
+    "exact/sprsound2022/locked_inter_test": {
+      "negative_log_likelihood": {
+        "estimate": 0.0273749220226997,
+        "lower": 0.012519302300688971,
+        "upper": 0.04483729312529126,
+        "probability_greater_than_zero": 1.0
+      },
+      "brier_score": {
+        "estimate": 0.003283179505617642,
+        "lower": 0.0014369057772149318,
+        "upper": 0.00569002478975476,
+        "probability_greater_than_zero": 1.0
+      },
+      "equal_frequency_ece": {
+        "estimate": -0.00412586561631112,
+        "lower": -0.007915239911634979,
+        "upper": -0.000664367343291366,
+        "probability_greater_than_zero": 0.0095
+      }
+    },
+    "exact/sprsound2022/locked_intra_test": {
+      "negative_log_likelihood": {
+        "estimate": 0.019116739294021357,
+        "lower": 0.010093296250085211,
+        "upper": 0.029404800356615322,
+        "probability_greater_than_zero": 1.0
+      },
+      "brier_score": {
+        "estimate": 0.003550755132047431,
+        "lower": 0.002181511087741899,
+        "upper": 0.0050237415553148574,
+        "probability_greater_than_zero": 1.0
+      },
+      "equal_frequency_ece": {
+        "estimate": -0.00016249354194450283,
+        "lower": -0.004432176289481073,
+        "upper": 0.005867164925127375,
+        "probability_greater_than_zero": 0.5345
+      }
+    },
+    "legacy-mask/icbhi2017/validation_select": {
+      "negative_log_likelihood": {
+        "estimate": 0.00878629117546137,
+        "lower": -0.02625271804778661,
+        "upper": 0.041125988199106886,
+        "probability_greater_than_zero": 0.68425
+      },
+      "brier_score": {
+        "estimate": 0.0020407500713403304,
+        "lower": -0.008332489462777988,
+        "upper": 0.011320808500077948,
+        "probability_greater_than_zero": 0.62525
+      },
+      "equal_frequency_ece": {
+        "estimate": 0.010944210779789403,
+        "lower": -0.03963584070743538,
+        "upper": 0.027793416212811384,
+        "probability_greater_than_zero": 0.49025
+      }
+    },
+    "legacy-mask/icbhi2017/calibration": {
+      "negative_log_likelihood": {
+        "estimate": 0.025712617004229665,
+        "lower": -0.02160195909835566,
+        "upper": 0.11136735132101497,
+        "probability_greater_than_zero": 0.82325
+      },
+      "brier_score": {
+        "estimate": 0.002634781598553071,
+        "lower": -0.006594165270620952,
+        "upper": 0.01895770771889681,
+        "probability_greater_than_zero": 0.667
+      },
+      "equal_frequency_ece": {
+        "estimate": 0.004720026740359595,
+        "lower": -0.03629672169124301,
+        "upper": 0.03714524447313072,
+        "probability_greater_than_zero": 0.50175
+      }
+    },
+    "legacy-mask/icbhi2017/locked_test": {
+      "negative_log_likelihood": {
+        "estimate": 0.04953769250455009,
+        "lower": 0.018284788623241007,
+        "upper": 0.08873917325604573,
+        "probability_greater_than_zero": 0.9995
+      },
+      "brier_score": {
+        "estimate": 0.009396065505930251,
+        "lower": 0.002010618033792168,
+        "upper": 0.018155195709709776,
+        "probability_greater_than_zero": 0.99175
+      },
+      "equal_frequency_ece": {
+        "estimate": 0.03810937505433326,
+        "lower": -0.0007002233645325076,
+        "upper": 0.05754950551283382,
+        "probability_greater_than_zero": 0.97125
+      }
+    },
+    "legacy-mask/sprsound2022/validation_select": {
+      "negative_log_likelihood": {
+        "estimate": 0.0011981676664867547,
+        "lower": -0.0039037500783025187,
+        "upper": 0.006845686957467562,
+        "probability_greater_than_zero": 0.664
+      },
+      "brier_score": {
+        "estimate": 0.0008351632601863029,
+        "lower": -0.0001305579079509309,
+        "upper": 0.0017559375200017903,
+        "probability_greater_than_zero": 0.9545
+      },
+      "equal_frequency_ece": {
+        "estimate": -0.007317760719934938,
+        "lower": -0.009619467853005137,
+        "upper": 0.0021388883318287574,
+        "probability_greater_than_zero": 0.06975
+      }
+    },
+    "legacy-mask/sprsound2022/calibration": {
+      "negative_log_likelihood": {
+        "estimate": 0.0038834983707209947,
+        "lower": -0.0028604562663366996,
+        "upper": 0.012399023962084827,
+        "probability_greater_than_zero": 0.85825
+      },
+      "brier_score": {
+        "estimate": 0.0010229314575721793,
+        "lower": 8.690445170636996e-05,
+        "upper": 0.0021504111105694404,
+        "probability_greater_than_zero": 0.98625
+      },
+      "equal_frequency_ece": {
+        "estimate": -0.005371786819086316,
+        "lower": -0.009551112226676263,
+        "upper": -0.0017343863683856576,
+        "probability_greater_than_zero": 0.00425
+      }
+    },
+    "legacy-mask/sprsound2022/locked_inter_test": {
+      "negative_log_likelihood": {
+        "estimate": 0.028630147360423852,
+        "lower": 0.013525397981781906,
+        "upper": 0.0472828607598776,
+        "probability_greater_than_zero": 1.0
+      },
+      "brier_score": {
+        "estimate": 0.0035174497615073907,
+        "lower": 0.0016422427960315902,
+        "upper": 0.005905302714317042,
+        "probability_greater_than_zero": 1.0
+      },
+      "equal_frequency_ece": {
+        "estimate": -0.00433268859401767,
+        "lower": -0.008269998712487845,
+        "upper": -0.0011337072591418053,
+        "probability_greater_than_zero": 0.005
+      }
+    },
+    "legacy-mask/sprsound2022/locked_intra_test": {
+      "negative_log_likelihood": {
+        "estimate": 0.019805528925852967,
+        "lower": 0.010776719444074422,
+        "upper": 0.030216385482284856,
+        "probability_greater_than_zero": 1.0
+      },
+      "brier_score": {
+        "estimate": 0.003923039351759944,
+        "lower": 0.002505462897813943,
+        "upper": 0.0054173789691606185,
+        "probability_greater_than_zero": 1.0
+      },
+      "equal_frequency_ece": {
+        "estimate": -0.0015912510153665016,
+        "lower": -0.004676133126978206,
+        "upper": 0.0032840368290950436,
+        "probability_greater_than_zero": 0.182
+      }
+    }
+  },
+  "bootstrap": {
+    "iterations": 4000,
+    "seed": 20260729,
+    "confidence": 0.95,
+    "cluster": "patient",
+    "equal_database_resampling": "independent domain resamples paired by replicate index"
+  },
+  "calibration_metrics": "NLL, Brier score, 15-bin equal-frequency ECE, intercept, and slope",
+  "calibration_intercept_and_slope_interval_status": "4000 patient-cluster draws; see diagnostics for intervals and any explicitly enumerated nonestimable replicates",
+  "manifest_sha256": "2dd168129fc0fc159db201f2990c4d7074cb746fc9bc2c13bd5031e47dbd1419",
+  "statistical_freeze_sha256": "f7d8327bc5c5d2490c814f338733221e597fceb81312f36514e801436bafd089",
+  "frozen_files": {
+    "scripts/analyze_revision_ablation.py": "df78cad5c3658b20f130a187133f3bede5f32d85228865cbe7af7bd91b981687",
+    "../experiment_plans/2026-09-03/01_REVISION_ANALYSIS_PLAN_FROZEN_2026-09-03.md": "18b6e39bba441e5be1ec870591b9dbf2846b7e6ab6293be9d211aab12809be39",
+    "../experiment_plans/2026-09-03/03_ANALYSIS_PLAN_AMENDMENT_2026-09-04_LEGACY_FAILURE.md": "9b2b7e19ae0f14fc8e3107b579d45987e9a729753507f858a2ca12ce94aa91e4",
+    "artifacts/revision_2026_09_03/analysis_a_inference_freeze.json": "34ce5d2d259f05446293a61acac0792d8d37e10431a2cce3fb56773f77f4b93c",
+    "artifacts/revision_2026_09_03/predictions/legacy_mask/prediction_manifest.json": "2928548cc964428b4b5bb76a4940e610dee37e9e7a9cc7b3273cbe5e6dec9aad",
+    "artifacts/post_gate11a/calibration_predictions/prediction_manifest.json": "9a2cdf1983b12a1f69a399cdf0943b5e4d26767bde84688b1b432bb67f909472",
+    "artifacts/post_gate11a/locked_predictions/prediction_manifest.json": "839a3523dffba6e810385a8ca0cfcbb1396405c70a8b193ec1b66c85bdf656ec",
+    "runs/gate11a_exactmask_fullft_seed20260729/best_validation_predictions_icbhi2017.csv": "bd5fe4b316514c0f9a6b34b7bb370621e380f60e57826091822c1a4fa4b45136",
+    "runs/gate11a_exactmask_fullft_seed20260729/best_validation_predictions_sprsound2022.csv": "aa6d0a0e1c36cdfd68bd2d59b5b6a307af87113f40747309c56ca5183f0bec3b",
+    "runs/gate11a_exactmask_fullft_seed20260731/best_validation_predictions_icbhi2017.csv": "5cf597c5580fb7e8efcd9d8d7ad7f90a5815f25cc61629a298eeaeb369e83d2d",
+    "runs/gate11a_exactmask_fullft_seed20260731/best_validation_predictions_sprsound2022.csv": "4c4837933f79c4409b14ef440fffb3ed485193824bddf5fc3a0f572e29f7cb73",
+    "data/manifests/cross_domain_binary.csv": "2dd168129fc0fc159db201f2990c4d7074cb746fc9bc2c13bd5031e47dbd1419",
+    "artifacts/revision_2026_09_03/analysis_a_statistical_freeze_amendment_2026-09-04.json": "128cb041b42a8c2eda8ab0d183845db5bb2fa01d71c8ac9ad08e95746b04fd16",
+    "artifacts/revision_2026_09_03/analysis_a_statistical_freeze_amendment2_2026-09-04.json": "6e7f34714c3730b453b25ba2fa2c8fb2918fdd3bf1329e9fa060d081b0b9f88c"
+  },
+  "prediction_hashes": {
+    "exact/20260729/icbhi2017/validation_select": "bd5fe4b316514c0f9a6b34b7bb370621e380f60e57826091822c1a4fa4b45136",
+    "exact/20260731/icbhi2017/validation_select": "5cf597c5580fb7e8efcd9d8d7ad7f90a5815f25cc61629a298eeaeb369e83d2d",
+    "exact/20260729/icbhi2017/calibration": "2e1b5a97c78c5411e035ea4ec929868b8a1a0a02173e4278ae1b6302e1ce03a8",
+    "exact/20260731/icbhi2017/calibration": "3edd2eadfbf327a1aa311766527b90c2b91cccbd40a1da516ab1070c7d714a9e",
+    "exact/20260729/icbhi2017/locked_test": "519e77edbaee73c198e4f661881384721987559d12654a54d21952bca7d7f0a2",
+    "exact/20260731/icbhi2017/locked_test": "911c02dbac5ce50e6b332e138af01312c8debf1bccee01fdae1f62c95b901346",
+    "exact/20260729/sprsound2022/validation_select": "aa6d0a0e1c36cdfd68bd2d59b5b6a307af87113f40747309c56ca5183f0bec3b",
+    "exact/20260731/sprsound2022/validation_select": "4c4837933f79c4409b14ef440fffb3ed485193824bddf5fc3a0f572e29f7cb73",
+    "exact/20260729/sprsound2022/calibration": "94e0f83e964dab7225cb2e6a3f9791935b2d116c4a7cf10c47e676557f7c8874",
+    "exact/20260731/sprsound2022/calibration": "8a7cbcfa7e60b36500950ec33f93abd1763354f00e74297b456854ee462dc16e",
+    "exact/20260729/sprsound2022/locked_inter_test": "b15ed25a5ef97e521e09d2de2338b06e77dc962c8524b611fc9224d2e44164ce",
+    "exact/20260731/sprsound2022/locked_inter_test": "6d0820fcb5d14626887081b643d899c70d514ae5d5f0649b520a9bf7b365c287",
+    "exact/20260729/sprsound2022/locked_intra_test": "b2969a10e3d673981932b06619032b8b8b8a69169373671b710c70f5d4eb5a7b",
+    "exact/20260731/sprsound2022/locked_intra_test": "cf3fcb54e3b9fee20b705bc3b257665a75df4d6942d7837628b4c57b0ff10e2f",
+    "legacy-mask/20260729/icbhi2017/validation_select": "030a3abb6ab7f39db8c9406074b434e2e4fb144b5992288f762a0a1d80d055fa",
+    "legacy-mask/20260731/icbhi2017/validation_select": "8aee65a3d774f11ca19804cead5fd6b07da11e604390064afbdbcd2ad4746a23",
+    "legacy-mask/20260729/icbhi2017/calibration": "361802dc234075d397dc60d0474ccd29c685f88411fef62212f0d2b213ffa407",
+    "legacy-mask/20260731/icbhi2017/calibration": "75ebb92c7ba3d86ba374100cb56f06381bb04e62179b3359d85a427d6b720c92",
+    "legacy-mask/20260729/icbhi2017/locked_test": "8b792ae6578f93251589dc48f1c3620db81e1637df0e96efae169a42ac7912f4",
+    "legacy-mask/20260731/icbhi2017/locked_test": "00264a9f260a8c22999098b0883b685e81996018502a4f726d8b80716adf28d4",
+    "legacy-mask/20260729/sprsound2022/validation_select": "172ccbc59b55c1c415d6c29259780ccf9f9ee42c00b5f12c7c211ff4fcb11f08",
+    "legacy-mask/20260731/sprsound2022/validation_select": "6c460914f2722b7c4305a23204ca5854a629ad6f3c3ca1606aa49db1af5d73a6",
+    "legacy-mask/20260729/sprsound2022/calibration": "d3b3b465fc904bfaa363682a5d54c3acb83a565f7166d8840d7f3884643191f6",
+    "legacy-mask/20260731/sprsound2022/calibration": "4b6c76e5e0ab3d346d5bf8bc3a53aab9a49515925e0756be3c543ca1f85a9cb7",
+    "legacy-mask/20260729/sprsound2022/locked_inter_test": "0e4324728de98d0f47a93114ccd26ffdf5ab83faa9ed0ec172f1e77d531387d1",
+    "legacy-mask/20260731/sprsound2022/locked_inter_test": "f65541da880fbee1303aca3bb8a574f67f4a8375e1d181d92e7fb0ff13bb3d47",
+    "legacy-mask/20260729/sprsound2022/locked_intra_test": "51aafdb214fca58d65850fce6c2e965a4a942b771c7b3946c77aca109d070489",
+    "legacy-mask/20260731/sprsound2022/locked_intra_test": "2bf79833b848f82c87211b30b2513d13fe5e27a3d39b7b573a6aee7aaac61714"
+  },
+  "output_hashes": {
+    "classification_metrics.csv": "76d2c76a50ecd23032fefe318daa1be382e96a0a442f83db0da4e673220f8137",
+    "calibration_metrics.csv": "3f49289b30241680dc122f478d08325c9b68afadfadbd0d567d7eb29199731d8",
+    "calibration_regression_diagnostics.json": "31ad37e84dc534c1e43b449189abbec103b239c7667a1c721819c2edab6200fe"
+  },
+  "patient_overlap_audit": {
+    "pairwise_overlap_counts": {
+      "icbhi2017/train_fit__icbhi2017/validation_select": 0,
+      "icbhi2017/train_fit__icbhi2017/calibration": 0,
+      "icbhi2017/train_fit__icbhi2017/locked_test": 0,
+      "icbhi2017/validation_select__icbhi2017/calibration": 0,
+      "icbhi2017/validation_select__icbhi2017/locked_test": 0,
+      "icbhi2017/calibration__icbhi2017/locked_test": 0,
+      "sprsound2022/train_fit__sprsound2022/validation_select": 0,
+      "sprsound2022/train_fit__sprsound2022/calibration": 0,
+      "sprsound2022/train_fit__sprsound2022/locked_inter_test": 0,
+      "sprsound2022/train_fit__sprsound2022/locked_intra_test": 111,
+      "sprsound2022/validation_select__sprsound2022/calibration": 0,
+      "sprsound2022/validation_select__sprsound2022/locked_inter_test": 0,
+      "sprsound2022/validation_select__sprsound2022/locked_intra_test": 19,
+      "sprsound2022/calibration__sprsound2022/locked_inter_test": 0,
+      "sprsound2022/calibration__sprsound2022/locked_intra_test": 26,
+      "sprsound2022/locked_inter_test__sprsound2022/locked_intra_test": 0
+    },
+    "expected_descriptive_intra_overlap": {
+      "sprsound2022/train_fit__sprsound2022/locked_intra_test": 111,
+      "sprsound2022/validation_select__sprsound2022/locked_intra_test": 19,
+      "sprsound2022/calibration__sprsound2022/locked_intra_test": 26,
+      "sprsound2022/locked_inter_test__sprsound2022/locked_intra_test": 0
+    },
+    "prohibited_overlap": {},
+    "primary_patient_disjoint_roles_passed": true
+  },
+  "finite_value_audit_passed": true,
+  "prediction_coverage_and_label_audit_passed": true,
+  "locked_results_used_for_selection": false,
+  "selection_after_locked_access": false,
+  "analysis_freeze_methods": {
+    "scope": "diagnostic two-seed matched-completer comparison conditional on Legacy fixed-prefix completion",
+    "ensemble": "arithmetic mean of seed-20260729 and seed-20260731 probabilities within each mask arm",
+    "threshold": 0.5,
+    "classification_metrics": [
+      "sensitivity",
+      "specificity",
+      "average_score",
+      "macro_f1",
+      "AUROC"
+    ],
+    "temperature_scaling": "one positive scalar temperature fitted by binary NLL on each arm-and-database calibration ensemble and applied unchanged to validation and held-out roles",
+    "calibration_metrics": [
+      "binary NLL",
+      "Brier score",
+      "15-bin equal-frequency ECE",
+      "calibration intercept",
+      "calibration slope"
+    ],
+    "primary_roles": {
+      "icbhi2017": "locked_test",
+      "sprsound2022": "locked_inter_test"
+    },
+    "contrast": "Exact minus Legacy",
+    "bootstrap": "4000 paired patient-cluster percentile replicates using seed 20260729; domains independently resampled for equal-database mean",
+    "calibration_intercept_and_slope_intervals": "not bootstrapped; descriptive point estimates because clustered resamples may be quasi-separated",
+    "failed_seed_policy": "seed-20260730 is retained as a numerical-stability failure and excluded from completed-seed classification/calibration without replacement",
+    "selection_after_locked_access": false
+  },
+  "supersedes_result_sha256": "8f2d39a665e2678ee20a00afe96ae1b5a81422b18471360cbee566220df1caa9",
+  "supersession_scope": "correct calibration regression coefficients and interval omission only; original files preserved",
+  "correction_freeze_sha256": "e64c5f2c4ffce8b37fef605b22d79170148637b189ae5f3e2bab8d23e9f895d1",
+  "corrected_at": "2026-09-05T08:13:04.043630+08:00",
+  "calibration_regression_qa_passed": true,
+  "original_nonregression_calibration_cells_verified": 84,
+  "original_primary_contrast_as_points_verified": 4,
+  "classification_table_byte_identical": true,
+  "original_intervals_preserved_without_reselection": true,
+  "correction_elapsed_seconds": 49.26680620806292
+}

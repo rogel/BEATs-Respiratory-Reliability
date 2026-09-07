@@ -1,0 +1,50 @@
+{
+  "gate": "9D-multiseed",
+  "frozen_after_seed_20260729_pass_and_before_seed_20260730_or_20260731_results": true,
+  "date": "2026-07-31",
+  "purpose": "Confirm whether database-by-class balanced LoRA has a repeatable advantage over raw event-random LoRA.",
+  "fixed_seeds": [
+    20260729,
+    20260730,
+    20260731
+  ],
+  "paired_modes": [
+    "domain_class_event",
+    "event_random"
+  ],
+  "shared_protocol": {
+    "model": "BEATs Iter3+ AS2M with rank-8 Q/V LoRA in blocks 8-11",
+    "trainable_parameters": 99842,
+    "trainable_fraction": 0.0011043047844926683,
+    "samples_per_epoch": 7515,
+    "full_batches_per_epoch": 940,
+    "checkpoint_selection": "worst-database Average Score, then mean-database Average Score",
+    "classification_threshold": 0.5,
+    "exact_arbitrary_position_token_mask": true
+  },
+  "lower_bound_gate": {
+    "directional_branch_a": {
+      "mean_paired_worst_database_gain_at_least": 0.003,
+      "mean_paired_mean_database_gain_at_least": 0.0
+    },
+    "directional_branch_b": {
+      "mean_paired_mean_database_gain_at_least": 0.003,
+      "mean_paired_worst_database_gain_at_least": 0.0
+    },
+    "at_least_one_branch_required": true,
+    "paired_wins_for_relevant_worst_or_mean_metric_at_least": "2 of 3",
+    "no_database_cross_seed_mean_drop_greater_than": 0.005,
+    "balanced_sensitivity_and_specificity_every_seed_at_least": 0.5,
+    "patient_cluster_bootstrap_probability_for_relevant_gain_at_least": 0.8,
+    "interpretation": "Low repeatability and relevance bounds, not final journal-level superiority thresholds."
+  },
+  "decision_policy": {
+    "if_passed": "Retain database-class balancing as one component of the applied paper and proceed to exact-mask full-fine-tuning and calibration/rejection stages.",
+    "if_failed": "Do not claim sampling as a central contribution and do not access locked tests."
+  },
+  "data_access": {
+    "validation_select": true,
+    "calibration": false,
+    "locked_tests": false
+  }
+}

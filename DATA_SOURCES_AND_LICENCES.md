@@ -1,6 +1,6 @@
 # Data sources and licences
 
-Datasets, original annotations and model weights are not bundled with this software. Obtain them from the original providers and follow their current access and reuse conditions.
+Source recordings, original annotation files and model weights are not redistributed. Obtain them from the original providers and follow their current access and reuse conditions. Derived event-role assignments, predictions and analysis outputs are included; see `DATA_GUIDE.md` for their scope and verification.
 
 ## ICBHI 2017
 

@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "stage": "BEATS_revision",
+  "analysis": "exact_versus_official_legacy_token_mapping",
+  "analysis_plan_sha256": "18b6e39bba441e5be1ec870591b9dbf2846b7e6ab6293be9d211aab12809be39",
+  "manifest_sha256": "2dd168129fc0fc159db201f2990c4d7074cb746fc9bc2c13bd5031e47dbd1419",
+  "events": 15987,
+  "event_placement_rows": 63903,
+  "unique_resampled_lengths": 4449,
+  "documented_failure_replay": {
+    "exact_valid_tokens": [
+      16,
+      16
+    ],
+    "legacy_valid_tokens": [
+      7,
+      0
+    ]
+  },
+  "centre_placement": {
+    "rows": 15987,
+    "events_with_excluded_exact_valid_tokens": 15542,
+    "events_with_included_padding_only_tokens": 0,
+    "zero_valid_legacy_rows": 0,
+    "events_with_any_zero_valid_legacy_placement": 0,
+    "exact_valid_excluded_total": 124202,
+    "padding_only_included_total": 0,
+    "fully_padding_tokens_total": 4732752,
+    "partially_valid_tokens_total": 279720,
+    "fully_valid_tokens_total": 1382328
+  },
+  "stress_placements": {
+    "rows": 63903,
+    "events_with_excluded_exact_valid_tokens": 15987,
+    "events_with_included_padding_only_tokens": 0,
+    "zero_valid_legacy_rows": 6,
+    "events_with_any_zero_valid_legacy_placement": 6,
+    "exact_valid_excluded_total": 499747,
+    "padding_only_included_total": 0,
+    "fully_padding_tokens_total": 19072904,
+    "partially_valid_tokens_total": 964792,
+    "fully_valid_tokens_total": 5523504
+  },
+  "q_j_definition_audit_passed": true,
+  "finite_audit_passed": true,
+  "details_sha256": "8605bfd10514e7cbfe6efc083c2887ce2c08983c55d0e1b11cee1c47baaa651b"
+}

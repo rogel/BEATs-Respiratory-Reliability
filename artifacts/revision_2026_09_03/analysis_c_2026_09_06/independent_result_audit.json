@@ -1,0 +1,552 @@
+{
+  "status": "independent_analysis_c_QA_passed",
+  "audited_at": "2026-09-06T06:31:11.229876+08:00",
+  "classification_rows": 56,
+  "classification_cells_recomputed": 336,
+  "primary_draws_independently_reproduced": 12000,
+  "primary_intervals_reproduced": 3,
+  "calibration_point_cells_recomputed": 84,
+  "regression_point_checks": 28,
+  "raw_minus_temperature_intervals_reproduced": 42,
+  "temperatures_independently_recomputed_from_calibration_only": 2,
+  "validation_path_comparisons_recomputed": 24,
+  "validation_path_comparison_records": [
+    {
+      "seed": 20260729,
+      "domain": "icbhi2017",
+      "comparison": "training_evaluate_workers4",
+      "producer_dtypes": [
+        "float32",
+        "float64"
+      ],
+      "same_path_gate_required": true,
+      "csv_float64_recomputation": {
+        "maximum_absolute_probability_difference": 0.0,
+        "mean_absolute_probability_difference": 0.0,
+        "events_above_1e_6": 0,
+        "changed_0_5_decisions": 0
+      },
+      "original_producer_dtype_reconstruction": {
+        "maximum_absolute_probability_difference": 2.94235229514328e-08,
+        "mean_absolute_probability_difference": 6.4169389210120014e-09,
+        "events_above_1e_6": 0,
+        "changed_0_5_decisions": 0
+      }
+    },
+    {
+      "seed": 20260729,
+      "domain": "icbhi2017",
+      "comparison": "archival_infer_workers0",
+      "producer_dtypes": [
+        "float32",
+        "float64"
+      ],
+      "same_path_gate_required": false,
+      "csv_float64_recomputation": {
+        "maximum_absolute_probability_difference": 0.002987000000000073,
+        "mean_absolute_probability_difference": 4.078295848375466e-05,
+        "events_above_1e_6": 62,
+        "changed_0_5_decisions": 0
+      },
+      "original_producer_dtype_reconstruction": {
+        "maximum_absolute_probability_difference": 0.0029869724388122965,
+        "mean_absolute_probability_difference": 4.078599024737648e-05,
+        "events_above_1e_6": 62,
+        "changed_0_5_decisions": 0
+      }
+    },
+    {
+      "seed": 20260729,
+      "domain": "icbhi2017",
+      "comparison": "infer_workers0_threads1",
+      "producer_dtypes": [
+        "float32",
+        "float64"
+      ],
+      "same_path_gate_required": true,
+      "csv_float64_recomputation": {
+        "maximum_absolute_probability_difference": 0.0,
+        "mean_absolute_probability_difference": 0.0,
+        "events_above_1e_6": 0,
+        "changed_0_5_decisions": 0
+      },
+      "original_producer_dtype_reconstruction": {
+        "maximum_absolute_probability_difference": 2.94235229514328e-08,
+        "mean_absolute_probability_difference": 6.4169389210120014e-09,
+        "events_above_1e_6": 0,
+        "changed_0_5_decisions": 0
+      }
+    },
+    {
+      "seed": 20260729,
+      "domain": "icbhi2017",
+      "comparison": "threads1_vs_training_path",
+      "producer_dtypes": [
+        "float32",
+        "float32"
+      ],
+      "same_path_gate_required": true,
+      "csv_float64_recomputation": {
+        "maximum_absolute_probability_difference": 0.0,
+        "mean_absolute_probability_difference": 0.0,
+        "events_above_1e_6": 0,
+        "changed_0_5_decisions": 0
+      },
+      "original_producer_dtype_reconstruction": {
+        "maximum_absolute_probability_difference": 0.0,
+        "mean_absolute_probability_difference": 0.0,
+        "events_above_1e_6": 0,
+        "changed_0_5_decisions": 0
+      }
+    },
+    {
+      "seed": 20260729,
+      "domain": "sprsound2022",
+      "comparison": "training_evaluate_workers4",
+      "producer_dtypes": [
+        "float32",
+        "float64"
+      ],
+      "same_path_gate_required": true,
+      "csv_float64_recomputation": {
+        "maximum_absolute_probability_difference": 0.0,
+        "mean_absolute_probability_difference": 0.0,
+        "events_above_1e_6": 0,
+        "changed_0_5_decisions": 0
+      },
+      "original_producer_dtype_reconstruction": {
+        "maximum_absolute_probability_difference": 2.979812618875144e-08,
+        "mean_absolute_probability_difference": 3.3800534405768627e-09,
+        "events_above_1e_6": 0,
+        "changed_0_5_decisions": 0
+      }
+    },
+    {
+      "seed": 20260729,
+      "domain": "sprsound2022",
+      "comparison": "archival_infer_workers0",
+      "producer_dtypes": [
+        "float32",
+        "float64"
+      ],
+      "same_path_gate_required": false,
+      "csv_float64_recomputation": {
+        "maximum_absolute_probability_difference": 9.005999999991965e-06,
+        "mean_absolute_probability_difference": 3.96624876603214e-08,
+        "events_above_1e_6": 11,
+        "changed_0_5_decisions": 0
+      },
+      "original_producer_dtype_reconstruction": {
+        "maximum_absolute_probability_difference": 9.006065502165095e-06,
+        "mean_absolute_probability_difference": 4.2984505804449876e-08,
+        "events_above_1e_6": 11,
+        "changed_0_5_decisions": 0
+      }
+    },
+    {
+      "seed": 20260729,
+      "domain": "sprsound2022",
+      "comparison": "infer_workers0_threads1",
+      "producer_dtypes": [
+        "float32",
+        "float64"
+      ],
+      "same_path_gate_required": true,
+      "csv_float64_recomputation": {
+        "maximum_absolute_probability_difference": 0.0,
+        "mean_absolute_probability_difference": 0.0,
+        "events_above_1e_6": 0,
+        "changed_0_5_decisions": 0
+      },
+      "original_producer_dtype_reconstruction": {
+        "maximum_absolute_probability_difference": 2.979812618875144e-08,
+        "mean_absolute_probability_difference": 3.3800534405768627e-09,
+        "events_above_1e_6": 0,
+        "changed_0_5_decisions": 0
+      }
+    },
+    {
+      "seed": 20260729,
+      "domain": "sprsound2022",
+      "comparison": "threads1_vs_training_path",
+      "producer_dtypes": [
+        "float32",
+        "float32"
+      ],
+      "same_path_gate_required": true,
+      "csv_float64_recomputation": {
+        "maximum_absolute_probability_difference": 0.0,
+        "mean_absolute_probability_difference": 0.0,
+        "events_above_1e_6": 0,
+        "changed_0_5_decisions": 0
+      },
+      "original_producer_dtype_reconstruction": {
+        "maximum_absolute_probability_difference": 0.0,
+        "mean_absolute_probability_difference": 0.0,
+        "events_above_1e_6": 0,
+        "changed_0_5_decisions": 0
+      }
+    },
+    {
+      "seed": 20260730,
+      "domain": "icbhi2017",
+      "comparison": "training_evaluate_workers4",
+      "producer_dtypes": [
+        "float32",
+        "float64"
+      ],
+      "same_path_gate_required": true,
+      "csv_float64_recomputation": {
+        "maximum_absolute_probability_difference": 0.0,
+        "mean_absolute_probability_difference": 0.0,
+        "events_above_1e_6": 0,
+        "changed_0_5_decisions": 0
+      },
+      "original_producer_dtype_reconstruction": {
+        "maximum_absolute_probability_difference": 2.950744626417645e-08,
+        "mean_absolute_probability_difference": 6.69658858932462e-09,
+        "events_above_1e_6": 0,
+        "changed_0_5_decisions": 0
+      }
+    },
+    {
+      "seed": 20260730,
+      "domain": "icbhi2017",
+      "comparison": "archival_infer_workers0",
+      "producer_dtypes": [
+        "float32",
+        "float64"
+      ],
+      "same_path_gate_required": false,
+      "csv_float64_recomputation": {
+        "maximum_absolute_probability_difference": 0.003224820000000017,
+        "mean_absolute_probability_difference": 4.17315162454856e-05,
+        "events_above_1e_6": 62,
+        "changed_0_5_decisions": 0
+      },
+      "original_producer_dtype_reconstruction": {
+        "maximum_absolute_probability_difference": 0.0032248234103393614,
+        "mean_absolute_probability_difference": 4.1733823396879205e-05,
+        "events_above_1e_6": 61,
+        "changed_0_5_decisions": 0
+      }
+    },
+    {
+      "seed": 20260730,
+      "domain": "icbhi2017",
+      "comparison": "infer_workers0_threads1",
+      "producer_dtypes": [
+        "float32",
+        "float64"
+      ],
+      "same_path_gate_required": true,
+      "csv_float64_recomputation": {
+        "maximum_absolute_probability_difference": 0.0,
+        "mean_absolute_probability_difference": 0.0,
+        "events_above_1e_6": 0,
+        "changed_0_5_decisions": 0
+      },
+      "original_producer_dtype_reconstruction": {
+        "maximum_absolute_probability_difference": 2.950744626417645e-08,
+        "mean_absolute_probability_difference": 6.69658858932462e-09,
+        "events_above_1e_6": 0,
+        "changed_0_5_decisions": 0
+      }
+    },
+    {
+      "seed": 20260730,
+      "domain": "icbhi2017",
+      "comparison": "threads1_vs_training_path",
+      "producer_dtypes": [
+        "float32",
+        "float32"
+      ],
+      "same_path_gate_required": true,
+      "csv_float64_recomputation": {
+        "maximum_absolute_probability_difference": 0.0,
+        "mean_absolute_probability_difference": 0.0,
+        "events_above_1e_6": 0,
+        "changed_0_5_decisions": 0
+      },
+      "original_producer_dtype_reconstruction": {
+        "maximum_absolute_probability_difference": 0.0,
+        "mean_absolute_probability_difference": 0.0,
+        "events_above_1e_6": 0,
+        "changed_0_5_decisions": 0
+      }
+    },
+    {
+      "seed": 20260730,
+      "domain": "sprsound2022",
+      "comparison": "training_evaluate_workers4",
+      "producer_dtypes": [
+        "float32",
+        "float64"
+      ],
+      "same_path_gate_required": true,
+      "csv_float64_recomputation": {
+        "maximum_absolute_probability_difference": 0.0,
+        "mean_absolute_probability_difference": 0.0,
+        "events_above_1e_6": 0,
+        "changed_0_5_decisions": 0
+      },
+      "original_producer_dtype_reconstruction": {
+        "maximum_absolute_probability_difference": 2.9783630339785816e-08,
+        "mean_absolute_probability_difference": 3.268618693530537e-09,
+        "events_above_1e_6": 0,
+        "changed_0_5_decisions": 0
+      }
+    },
+    {
+      "seed": 20260730,
+      "domain": "sprsound2022",
+      "comparison": "archival_infer_workers0",
+      "producer_dtypes": [
+        "float32",
+        "float64"
+      ],
+      "same_path_gate_required": false,
+      "csv_float64_recomputation": {
+        "maximum_absolute_probability_difference": 7.740000000006075e-06,
+        "mean_absolute_probability_difference": 2.9881737413575015e-08,
+        "events_above_1e_6": 9,
+        "changed_0_5_decisions": 0
+      },
+      "original_producer_dtype_reconstruction": {
+        "maximum_absolute_probability_difference": 7.741901473998225e-06,
+        "mean_absolute_probability_difference": 3.3164810611220475e-08,
+        "events_above_1e_6": 9,
+        "changed_0_5_decisions": 0
+      }
+    },
+    {
+      "seed": 20260730,
+      "domain": "sprsound2022",
+      "comparison": "infer_workers0_threads1",
+      "producer_dtypes": [
+        "float32",
+        "float64"
+      ],
+      "same_path_gate_required": true,
+      "csv_float64_recomputation": {
+        "maximum_absolute_probability_difference": 0.0,
+        "mean_absolute_probability_difference": 0.0,
+        "events_above_1e_6": 0,
+        "changed_0_5_decisions": 0
+      },
+      "original_producer_dtype_reconstruction": {
+        "maximum_absolute_probability_difference": 2.9783630339785816e-08,
+        "mean_absolute_probability_difference": 3.268618693530537e-09,
+        "events_above_1e_6": 0,
+        "changed_0_5_decisions": 0
+      }
+    },
+    {
+      "seed": 20260730,
+      "domain": "sprsound2022",
+      "comparison": "threads1_vs_training_path",
+      "producer_dtypes": [
+        "float32",
+        "float32"
+      ],
+      "same_path_gate_required": true,
+      "csv_float64_recomputation": {
+        "maximum_absolute_probability_difference": 0.0,
+        "mean_absolute_probability_difference": 0.0,
+        "events_above_1e_6": 0,
+        "changed_0_5_decisions": 0
+      },
+      "original_producer_dtype_reconstruction": {
+        "maximum_absolute_probability_difference": 0.0,
+        "mean_absolute_probability_difference": 0.0,
+        "events_above_1e_6": 0,
+        "changed_0_5_decisions": 0
+      }
+    },
+    {
+      "seed": 20260731,
+      "domain": "icbhi2017",
+      "comparison": "training_evaluate_workers4",
+      "producer_dtypes": [
+        "float32",
+        "float64"
+      ],
+      "same_path_gate_required": true,
+      "csv_float64_recomputation": {
+        "maximum_absolute_probability_difference": 0.0,
+        "mean_absolute_probability_difference": 0.0,
+        "events_above_1e_6": 0,
+        "changed_0_5_decisions": 0
+      },
+      "original_producer_dtype_reconstruction": {
+        "maximum_absolute_probability_difference": 2.9780578558735726e-08,
+        "mean_absolute_probability_difference": 7.128333492947906e-09,
+        "events_above_1e_6": 0,
+        "changed_0_5_decisions": 0
+      }
+    },
+    {
+      "seed": 20260731,
+      "domain": "icbhi2017",
+      "comparison": "archival_infer_workers0",
+      "producer_dtypes": [
+        "float32",
+        "float64"
+      ],
+      "same_path_gate_required": false,
+      "csv_float64_recomputation": {
+        "maximum_absolute_probability_difference": 0.0026863799999999882,
+        "mean_absolute_probability_difference": 4.373370577617302e-05,
+        "events_above_1e_6": 63,
+        "changed_0_5_decisions": 0
+      },
+      "original_producer_dtype_reconstruction": {
+        "maximum_absolute_probability_difference": 0.002686384535217301,
+        "mean_absolute_probability_difference": 4.373631144611576e-05,
+        "events_above_1e_6": 63,
+        "changed_0_5_decisions": 0
+      }
+    },
+    {
+      "seed": 20260731,
+      "domain": "icbhi2017",
+      "comparison": "infer_workers0_threads1",
+      "producer_dtypes": [
+        "float32",
+        "float64"
+      ],
+      "same_path_gate_required": true,
+      "csv_float64_recomputation": {
+        "maximum_absolute_probability_difference": 0.0,
+        "mean_absolute_probability_difference": 0.0,
+        "events_above_1e_6": 0,
+        "changed_0_5_decisions": 0
+      },
+      "original_producer_dtype_reconstruction": {
+        "maximum_absolute_probability_difference": 2.9780578558735726e-08,
+        "mean_absolute_probability_difference": 7.128333492947906e-09,
+        "events_above_1e_6": 0,
+        "changed_0_5_decisions": 0
+      }
+    },
+    {
+      "seed": 20260731,
+      "domain": "icbhi2017",
+      "comparison": "threads1_vs_training_path",
+      "producer_dtypes": [
+        "float32",
+        "float32"
+      ],
+      "same_path_gate_required": true,
+      "csv_float64_recomputation": {
+        "maximum_absolute_probability_difference": 0.0,
+        "mean_absolute_probability_difference": 0.0,
+        "events_above_1e_6": 0,
+        "changed_0_5_decisions": 0
+      },
+      "original_producer_dtype_reconstruction": {
+        "maximum_absolute_probability_difference": 0.0,
+        "mean_absolute_probability_difference": 0.0,
+        "events_above_1e_6": 0,
+        "changed_0_5_decisions": 0
+      }
+    },
+    {
+      "seed": 20260731,
+      "domain": "sprsound2022",
+      "comparison": "training_evaluate_workers4",
+      "producer_dtypes": [
+        "float32",
+        "float64"
+      ],
+      "same_path_gate_required": true,
+      "csv_float64_recomputation": {
+        "maximum_absolute_probability_difference": 0.0,
+        "mean_absolute_probability_difference": 0.0,
+        "events_above_1e_6": 0,
+        "changed_0_5_decisions": 0
+      },
+      "original_producer_dtype_reconstruction": {
+        "maximum_absolute_probability_difference": 2.9712676985482744e-08,
+        "mean_absolute_probability_difference": 3.705697283964668e-09,
+        "events_above_1e_6": 0,
+        "changed_0_5_decisions": 0
+      }
+    },
+    {
+      "seed": 20260731,
+      "domain": "sprsound2022",
+      "comparison": "archival_infer_workers0",
+      "producer_dtypes": [
+        "float32",
+        "float64"
+      ],
+      "same_path_gate_required": false,
+      "csv_float64_recomputation": {
+        "maximum_absolute_probability_difference": 5.669999999999287e-06,
+        "mean_absolute_probability_difference": 4.0809180651618154e-08,
+        "events_above_1e_6": 13,
+        "changed_0_5_decisions": 0
+      },
+      "original_producer_dtype_reconstruction": {
+        "maximum_absolute_probability_difference": 5.671354684828878e-06,
+        "mean_absolute_probability_difference": 4.442437631982198e-08,
+        "events_above_1e_6": 13,
+        "changed_0_5_decisions": 0
+      }
+    },
+    {
+      "seed": 20260731,
+      "domain": "sprsound2022",
+      "comparison": "infer_workers0_threads1",
+      "producer_dtypes": [
+        "float32",
+        "float64"
+      ],
+      "same_path_gate_required": true,
+      "csv_float64_recomputation": {
+        "maximum_absolute_probability_difference": 0.0,
+        "mean_absolute_probability_difference": 0.0,
+        "events_above_1e_6": 0,
+        "changed_0_5_decisions": 0
+      },
+      "original_producer_dtype_reconstruction": {
+        "maximum_absolute_probability_difference": 2.9712676985482744e-08,
+        "mean_absolute_probability_difference": 3.705697283964668e-09,
+        "events_above_1e_6": 0,
+        "changed_0_5_decisions": 0
+      }
+    },
+    {
+      "seed": 20260731,
+      "domain": "sprsound2022",
+      "comparison": "threads1_vs_training_path",
+      "producer_dtypes": [
+        "float32",
+        "float32"
+      ],
+      "same_path_gate_required": true,
+      "csv_float64_recomputation": {
+        "maximum_absolute_probability_difference": 0.0,
+        "mean_absolute_probability_difference": 0.0,
+        "events_above_1e_6": 0,
+        "changed_0_5_decisions": 0
+      },
+      "original_producer_dtype_reconstruction": {
+        "maximum_absolute_probability_difference": 0.0,
+        "mean_absolute_probability_difference": 0.0,
+        "events_above_1e_6": 0,
+        "changed_0_5_decisions": 0
+      }
+    }
+  ],
+  "dtype_amendment_sha256": "4005cdf77b8eab5bff1ed9eadf7aaa980e9a7bf9f8f3a87679bde17d00114ace",
+  "superseded_audit_source_sha256": "334cf22b6889e9e4efe0475247b5778a17e297b11408f4faa7746a9ee8840005",
+  "correction_scope": "validation diagnostic dtypes only; original statistics and inference unchanged",
+  "all_prediction_metadata_and_hashes_verified": true,
+  "original_freezes_verified": true,
+  "result_sha256": "907d0627c2b8142dcfad0f1b49c3d221e57f74f3c1cef07cf354a6508d5bfce0",
+  "freeze_sha256": "3198f7d4f672554b719044a722c0fd7fab7bae5546e32890f2abdee94f477094",
+  "audit_source_sha256": "7d504960e80c946d8f56c1f29fab59f091087c1792449a34786be01ea1b70f8f",
+  "scientific_conclusion_review": "required before using these results"
+}

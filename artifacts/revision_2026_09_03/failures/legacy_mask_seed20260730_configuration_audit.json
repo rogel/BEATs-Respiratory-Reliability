@@ -1,0 +1,83 @@
+{
+  "schema_version": 1,
+  "stage": "BEATS_seed20260730_configuration_forensics",
+  "status": "configuration_valid_failure_attributed_to_legacy_zero_token_mapping",
+  "compared_seeds": [
+    20260729,
+    20260730,
+    20260731
+  ],
+  "common_configuration_equal_after_expected_seed_and_epoch_fields": true,
+  "expected_differences_only": [
+    "run_name",
+    "seed",
+    "specification.seed",
+    "specification.epochs_to_run"
+  ],
+  "seed20260730_specification": {
+    "mask_mode": "legacy",
+    "adaptation": "fullft",
+    "batch_size": 8,
+    "samples_per_epoch": 7515,
+    "batches_per_epoch": 940,
+    "views": 2,
+    "backbone_learning_rate": 1e-05,
+    "head_learning_rate": 0.0001,
+    "weight_decay": 0.01,
+    "warmup_epochs": 3,
+    "cosine_horizon_epochs": 20,
+    "js_max_weight": 0.4,
+    "fixed_prefix_epochs": 9,
+    "num_workers": 4,
+    "data_loader_generator_seed": 31260730
+  },
+  "learning_rate_and_consistency_trace_vs_matching_exact_run": {
+    "epochs_compared": 5,
+    "backbone_learning_rate_max_abs_delta": 0.0,
+    "head_learning_rate_max_abs_delta": 0.0,
+    "consistency_weight_max_abs_delta": 0.0
+  },
+  "data_audit": {
+    "manifest_rows": 15987,
+    "unique_sample_ids": 15987,
+    "selected_train_and_validation_rows": 9082,
+    "train_fit_rows": 7515,
+    "validation_select_rows": 1567,
+    "icbhi_train_validation_patient_overlap": 0,
+    "sprsound_train_validation_patient_overlap": 0,
+    "calibration_selected_during_training": false,
+    "locked_selected_during_training": false
+  },
+  "model_audit": {
+    "source_tensor_count": 252,
+    "discarded_audioset_predictor_parameters": 405263,
+    "trainable_parameters": 90313330,
+    "total_parameters": 90313330,
+    "strict_upstream_checkpoint_load": true
+  },
+  "software_equal_across_legacy_seeds": true,
+  "software": {
+    "python": "3.12.9",
+    "pytorch": "2.13.0",
+    "numpy": "2.4.6",
+    "pandas": "2.3.3",
+    "platform": "macOS-26.6.2-arm64-arm-64bit",
+    "device": "mps"
+  },
+  "deterministic_epoch6_mask_replay": {
+    "batch_index_zero_based": 919,
+    "sample_id": "sprsound2022::64743918_7.0_0_p2_2835__event_001",
+    "target": 1,
+    "view_index_zero_based": 1,
+    "valid_waveform_samples": 2192,
+    "first_valid_sample": 125794,
+    "last_valid_sample_inclusive": 127985,
+    "legacy_valid_tokens": 0,
+    "exact_valid_tokens": 8,
+    "other_view_legacy_valid_tokens": 8,
+    "mask_replay_sha256": "bb06eb578938dea20d1577ad07f6a4620ae944a1edfaa9ac3069fac952040ba5"
+  },
+  "conclusion": "No configuration, data-boundary, learning-rate, checkpoint-load, parameter-count, or software mismatch was found. The failure is caused by deterministic Legacy mask semantics for a valid right-edge event placement.",
+  "calibration_accessed": false,
+  "locked_tests_accessed": false
+}

@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "stage": "BEATS_revision_predictions",
+  "family": "legacy-mask",
+  "device": "mps",
+  "batch_size": 8,
+  "analysis_plan_sha256": "18b6e39bba441e5be1ec870591b9dbf2846b7e6ab6293be9d211aab12809be39",
+  "legacy_failure_amendment_sha256": "9b2b7e19ae0f14fc8e3107b579d45987e9a729753507f858a2ca12ce94aa91e4",
+  "manifest_sha256": "2dd168129fc0fc159db201f2990c4d7074cb746fc9bc2c13bd5031e47dbd1419",
+  "analysis_a_inference_freeze_sha256": "34ce5d2d259f05446293a61acac0792d8d37e10431a2cce3fb56773f77f4b93c",
+  "runs": {
+    "20260729": {
+      "run": "runs/revision_2026_09_03/revision_legacy_mask_seed20260729",
+      "summary_sha256": "c276f6ef6926341dc54eabf1225a2ba78fe62db6c56627038e0f5c659c9d0240",
+      "configuration_sha256": "827e116d9e3b51ade1026efd4decaae337475652427b0b69e3916973b950260f",
+      "checkpoint_sha256": "55be055282fcd7d73f4f5e03e71cc79a578139f785db74734987169dc692aef9",
+      "best_epoch": 2,
+      "epochs_completed": 7
+    },
+    "20260731": {
+      "run": "runs/revision_2026_09_03/revision_legacy_mask_seed20260731",
+      "summary_sha256": "c62d1c3cf08f0ae448e51e689598d9780b9cb7f77116b4de16a20f00d97f6622",
+      "configuration_sha256": "1c8e2d12b5ddf372c0332c490b9a1a8dea57dfde4088fe5bab7e29dd207bedff",
+      "checkpoint_sha256": "eba81e3d10d732307f77f8e451b50730d502f9891240d2b2f42f757ef9a1053e",
+      "best_epoch": 1,
+      "epochs_completed": 6
+    }
+  },
+  "seeds": [
+    20260729,
+    20260731
+  ],
+  "roles": {
+    "icbhi2017": [
+      "validation_select",
+      "calibration",
+      "locked_test"
+    ],
+    "sprsound2022": [
+      "validation_select",
+      "calibration",
+      "locked_inter_test",
+      "locked_intra_test"
+    ]
+  },
+  "files": {
+    "seed20260729_icbhi2017_validation_select.csv": "030a3abb6ab7f39db8c9406074b434e2e4fb144b5992288f762a0a1d80d055fa",
+    "seed20260729_icbhi2017_calibration.csv": "361802dc234075d397dc60d0474ccd29c685f88411fef62212f0d2b213ffa407",
+    "seed20260729_icbhi2017_locked_test.csv": "8b792ae6578f93251589dc48f1c3620db81e1637df0e96efae169a42ac7912f4",
+    "seed20260729_sprsound2022_validation_select.csv": "172ccbc59b55c1c415d6c29259780ccf9f9ee42c00b5f12c7c211ff4fcb11f08",
+    "seed20260729_sprsound2022_calibration.csv": "d3b3b465fc904bfaa363682a5d54c3acb83a565f7166d8840d7f3884643191f6",
+    "seed20260729_sprsound2022_locked_inter_test.csv": "0e4324728de98d0f47a93114ccd26ffdf5ab83faa9ed0ec172f1e77d531387d1",
+    "seed20260729_sprsound2022_locked_intra_test.csv": "51aafdb214fca58d65850fce6c2e965a4a942b771c7b3946c77aca109d070489",
+    "seed20260731_icbhi2017_validation_select.csv": "8aee65a3d774f11ca19804cead5fd6b07da11e604390064afbdbcd2ad4746a23",
+    "seed20260731_icbhi2017_calibration.csv": "75ebb92c7ba3d86ba374100cb56f06381bb04e62179b3359d85a427d6b720c92",
+    "seed20260731_icbhi2017_locked_test.csv": "00264a9f260a8c22999098b0883b685e81996018502a4f726d8b80716adf28d4",
+    "seed20260731_sprsound2022_validation_select.csv": "6c460914f2722b7c4305a23204ca5854a629ad6f3c3ca1606aa49db1af5d73a6",
+    "seed20260731_sprsound2022_calibration.csv": "4b6c76e5e0ab3d346d5bf8bc3a53aab9a49515925e0756be3c543ca1f85a9cb7",
+    "seed20260731_sprsound2022_locked_inter_test.csv": "f65541da880fbee1303aca3bb8a574f67f4a8375e1d181d92e7fb0ff13bb3d47",
+    "seed20260731_sprsound2022_locked_intra_test.csv": "2bf79833b848f82c87211b30b2513d13fe5e27a3d39b7b573a6aee7aaac61714",
+    "ensemble_icbhi2017_validation_select.csv": "8300f07518430a5b449732e47cf245303e92f697699ad9bf23709526427f3222",
+    "ensemble_icbhi2017_calibration.csv": "9ca18e4ed5cb73b616d142b017f17352f5f325cbef14fbad383c4c0db7cb2361",
+    "ensemble_icbhi2017_locked_test.csv": "6c47d38819db0e662b4d758df660c50fdae92c897e9f06613372b02ac6ceca27",
+    "ensemble_sprsound2022_validation_select.csv": "89a24887e300c3ccb6a11e7566258ee6ba25b20dceac3b35dd7b1aef69d84110",
+    "ensemble_sprsound2022_calibration.csv": "58d7d63487f33af507bf267065c20899d9595403fda968120df241d971307be2",
+    "ensemble_sprsound2022_locked_inter_test.csv": "e0d3bfbe5bb47a24078aadf726c0f313ad1802a44a511846d6b35c4581639346",
+    "ensemble_sprsound2022_locked_intra_test.csv": "35052b5fec0fe6f173510285b21b2d5bf4ec52de4913986243799a3704bed775"
+  },
+  "calibration_accessed": true,
+  "locked_tests_accessed": true,
+  "selection_after_locked_access": false
+}

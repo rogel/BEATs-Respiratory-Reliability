@@ -1,0 +1,16 @@
+{"stage": "primary_contrast_computed_pending_full_QA", "contrast": {"icbhi2017": {"role": "locked_test", "js_on_average_score": 0.6619359341579276, "no_js_average_score": 0.6625652607784437, "js_on_minus_no_js": {"estimate": -0.0006293266205160686, "lower": -0.0016779652596493693, "upper": 0.0, "valid_replicates": 4000, "invalid_replicates": 0, "status": "complete"}}, "sprsound2022": {"role": "locked_inter_test", "js_on_average_score": 0.9111948783863951, "no_js_average_score": 0.9111948783863951, "js_on_minus_no_js": {"estimate": 0.0, "lower": 0.0, "upper": 0.0, "valid_replicates": 4000, "invalid_replicates": 0, "status": "complete"}}, "equal_database_mean": {"estimate": -0.0003146633102580343, "lower": -0.0008389826298246846, "upper": 0.0, "valid_replicates": 4000, "invalid_replicates": 0, "status": "complete"}}}
+{"stage": "calibration_summary_complete", "key": "exact/icbhi2017/validation_select", "iterations": 4000, "primary_coefficient_nonestimable": 0}
+{"stage": "calibration_summary_complete", "key": "exact/icbhi2017/calibration", "iterations": 4000, "primary_coefficient_nonestimable": 0}
+{"stage": "calibration_summary_complete", "key": "exact/icbhi2017/locked_test", "iterations": 4000, "primary_coefficient_nonestimable": 0}
+{"stage": "calibration_summary_complete", "key": "exact/sprsound2022/validation_select", "iterations": 4000, "primary_coefficient_nonestimable": 0}
+{"stage": "calibration_summary_complete", "key": "exact/sprsound2022/calibration", "iterations": 4000, "primary_coefficient_nonestimable": 0}
+{"stage": "calibration_summary_complete", "key": "exact/sprsound2022/locked_inter_test", "iterations": 4000, "primary_coefficient_nonestimable": 0}
+{"stage": "calibration_summary_complete", "key": "exact/sprsound2022/locked_intra_test", "iterations": 4000, "primary_coefficient_nonestimable": 0}
+{"stage": "calibration_summary_complete", "key": "no-js/icbhi2017/validation_select", "iterations": 4000, "primary_coefficient_nonestimable": null}
+{"stage": "calibration_summary_complete", "key": "no-js/icbhi2017/calibration", "iterations": 4000, "primary_coefficient_nonestimable": null}
+{"stage": "calibration_summary_complete", "key": "no-js/icbhi2017/locked_test", "iterations": 4000, "primary_coefficient_nonestimable": null}
+{"stage": "calibration_summary_complete", "key": "no-js/sprsound2022/validation_select", "iterations": 4000, "primary_coefficient_nonestimable": null}
+{"stage": "calibration_summary_complete", "key": "no-js/sprsound2022/calibration", "iterations": 4000, "primary_coefficient_nonestimable": null}
+{"stage": "calibration_summary_complete", "key": "no-js/sprsound2022/locked_inter_test", "iterations": 4000, "primary_coefficient_nonestimable": null}
+{"stage": "calibration_summary_complete", "key": "no-js/sprsound2022/locked_intra_test", "iterations": 4000, "primary_coefficient_nonestimable": null}
+{"stage": "analysis_complete_pending_QA", "sha256": "93d4be2e39ce59fd47349e9940175de0c2632e521398d4defc83bc12e6cc3a13"}

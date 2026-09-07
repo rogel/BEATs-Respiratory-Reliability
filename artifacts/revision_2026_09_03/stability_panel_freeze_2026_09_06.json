@@ -1,0 +1,1775 @@
+{
+  "status": "frozen_before_panel_model_diagnostics",
+  "frozen_at": "2026-09-06T06:51:50.756460+08:00",
+  "selection_strata": [
+    {
+      "sample_id": "sprsound2022::41191269_3.1_1_p1_1332__event_001",
+      "dataset": "sprsound2022",
+      "binary_label_id": 0,
+      "event_duration_seconds": 2.1190000000000007,
+      "duration_bin": "2_to_4"
+    },
+    {
+      "sample_id": "icbhi2017::213_2p2_Tc_mc_AKGC417L__cycle_002",
+      "dataset": "icbhi2017",
+      "binary_label_id": 0,
+      "event_duration_seconds": 2.6710000000000003,
+      "duration_bin": "2_to_4"
+    },
+    {
+      "sample_id": "sprsound2022::41246720_4.2_0_p3_1516__event_003",
+      "dataset": "sprsound2022",
+      "binary_label_id": 0,
+      "event_duration_seconds": 1.399,
+      "duration_bin": "1_to_2"
+    },
+    {
+      "sample_id": "icbhi2017::138_1p4_Pr_mc_AKGC417L__cycle_001",
+      "dataset": "icbhi2017",
+      "binary_label_id": 1,
+      "event_duration_seconds": 3.957,
+      "duration_bin": "2_to_4"
+    },
+    {
+      "sample_id": "sprsound2022::41246720_4.2_0_p1_1575__event_003",
+      "dataset": "sprsound2022",
+      "binary_label_id": 0,
+      "event_duration_seconds": 0.4599999999999991,
+      "duration_bin": "0_to_0.5"
+    },
+    {
+      "sample_id": "sprsound2022::41073831_5.1_1_p1_1021__event_000",
+      "dataset": "sprsound2022",
+      "binary_label_id": 0,
+      "event_duration_seconds": 0.7810000000000001,
+      "duration_bin": "0.5_to_1"
+    },
+    {
+      "sample_id": "sprsound2022::41226005_3.9_1_p3_979__event_002",
+      "dataset": "sprsound2022",
+      "binary_label_id": 1,
+      "event_duration_seconds": 0.9420000000000002,
+      "duration_bin": "0.5_to_1"
+    },
+    {
+      "sample_id": "sprsound2022::41246720_4.2_0_p4_1921__event_004",
+      "dataset": "sprsound2022",
+      "binary_label_id": 1,
+      "event_duration_seconds": 1.4320000000000004,
+      "duration_bin": "1_to_2"
+    },
+    {
+      "sample_id": "icbhi2017::138_1p3_Ll_mc_AKGC417L__cycle_002",
+      "dataset": "icbhi2017",
+      "binary_label_id": 1,
+      "event_duration_seconds": 4.040000000000001,
+      "duration_bin": "4_to_8"
+    },
+    {
+      "sample_id": "icbhi2017::110_1p1_Pr_sc_Meditron__cycle_012",
+      "dataset": "icbhi2017",
+      "binary_label_id": 0,
+      "event_duration_seconds": 4.745999999999995,
+      "duration_bin": "4_to_8"
+    },
+    {
+      "sample_id": "icbhi2017::219_2b1_Tc_mc_LittC2SE__cycle_004",
+      "dataset": "icbhi2017",
+      "binary_label_id": 0,
+      "event_duration_seconds": 1.3999999999999986,
+      "duration_bin": "1_to_2"
+    },
+    {
+      "sample_id": "icbhi2017::180_1b4_Lr_mc_AKGC417L__cycle_005",
+      "dataset": "icbhi2017",
+      "binary_label_id": 1,
+      "event_duration_seconds": 0.7680000000000007,
+      "duration_bin": "0.5_to_1"
+    },
+    {
+      "sample_id": "icbhi2017::138_2p2_Pl_mc_AKGC417L__cycle_000",
+      "dataset": "icbhi2017",
+      "binary_label_id": 1,
+      "event_duration_seconds": 1.5360000000000005,
+      "duration_bin": "1_to_2"
+    },
+    {
+      "sample_id": "icbhi2017::191_2b1_Pl_mc_LittC2SE__cycle_007",
+      "dataset": "icbhi2017",
+      "binary_label_id": 0,
+      "event_duration_seconds": 0.6149999999999984,
+      "duration_bin": "0.5_to_1"
+    },
+    {
+      "sample_id": "sprsound2022::41187871_3.8_1_p3_3292__event_005",
+      "dataset": "sprsound2022",
+      "binary_label_id": 1,
+      "event_duration_seconds": 0.488999999999999,
+      "duration_bin": "0_to_0.5"
+    },
+    {
+      "sample_id": "sprsound2022::41260853_9.7_1_p1_573__event_000",
+      "dataset": "sprsound2022",
+      "binary_label_id": 1,
+      "event_duration_seconds": 2.988999999999999,
+      "duration_bin": "2_to_4"
+    },
+    {
+      "sample_id": "icbhi2017::219_2b2_Tc_mc_LittC2SE__cycle_005",
+      "dataset": "icbhi2017",
+      "binary_label_id": 0,
+      "event_duration_seconds": 0.3429999999999999,
+      "duration_bin": "0_to_0.5"
+    },
+    {
+      "sample_id": "sprsound2022::41260853_9.7_1_p4_576__event_001",
+      "dataset": "sprsound2022",
+      "binary_label_id": 0,
+      "event_duration_seconds": 4.091,
+      "duration_bin": "4_to_8"
+    },
+    {
+      "sample_id": "icbhi2017::132_2b2_Lr_mc_LittC2SE__cycle_009",
+      "dataset": "icbhi2017",
+      "binary_label_id": 1,
+      "event_duration_seconds": 0.3670000000000009,
+      "duration_bin": "0_to_0.5"
+    }
+  ],
+  "empty_strata": [
+    [
+      "icbhi2017",
+      0,
+      "over_8"
+    ],
+    [
+      "icbhi2017",
+      1,
+      "over_8"
+    ],
+    [
+      "sprsound2022",
+      0,
+      "over_8"
+    ],
+    [
+      "sprsound2022",
+      1,
+      "4_to_8"
+    ],
+    [
+      "sprsound2022",
+      1,
+      "over_8"
+    ]
+  ],
+  "cases": [
+    {
+      "sample_id": "icbhi2017::110_1p1_Pr_sc_Meditron__cycle_012",
+      "dataset": "icbhi2017",
+      "patient_id": "icbhi2017::110",
+      "protocol_role": "validation_select",
+      "target": 0,
+      "event_duration_seconds": 4.745999999999995,
+      "known_zero_token_event": false,
+      "length": 75936,
+      "waveform_sha256": "a5424b7eb1a89787c6bcf3ce0f6babce9f7bdff3700ab5e770cf1d5d1b747112",
+      "placements": [
+        {
+          "label": "centre",
+          "start_sample": 26032,
+          "exact_valid_tokens": 240,
+          "legacy_valid_tokens": 238,
+          "fully_padding_tokens": 160,
+          "partially_valid_tokens": 16,
+          "fully_valid_tokens": 224,
+          "independent_q_verified": true
+        },
+        {
+          "label": "left",
+          "start_sample": 0,
+          "exact_valid_tokens": 240,
+          "legacy_valid_tokens": 238,
+          "fully_padding_tokens": 160,
+          "partially_valid_tokens": 8,
+          "fully_valid_tokens": 232,
+          "independent_q_verified": true
+        },
+        {
+          "label": "right",
+          "start_sample": 52064,
+          "exact_valid_tokens": 240,
+          "legacy_valid_tokens": 230,
+          "fully_padding_tokens": 160,
+          "partially_valid_tokens": 16,
+          "fully_valid_tokens": 224,
+          "independent_q_verified": true
+        },
+        {
+          "label": "stable_random",
+          "start_sample": 32570,
+          "exact_valid_tokens": 248,
+          "legacy_valid_tokens": 239,
+          "fully_padding_tokens": 152,
+          "partially_valid_tokens": 16,
+          "fully_valid_tokens": 232,
+          "independent_q_verified": true
+        }
+      ]
+    },
+    {
+      "sample_id": "icbhi2017::132_2b2_Lr_mc_LittC2SE__cycle_009",
+      "dataset": "icbhi2017",
+      "patient_id": "icbhi2017::132",
+      "protocol_role": "validation_select",
+      "target": 1,
+      "event_duration_seconds": 0.3670000000000009,
+      "known_zero_token_event": false,
+      "length": 5873,
+      "waveform_sha256": "0ea9d02fedb51a0315612b23f3555ba71bc3e99b5ccddb2f8768d7281d6f59f3",
+      "placements": [
+        {
+          "label": "centre",
+          "start_sample": 61063,
+          "exact_valid_tokens": 32,
+          "legacy_valid_tokens": 20,
+          "fully_padding_tokens": 368,
+          "partially_valid_tokens": 16,
+          "fully_valid_tokens": 16,
+          "independent_q_verified": true
+        },
+        {
+          "label": "left",
+          "start_sample": 0,
+          "exact_valid_tokens": 24,
+          "legacy_valid_tokens": 19,
+          "fully_padding_tokens": 376,
+          "partially_valid_tokens": 8,
+          "fully_valid_tokens": 16,
+          "independent_q_verified": true
+        },
+        {
+          "label": "right",
+          "start_sample": 122127,
+          "exact_valid_tokens": 24,
+          "legacy_valid_tokens": 11,
+          "fully_padding_tokens": 376,
+          "partially_valid_tokens": 16,
+          "fully_valid_tokens": 8,
+          "independent_q_verified": true
+        },
+        {
+          "label": "stable_random",
+          "start_sample": 64017,
+          "exact_valid_tokens": 32,
+          "legacy_valid_tokens": 19,
+          "fully_padding_tokens": 368,
+          "partially_valid_tokens": 24,
+          "fully_valid_tokens": 8,
+          "independent_q_verified": true
+        }
+      ]
+    },
+    {
+      "sample_id": "icbhi2017::138_1p3_Ll_mc_AKGC417L__cycle_002",
+      "dataset": "icbhi2017",
+      "patient_id": "icbhi2017::138",
+      "protocol_role": "validation_select",
+      "target": 1,
+      "event_duration_seconds": 4.040000000000001,
+      "known_zero_token_event": false,
+      "length": 64641,
+      "waveform_sha256": "1cd33b6ee17ccb00681680cb86ea18a35596e2c1f17c398caf056fc6c3751a68",
+      "placements": [
+        {
+          "label": "centre",
+          "start_sample": 31679,
+          "exact_valid_tokens": 208,
+          "legacy_valid_tokens": 203,
+          "fully_padding_tokens": 192,
+          "partially_valid_tokens": 16,
+          "fully_valid_tokens": 192,
+          "independent_q_verified": true
+        },
+        {
+          "label": "left",
+          "start_sample": 0,
+          "exact_valid_tokens": 208,
+          "legacy_valid_tokens": 203,
+          "fully_padding_tokens": 192,
+          "partially_valid_tokens": 8,
+          "fully_valid_tokens": 200,
+          "independent_q_verified": true
+        },
+        {
+          "label": "right",
+          "start_sample": 63359,
+          "exact_valid_tokens": 208,
+          "legacy_valid_tokens": 195,
+          "fully_padding_tokens": 192,
+          "partially_valid_tokens": 16,
+          "fully_valid_tokens": 192,
+          "independent_q_verified": true
+        },
+        {
+          "label": "stable_random",
+          "start_sample": 35727,
+          "exact_valid_tokens": 216,
+          "legacy_valid_tokens": 203,
+          "fully_padding_tokens": 184,
+          "partially_valid_tokens": 16,
+          "fully_valid_tokens": 200,
+          "independent_q_verified": true
+        }
+      ]
+    },
+    {
+      "sample_id": "icbhi2017::138_1p4_Pr_mc_AKGC417L__cycle_001",
+      "dataset": "icbhi2017",
+      "patient_id": "icbhi2017::138",
+      "protocol_role": "validation_select",
+      "target": 1,
+      "event_duration_seconds": 3.957,
+      "known_zero_token_event": false,
+      "length": 63313,
+      "waveform_sha256": "1bfaf9b6477cdfcc9340c2c95cc4e4c8d07aa26886e2b566614fb769d8fd9069",
+      "placements": [
+        {
+          "label": "centre",
+          "start_sample": 32343,
+          "exact_valid_tokens": 208,
+          "legacy_valid_tokens": 198,
+          "fully_padding_tokens": 192,
+          "partially_valid_tokens": 16,
+          "fully_valid_tokens": 192,
+          "independent_q_verified": true
+        },
+        {
+          "label": "left",
+          "start_sample": 0,
+          "exact_valid_tokens": 200,
+          "legacy_valid_tokens": 198,
+          "fully_padding_tokens": 200,
+          "partially_valid_tokens": 8,
+          "fully_valid_tokens": 192,
+          "independent_q_verified": true
+        },
+        {
+          "label": "right",
+          "start_sample": 64687,
+          "exact_valid_tokens": 200,
+          "legacy_valid_tokens": 190,
+          "fully_padding_tokens": 200,
+          "partially_valid_tokens": 16,
+          "fully_valid_tokens": 184,
+          "independent_q_verified": true
+        },
+        {
+          "label": "stable_random",
+          "start_sample": 50729,
+          "exact_valid_tokens": 208,
+          "legacy_valid_tokens": 199,
+          "fully_padding_tokens": 192,
+          "partially_valid_tokens": 16,
+          "fully_valid_tokens": 192,
+          "independent_q_verified": true
+        }
+      ]
+    },
+    {
+      "sample_id": "icbhi2017::138_2p2_Pl_mc_AKGC417L__cycle_000",
+      "dataset": "icbhi2017",
+      "patient_id": "icbhi2017::138",
+      "protocol_role": "validation_select",
+      "target": 1,
+      "event_duration_seconds": 1.5360000000000005,
+      "known_zero_token_event": false,
+      "length": 24577,
+      "waveform_sha256": "ef44eb08796f425a50079d92a6e546864fb1e92dba4b2d4039e9e14b7b8c4ede",
+      "placements": [
+        {
+          "label": "centre",
+          "start_sample": 51711,
+          "exact_valid_tokens": 80,
+          "legacy_valid_tokens": 78,
+          "fully_padding_tokens": 320,
+          "partially_valid_tokens": 16,
+          "fully_valid_tokens": 64,
+          "independent_q_verified": true
+        },
+        {
+          "label": "left",
+          "start_sample": 0,
+          "exact_valid_tokens": 80,
+          "legacy_valid_tokens": 77,
+          "fully_padding_tokens": 320,
+          "partially_valid_tokens": 8,
+          "fully_valid_tokens": 72,
+          "independent_q_verified": true
+        },
+        {
+          "label": "right",
+          "start_sample": 103423,
+          "exact_valid_tokens": 80,
+          "legacy_valid_tokens": 69,
+          "fully_padding_tokens": 320,
+          "partially_valid_tokens": 16,
+          "fully_valid_tokens": 64,
+          "independent_q_verified": true
+        },
+        {
+          "label": "stable_random",
+          "start_sample": 42836,
+          "exact_valid_tokens": 88,
+          "legacy_valid_tokens": 78,
+          "fully_padding_tokens": 312,
+          "partially_valid_tokens": 16,
+          "fully_valid_tokens": 72,
+          "independent_q_verified": true
+        }
+      ]
+    },
+    {
+      "sample_id": "icbhi2017::180_1b4_Lr_mc_AKGC417L__cycle_005",
+      "dataset": "icbhi2017",
+      "patient_id": "icbhi2017::180",
+      "protocol_role": "validation_select",
+      "target": 1,
+      "event_duration_seconds": 0.7680000000000007,
+      "known_zero_token_event": false,
+      "length": 12289,
+      "waveform_sha256": "3d866c6e0dfa4e8d79195bcfe9588ea6a44fc0993d44aa9db70b3f5e4f454c19",
+      "placements": [
+        {
+          "label": "centre",
+          "start_sample": 57855,
+          "exact_valid_tokens": 48,
+          "legacy_valid_tokens": 40,
+          "fully_padding_tokens": 352,
+          "partially_valid_tokens": 16,
+          "fully_valid_tokens": 32,
+          "independent_q_verified": true
+        },
+        {
+          "label": "left",
+          "start_sample": 0,
+          "exact_valid_tokens": 40,
+          "legacy_valid_tokens": 39,
+          "fully_padding_tokens": 360,
+          "partially_valid_tokens": 8,
+          "fully_valid_tokens": 32,
+          "independent_q_verified": true
+        },
+        {
+          "label": "right",
+          "start_sample": 115711,
+          "exact_valid_tokens": 40,
+          "legacy_valid_tokens": 31,
+          "fully_padding_tokens": 360,
+          "partially_valid_tokens": 16,
+          "fully_valid_tokens": 24,
+          "independent_q_verified": true
+        },
+        {
+          "label": "stable_random",
+          "start_sample": 5882,
+          "exact_valid_tokens": 48,
+          "legacy_valid_tokens": 39,
+          "fully_padding_tokens": 352,
+          "partially_valid_tokens": 16,
+          "fully_valid_tokens": 32,
+          "independent_q_verified": true
+        }
+      ]
+    },
+    {
+      "sample_id": "icbhi2017::191_2b1_Pl_mc_LittC2SE__cycle_007",
+      "dataset": "icbhi2017",
+      "patient_id": "icbhi2017::191",
+      "protocol_role": "validation_select",
+      "target": 0,
+      "event_duration_seconds": 0.6149999999999984,
+      "known_zero_token_event": false,
+      "length": 9841,
+      "waveform_sha256": "ba44674c8f003ddbeecba86ace4c60854f62fe914c12ccb75656ccf073695dbe",
+      "placements": [
+        {
+          "label": "centre",
+          "start_sample": 59079,
+          "exact_valid_tokens": 40,
+          "legacy_valid_tokens": 32,
+          "fully_padding_tokens": 360,
+          "partially_valid_tokens": 24,
+          "fully_valid_tokens": 16,
+          "independent_q_verified": true
+        },
+        {
+          "label": "left",
+          "start_sample": 0,
+          "exact_valid_tokens": 32,
+          "legacy_valid_tokens": 31,
+          "fully_padding_tokens": 368,
+          "partially_valid_tokens": 8,
+          "fully_valid_tokens": 24,
+          "independent_q_verified": true
+        },
+        {
+          "label": "right",
+          "start_sample": 118159,
+          "exact_valid_tokens": 32,
+          "legacy_valid_tokens": 23,
+          "fully_padding_tokens": 368,
+          "partially_valid_tokens": 16,
+          "fully_valid_tokens": 16,
+          "independent_q_verified": true
+        },
+        {
+          "label": "stable_random",
+          "start_sample": 109008,
+          "exact_valid_tokens": 40,
+          "legacy_valid_tokens": 32,
+          "fully_padding_tokens": 360,
+          "partially_valid_tokens": 16,
+          "fully_valid_tokens": 24,
+          "independent_q_verified": true
+        }
+      ]
+    },
+    {
+      "sample_id": "icbhi2017::213_2p2_Tc_mc_AKGC417L__cycle_002",
+      "dataset": "icbhi2017",
+      "patient_id": "icbhi2017::213",
+      "protocol_role": "validation_select",
+      "target": 0,
+      "event_duration_seconds": 2.6710000000000003,
+      "known_zero_token_event": false,
+      "length": 42737,
+      "waveform_sha256": "2d3a4ace6c32481f43fe6a4502dbacc340809d3ceb9f2f06a8875dfc60f0aba9",
+      "placements": [
+        {
+          "label": "centre",
+          "start_sample": 42631,
+          "exact_valid_tokens": 144,
+          "legacy_valid_tokens": 134,
+          "fully_padding_tokens": 256,
+          "partially_valid_tokens": 16,
+          "fully_valid_tokens": 128,
+          "independent_q_verified": true
+        },
+        {
+          "label": "left",
+          "start_sample": 0,
+          "exact_valid_tokens": 136,
+          "legacy_valid_tokens": 134,
+          "fully_padding_tokens": 264,
+          "partially_valid_tokens": 8,
+          "fully_valid_tokens": 128,
+          "independent_q_verified": true
+        },
+        {
+          "label": "right",
+          "start_sample": 85263,
+          "exact_valid_tokens": 136,
+          "legacy_valid_tokens": 126,
+          "fully_padding_tokens": 264,
+          "partially_valid_tokens": 16,
+          "fully_valid_tokens": 120,
+          "independent_q_verified": true
+        },
+        {
+          "label": "stable_random",
+          "start_sample": 42972,
+          "exact_valid_tokens": 144,
+          "legacy_valid_tokens": 134,
+          "fully_padding_tokens": 256,
+          "partially_valid_tokens": 16,
+          "fully_valid_tokens": 128,
+          "independent_q_verified": true
+        }
+      ]
+    },
+    {
+      "sample_id": "icbhi2017::219_2b1_Tc_mc_LittC2SE__cycle_004",
+      "dataset": "icbhi2017",
+      "patient_id": "icbhi2017::219",
+      "protocol_role": "validation_select",
+      "target": 0,
+      "event_duration_seconds": 1.3999999999999986,
+      "known_zero_token_event": false,
+      "length": 22401,
+      "waveform_sha256": "c200beaccdf046b6f76abbd98adb766b4f3bb6577c2339d642be38aa8f208b7c",
+      "placements": [
+        {
+          "label": "centre",
+          "start_sample": 52799,
+          "exact_valid_tokens": 80,
+          "legacy_valid_tokens": 71,
+          "fully_padding_tokens": 320,
+          "partially_valid_tokens": 16,
+          "fully_valid_tokens": 64,
+          "independent_q_verified": true
+        },
+        {
+          "label": "left",
+          "start_sample": 0,
+          "exact_valid_tokens": 72,
+          "legacy_valid_tokens": 71,
+          "fully_padding_tokens": 328,
+          "partially_valid_tokens": 8,
+          "fully_valid_tokens": 64,
+          "independent_q_verified": true
+        },
+        {
+          "label": "right",
+          "start_sample": 105599,
+          "exact_valid_tokens": 72,
+          "legacy_valid_tokens": 63,
+          "fully_padding_tokens": 328,
+          "partially_valid_tokens": 16,
+          "fully_valid_tokens": 56,
+          "independent_q_verified": true
+        },
+        {
+          "label": "stable_random",
+          "start_sample": 50970,
+          "exact_valid_tokens": 80,
+          "legacy_valid_tokens": 71,
+          "fully_padding_tokens": 320,
+          "partially_valid_tokens": 16,
+          "fully_valid_tokens": 64,
+          "independent_q_verified": true
+        }
+      ]
+    },
+    {
+      "sample_id": "icbhi2017::219_2b2_Tc_mc_LittC2SE__cycle_005",
+      "dataset": "icbhi2017",
+      "patient_id": "icbhi2017::219",
+      "protocol_role": "validation_select",
+      "target": 0,
+      "event_duration_seconds": 0.3429999999999999,
+      "known_zero_token_event": false,
+      "length": 5489,
+      "waveform_sha256": "f3f95e9cee2fb968522f31d7bf759a783f7f00e930b3d71ae0b7921555ee731b",
+      "placements": [
+        {
+          "label": "centre",
+          "start_sample": 61255,
+          "exact_valid_tokens": 32,
+          "legacy_valid_tokens": 18,
+          "fully_padding_tokens": 368,
+          "partially_valid_tokens": 24,
+          "fully_valid_tokens": 8,
+          "independent_q_verified": true
+        },
+        {
+          "label": "left",
+          "start_sample": 0,
+          "exact_valid_tokens": 24,
+          "legacy_valid_tokens": 18,
+          "fully_padding_tokens": 376,
+          "partially_valid_tokens": 8,
+          "fully_valid_tokens": 16,
+          "independent_q_verified": true
+        },
+        {
+          "label": "right",
+          "start_sample": 122511,
+          "exact_valid_tokens": 24,
+          "legacy_valid_tokens": 10,
+          "fully_padding_tokens": 376,
+          "partially_valid_tokens": 16,
+          "fully_valid_tokens": 8,
+          "independent_q_verified": true
+        },
+        {
+          "label": "stable_random",
+          "start_sample": 12365,
+          "exact_valid_tokens": 24,
+          "legacy_valid_tokens": 18,
+          "fully_padding_tokens": 376,
+          "partially_valid_tokens": 16,
+          "fully_valid_tokens": 8,
+          "independent_q_verified": true
+        }
+      ]
+    },
+    {
+      "sample_id": "sprsound2022::40995749_10.5_1_p2_1343__event_002",
+      "dataset": "sprsound2022",
+      "patient_id": "sprsound2022::40995749",
+      "protocol_role": "validation_select",
+      "target": 1,
+      "event_duration_seconds": 0.1559999999999997,
+      "known_zero_token_event": true,
+      "length": 2496,
+      "waveform_sha256": "4e909da69b4fbc05ca330df47b05f58fa18529fbbeb222a954f20ea278974068",
+      "placements": [
+        {
+          "label": "centre",
+          "start_sample": 62752,
+          "exact_valid_tokens": 16,
+          "legacy_valid_tokens": 8,
+          "fully_padding_tokens": 384,
+          "partially_valid_tokens": 16,
+          "fully_valid_tokens": 0,
+          "independent_q_verified": true
+        },
+        {
+          "label": "left",
+          "start_sample": 0,
+          "exact_valid_tokens": 8,
+          "legacy_valid_tokens": 8,
+          "fully_padding_tokens": 392,
+          "partially_valid_tokens": 8,
+          "fully_valid_tokens": 0,
+          "independent_q_verified": true
+        },
+        {
+          "label": "right",
+          "start_sample": 125504,
+          "exact_valid_tokens": 16,
+          "legacy_valid_tokens": 0,
+          "fully_padding_tokens": 384,
+          "partially_valid_tokens": 16,
+          "fully_valid_tokens": 0,
+          "independent_q_verified": true
+        },
+        {
+          "label": "stable_random",
+          "start_sample": 119211,
+          "exact_valid_tokens": 16,
+          "legacy_valid_tokens": 9,
+          "fully_padding_tokens": 384,
+          "partially_valid_tokens": 16,
+          "fully_valid_tokens": 0,
+          "independent_q_verified": true
+        }
+      ]
+    },
+    {
+      "sample_id": "sprsound2022::41073831_5.1_1_p1_1021__event_000",
+      "dataset": "sprsound2022",
+      "patient_id": "sprsound2022::41073831",
+      "protocol_role": "validation_select",
+      "target": 0,
+      "event_duration_seconds": 0.7810000000000001,
+      "known_zero_token_event": false,
+      "length": 12496,
+      "waveform_sha256": "4b441f6b5763bd6b33f1d1b7e4ec8c569883ccadd77b240a12d54f37cce5f0f1",
+      "placements": [
+        {
+          "label": "centre",
+          "start_sample": 57752,
+          "exact_valid_tokens": 48,
+          "legacy_valid_tokens": 40,
+          "fully_padding_tokens": 352,
+          "partially_valid_tokens": 16,
+          "fully_valid_tokens": 32,
+          "independent_q_verified": true
+        },
+        {
+          "label": "left",
+          "start_sample": 0,
+          "exact_valid_tokens": 40,
+          "legacy_valid_tokens": 40,
+          "fully_padding_tokens": 360,
+          "partially_valid_tokens": 8,
+          "fully_valid_tokens": 32,
+          "independent_q_verified": true
+        },
+        {
+          "label": "right",
+          "start_sample": 115504,
+          "exact_valid_tokens": 40,
+          "legacy_valid_tokens": 32,
+          "fully_padding_tokens": 360,
+          "partially_valid_tokens": 16,
+          "fully_valid_tokens": 24,
+          "independent_q_verified": true
+        },
+        {
+          "label": "stable_random",
+          "start_sample": 58045,
+          "exact_valid_tokens": 48,
+          "legacy_valid_tokens": 40,
+          "fully_padding_tokens": 352,
+          "partially_valid_tokens": 16,
+          "fully_valid_tokens": 32,
+          "independent_q_verified": true
+        }
+      ]
+    },
+    {
+      "sample_id": "sprsound2022::41161556_1.7_0_p2_2139__event_002",
+      "dataset": "sprsound2022",
+      "patient_id": "sprsound2022::41161556",
+      "protocol_role": "train_fit",
+      "target": 1,
+      "event_duration_seconds": 0.157,
+      "known_zero_token_event": true,
+      "length": 2512,
+      "waveform_sha256": "a54254219e6c55f11f0c0619f9e86e6fd2fa3737d9c8d642fadfc540e93b34a3",
+      "placements": [
+        {
+          "label": "centre",
+          "start_sample": 62744,
+          "exact_valid_tokens": 16,
+          "legacy_valid_tokens": 8,
+          "fully_padding_tokens": 384,
+          "partially_valid_tokens": 16,
+          "fully_valid_tokens": 0,
+          "independent_q_verified": true
+        },
+        {
+          "label": "left",
+          "start_sample": 0,
+          "exact_valid_tokens": 8,
+          "legacy_valid_tokens": 8,
+          "fully_padding_tokens": 392,
+          "partially_valid_tokens": 8,
+          "fully_valid_tokens": 0,
+          "independent_q_verified": true
+        },
+        {
+          "label": "right",
+          "start_sample": 125488,
+          "exact_valid_tokens": 16,
+          "legacy_valid_tokens": 0,
+          "fully_padding_tokens": 384,
+          "partially_valid_tokens": 16,
+          "fully_valid_tokens": 0,
+          "independent_q_verified": true
+        },
+        {
+          "label": "stable_random",
+          "start_sample": 73544,
+          "exact_valid_tokens": 16,
+          "legacy_valid_tokens": 9,
+          "fully_padding_tokens": 384,
+          "partially_valid_tokens": 16,
+          "fully_valid_tokens": 0,
+          "independent_q_verified": true
+        }
+      ]
+    },
+    {
+      "sample_id": "sprsound2022::41187871_3.8_1_p3_3292__event_005",
+      "dataset": "sprsound2022",
+      "patient_id": "sprsound2022::41187871",
+      "protocol_role": "validation_select",
+      "target": 1,
+      "event_duration_seconds": 0.488999999999999,
+      "known_zero_token_event": false,
+      "length": 7824,
+      "waveform_sha256": "d6c81a7cd44e48282604395579e8243c8c2cba63bbba67a84aadd8675a217ce2",
+      "placements": [
+        {
+          "label": "centre",
+          "start_sample": 60088,
+          "exact_valid_tokens": 32,
+          "legacy_valid_tokens": 26,
+          "fully_padding_tokens": 368,
+          "partially_valid_tokens": 16,
+          "fully_valid_tokens": 16,
+          "independent_q_verified": true
+        },
+        {
+          "label": "left",
+          "start_sample": 0,
+          "exact_valid_tokens": 32,
+          "legacy_valid_tokens": 25,
+          "fully_padding_tokens": 368,
+          "partially_valid_tokens": 16,
+          "fully_valid_tokens": 16,
+          "independent_q_verified": true
+        },
+        {
+          "label": "right",
+          "start_sample": 120176,
+          "exact_valid_tokens": 32,
+          "legacy_valid_tokens": 17,
+          "fully_padding_tokens": 368,
+          "partially_valid_tokens": 16,
+          "fully_valid_tokens": 16,
+          "independent_q_verified": true
+        },
+        {
+          "label": "stable_random",
+          "start_sample": 105295,
+          "exact_valid_tokens": 32,
+          "legacy_valid_tokens": 25,
+          "fully_padding_tokens": 368,
+          "partially_valid_tokens": 16,
+          "fully_valid_tokens": 16,
+          "independent_q_verified": true
+        }
+      ]
+    },
+    {
+      "sample_id": "sprsound2022::41191269_3.1_1_p1_1332__event_001",
+      "dataset": "sprsound2022",
+      "patient_id": "sprsound2022::41191269",
+      "protocol_role": "validation_select",
+      "target": 0,
+      "event_duration_seconds": 2.1190000000000007,
+      "known_zero_token_event": false,
+      "length": 33904,
+      "waveform_sha256": "4edc9e28ed99b90b5d47106223c486d4371dac5f19a0e8d1e82c2ff26419ed77",
+      "placements": [
+        {
+          "label": "centre",
+          "start_sample": 47048,
+          "exact_valid_tokens": 112,
+          "legacy_valid_tokens": 106,
+          "fully_padding_tokens": 288,
+          "partially_valid_tokens": 16,
+          "fully_valid_tokens": 96,
+          "independent_q_verified": true
+        },
+        {
+          "label": "left",
+          "start_sample": 0,
+          "exact_valid_tokens": 112,
+          "legacy_valid_tokens": 106,
+          "fully_padding_tokens": 288,
+          "partially_valid_tokens": 8,
+          "fully_valid_tokens": 104,
+          "independent_q_verified": true
+        },
+        {
+          "label": "right",
+          "start_sample": 94096,
+          "exact_valid_tokens": 112,
+          "legacy_valid_tokens": 98,
+          "fully_padding_tokens": 288,
+          "partially_valid_tokens": 16,
+          "fully_valid_tokens": 96,
+          "independent_q_verified": true
+        },
+        {
+          "label": "stable_random",
+          "start_sample": 25551,
+          "exact_valid_tokens": 120,
+          "legacy_valid_tokens": 107,
+          "fully_padding_tokens": 280,
+          "partially_valid_tokens": 16,
+          "fully_valid_tokens": 104,
+          "independent_q_verified": true
+        }
+      ]
+    },
+    {
+      "sample_id": "sprsound2022::41226005_3.9_1_p3_979__event_002",
+      "dataset": "sprsound2022",
+      "patient_id": "sprsound2022::41226005",
+      "protocol_role": "validation_select",
+      "target": 1,
+      "event_duration_seconds": 0.9420000000000002,
+      "known_zero_token_event": false,
+      "length": 15072,
+      "waveform_sha256": "d3ba87f14c781e161057bd2ba85c34160bc070fb805322836299b269d30194d6",
+      "placements": [
+        {
+          "label": "centre",
+          "start_sample": 56464,
+          "exact_valid_tokens": 56,
+          "legacy_valid_tokens": 48,
+          "fully_padding_tokens": 344,
+          "partially_valid_tokens": 24,
+          "fully_valid_tokens": 32,
+          "independent_q_verified": true
+        },
+        {
+          "label": "left",
+          "start_sample": 0,
+          "exact_valid_tokens": 48,
+          "legacy_valid_tokens": 48,
+          "fully_padding_tokens": 352,
+          "partially_valid_tokens": 8,
+          "fully_valid_tokens": 40,
+          "independent_q_verified": true
+        },
+        {
+          "label": "right",
+          "start_sample": 112928,
+          "exact_valid_tokens": 48,
+          "legacy_valid_tokens": 40,
+          "fully_padding_tokens": 352,
+          "partially_valid_tokens": 16,
+          "fully_valid_tokens": 32,
+          "independent_q_verified": true
+        },
+        {
+          "label": "stable_random",
+          "start_sample": 86579,
+          "exact_valid_tokens": 56,
+          "legacy_valid_tokens": 48,
+          "fully_padding_tokens": 344,
+          "partially_valid_tokens": 16,
+          "fully_valid_tokens": 40,
+          "independent_q_verified": true
+        }
+      ]
+    },
+    {
+      "sample_id": "sprsound2022::41246720_4.2_0_p1_1575__event_003",
+      "dataset": "sprsound2022",
+      "patient_id": "sprsound2022::41246720",
+      "protocol_role": "validation_select",
+      "target": 0,
+      "event_duration_seconds": 0.4599999999999991,
+      "known_zero_token_event": false,
+      "length": 7360,
+      "waveform_sha256": "1648f5570ef247a83e625c5d3b9ae781779c30ce591ea6a6a0350f9d474f35b1",
+      "placements": [
+        {
+          "label": "centre",
+          "start_sample": 60320,
+          "exact_valid_tokens": 32,
+          "legacy_valid_tokens": 24,
+          "fully_padding_tokens": 368,
+          "partially_valid_tokens": 16,
+          "fully_valid_tokens": 16,
+          "independent_q_verified": true
+        },
+        {
+          "label": "left",
+          "start_sample": 0,
+          "exact_valid_tokens": 24,
+          "legacy_valid_tokens": 23,
+          "fully_padding_tokens": 376,
+          "partially_valid_tokens": 8,
+          "fully_valid_tokens": 16,
+          "independent_q_verified": true
+        },
+        {
+          "label": "right",
+          "start_sample": 120640,
+          "exact_valid_tokens": 24,
+          "legacy_valid_tokens": 15,
+          "fully_padding_tokens": 376,
+          "partially_valid_tokens": 16,
+          "fully_valid_tokens": 8,
+          "independent_q_verified": true
+        },
+        {
+          "label": "stable_random",
+          "start_sample": 116594,
+          "exact_valid_tokens": 32,
+          "legacy_valid_tokens": 24,
+          "fully_padding_tokens": 368,
+          "partially_valid_tokens": 16,
+          "fully_valid_tokens": 16,
+          "independent_q_verified": true
+        }
+      ]
+    },
+    {
+      "sample_id": "sprsound2022::41246720_4.2_0_p3_1516__event_003",
+      "dataset": "sprsound2022",
+      "patient_id": "sprsound2022::41246720",
+      "protocol_role": "validation_select",
+      "target": 0,
+      "event_duration_seconds": 1.399,
+      "known_zero_token_event": false,
+      "length": 22384,
+      "waveform_sha256": "96b7639091efe05215e6055713f6f689ff5e3f27d1474330af14ae98c4213546",
+      "placements": [
+        {
+          "label": "centre",
+          "start_sample": 52808,
+          "exact_valid_tokens": 80,
+          "legacy_valid_tokens": 70,
+          "fully_padding_tokens": 320,
+          "partially_valid_tokens": 16,
+          "fully_valid_tokens": 64,
+          "independent_q_verified": true
+        },
+        {
+          "label": "left",
+          "start_sample": 0,
+          "exact_valid_tokens": 72,
+          "legacy_valid_tokens": 70,
+          "fully_padding_tokens": 328,
+          "partially_valid_tokens": 8,
+          "fully_valid_tokens": 64,
+          "independent_q_verified": true
+        },
+        {
+          "label": "right",
+          "start_sample": 105616,
+          "exact_valid_tokens": 72,
+          "legacy_valid_tokens": 62,
+          "fully_padding_tokens": 328,
+          "partially_valid_tokens": 16,
+          "fully_valid_tokens": 56,
+          "independent_q_verified": true
+        },
+        {
+          "label": "stable_random",
+          "start_sample": 53504,
+          "exact_valid_tokens": 80,
+          "legacy_valid_tokens": 71,
+          "fully_padding_tokens": 320,
+          "partially_valid_tokens": 16,
+          "fully_valid_tokens": 64,
+          "independent_q_verified": true
+        }
+      ]
+    },
+    {
+      "sample_id": "sprsound2022::41246720_4.2_0_p4_1921__event_004",
+      "dataset": "sprsound2022",
+      "patient_id": "sprsound2022::41246720",
+      "protocol_role": "validation_select",
+      "target": 1,
+      "event_duration_seconds": 1.4320000000000004,
+      "known_zero_token_event": false,
+      "length": 22912,
+      "waveform_sha256": "5cf19516377c54fac5eaf4e15fd8cd784ab3237d1405f9e4abdb464aaf96e7f2",
+      "placements": [
+        {
+          "label": "centre",
+          "start_sample": 52544,
+          "exact_valid_tokens": 80,
+          "legacy_valid_tokens": 72,
+          "fully_padding_tokens": 320,
+          "partially_valid_tokens": 16,
+          "fully_valid_tokens": 64,
+          "independent_q_verified": true
+        },
+        {
+          "label": "left",
+          "start_sample": 0,
+          "exact_valid_tokens": 72,
+          "legacy_valid_tokens": 72,
+          "fully_padding_tokens": 328,
+          "partially_valid_tokens": 8,
+          "fully_valid_tokens": 64,
+          "independent_q_verified": true
+        },
+        {
+          "label": "right",
+          "start_sample": 105088,
+          "exact_valid_tokens": 80,
+          "legacy_valid_tokens": 64,
+          "fully_padding_tokens": 320,
+          "partially_valid_tokens": 24,
+          "fully_valid_tokens": 56,
+          "independent_q_verified": true
+        },
+        {
+          "label": "stable_random",
+          "start_sample": 38554,
+          "exact_valid_tokens": 88,
+          "legacy_valid_tokens": 73,
+          "fully_padding_tokens": 312,
+          "partially_valid_tokens": 32,
+          "fully_valid_tokens": 56,
+          "independent_q_verified": true
+        }
+      ]
+    },
+    {
+      "sample_id": "sprsound2022::41260853_9.7_1_p1_573__event_000",
+      "dataset": "sprsound2022",
+      "patient_id": "sprsound2022::41260853",
+      "protocol_role": "validation_select",
+      "target": 1,
+      "event_duration_seconds": 2.988999999999999,
+      "known_zero_token_event": false,
+      "length": 47824,
+      "waveform_sha256": "3d6fc8ae42fc1f2f2bf13e5681eb964e364a7d3193ec1be67ac6f1ecf7df6efb",
+      "placements": [
+        {
+          "label": "centre",
+          "start_sample": 40088,
+          "exact_valid_tokens": 160,
+          "legacy_valid_tokens": 150,
+          "fully_padding_tokens": 240,
+          "partially_valid_tokens": 16,
+          "fully_valid_tokens": 144,
+          "independent_q_verified": true
+        },
+        {
+          "label": "left",
+          "start_sample": 0,
+          "exact_valid_tokens": 152,
+          "legacy_valid_tokens": 150,
+          "fully_padding_tokens": 248,
+          "partially_valid_tokens": 8,
+          "fully_valid_tokens": 144,
+          "independent_q_verified": true
+        },
+        {
+          "label": "right",
+          "start_sample": 80176,
+          "exact_valid_tokens": 152,
+          "legacy_valid_tokens": 142,
+          "fully_padding_tokens": 248,
+          "partially_valid_tokens": 16,
+          "fully_valid_tokens": 136,
+          "independent_q_verified": true
+        },
+        {
+          "label": "stable_random",
+          "start_sample": 47387,
+          "exact_valid_tokens": 160,
+          "legacy_valid_tokens": 150,
+          "fully_padding_tokens": 240,
+          "partially_valid_tokens": 16,
+          "fully_valid_tokens": 144,
+          "independent_q_verified": true
+        }
+      ]
+    },
+    {
+      "sample_id": "sprsound2022::41260853_9.7_1_p4_576__event_001",
+      "dataset": "sprsound2022",
+      "patient_id": "sprsound2022::41260853",
+      "protocol_role": "validation_select",
+      "target": 0,
+      "event_duration_seconds": 4.091,
+      "known_zero_token_event": false,
+      "length": 65456,
+      "waveform_sha256": "d6b1a86a3cc21a281fd4872bee4fb138fa1d57286dbfc1e9c1537fd20f497799",
+      "placements": [
+        {
+          "label": "centre",
+          "start_sample": 31272,
+          "exact_valid_tokens": 208,
+          "legacy_valid_tokens": 206,
+          "fully_padding_tokens": 192,
+          "partially_valid_tokens": 16,
+          "fully_valid_tokens": 192,
+          "independent_q_verified": true
+        },
+        {
+          "label": "left",
+          "start_sample": 0,
+          "exact_valid_tokens": 208,
+          "legacy_valid_tokens": 205,
+          "fully_padding_tokens": 192,
+          "partially_valid_tokens": 8,
+          "fully_valid_tokens": 200,
+          "independent_q_verified": true
+        },
+        {
+          "label": "right",
+          "start_sample": 62544,
+          "exact_valid_tokens": 208,
+          "legacy_valid_tokens": 197,
+          "fully_padding_tokens": 192,
+          "partially_valid_tokens": 16,
+          "fully_valid_tokens": 192,
+          "independent_q_verified": true
+        },
+        {
+          "label": "stable_random",
+          "start_sample": 39579,
+          "exact_valid_tokens": 216,
+          "legacy_valid_tokens": 206,
+          "fully_padding_tokens": 184,
+          "partially_valid_tokens": 24,
+          "fully_valid_tokens": 192,
+          "independent_q_verified": true
+        }
+      ]
+    },
+    {
+      "sample_id": "sprsound2022::64743918_7.0_0_p1_2799__event_000",
+      "dataset": "sprsound2022",
+      "patient_id": "sprsound2022::64743918",
+      "protocol_role": "train_fit",
+      "target": 1,
+      "event_duration_seconds": 0.149,
+      "known_zero_token_event": true,
+      "length": 2384,
+      "waveform_sha256": "3d4f9a46f670f769432dd5ddb12c57397111e3a3c2e3ee40cdaf42161453bebb",
+      "placements": [
+        {
+          "label": "centre",
+          "start_sample": 62808,
+          "exact_valid_tokens": 16,
+          "legacy_valid_tokens": 8,
+          "fully_padding_tokens": 384,
+          "partially_valid_tokens": 16,
+          "fully_valid_tokens": 0,
+          "independent_q_verified": true
+        },
+        {
+          "label": "left",
+          "start_sample": 0,
+          "exact_valid_tokens": 8,
+          "legacy_valid_tokens": 8,
+          "fully_padding_tokens": 392,
+          "partially_valid_tokens": 8,
+          "fully_valid_tokens": 0,
+          "independent_q_verified": true
+        },
+        {
+          "label": "right",
+          "start_sample": 125616,
+          "exact_valid_tokens": 16,
+          "legacy_valid_tokens": 0,
+          "fully_padding_tokens": 384,
+          "partially_valid_tokens": 16,
+          "fully_valid_tokens": 0,
+          "independent_q_verified": true
+        },
+        {
+          "label": "stable_random",
+          "start_sample": 115791,
+          "exact_valid_tokens": 16,
+          "legacy_valid_tokens": 9,
+          "fully_padding_tokens": 384,
+          "partially_valid_tokens": 16,
+          "fully_valid_tokens": 0,
+          "independent_q_verified": true
+        }
+      ]
+    },
+    {
+      "sample_id": "sprsound2022::64743918_7.0_0_p1_2799__event_001",
+      "dataset": "sprsound2022",
+      "patient_id": "sprsound2022::64743918",
+      "protocol_role": "train_fit",
+      "target": 1,
+      "event_duration_seconds": 0.1390000000000002,
+      "known_zero_token_event": true,
+      "length": 2224,
+      "waveform_sha256": "b372f7093ac3f281f92cff596fec4e11ecfe3ed6a63c920005f42b0e2cdf3a2a",
+      "placements": [
+        {
+          "label": "centre",
+          "start_sample": 62888,
+          "exact_valid_tokens": 16,
+          "legacy_valid_tokens": 8,
+          "fully_padding_tokens": 384,
+          "partially_valid_tokens": 16,
+          "fully_valid_tokens": 0,
+          "independent_q_verified": true
+        },
+        {
+          "label": "left",
+          "start_sample": 0,
+          "exact_valid_tokens": 8,
+          "legacy_valid_tokens": 7,
+          "fully_padding_tokens": 392,
+          "partially_valid_tokens": 8,
+          "fully_valid_tokens": 0,
+          "independent_q_verified": true
+        },
+        {
+          "label": "right",
+          "start_sample": 125776,
+          "exact_valid_tokens": 8,
+          "legacy_valid_tokens": 0,
+          "fully_padding_tokens": 392,
+          "partially_valid_tokens": 8,
+          "fully_valid_tokens": 0,
+          "independent_q_verified": true
+        },
+        {
+          "label": "stable_random",
+          "start_sample": 41994,
+          "exact_valid_tokens": 16,
+          "legacy_valid_tokens": 8,
+          "fully_padding_tokens": 384,
+          "partially_valid_tokens": 16,
+          "fully_valid_tokens": 0,
+          "independent_q_verified": true
+        }
+      ]
+    },
+    {
+      "sample_id": "sprsound2022::64743918_7.0_0_p2_2835__event_001",
+      "dataset": "sprsound2022",
+      "patient_id": "sprsound2022::64743918",
+      "protocol_role": "train_fit",
+      "target": 1,
+      "event_duration_seconds": 0.137,
+      "known_zero_token_event": true,
+      "length": 2192,
+      "waveform_sha256": "0994e386ca9b89eedae903f77854ca47f2eac9def7ed469defd009575e7ebb67",
+      "placements": [
+        {
+          "label": "centre",
+          "start_sample": 62904,
+          "exact_valid_tokens": 16,
+          "legacy_valid_tokens": 8,
+          "fully_padding_tokens": 384,
+          "partially_valid_tokens": 16,
+          "fully_valid_tokens": 0,
+          "independent_q_verified": true
+        },
+        {
+          "label": "left",
+          "start_sample": 0,
+          "exact_valid_tokens": 8,
+          "legacy_valid_tokens": 7,
+          "fully_padding_tokens": 392,
+          "partially_valid_tokens": 8,
+          "fully_valid_tokens": 0,
+          "independent_q_verified": true
+        },
+        {
+          "label": "right",
+          "start_sample": 125808,
+          "exact_valid_tokens": 8,
+          "legacy_valid_tokens": 0,
+          "fully_padding_tokens": 392,
+          "partially_valid_tokens": 8,
+          "fully_valid_tokens": 0,
+          "independent_q_verified": true
+        },
+        {
+          "label": "stable_random",
+          "start_sample": 121122,
+          "exact_valid_tokens": 16,
+          "legacy_valid_tokens": 8,
+          "fully_padding_tokens": 384,
+          "partially_valid_tokens": 16,
+          "fully_valid_tokens": 0,
+          "independent_q_verified": true
+        },
+        {
+          "label": "documented_125794",
+          "start_sample": 125794,
+          "exact_valid_tokens": 8,
+          "legacy_valid_tokens": 0,
+          "fully_padding_tokens": 392,
+          "partially_valid_tokens": 8,
+          "fully_valid_tokens": 0,
+          "independent_q_verified": true
+        }
+      ]
+    },
+    {
+      "sample_id": "sprsound2022::65044711_0.4_1_p4_340__event_001",
+      "dataset": "sprsound2022",
+      "patient_id": "sprsound2022::65044711",
+      "protocol_role": "train_fit",
+      "target": 1,
+      "event_duration_seconds": 0.1260000000000001,
+      "known_zero_token_event": true,
+      "length": 2016,
+      "waveform_sha256": "e28ce4d8f1903fd2032a79ea7a5dccc9d28fba8e6e8d2b53ac8d38b4203d4265",
+      "placements": [
+        {
+          "label": "centre",
+          "start_sample": 62992,
+          "exact_valid_tokens": 16,
+          "legacy_valid_tokens": 8,
+          "fully_padding_tokens": 384,
+          "partially_valid_tokens": 16,
+          "fully_valid_tokens": 0,
+          "independent_q_verified": true
+        },
+        {
+          "label": "left",
+          "start_sample": 0,
+          "exact_valid_tokens": 8,
+          "legacy_valid_tokens": 7,
+          "fully_padding_tokens": 392,
+          "partially_valid_tokens": 8,
+          "fully_valid_tokens": 0,
+          "independent_q_verified": true
+        },
+        {
+          "label": "right",
+          "start_sample": 125984,
+          "exact_valid_tokens": 8,
+          "legacy_valid_tokens": 0,
+          "fully_padding_tokens": 392,
+          "partially_valid_tokens": 8,
+          "fully_valid_tokens": 0,
+          "independent_q_verified": true
+        },
+        {
+          "label": "stable_random",
+          "start_sample": 2906,
+          "exact_valid_tokens": 8,
+          "legacy_valid_tokens": 7,
+          "fully_padding_tokens": 392,
+          "partially_valid_tokens": 8,
+          "fully_valid_tokens": 0,
+          "independent_q_verified": true
+        }
+      ]
+    },
+    {
+      "sample_id": "synthetic::documented_2016",
+      "dataset": "synthetic",
+      "patient_id": null,
+      "protocol_role": "synthetic",
+      "target": 0,
+      "length": 2016,
+      "known_zero_token_event": true,
+      "placements": [
+        {
+          "label": "centre",
+          "start_sample": 62992,
+          "exact_valid_tokens": 16,
+          "legacy_valid_tokens": 8,
+          "fully_padding_tokens": 384,
+          "partially_valid_tokens": 16,
+          "fully_valid_tokens": 0,
+          "independent_q_verified": true
+        },
+        {
+          "label": "left",
+          "start_sample": 0,
+          "exact_valid_tokens": 8,
+          "legacy_valid_tokens": 7,
+          "fully_padding_tokens": 392,
+          "partially_valid_tokens": 8,
+          "fully_valid_tokens": 0,
+          "independent_q_verified": true
+        },
+        {
+          "label": "right",
+          "start_sample": 125984,
+          "exact_valid_tokens": 8,
+          "legacy_valid_tokens": 0,
+          "fully_padding_tokens": 392,
+          "partially_valid_tokens": 8,
+          "fully_valid_tokens": 0,
+          "independent_q_verified": true
+        },
+        {
+          "label": "stable_random",
+          "start_sample": 89201,
+          "exact_valid_tokens": 16,
+          "legacy_valid_tokens": 8,
+          "fully_padding_tokens": 384,
+          "partially_valid_tokens": 16,
+          "fully_valid_tokens": 0,
+          "independent_q_verified": true
+        },
+        {
+          "label": "documented_114458",
+          "start_sample": 114458,
+          "exact_valid_tokens": 16,
+          "legacy_valid_tokens": 7,
+          "fully_padding_tokens": 384,
+          "partially_valid_tokens": 16,
+          "fully_valid_tokens": 0,
+          "independent_q_verified": true
+        },
+        {
+          "label": "documented_125554",
+          "start_sample": 125554,
+          "exact_valid_tokens": 16,
+          "legacy_valid_tokens": 0,
+          "fully_padding_tokens": 384,
+          "partially_valid_tokens": 16,
+          "fully_valid_tokens": 0,
+          "independent_q_verified": true
+        }
+      ],
+      "waveform_sha256": "5a06d303c87cc3409135606057f04d70d109302d8e2259aef681869bc799a752"
+    }
+  ],
+  "models": {
+    "exact": [
+      20260729,
+      20260730,
+      20260731
+    ],
+    "legacy-mask": [
+      20260729,
+      20260731
+    ]
+  },
+  "real_events": 25,
+  "synthetic_events": 1,
+  "event_placements": 107,
+  "known_zero_legacy_mapping_rows": [
+    {
+      "sample_id": "sprsound2022::40995749_10.5_1_p2_1343__event_002",
+      "dataset": "sprsound2022",
+      "patient_id": "sprsound2022::40995749",
+      "protocol_role": "validation_select",
+      "event_samples_16khz": 2496,
+      "placement": "right",
+      "start_sample": 125504,
+      "exact_valid_tokens": 16,
+      "legacy_valid_tokens": 0,
+      "fully_padding_tokens": 384,
+      "partially_valid_tokens": 16,
+      "fully_valid_tokens": 0,
+      "exact_valid_excluded_by_legacy": 16,
+      "padding_only_included_by_legacy": 0,
+      "excluded_fraction_of_exact_valid": 1.0,
+      "included_fraction_of_exact_padding": 0.0,
+      "legacy_zero_valid": 1
+    },
+    {
+      "sample_id": "sprsound2022::41161556_1.7_0_p2_2139__event_002",
+      "dataset": "sprsound2022",
+      "patient_id": "sprsound2022::41161556",
+      "protocol_role": "train_fit",
+      "event_samples_16khz": 2512,
+      "placement": "right",
+      "start_sample": 125488,
+      "exact_valid_tokens": 16,
+      "legacy_valid_tokens": 0,
+      "fully_padding_tokens": 384,
+      "partially_valid_tokens": 16,
+      "fully_valid_tokens": 0,
+      "exact_valid_excluded_by_legacy": 16,
+      "padding_only_included_by_legacy": 0,
+      "excluded_fraction_of_exact_valid": 1.0,
+      "included_fraction_of_exact_padding": 0.0,
+      "legacy_zero_valid": 1
+    },
+    {
+      "sample_id": "sprsound2022::64743918_7.0_0_p1_2799__event_000",
+      "dataset": "sprsound2022",
+      "patient_id": "sprsound2022::64743918",
+      "protocol_role": "train_fit",
+      "event_samples_16khz": 2384,
+      "placement": "right",
+      "start_sample": 125616,
+      "exact_valid_tokens": 16,
+      "legacy_valid_tokens": 0,
+      "fully_padding_tokens": 384,
+      "partially_valid_tokens": 16,
+      "fully_valid_tokens": 0,
+      "exact_valid_excluded_by_legacy": 16,
+      "padding_only_included_by_legacy": 0,
+      "excluded_fraction_of_exact_valid": 1.0,
+      "included_fraction_of_exact_padding": 0.0,
+      "legacy_zero_valid": 1
+    },
+    {
+      "sample_id": "sprsound2022::64743918_7.0_0_p1_2799__event_001",
+      "dataset": "sprsound2022",
+      "patient_id": "sprsound2022::64743918",
+      "protocol_role": "train_fit",
+      "event_samples_16khz": 2224,
+      "placement": "right",
+      "start_sample": 125776,
+      "exact_valid_tokens": 8,
+      "legacy_valid_tokens": 0,
+      "fully_padding_tokens": 392,
+      "partially_valid_tokens": 8,
+      "fully_valid_tokens": 0,
+      "exact_valid_excluded_by_legacy": 8,
+      "padding_only_included_by_legacy": 0,
+      "excluded_fraction_of_exact_valid": 1.0,
+      "included_fraction_of_exact_padding": 0.0,
+      "legacy_zero_valid": 1
+    },
+    {
+      "sample_id": "sprsound2022::64743918_7.0_0_p2_2835__event_001",
+      "dataset": "sprsound2022",
+      "patient_id": "sprsound2022::64743918",
+      "protocol_role": "train_fit",
+      "event_samples_16khz": 2192,
+      "placement": "right",
+      "start_sample": 125808,
+      "exact_valid_tokens": 8,
+      "legacy_valid_tokens": 0,
+      "fully_padding_tokens": 392,
+      "partially_valid_tokens": 8,
+      "fully_valid_tokens": 0,
+      "exact_valid_excluded_by_legacy": 8,
+      "padding_only_included_by_legacy": 0,
+      "excluded_fraction_of_exact_valid": 1.0,
+      "included_fraction_of_exact_padding": 0.0,
+      "legacy_zero_valid": 1
+    },
+    {
+      "sample_id": "sprsound2022::65044711_0.4_1_p4_340__event_001",
+      "dataset": "sprsound2022",
+      "patient_id": "sprsound2022::65044711",
+      "protocol_role": "train_fit",
+      "event_samples_16khz": 2016,
+      "placement": "right",
+      "start_sample": 125984,
+      "exact_valid_tokens": 8,
+      "legacy_valid_tokens": 0,
+      "fully_padding_tokens": 392,
+      "partially_valid_tokens": 8,
+      "fully_valid_tokens": 0,
+      "exact_valid_excluded_by_legacy": 8,
+      "padding_only_included_by_legacy": 0,
+      "excluded_fraction_of_exact_valid": 1.0,
+      "included_fraction_of_exact_padding": 0.0,
+      "legacy_zero_valid": 1
+    }
+  ],
+  "patient_overlap_audit": {
+    "pairwise_overlap_counts": {
+      "icbhi2017/train_fit__icbhi2017/validation_select": 0,
+      "icbhi2017/train_fit__icbhi2017/calibration": 0,
+      "icbhi2017/train_fit__icbhi2017/locked_test": 0,
+      "icbhi2017/validation_select__icbhi2017/calibration": 0,
+      "icbhi2017/validation_select__icbhi2017/locked_test": 0,
+      "icbhi2017/calibration__icbhi2017/locked_test": 0,
+      "sprsound2022/train_fit__sprsound2022/validation_select": 0,
+      "sprsound2022/train_fit__sprsound2022/calibration": 0,
+      "sprsound2022/train_fit__sprsound2022/locked_inter_test": 0,
+      "sprsound2022/train_fit__sprsound2022/locked_intra_test": 111,
+      "sprsound2022/validation_select__sprsound2022/calibration": 0,
+      "sprsound2022/validation_select__sprsound2022/locked_inter_test": 0,
+      "sprsound2022/validation_select__sprsound2022/locked_intra_test": 19,
+      "sprsound2022/calibration__sprsound2022/locked_inter_test": 0,
+      "sprsound2022/calibration__sprsound2022/locked_intra_test": 26,
+      "sprsound2022/locked_inter_test__sprsound2022/locked_intra_test": 0
+    },
+    "expected_descriptive_intra_overlap": {
+      "sprsound2022/train_fit__sprsound2022/locked_intra_test": 111,
+      "sprsound2022/validation_select__sprsound2022/locked_intra_test": 19,
+      "sprsound2022/calibration__sprsound2022/locked_intra_test": 26,
+      "sprsound2022/locked_inter_test__sprsound2022/locked_intra_test": 0
+    },
+    "prohibited_overlap": {},
+    "primary_patient_disjoint_roles_passed": true
+  },
+  "no_calibration_or_heldout_panel_events": true,
+  "no_training_or_model_selection": true,
+  "cpu_threads": 12,
+  "files": {
+    "[user-home]/Documents/njgpt/学术方向/Respiratory Sound Classification/artifacts/revision_2026_09_03/failures/legacy_mask_seed20260730_epoch6_mask_replay.json": "bb06eb578938dea20d1577ad07f6a4620ae944a1edfaa9ac3069fac952040ba5",
+    "[user-home]/Documents/njgpt/学术方向/Respiratory Sound Classification/artifacts/revision_2026_09_03/mask_mapping/exact_legacy_mapping_event_placements.csv": "8605bfd10514e7cbfe6efc083c2887ce2c08983c55d0e1b11cee1c47baaa651b",
+    "[user-home]/Documents/njgpt/学术方向/Respiratory Sound Classification/artifacts/revision_2026_09_03/resource_profile_2026_09_06/independent_resource_audit.json": "578920317d6f38e51600d8482976912295d4371ce82ac7fdcd1c4cd858b8d070",
+    "[user-home]/Documents/njgpt/学术方向/Respiratory Sound Classification/artifacts/revision_2026_09_03/resource_profile_freeze_2026_09_06.json": "b4b61a549ed8a093f645f1744da67bdaf40a6154fddeecc8ce45fa398b422273",
+    "[user-home]/Documents/njgpt/学术方向/Respiratory Sound Classification/data/raw/icbhi2017/ICBHI_final_database/110_1p1_Pr_sc_Meditron.wav": "7bd7452db39899adc7d34bf66f098f80660b671f540af35e6ff3913e0e9ecb36",
+    "[user-home]/Documents/njgpt/学术方向/Respiratory Sound Classification/data/raw/icbhi2017/ICBHI_final_database/132_2b2_Lr_mc_LittC2SE.wav": "a8d634c0702692858e214986089704e568c19be9882c081c0fead8bc9afbe95f",
+    "[user-home]/Documents/njgpt/学术方向/Respiratory Sound Classification/data/raw/icbhi2017/ICBHI_final_database/138_1p3_Ll_mc_AKGC417L.wav": "9f3ca6af5e66d5debfa7ea14ff2e65ac7a22723b280e69e024b7347e8e10203c",
+    "[user-home]/Documents/njgpt/学术方向/Respiratory Sound Classification/data/raw/icbhi2017/ICBHI_final_database/138_1p4_Pr_mc_AKGC417L.wav": "26edd0da7fb759094d98265c625ba3946b962c378944f0c84482041be7791fe6",
+    "[user-home]/Documents/njgpt/学术方向/Respiratory Sound Classification/data/raw/icbhi2017/ICBHI_final_database/138_2p2_Pl_mc_AKGC417L.wav": "1c7f6792637e86380beef14ccece8af3dabddf7fbf5ff55e31d028315c10b93f",
+    "[user-home]/Documents/njgpt/学术方向/Respiratory Sound Classification/data/raw/icbhi2017/ICBHI_final_database/180_1b4_Lr_mc_AKGC417L.wav": "f8f94cffd84a914ea5924a1c0acf5174c89d6422695b2e9e96f0359523224cd8",
+    "[user-home]/Documents/njgpt/学术方向/Respiratory Sound Classification/data/raw/icbhi2017/ICBHI_final_database/191_2b1_Pl_mc_LittC2SE.wav": "2db787f6825d1f7c34af8d84a469bb71f35f03a28fea98d4c7dc12921cf21e14",
+    "[user-home]/Documents/njgpt/学术方向/Respiratory Sound Classification/data/raw/icbhi2017/ICBHI_final_database/213_2p2_Tc_mc_AKGC417L.wav": "e6bbce30174a1699921dcb2733c836ad52fd5281bc5f8276c2bde1674919cb08",
+    "[user-home]/Documents/njgpt/学术方向/Respiratory Sound Classification/data/raw/icbhi2017/ICBHI_final_database/219_2b1_Tc_mc_LittC2SE.wav": "3ad42e7e4362a101d382985e52dd123b8b1dcbf2196d571bd421874f451a3b54",
+    "[user-home]/Documents/njgpt/学术方向/Respiratory Sound Classification/data/raw/icbhi2017/ICBHI_final_database/219_2b2_Tc_mc_LittC2SE.wav": "17899f7f22faf150396a39f62c52479d30058c7310b825f4ed97739c22a446c1",
+    "[user-home]/Documents/njgpt/学术方向/Respiratory Sound Classification/data/raw/sprsound2022/official_repo/BioCAS2022/train2022_wav/40995749_10.5_1_p2_1343.wav": "6c10e5eeb119f35640a48c44e3f0c04dc74003b22855f036347c42544ba2014a",
+    "[user-home]/Documents/njgpt/学术方向/Respiratory Sound Classification/data/raw/sprsound2022/official_repo/BioCAS2022/train2022_wav/41073831_5.1_1_p1_1021.wav": "205b2cc0fe7dfaa266140beb379caa83239de18c4e76cb0c73f9a2e9e3ec741d",
+    "[user-home]/Documents/njgpt/学术方向/Respiratory Sound Classification/data/raw/sprsound2022/official_repo/BioCAS2022/train2022_wav/41161556_1.7_0_p2_2139.wav": "f1828a14a00efd9d6ad90ec153a27e6d76f475039997b2c90d864ec3f8bba47f",
+    "[user-home]/Documents/njgpt/学术方向/Respiratory Sound Classification/data/raw/sprsound2022/official_repo/BioCAS2022/train2022_wav/41187871_3.8_1_p3_3292.wav": "15c68ea8e1dcafc4f116b7a004891f88c4196719872322264551542a96891177",
+    "[user-home]/Documents/njgpt/学术方向/Respiratory Sound Classification/data/raw/sprsound2022/official_repo/BioCAS2022/train2022_wav/41191269_3.1_1_p1_1332.wav": "5ec2f7db8ab6f9afaff5f19d1f877651c40837a32039fef53dc3b115bc76c125",
+    "[user-home]/Documents/njgpt/学术方向/Respiratory Sound Classification/data/raw/sprsound2022/official_repo/BioCAS2022/train2022_wav/41226005_3.9_1_p3_979.wav": "f7441265389a8c4148c3b0a6feea4be547495e88dd479da1ce7e3de15fc11f99",
+    "[user-home]/Documents/njgpt/学术方向/Respiratory Sound Classification/data/raw/sprsound2022/official_repo/BioCAS2022/train2022_wav/41246720_4.2_0_p1_1575.wav": "14a26e525df727f8e4d8ba6c6824bbcf87ed2ebfe3c09d7fceae8ed1fa841bdf",
+    "[user-home]/Documents/njgpt/学术方向/Respiratory Sound Classification/data/raw/sprsound2022/official_repo/BioCAS2022/train2022_wav/41246720_4.2_0_p3_1516.wav": "59c5c4e3cb9736c0c7628eb365d4fe32d9492a464267ddb2676c841ea49ca1ac",
+    "[user-home]/Documents/njgpt/学术方向/Respiratory Sound Classification/data/raw/sprsound2022/official_repo/BioCAS2022/train2022_wav/41246720_4.2_0_p4_1921.wav": "b8bc26bf5f4cd8018bebc3b1ee866e243b5148c50c5e7c88ed1ae65d73bf9b04",
+    "[user-home]/Documents/njgpt/学术方向/Respiratory Sound Classification/data/raw/sprsound2022/official_repo/BioCAS2022/train2022_wav/41260853_9.7_1_p1_573.wav": "935d86fa26f99940130960afa5bd0655d1a47c0f0792ee3d5927f511a46a65fc",
+    "[user-home]/Documents/njgpt/学术方向/Respiratory Sound Classification/data/raw/sprsound2022/official_repo/BioCAS2022/train2022_wav/41260853_9.7_1_p4_576.wav": "4a4479566dc949c04274a26e4b5942b6ef785d835a462ffb83aff45ab632187d",
+    "[user-home]/Documents/njgpt/学术方向/Respiratory Sound Classification/data/raw/sprsound2022/official_repo/BioCAS2022/train2022_wav/64743918_7.0_0_p1_2799.wav": "c1225c6551ae60354dcd90d1868808f51d05bc9e46c163a4e7d4c2ae74a61f01",
+    "[user-home]/Documents/njgpt/学术方向/Respiratory Sound Classification/data/raw/sprsound2022/official_repo/BioCAS2022/train2022_wav/64743918_7.0_0_p2_2835.wav": "3f6a5126c82ab20221f10a7609fd7e761eafa2a5f7c90fbd2a14d494e7690bb9",
+    "[user-home]/Documents/njgpt/学术方向/Respiratory Sound Classification/data/raw/sprsound2022/official_repo/BioCAS2022/train2022_wav/65044711_0.4_1_p4_340.wav": "ba00beea63ddd198fb9a19ab469abf28b524bf21446dc60c6269b86e518eeefa",
+    "[user-home]/Documents/njgpt/学术方向/Respiratory Sound Classification/runs/gate11a_exactmask_fullft_seed20260729/best.pt": "3f7942419370cc8822d447c9e1b2789cbfa58d2b150f6466c94da46c5948f6a8",
+    "[user-home]/Documents/njgpt/学术方向/Respiratory Sound Classification/runs/gate11a_exactmask_fullft_seed20260730/best.pt": "a9ee6200147b9979bcd37a5be62a60156ab5e146707982ed66e035727a47ef47",
+    "[user-home]/Documents/njgpt/学术方向/Respiratory Sound Classification/runs/gate11a_exactmask_fullft_seed20260731/best.pt": "093519ab419cf1c63c4d62047b858c75b62b6da3c1aaf74ccfca261fd3b23d60",
+    "[user-home]/Documents/njgpt/学术方向/Respiratory Sound Classification/runs/revision_2026_09_03/revision_legacy_mask_seed20260729/best.pt": "55be055282fcd7d73f4f5e03e71cc79a578139f785db74734987169dc692aef9",
+    "[user-home]/Documents/njgpt/学术方向/Respiratory Sound Classification/runs/revision_2026_09_03/revision_legacy_mask_seed20260731/best.pt": "eba81e3d10d732307f77f8e451b50730d502f9891240d2b2f42f757ef9a1053e",
+    "[user-home]/Documents/njgpt/学术方向/Respiratory Sound Classification/scripts/audit_revision_mask_mapping.py": "6be47ae0318354947d81c08a8940b4de907867234f43d00201d4743428b803b8",
+    "[user-home]/Documents/njgpt/学术方向/Respiratory Sound Classification/scripts/run_revision_stability_panel_20260906.py": "73ca24ba32b5c3e0e9e3bbe015eca5700abaae75b65a2806c70ccdda23096032",
+    "[user-home]/Documents/njgpt/学术方向/Respiratory Sound Classification/tests/test_revision_stability_panel.py": "335f264c1bf429aaf5abde4ecc5874bc9b3bca7ff51d9d768f75f3008599097d",
+    "[user-home]/Documents/njgpt/学术方向/experiment_plans/2026-09-03/25_STABILITY_PLACEMENT_EXECUTION_SPEC_2026-09-06.md": "6b716dad308e791afc7cb8ce64fd63943929e3aca09aea480ad67978c637e325"
+  }
+}

@@ -1,0 +1,271 @@
+{
+  "data_gate_passed": true,
+  "checks": {
+    "unique_sample_ids": true,
+    "all_roles_known": true,
+    "development_roles_have_both_labels": true,
+    "development_patient_disjoint": true,
+    "independent_test_patient_disjoint": true,
+    "no_locked_rows_in_development": true,
+    "all_source_paths_present": true,
+    "labels_harmonized": true,
+    "calibration_has_at_least_ten_patients_per_dataset": true,
+    "calibration_has_at_least_100_samples_per_class": true
+  },
+  "split_seed": 20260728,
+  "label_mapping": {
+    "icbhi2017": "normal -> normal; crackle/wheeze/both -> adventitious",
+    "sprsound2022": "normal -> normal; all six non-normal event labels -> adventitious"
+  },
+  "device_claim_limit": "SPRSound has no per-record device field; ICBHI device is strongly patient-confounded. Device invariance is not an admissible primary claim.",
+  "confounding_summary": {
+    "icbhi_devices": {
+      "AKGC417L": {
+        "samples": 2441,
+        "patients": 16,
+        "positive_prevalence": 0.5985251945923802
+      },
+      "Litt3200": {
+        "samples": 28,
+        "patients": 1,
+        "positive_prevalence": 0.75
+      },
+      "LittC2SE": {
+        "samples": 594,
+        "patients": 23,
+        "positive_prevalence": 0.4158249158249158
+      },
+      "Meditron": {
+        "samples": 962,
+        "patients": 40,
+        "positive_prevalence": 0.2525987525987526
+      }
+    },
+    "icbhi_devices_per_patient": {
+      "1": 74,
+      "2": 3
+    },
+    "sprsound_device_field": "unreported",
+    "sprsound_recording_positions": {
+      "p1": {
+        "samples": 1682,
+        "patients": 202,
+        "positive_prevalence": 0.19797859690844233
+      },
+      "p2": {
+        "samples": 1761,
+        "patients": 202,
+        "positive_prevalence": 0.24758659852356615
+      },
+      "p3": {
+        "samples": 1442,
+        "patients": 187,
+        "positive_prevalence": 0.21983356449375868
+      },
+      "p4": {
+        "samples": 1771,
+        "patients": 206,
+        "positive_prevalence": 0.23207227555053642
+      }
+    }
+  },
+  "development_shift_summary": {
+    "icbhi2017": {
+      "samples": 4025,
+      "patients": 77,
+      "positive_prevalence": 0.4899378881987578,
+      "duration_seconds": {
+        "median": 2.523999999999998,
+        "p10": 1.4640000000000022,
+        "p90": 4.143000000000001
+      },
+      "source_sample_rates": {
+        "44100": 3569,
+        "4000": 456
+      },
+      "fine_label_counts": {
+        "normal": 2053,
+        "crackle": 1186,
+        "wheeze": 486,
+        "both": 300
+      }
+    },
+    "sprsound2022": {
+      "samples": 6656,
+      "patients": 243,
+      "positive_prevalence": 0.22490985576923078,
+      "duration_seconds": {
+        "median": 1.2099999999999995,
+        "p10": 0.6245,
+        "p90": 1.9829999999999999
+      },
+      "source_sample_rates": {
+        "8000": 6656
+      },
+      "fine_label_counts": {
+        "normal": 5159,
+        "fine_crackle": 912,
+        "wheeze": 452,
+        "coarse_crackle": 49,
+        "rhonchi": 39,
+        "wheeze_crackle": 30,
+        "stridor": 15
+      }
+    }
+  },
+  "split_metadata": {
+    "icbhi2017": {
+      "seed": 20260728,
+      "attempts": 8192,
+      "objective": 0.15859688270873007,
+      "patient_counts": {
+        "train_fit": 53,
+        "validation_select": 12,
+        "calibration": 12
+      },
+      "overall_positive_prevalence": 0.4899378881987578,
+      "balanced_domains": [
+        "AKGC417L",
+        "LittC2SE",
+        "Meditron"
+      ],
+      "roles": {
+        "validation_select": {
+          "patients": 12,
+          "samples": 554,
+          "sample_fraction": 0.13763975155279504,
+          "positive_prevalence": 0.48194945848375453,
+          "domain_l1_distance": 0.06893288786241228
+        },
+        "calibration": {
+          "patients": 12,
+          "samples": 561,
+          "sample_fraction": 0.13937888198757764,
+          "positive_prevalence": 0.49910873440285203,
+          "domain_l1_distance": 0.0829149367256784
+        },
+        "train_fit": {
+          "patients": 53,
+          "samples": 2910,
+          "sample_fraction": 0.7229813664596273,
+          "positive_prevalence": 0.4896907216494845,
+          "domain_l1_distance": 0.020185695075878918
+        }
+      }
+    },
+    "sprsound2022": {
+      "seed": 20260729,
+      "attempts": 8192,
+      "objective": 0.06174055165449735,
+      "patient_counts": {
+        "train_fit": 171,
+        "validation_select": 36,
+        "calibration": 36
+      },
+      "overall_positive_prevalence": 0.22490985576923078,
+      "balanced_domains": [
+        "p1",
+        "p2",
+        "p3",
+        "p4"
+      ],
+      "roles": {
+        "validation_select": {
+          "patients": 36,
+          "samples": 1013,
+          "sample_fraction": 0.1521935096153846,
+          "positive_prevalence": 0.2240868706811451,
+          "domain_l1_distance": 0.0740852689080416
+        },
+        "calibration": {
+          "patients": 36,
+          "samples": 1038,
+          "sample_fraction": 0.15594951923076922,
+          "positive_prevalence": 0.22736030828516376,
+          "domain_l1_distance": 0.027693442455906325
+        },
+        "train_fit": {
+          "patients": 171,
+          "samples": 4605,
+          "sample_fraction": 0.6918569711538461,
+          "positive_prevalence": 0.2245385450597177,
+          "domain_l1_distance": 0.021723291468303624
+        }
+      }
+    }
+  },
+  "role_summary": {
+    "icbhi2017:calibration": {
+      "samples": 561,
+      "patients": 12,
+      "recordings": 70,
+      "normal": 281,
+      "adventitious": 280,
+      "positive_prevalence": 0.49910873440285203
+    },
+    "icbhi2017:locked_test": {
+      "samples": 2873,
+      "patients": 49,
+      "recordings": 394,
+      "normal": 1589,
+      "adventitious": 1284,
+      "positive_prevalence": 0.4469195962408632
+    },
+    "icbhi2017:train_fit": {
+      "samples": 2910,
+      "patients": 53,
+      "recordings": 375,
+      "normal": 1485,
+      "adventitious": 1425,
+      "positive_prevalence": 0.4896907216494845
+    },
+    "icbhi2017:validation_select": {
+      "samples": 554,
+      "patients": 12,
+      "recordings": 81,
+      "normal": 287,
+      "adventitious": 267,
+      "positive_prevalence": 0.48194945848375453
+    },
+    "sprsound2022:calibration": {
+      "samples": 1038,
+      "patients": 36,
+      "recordings": 288,
+      "normal": 802,
+      "adventitious": 236,
+      "positive_prevalence": 0.22736030828516376
+    },
+    "sprsound2022:locked_inter_test": {
+      "samples": 1429,
+      "patients": 41,
+      "recordings": 347,
+      "normal": 1040,
+      "adventitious": 389,
+      "positive_prevalence": 0.2722183344996501
+    },
+    "sprsound2022:locked_intra_test": {
+      "samples": 1004,
+      "patients": 160,
+      "recordings": 377,
+      "normal": 688,
+      "adventitious": 316,
+      "positive_prevalence": 0.3147410358565737
+    },
+    "sprsound2022:train_fit": {
+      "samples": 4605,
+      "patients": 171,
+      "recordings": 1195,
+      "normal": 3571,
+      "adventitious": 1034,
+      "positive_prevalence": 0.2245385450597177
+    },
+    "sprsound2022:validation_select": {
+      "samples": 1013,
+      "patients": 36,
+      "recordings": 289,
+      "normal": 786,
+      "adventitious": 227,
+      "positive_prevalence": 0.2240868706811451
+    }
+  }
+}

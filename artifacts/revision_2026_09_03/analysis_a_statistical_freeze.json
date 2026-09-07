@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "status": "frozen_before_analysis_a_statistics",
+  "frozen_at": "2026-09-04 22:34:02 CST (+0800)",
+  "analysis_plan_sha256": "18b6e39bba441e5be1ec870591b9dbf2846b7e6ab6293be9d211aab12809be39",
+  "legacy_failure_amendment_sha256": "9b2b7e19ae0f14fc8e3107b579d45987e9a729753507f858a2ca12ce94aa91e4",
+  "manifest_sha256": "2dd168129fc0fc159db201f2990c4d7074cb746fc9bc2c13bd5031e47dbd1419",
+  "matched_completed_seeds": [
+    20260729,
+    20260731
+  ],
+  "failed_legacy_seed_retained": 20260730,
+  "heldout_prediction_values_inspected_before_freeze": false,
+  "frozen_files": {
+    "scripts/analyze_revision_analysis_a.py": "38cb1eb73a1f0e7911a74692c27c3bb4079bc3c8370f5c784419e115c0e96757",
+    "scripts/analyze_revision_ablation.py": "df78cad5c3658b20f130a187133f3bede5f32d85228865cbe7af7bd91b981687",
+    "../experiment_plans/2026-09-03/01_REVISION_ANALYSIS_PLAN_FROZEN_2026-09-03.md": "18b6e39bba441e5be1ec870591b9dbf2846b7e6ab6293be9d211aab12809be39",
+    "../experiment_plans/2026-09-03/03_ANALYSIS_PLAN_AMENDMENT_2026-09-04_LEGACY_FAILURE.md": "9b2b7e19ae0f14fc8e3107b579d45987e9a729753507f858a2ca12ce94aa91e4",
+    "artifacts/revision_2026_09_03/analysis_a_inference_freeze.json": "34ce5d2d259f05446293a61acac0792d8d37e10431a2cce3fb56773f77f4b93c",
+    "artifacts/revision_2026_09_03/predictions/legacy_mask/prediction_manifest.json": "2928548cc964428b4b5bb76a4940e610dee37e9e7a9cc7b3273cbe5e6dec9aad",
+    "artifacts/post_gate11a/calibration_predictions/prediction_manifest.json": "9a2cdf1983b12a1f69a399cdf0943b5e4d26767bde84688b1b432bb67f909472",
+    "artifacts/post_gate11a/locked_predictions/prediction_manifest.json": "839a3523dffba6e810385a8ca0cfcbb1396405c70a8b193ec1b66c85bdf656ec",
+    "runs/gate11a_exactmask_fullft_seed20260729/best_validation_predictions_icbhi2017.csv": "bd5fe4b316514c0f9a6b34b7bb370621e380f60e57826091822c1a4fa4b45136",
+    "runs/gate11a_exactmask_fullft_seed20260729/best_validation_predictions_sprsound2022.csv": "aa6d0a0e1c36cdfd68bd2d59b5b6a307af87113f40747309c56ca5183f0bec3b",
+    "runs/gate11a_exactmask_fullft_seed20260731/best_validation_predictions_icbhi2017.csv": "5cf597c5580fb7e8efcd9d8d7ad7f90a5815f25cc61629a298eeaeb369e83d2d",
+    "runs/gate11a_exactmask_fullft_seed20260731/best_validation_predictions_sprsound2022.csv": "4c4837933f79c4409b14ef440fffb3ed485193824bddf5fc3a0f572e29f7cb73",
+    "data/manifests/cross_domain_binary.csv": "2dd168129fc0fc159db201f2990c4d7074cb746fc9bc2c13bd5031e47dbd1419"
+  },
+  "methods": {
+    "scope": "diagnostic two-seed matched-completer comparison conditional on Legacy fixed-prefix completion",
+    "ensemble": "arithmetic mean of seed-20260729 and seed-20260731 probabilities within each mask arm",
+    "threshold": 0.5,
+    "classification_metrics": [
+      "sensitivity",
+      "specificity",
+      "average_score",
+      "macro_f1",
+      "AUROC"
+    ],
+    "temperature_scaling": "one positive scalar temperature fitted by binary NLL on each arm-and-database calibration ensemble and applied unchanged to validation and held-out roles",
+    "calibration_metrics": [
+      "binary NLL",
+      "Brier score",
+      "15-bin equal-frequency ECE",
+      "calibration intercept",
+      "calibration slope"
+    ],
+    "primary_roles": {
+      "icbhi2017": "locked_test",
+      "sprsound2022": "locked_inter_test"
+    },
+    "contrast": "Exact minus Legacy",
+    "bootstrap": "4000 paired patient-cluster percentile replicates using seed 20260729; domains independently resampled for equal-database mean",
+    "calibration_intercept_and_slope_intervals": "not bootstrapped; descriptive point estimates because clustered resamples may be quasi-separated",
+    "failed_seed_policy": "seed-20260730 is retained as a numerical-stability failure and excluded from completed-seed classification/calibration without replacement",
+    "selection_after_locked_access": false
+  }
+}

@@ -1,0 +1,350 @@
+{
+  "gate": "11A",
+  "stage": "three_seed_confirmation",
+  "status": "gate11a_passed",
+  "freeze": "artifacts/gate11a_exactmask_fullft_freeze.json",
+  "freeze_sha256": "b5224677601c520f0f411af8ec002befe366ce10032626f564920daedae1a27c",
+  "runs": [
+    "runs/gate11a_exactmask_fullft_seed20260729",
+    "runs/gate11a_exactmask_fullft_seed20260730",
+    "runs/gate11a_exactmask_fullft_seed20260731"
+  ],
+  "gate_decision": {
+    "gate": "11A",
+    "seeds": [
+      20260729,
+      20260730,
+      20260731
+    ],
+    "single_seed_decisions": [
+      {
+        "gate": "11A",
+        "seed": 20260729,
+        "scores": {
+          "icbhi_average_score": 0.7348980151117723,
+          "sprsound_average_score": 0.8932558765174698,
+          "icbhi_sensitivity": 0.7415730337078652,
+          "icbhi_specificity": 0.7282229965156795,
+          "sprsound_sensitivity": 0.8590308370044053,
+          "sprsound_specificity": 0.9274809160305344,
+          "two_domain_mean_average_score": 0.8140769458146211
+        },
+        "checks": {
+          "icbhi_average_score_at_least_0_69": true,
+          "sprsound_average_score_at_least_0_86": true,
+          "two_domain_mean_average_score_at_least_0_79": true,
+          "sensitivity_each_domain_at_least_0_50": true,
+          "specificity_each_domain_at_least_0_50": true,
+          "finite_audit_passed": true,
+          "data_boundary_audit_passed": true,
+          "exact_mask_audit_passed": true
+        },
+        "passed": true
+      },
+      {
+        "gate": "11A",
+        "seed": 20260730,
+        "scores": {
+          "icbhi_average_score": 0.710377272312049,
+          "sprsound_average_score": 0.8772404748293372,
+          "icbhi_sensitivity": 0.7378277153558053,
+          "icbhi_specificity": 0.6829268292682927,
+          "sprsound_sensitivity": 0.762114537444934,
+          "sprsound_specificity": 0.9923664122137404,
+          "two_domain_mean_average_score": 0.7938088735706931
+        },
+        "checks": {
+          "icbhi_average_score_at_least_0_69": true,
+          "sprsound_average_score_at_least_0_86": true,
+          "two_domain_mean_average_score_at_least_0_79": true,
+          "sensitivity_each_domain_at_least_0_50": true,
+          "specificity_each_domain_at_least_0_50": true,
+          "finite_audit_passed": true,
+          "data_boundary_audit_passed": true,
+          "exact_mask_audit_passed": true
+        },
+        "passed": true
+      },
+      {
+        "gate": "11A",
+        "seed": 20260731,
+        "scores": {
+          "icbhi_average_score": 0.7005768051259966,
+          "sprsound_average_score": 0.8868469134972145,
+          "icbhi_sensitivity": 0.7565543071161048,
+          "icbhi_specificity": 0.6445993031358885,
+          "sprsound_sensitivity": 0.8678414096916299,
+          "sprsound_specificity": 0.905852417302799,
+          "two_domain_mean_average_score": 0.7937118593116055
+        },
+        "checks": {
+          "icbhi_average_score_at_least_0_69": true,
+          "sprsound_average_score_at_least_0_86": true,
+          "two_domain_mean_average_score_at_least_0_79": true,
+          "sensitivity_each_domain_at_least_0_50": true,
+          "specificity_each_domain_at_least_0_50": true,
+          "finite_audit_passed": true,
+          "data_boundary_audit_passed": true,
+          "exact_mask_audit_passed": true
+        },
+        "passed": true
+      }
+    ],
+    "mean_scores": {
+      "icbhi_average_score": 0.7152840308499394,
+      "sprsound_average_score": 0.8857810882813405,
+      "two_domain_mean_average_score": 0.80053255956564
+    },
+    "sample_standard_deviations": {
+      "icbhi": 0.01767890192386952,
+      "sprsound": 0.008060723314390283,
+      "two_domain_mean": 0.011729882867608269
+    },
+    "checks": {
+      "mean_icbhi_average_score_at_least_0_69": true,
+      "mean_sprsound_average_score_at_least_0_86": true,
+      "mean_two_domain_average_score_at_least_0_79": true,
+      "single_seed_gate_passes_at_least_2": true,
+      "all_seed_domain_sensitivity_at_least_0_50": true,
+      "all_seed_domain_specificity_at_least_0_50": true
+    },
+    "passed": true
+  },
+  "primary_full_ft_probability_ensemble": {
+    "weights": [
+      0.3333333333333333,
+      0.3333333333333333,
+      0.3333333333333333
+    ],
+    "metrics": {
+      "icbhi2017": {
+        "accuracy": 0.7166064981949458,
+        "sensitivity": 0.7528089887640449,
+        "specificity": 0.6829268292682927,
+        "average_score": 0.7178679090161688,
+        "harmonic_score": 0.716167207482344,
+        "score": 0.7170175582492564,
+        "macro_f1": 0.7165834123516167,
+        "uar": 0.7178679090161688,
+        "per_class_recall": {
+          "normal": 0.6829268292682927,
+          "adventitious": 0.7528089887640449
+        },
+        "confusion_matrix": [
+          [
+            196,
+            91
+          ],
+          [
+            66,
+            201
+          ]
+        ],
+        "support": {
+          "normal": 287,
+          "adventitious": 267
+        },
+        "auroc": 0.8022941706142581
+      },
+      "sprsound2022": {
+        "accuracy": 0.9318854886475815,
+        "sensitivity": 0.8458149779735683,
+        "specificity": 0.9567430025445293,
+        "average_score": 0.9012789902590488,
+        "harmonic_score": 0.8978657778219988,
+        "score": 0.8995723840405239,
+        "macro_f1": 0.9019084467609453,
+        "uar": 0.9012789902590488,
+        "per_class_recall": {
+          "normal": 0.9567430025445293,
+          "adventitious": 0.8458149779735683
+        },
+        "confusion_matrix": [
+          [
+            752,
+            34
+          ],
+          [
+            35,
+            192
+          ]
+        ],
+        "support": {
+          "normal": 786,
+          "adventitious": 227
+        },
+        "auroc": 0.9728284628577194
+      }
+    },
+    "patient_cluster_absolute_intervals": {
+      "icbhi2017": {
+        "sensitivity": {
+          "estimate": 0.7528089887640449,
+          "lower": 0.5471418818272096,
+          "upper": 0.8465640727835849
+        },
+        "specificity": {
+          "estimate": 0.6829268292682927,
+          "lower": 0.5337055046737796,
+          "upper": 0.9363051470588236
+        },
+        "average_score": {
+          "estimate": 0.7178679090161688,
+          "lower": 0.6347370759085876,
+          "upper": 0.8161831227631742
+        },
+        "harmonic_score": {
+          "estimate": 0.716167207482344,
+          "lower": 0.6252423783398505,
+          "upper": 0.8106215773438664
+        },
+        "score": {
+          "estimate": 0.7170175582492564,
+          "lower": 0.6304473651532648,
+          "upper": 0.8124047012173251
+        },
+        "macro_f1": {
+          "estimate": 0.7165834123516167,
+          "lower": 0.59200799142879,
+          "upper": 0.8059709443243347
+        },
+        "uar": {
+          "estimate": 0.7178679090161688,
+          "lower": 0.6347370759085876,
+          "upper": 0.8161831227631742
+        }
+      },
+      "sprsound2022": {
+        "sensitivity": {
+          "estimate": 0.8458149779735683,
+          "lower": 0.7482001065814016,
+          "upper": 0.9147991302419554
+        },
+        "specificity": {
+          "estimate": 0.9567430025445293,
+          "lower": 0.9398391014536416,
+          "upper": 0.9720177493571008
+        },
+        "average_score": {
+          "estimate": 0.9012789902590488,
+          "lower": 0.8545590423372755,
+          "upper": 0.9341322602434704
+        },
+        "harmonic_score": {
+          "estimate": 0.8978657778219988,
+          "lower": 0.8411809464136759,
+          "upper": 0.933216246386437
+        },
+        "score": {
+          "estimate": 0.8995723840405239,
+          "lower": 0.848081162785637,
+          "upper": 0.9335562341270901
+        },
+        "macro_f1": {
+          "estimate": 0.9019084467609453,
+          "lower": 0.8588422541407721,
+          "upper": 0.925063953221815
+        },
+        "uar": {
+          "estimate": 0.9012789902590488,
+          "lower": 0.8545590423372755,
+          "upper": 0.9341322602434704
+        }
+      }
+    }
+  },
+  "matched_lora_probability_ensemble": {
+    "artifact": "artifacts/gate9d_multiseed_final.json",
+    "artifact_sha256": "0dac138bcbd3ae79bd27ff33994d12dbbfc1ae235ca93ab43707249a079daa73",
+    "metrics": {
+      "icbhi2017": {
+        "accuracy": 0.6949458483754513,
+        "sensitivity": 0.7602996254681648,
+        "specificity": 0.6341463414634146,
+        "average_score": 0.6972229834657897,
+        "harmonic_score": 0.6915165411071078,
+        "score": 0.6943697622864488,
+        "macro_f1": 0.694506892895016,
+        "uar": 0.6972229834657897,
+        "per_class_recall": {
+          "normal": 0.6341463414634146,
+          "adventitious": 0.7602996254681648
+        },
+        "confusion_matrix": [
+          [
+            182,
+            105
+          ],
+          [
+            64,
+            203
+          ]
+        ],
+        "support": {
+          "normal": 287,
+          "adventitious": 267
+        },
+        "auroc": 0.7632228007673335
+      },
+      "sprsound2022": {
+        "accuracy": 0.9239881539980257,
+        "sensitivity": 0.8458149779735683,
+        "specificity": 0.9465648854961832,
+        "average_score": 0.8961899317348758,
+        "harmonic_score": 0.893358348968105,
+        "score": 0.8947741403514904,
+        "macro_f1": 0.891885261239284,
+        "uar": 0.8961899317348758,
+        "per_class_recall": {
+          "normal": 0.9465648854961832,
+          "adventitious": 0.8458149779735683
+        },
+        "confusion_matrix": [
+          [
+            744,
+            42
+          ],
+          [
+            35,
+            192
+          ]
+        ],
+        "support": {
+          "normal": 786,
+          "adventitious": 227
+        },
+        "auroc": 0.9671453071930591
+      }
+    }
+  },
+  "paired_full_ft_minus_lora_bootstrap": {
+    "iterations": 4000,
+    "seed": 20260729,
+    "confidence": 0.95,
+    "results": {
+      "icbhi2017": {
+        "estimate": 0.020644925550379112,
+        "lower": -0.013827768342438717,
+        "upper": 0.048956374944376775,
+        "probability_a_greater_than_b": 0.86425
+      },
+      "sprsound2022": {
+        "estimate": 0.0050890585241729624,
+        "lower": -0.02016503485576122,
+        "upper": 0.02260896256143554,
+        "probability_a_greater_than_b": 0.6975
+      },
+      "two_domain_mean": {
+        "estimate": 0.012866992037276037,
+        "lower": -0.00974456918960689,
+        "upper": 0.030292026639310524,
+        "probability_full_ft_greater_than_lora": 0.87575
+      }
+    },
+    "full_ft_superiority_supported_in_each_domain_and_mean": false,
+    "claim_rule": "If false, report a performance-efficiency trade-off and do not claim full-FT superiority."
+  },
+  "recommendation": "freeze_classifier_and_design_calibration_selective_evaluation",
+  "calibration_accessed": false,
+  "locked_tests_accessed": false
+}

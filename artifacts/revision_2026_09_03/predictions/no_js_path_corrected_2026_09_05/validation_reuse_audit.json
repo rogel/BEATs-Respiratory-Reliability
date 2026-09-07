@@ -1,0 +1,38 @@
+{
+  "20260729/icbhi2017": {
+    "source": "runs/revision_2026_09_03/revision_no_js_seed20260729/best_validation_predictions_icbhi2017.csv",
+    "sha256": "e97cfac53858ee28af4e25dcf002e0cffe76b96a9b3b08138ac2393f8dffcc69",
+    "events": 554,
+    "same_path_replay_passed_in_extended_audit": true
+  },
+  "20260729/sprsound2022": {
+    "source": "runs/revision_2026_09_03/revision_no_js_seed20260729/best_validation_predictions_sprsound2022.csv",
+    "sha256": "da2a84670d4a7d13e1f228afab9a26148894682d3ff25898403291a421bd8597",
+    "events": 1013,
+    "same_path_replay_passed_in_extended_audit": true
+  },
+  "20260730/icbhi2017": {
+    "source": "runs/revision_2026_09_03/revision_no_js_seed20260730/best_validation_predictions_icbhi2017.csv",
+    "sha256": "ddbe27b6d58e7437277b8fe38bdcc989ec821020c667bc1895989b8bec0b0bd0",
+    "events": 554,
+    "same_path_replay_passed_in_extended_audit": true
+  },
+  "20260730/sprsound2022": {
+    "source": "runs/revision_2026_09_03/revision_no_js_seed20260730/best_validation_predictions_sprsound2022.csv",
+    "sha256": "1ec3d8daf5b9eb6d1cdaecc7932d0363f7d90c2813353a4367c89d06b6b05598",
+    "events": 1013,
+    "same_path_replay_passed_in_extended_audit": true
+  },
+  "20260731/icbhi2017": {
+    "source": "runs/revision_2026_09_03/revision_no_js_seed20260731/best_validation_predictions_icbhi2017.csv",
+    "sha256": "b46d34bb49d4b5254bd93b17388cbee87880684fbbfce91b35a507017928ae6f",
+    "events": 554,
+    "same_path_replay_passed_in_extended_audit": true
+  },
+  "20260731/sprsound2022": {
+    "source": "runs/revision_2026_09_03/revision_no_js_seed20260731/best_validation_predictions_sprsound2022.csv",
+    "sha256": "cb431b4631ed1eeb95e1cd10aaa6362ecb204d3cfbb3503863cbdf57362b6ca0",
+    "events": 1013,
+    "same_path_replay_passed_in_extended_audit": true
+  }
+}

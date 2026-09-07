@@ -1,0 +1,521 @@
+{
+  "status": "complete_pending_independent_QA_and_scientific_review",
+  "completed_at": "2026-09-06T02:45:47.066488+08:00",
+  "families": [
+    "exact",
+    "matched-lora"
+  ],
+  "seeds": [
+    20260729,
+    20260730,
+    20260731
+  ],
+  "threshold": 0.5,
+  "primary_contrast": {
+    "icbhi2017": {
+      "role": "locked_test",
+      "fullft_average_score": 0.6619359341579276,
+      "matched_lora_average_score": 0.6145205354569676,
+      "fullft_minus_matched_lora": {
+        "estimate": 0.04741539870096001,
+        "lower": 0.021656183710024875,
+        "upper": 0.07029886949713865,
+        "valid_replicates": 4000,
+        "invalid_replicates": 0,
+        "status": "complete"
+      }
+    },
+    "sprsound2022": {
+      "role": "locked_inter_test",
+      "fullft_average_score": 0.9111948783863951,
+      "matched_lora_average_score": 0.8797780304528376,
+      "fullft_minus_matched_lora": {
+        "estimate": 0.03141684793355748,
+        "lower": 0.018271309465523744,
+        "upper": 0.04922754426258096,
+        "valid_replicates": 4000,
+        "invalid_replicates": 0,
+        "status": "complete"
+      }
+    },
+    "equal_database_mean": {
+      "estimate": 0.039416123317258744,
+      "lower": 0.025432688034460835,
+      "upper": 0.054048182383880025,
+      "valid_replicates": 4000,
+      "invalid_replicates": 0,
+      "status": "complete"
+    }
+  },
+  "temperatures": {
+    "exact/icbhi2017": 1.6464554911106857,
+    "exact/sprsound2022": 1.0350845956825019,
+    "matched-lora/icbhi2017": 1.5138173943395636,
+    "matched-lora/sprsound2022": 0.9126123246619043
+  },
+  "raw_minus_temperature_probability_intervals": {
+    "exact/icbhi2017/validation_select": {
+      "negative_log_likelihood": {
+        "estimate": 0.010931467830023411,
+        "lower": -0.025618773938736288,
+        "upper": 0.04357360061593754,
+        "valid_replicates": 4000,
+        "invalid_replicates": 0,
+        "status": "complete"
+      },
+      "brier_score": {
+        "estimate": 0.0025120885369913637,
+        "lower": -0.008387877286398681,
+        "upper": 0.013438282203258422,
+        "valid_replicates": 4000,
+        "invalid_replicates": 0,
+        "status": "complete"
+      },
+      "equal_frequency_ece": {
+        "estimate": 0.011512528919615309,
+        "lower": -0.03729865674939664,
+        "upper": 0.029827902828027934,
+        "valid_replicates": 4000,
+        "invalid_replicates": 0,
+        "status": "complete"
+      }
+    },
+    "exact/icbhi2017/calibration": {
+      "negative_log_likelihood": {
+        "estimate": 0.036284688438442014,
+        "lower": -0.015633714151884238,
+        "upper": 0.13354791161768315,
+        "valid_replicates": 4000,
+        "invalid_replicates": 0,
+        "status": "complete"
+      },
+      "brier_score": {
+        "estimate": 0.004725366614132753,
+        "lower": -0.0044448712912687795,
+        "upper": 0.021833650505593816,
+        "valid_replicates": 4000,
+        "invalid_replicates": 0,
+        "status": "complete"
+      },
+      "equal_frequency_ece": {
+        "estimate": 0.03371469949899129,
+        "lower": -0.026025398637751263,
+        "upper": 0.05067239528690545,
+        "valid_replicates": 4000,
+        "invalid_replicates": 0,
+        "status": "complete"
+      }
+    },
+    "exact/icbhi2017/locked_test": {
+      "negative_log_likelihood": {
+        "estimate": 0.06881431641998725,
+        "lower": 0.030246924371853803,
+        "upper": 0.11650962148895685,
+        "valid_replicates": 4000,
+        "invalid_replicates": 0,
+        "status": "complete"
+      },
+      "brier_score": {
+        "estimate": 0.014223073264155672,
+        "lower": 0.005440874576094518,
+        "upper": 0.024866123112489747,
+        "valid_replicates": 4000,
+        "invalid_replicates": 0,
+        "status": "complete"
+      },
+      "equal_frequency_ece": {
+        "estimate": 0.06976404650653595,
+        "lower": 0.016800852269680477,
+        "upper": 0.07760643429675,
+        "valid_replicates": 4000,
+        "invalid_replicates": 0,
+        "status": "complete"
+      }
+    },
+    "exact/sprsound2022/validation_select": {
+      "negative_log_likelihood": {
+        "estimate": -0.0003053459129125635,
+        "lower": -0.0013389888597500523,
+        "upper": 0.0009456830518312167,
+        "valid_replicates": 4000,
+        "invalid_replicates": 0,
+        "status": "complete"
+      },
+      "brier_score": {
+        "estimate": -3.231440593252227e-05,
+        "lower": -0.00018851759342688144,
+        "upper": 0.00014214773855528805,
+        "valid_replicates": 4000,
+        "invalid_replicates": 0,
+        "status": "complete"
+      },
+      "equal_frequency_ece": {
+        "estimate": 3.040498825439275e-05,
+        "lower": -0.002032473116104291,
+        "upper": 0.0010252030828951028,
+        "valid_replicates": 4000,
+        "invalid_replicates": 0,
+        "status": "complete"
+      }
+    },
+    "exact/sprsound2022/calibration": {
+      "negative_log_likelihood": {
+        "estimate": 0.00011988009368982255,
+        "lower": -0.0009125296790333609,
+        "upper": 0.001595774931892021,
+        "valid_replicates": 4000,
+        "invalid_replicates": 0,
+        "status": "complete"
+      },
+      "brier_score": {
+        "estimate": -2.6311443118848254e-06,
+        "lower": -0.00012193450876131643,
+        "upper": 0.00013677389265908673,
+        "valid_replicates": 4000,
+        "invalid_replicates": 0,
+        "status": "complete"
+      },
+      "equal_frequency_ece": {
+        "estimate": -0.0009991165629720453,
+        "lower": -0.0015800377317106865,
+        "upper": -0.0002081724439789361,
+        "valid_replicates": 4000,
+        "invalid_replicates": 0,
+        "status": "complete"
+      }
+    },
+    "exact/sprsound2022/locked_inter_test": {
+      "negative_log_likelihood": {
+        "estimate": 0.003746494065498096,
+        "lower": 0.0015231160990855142,
+        "upper": 0.006562385244400759,
+        "valid_replicates": 4000,
+        "invalid_replicates": 0,
+        "status": "complete"
+      },
+      "brier_score": {
+        "estimate": 0.00047400301605612927,
+        "lower": 0.0001425359732124468,
+        "upper": 0.0009192125136359665,
+        "valid_replicates": 4000,
+        "invalid_replicates": 0,
+        "status": "complete"
+      },
+      "equal_frequency_ece": {
+        "estimate": -0.0006666408515125233,
+        "lower": -0.001390534127066328,
+        "upper": -0.0001444334681654813,
+        "valid_replicates": 4000,
+        "invalid_replicates": 0,
+        "status": "complete"
+      }
+    },
+    "exact/sprsound2022/locked_intra_test": {
+      "negative_log_likelihood": {
+        "estimate": 0.0017476594775704957,
+        "lower": 0.00021093187953843062,
+        "upper": 0.0035639848660342557,
+        "valid_replicates": 4000,
+        "invalid_replicates": 0,
+        "status": "complete"
+      },
+      "brier_score": {
+        "estimate": 0.00020432696278975537,
+        "lower": 1.329857151940832e-05,
+        "upper": 0.000412154805752149,
+        "valid_replicates": 4000,
+        "invalid_replicates": 0,
+        "status": "complete"
+      },
+      "equal_frequency_ece": {
+        "estimate": 0.00038583433822880764,
+        "lower": -0.0008538279130949636,
+        "upper": 0.0007847714433730561,
+        "valid_replicates": 4000,
+        "invalid_replicates": 0,
+        "status": "complete"
+      }
+    },
+    "matched-lora/icbhi2017/validation_select": {
+      "negative_log_likelihood": {
+        "estimate": 0.03723513988830596,
+        "lower": 0.0018338891368304634,
+        "upper": 0.0709530826984164,
+        "valid_replicates": 4000,
+        "invalid_replicates": 0,
+        "status": "complete"
+      },
+      "brier_score": {
+        "estimate": 0.009629587588233707,
+        "lower": -0.0029507906029418948,
+        "upper": 0.022101273661474876,
+        "valid_replicates": 4000,
+        "invalid_replicates": 0,
+        "status": "complete"
+      },
+      "equal_frequency_ece": {
+        "estimate": 0.038852672095833735,
+        "lower": -0.012452614466449071,
+        "upper": 0.04959667251156225,
+        "valid_replicates": 4000,
+        "invalid_replicates": 0,
+        "status": "complete"
+      }
+    },
+    "matched-lora/icbhi2017/calibration": {
+      "negative_log_likelihood": {
+        "estimate": 0.020286683464250554,
+        "lower": -0.01459297885219045,
+        "upper": 0.07889464040429525,
+        "valid_replicates": 4000,
+        "invalid_replicates": 0,
+        "status": "complete"
+      },
+      "brier_score": {
+        "estimate": 0.003519725730624035,
+        "lower": -0.0048529691235573574,
+        "upper": 0.017402655033708872,
+        "valid_replicates": 4000,
+        "invalid_replicates": 0,
+        "status": "complete"
+      },
+      "equal_frequency_ece": {
+        "estimate": 0.022274630209082782,
+        "lower": -0.029044236247865375,
+        "upper": 0.04114195723574835,
+        "valid_replicates": 4000,
+        "invalid_replicates": 0,
+        "status": "complete"
+      }
+    },
+    "matched-lora/icbhi2017/locked_test": {
+      "negative_log_likelihood": {
+        "estimate": 0.09074722600221818,
+        "lower": 0.04448185766532365,
+        "upper": 0.15037375515941906,
+        "valid_replicates": 4000,
+        "invalid_replicates": 0,
+        "status": "complete"
+      },
+      "brier_score": {
+        "estimate": 0.01720869893222088,
+        "lower": 0.008039952449033005,
+        "upper": 0.028382543228361295,
+        "valid_replicates": 4000,
+        "invalid_replicates": 0,
+        "status": "complete"
+      },
+      "equal_frequency_ece": {
+        "estimate": 0.04947621419381355,
+        "lower": 0.011447853769088905,
+        "upper": 0.063191302526122,
+        "valid_replicates": 4000,
+        "invalid_replicates": 0,
+        "status": "complete"
+      }
+    },
+    "matched-lora/sprsound2022/validation_select": {
+      "negative_log_likelihood": {
+        "estimate": 0.00047650292065923305,
+        "lower": -0.002930939647726803,
+        "upper": 0.0034890084475952673,
+        "valid_replicates": 4000,
+        "invalid_replicates": 0,
+        "status": "complete"
+      },
+      "brier_score": {
+        "estimate": -0.0002802651585163962,
+        "lower": -0.0008528295718721064,
+        "upper": 0.0003226711531727174,
+        "valid_replicates": 4000,
+        "invalid_replicates": 0,
+        "status": "complete"
+      },
+      "equal_frequency_ece": {
+        "estimate": 0.0025529317544948638,
+        "lower": -0.001220288950100134,
+        "upper": 0.006261567143869558,
+        "valid_replicates": 4000,
+        "invalid_replicates": 0,
+        "status": "complete"
+      }
+    },
+    "matched-lora/sprsound2022/calibration": {
+      "negative_log_likelihood": {
+        "estimate": 0.0010096371332996568,
+        "lower": -0.0028758545358794664,
+        "upper": 0.0039699357246440895,
+        "valid_replicates": 4000,
+        "invalid_replicates": 0,
+        "status": "complete"
+      },
+      "brier_score": {
+        "estimate": 9.586049564662413e-05,
+        "lower": -0.00042608218594148567,
+        "upper": 0.0005720469905532323,
+        "valid_replicates": 4000,
+        "invalid_replicates": 0,
+        "status": "complete"
+      },
+      "equal_frequency_ece": {
+        "estimate": 0.004431875212006095,
+        "lower": 0.002130837980325489,
+        "upper": 0.00664807165697657,
+        "valid_replicates": 4000,
+        "invalid_replicates": 0,
+        "status": "complete"
+      }
+    },
+    "matched-lora/sprsound2022/locked_inter_test": {
+      "negative_log_likelihood": {
+        "estimate": -0.015814514667492285,
+        "lower": -0.024265262745679268,
+        "upper": -0.008481093263133191,
+        "valid_replicates": 4000,
+        "invalid_replicates": 0,
+        "status": "complete"
+      },
+      "brier_score": {
+        "estimate": -0.0016850765831107756,
+        "lower": -0.0028458869671272417,
+        "upper": -0.0006511257856787101,
+        "valid_replicates": 4000,
+        "invalid_replicates": 0,
+        "status": "complete"
+      },
+      "equal_frequency_ece": {
+        "estimate": 0.002177154634395856,
+        "lower": 0.00025838492741780137,
+        "upper": 0.00441966518138218,
+        "valid_replicates": 4000,
+        "invalid_replicates": 0,
+        "status": "complete"
+      }
+    },
+    "matched-lora/sprsound2022/locked_intra_test": {
+      "negative_log_likelihood": {
+        "estimate": -0.008199855136842626,
+        "lower": -0.013134106371891255,
+        "upper": -0.0035011847979371804,
+        "valid_replicates": 4000,
+        "invalid_replicates": 0,
+        "status": "complete"
+      },
+      "brier_score": {
+        "estimate": -0.0015380654262633908,
+        "lower": -0.0022742820500180156,
+        "upper": -0.0008380385090152489,
+        "valid_replicates": 4000,
+        "invalid_replicates": 0,
+        "status": "complete"
+      },
+      "equal_frequency_ece": {
+        "estimate": 0.0024062112375046463,
+        "lower": 3.037312840464251e-05,
+        "upper": 0.003772167823006682,
+        "valid_replicates": 4000,
+        "invalid_replicates": 0,
+        "status": "complete"
+      }
+    }
+  },
+  "bootstrap": {
+    "iterations": 4000,
+    "seed": 20260729,
+    "cluster": "patient",
+    "confidence": 0.95,
+    "primary_streams": "independent SeedSequence children per database, paired arms, same draws for equal mean",
+    "scope": "conditional on frozen models/temperatures; no seed-population inference, equivalence or multiplicity adjustment"
+  },
+  "primary_archived_ensemble_reproduced": {
+    "icbhi2017/calibration": true,
+    "icbhi2017/locked_test": true,
+    "sprsound2022/calibration": true,
+    "sprsound2022/locked_inter_test": true,
+    "sprsound2022/locked_intra_test": true
+  },
+  "patient_overlap_audit": {
+    "pairwise_overlap_counts": {
+      "icbhi2017/train_fit__icbhi2017/validation_select": 0,
+      "icbhi2017/train_fit__icbhi2017/calibration": 0,
+      "icbhi2017/train_fit__icbhi2017/locked_test": 0,
+      "icbhi2017/validation_select__icbhi2017/calibration": 0,
+      "icbhi2017/validation_select__icbhi2017/locked_test": 0,
+      "icbhi2017/calibration__icbhi2017/locked_test": 0,
+      "sprsound2022/train_fit__sprsound2022/validation_select": 0,
+      "sprsound2022/train_fit__sprsound2022/calibration": 0,
+      "sprsound2022/train_fit__sprsound2022/locked_inter_test": 0,
+      "sprsound2022/train_fit__sprsound2022/locked_intra_test": 111,
+      "sprsound2022/validation_select__sprsound2022/calibration": 0,
+      "sprsound2022/validation_select__sprsound2022/locked_inter_test": 0,
+      "sprsound2022/validation_select__sprsound2022/locked_intra_test": 19,
+      "sprsound2022/calibration__sprsound2022/locked_inter_test": 0,
+      "sprsound2022/calibration__sprsound2022/locked_intra_test": 26,
+      "sprsound2022/locked_inter_test__sprsound2022/locked_intra_test": 0
+    },
+    "expected_descriptive_intra_overlap": {
+      "sprsound2022/train_fit__sprsound2022/locked_intra_test": 111,
+      "sprsound2022/validation_select__sprsound2022/locked_intra_test": 19,
+      "sprsound2022/calibration__sprsound2022/locked_intra_test": 26,
+      "sprsound2022/locked_inter_test__sprsound2022/locked_intra_test": 0
+    },
+    "prohibited_overlap": {},
+    "primary_patient_disjoint_roles_passed": true
+  },
+  "freeze_sha256": "3198f7d4f672554b719044a722c0fd7fab7bae5546e32890f2abdee94f477094",
+  "prediction_manifest_sha256": "3cdda96131ff65332866223b9297654fce1c9c792aeaa842bdfeda87d405774f",
+  "validation_replay_sha256": "14bf3bc6f6e702347d3f33ba8b74f7ea502392c9f9bcd75250e7c6d959031b2d",
+  "input_prediction_hashes": {
+    "[user-home]/Documents/njgpt/\u5b66\u672f\u65b9\u5411/Respiratory Sound Classification/runs/gate11a_exactmask_fullft_seed20260729/best_validation_predictions_icbhi2017.csv": "bd5fe4b316514c0f9a6b34b7bb370621e380f60e57826091822c1a4fa4b45136",
+    "[user-home]/Documents/njgpt/\u5b66\u672f\u65b9\u5411/Respiratory Sound Classification/runs/gate11a_exactmask_fullft_seed20260730/best_validation_predictions_icbhi2017.csv": "6f058455c1c4baece7bb902c2376632d28663e7cf6742422eaae0dc3bf6b81f9",
+    "[user-home]/Documents/njgpt/\u5b66\u672f\u65b9\u5411/Respiratory Sound Classification/runs/gate11a_exactmask_fullft_seed20260731/best_validation_predictions_icbhi2017.csv": "5cf597c5580fb7e8efcd9d8d7ad7f90a5815f25cc61629a298eeaeb369e83d2d",
+    "[user-home]/Documents/njgpt/\u5b66\u672f\u65b9\u5411/Respiratory Sound Classification/artifacts/post_gate11a/calibration_predictions/fullft_seed20260729_icbhi2017_calibration.csv": "2e1b5a97c78c5411e035ea4ec929868b8a1a0a02173e4278ae1b6302e1ce03a8",
+    "[user-home]/Documents/njgpt/\u5b66\u672f\u65b9\u5411/Respiratory Sound Classification/artifacts/post_gate11a/calibration_predictions/fullft_seed20260730_icbhi2017_calibration.csv": "3de8af1a2cd64ca55080cee5c039f6b1fe3fb508d76ef09a4132fca1867645a1",
+    "[user-home]/Documents/njgpt/\u5b66\u672f\u65b9\u5411/Respiratory Sound Classification/artifacts/post_gate11a/calibration_predictions/fullft_seed20260731_icbhi2017_calibration.csv": "3edd2eadfbf327a1aa311766527b90c2b91cccbd40a1da516ab1070c7d714a9e",
+    "[user-home]/Documents/njgpt/\u5b66\u672f\u65b9\u5411/Respiratory Sound Classification/artifacts/post_gate11a/locked_predictions/fullft_seed20260729_icbhi2017_locked_test.csv": "519e77edbaee73c198e4f661881384721987559d12654a54d21952bca7d7f0a2",
+    "[user-home]/Documents/njgpt/\u5b66\u672f\u65b9\u5411/Respiratory Sound Classification/artifacts/post_gate11a/locked_predictions/fullft_seed20260730_icbhi2017_locked_test.csv": "bdbc9e0e4fb1118f847366067f8dce04c81817904f8b2e93fa4aac24c08e69aa",
+    "[user-home]/Documents/njgpt/\u5b66\u672f\u65b9\u5411/Respiratory Sound Classification/artifacts/post_gate11a/locked_predictions/fullft_seed20260731_icbhi2017_locked_test.csv": "911c02dbac5ce50e6b332e138af01312c8debf1bccee01fdae1f62c95b901346",
+    "[user-home]/Documents/njgpt/\u5b66\u672f\u65b9\u5411/Respiratory Sound Classification/runs/gate11a_exactmask_fullft_seed20260729/best_validation_predictions_sprsound2022.csv": "aa6d0a0e1c36cdfd68bd2d59b5b6a307af87113f40747309c56ca5183f0bec3b",
+    "[user-home]/Documents/njgpt/\u5b66\u672f\u65b9\u5411/Respiratory Sound Classification/runs/gate11a_exactmask_fullft_seed20260730/best_validation_predictions_sprsound2022.csv": "0402cabae73531aad317d51b46b2cf7bb45fffd652eccde42be7ad759c492e90",
+    "[user-home]/Documents/njgpt/\u5b66\u672f\u65b9\u5411/Respiratory Sound Classification/runs/gate11a_exactmask_fullft_seed20260731/best_validation_predictions_sprsound2022.csv": "4c4837933f79c4409b14ef440fffb3ed485193824bddf5fc3a0f572e29f7cb73",
+    "[user-home]/Documents/njgpt/\u5b66\u672f\u65b9\u5411/Respiratory Sound Classification/artifacts/post_gate11a/calibration_predictions/fullft_seed20260729_sprsound2022_calibration.csv": "94e0f83e964dab7225cb2e6a3f9791935b2d116c4a7cf10c47e676557f7c8874",
+    "[user-home]/Documents/njgpt/\u5b66\u672f\u65b9\u5411/Respiratory Sound Classification/artifacts/post_gate11a/calibration_predictions/fullft_seed20260730_sprsound2022_calibration.csv": "aa87492fc3d47c90e3f3cb1cccacb9d03644126159b6b325783419068fefc086",
+    "[user-home]/Documents/njgpt/\u5b66\u672f\u65b9\u5411/Respiratory Sound Classification/artifacts/post_gate11a/calibration_predictions/fullft_seed20260731_sprsound2022_calibration.csv": "8a7cbcfa7e60b36500950ec33f93abd1763354f00e74297b456854ee462dc16e",
+    "[user-home]/Documents/njgpt/\u5b66\u672f\u65b9\u5411/Respiratory Sound Classification/artifacts/post_gate11a/locked_predictions/fullft_seed20260729_sprsound2022_locked_inter_test.csv": "b15ed25a5ef97e521e09d2de2338b06e77dc962c8524b611fc9224d2e44164ce",
+    "[user-home]/Documents/njgpt/\u5b66\u672f\u65b9\u5411/Respiratory Sound Classification/artifacts/post_gate11a/locked_predictions/fullft_seed20260730_sprsound2022_locked_inter_test.csv": "285f99e19281bc0a25d387e45c24894ec7297c499e943253b4251d3ea138eec9",
+    "[user-home]/Documents/njgpt/\u5b66\u672f\u65b9\u5411/Respiratory Sound Classification/artifacts/post_gate11a/locked_predictions/fullft_seed20260731_sprsound2022_locked_inter_test.csv": "6d0820fcb5d14626887081b643d899c70d514ae5d5f0649b520a9bf7b365c287",
+    "[user-home]/Documents/njgpt/\u5b66\u672f\u65b9\u5411/Respiratory Sound Classification/artifacts/post_gate11a/locked_predictions/fullft_seed20260729_sprsound2022_locked_intra_test.csv": "b2969a10e3d673981932b06619032b8b8b8a69169373671b710c70f5d4eb5a7b",
+    "[user-home]/Documents/njgpt/\u5b66\u672f\u65b9\u5411/Respiratory Sound Classification/artifacts/post_gate11a/locked_predictions/fullft_seed20260730_sprsound2022_locked_intra_test.csv": "ba835d2121866bc19ef06757f4d83cd25bb79cc2837cdaf13147526123afef3d",
+    "[user-home]/Documents/njgpt/\u5b66\u672f\u65b9\u5411/Respiratory Sound Classification/artifacts/post_gate11a/locked_predictions/fullft_seed20260731_sprsound2022_locked_intra_test.csv": "cf3fcb54e3b9fee20b705bc3b257665a75df4d6942d7837628b4c57b0ff10e2f",
+    "[user-home]/Documents/njgpt/\u5b66\u672f\u65b9\u5411/Respiratory Sound Classification/artifacts/revision_2026_09_03/predictions/matched_lora_2026_09_06/seed20260729_icbhi2017_validation_select.csv": "ff54f484a2c0c4782effb1c2eaaf449eda26a9d9adf705343d0914a3455480a9",
+    "[user-home]/Documents/njgpt/\u5b66\u672f\u65b9\u5411/Respiratory Sound Classification/artifacts/revision_2026_09_03/predictions/matched_lora_2026_09_06/seed20260730_icbhi2017_validation_select.csv": "987ad36d152d2a6273600f4ad592d915751ad2b924692596756b32b7abd9f905",
+    "[user-home]/Documents/njgpt/\u5b66\u672f\u65b9\u5411/Respiratory Sound Classification/artifacts/revision_2026_09_03/predictions/matched_lora_2026_09_06/seed20260731_icbhi2017_validation_select.csv": "f1c4015f125aa0103be226809a71ed75e413fce9d4b08aa2fc7efef4996b64be",
+    "[user-home]/Documents/njgpt/\u5b66\u672f\u65b9\u5411/Respiratory Sound Classification/artifacts/revision_2026_09_03/predictions/matched_lora_2026_09_06/seed20260729_icbhi2017_calibration.csv": "e74d3ee5e45df328aad97095a53b71bf18e8ecc81d9ea8f1db50f33aa9896ca8",
+    "[user-home]/Documents/njgpt/\u5b66\u672f\u65b9\u5411/Respiratory Sound Classification/artifacts/revision_2026_09_03/predictions/matched_lora_2026_09_06/seed20260730_icbhi2017_calibration.csv": "f44c085718c49715d8e7a5e5210c63e41225aea085469a4d4c4922e08c0efeb8",
+    "[user-home]/Documents/njgpt/\u5b66\u672f\u65b9\u5411/Respiratory Sound Classification/artifacts/revision_2026_09_03/predictions/matched_lora_2026_09_06/seed20260731_icbhi2017_calibration.csv": "15db141183de87df5128ec6290cafcc802ddb13d0ac619a96106997b4e39a257",
+    "[user-home]/Documents/njgpt/\u5b66\u672f\u65b9\u5411/Respiratory Sound Classification/artifacts/revision_2026_09_03/predictions/matched_lora_2026_09_06/seed20260729_icbhi2017_locked_test.csv": "9eb17aced2497426506e65078da5b3c66dfef119d15be0743228a773bb64e495",
+    "[user-home]/Documents/njgpt/\u5b66\u672f\u65b9\u5411/Respiratory Sound Classification/artifacts/revision_2026_09_03/predictions/matched_lora_2026_09_06/seed20260730_icbhi2017_locked_test.csv": "2fccf3c55dcdd6053a4e268a40bbd24099e683034bf99300ed5f791325076243",
+    "[user-home]/Documents/njgpt/\u5b66\u672f\u65b9\u5411/Respiratory Sound Classification/artifacts/revision_2026_09_03/predictions/matched_lora_2026_09_06/seed20260731_icbhi2017_locked_test.csv": "94a0b3fe4fbdcf3eebb51a3481de89356da81508f16edb75bfd1d27037ab8779",
+    "[user-home]/Documents/njgpt/\u5b66\u672f\u65b9\u5411/Respiratory Sound Classification/artifacts/revision_2026_09_03/predictions/matched_lora_2026_09_06/seed20260729_sprsound2022_validation_select.csv": "3513c1765ead4107bd6c34d3745c28dda1740f2687ebe2ffdeba33b27311f166",
+    "[user-home]/Documents/njgpt/\u5b66\u672f\u65b9\u5411/Respiratory Sound Classification/artifacts/revision_2026_09_03/predictions/matched_lora_2026_09_06/seed20260730_sprsound2022_validation_select.csv": "94720baef5d4dc2dbe690526d53bc8a41b5aad1fddede4bba08724491a8b35f6",
+    "[user-home]/Documents/njgpt/\u5b66\u672f\u65b9\u5411/Respiratory Sound Classification/artifacts/revision_2026_09_03/predictions/matched_lora_2026_09_06/seed20260731_sprsound2022_validation_select.csv": "89d7b1fefca05a88e8adf9e4ad3e630d096a8e1b1a6c19443969a301ef82b531",
+    "[user-home]/Documents/njgpt/\u5b66\u672f\u65b9\u5411/Respiratory Sound Classification/artifacts/revision_2026_09_03/predictions/matched_lora_2026_09_06/seed20260729_sprsound2022_calibration.csv": "fb197d90d6e281347cfa33d5793eff8d2220e6e61f0601bdd40013af84924390",
+    "[user-home]/Documents/njgpt/\u5b66\u672f\u65b9\u5411/Respiratory Sound Classification/artifacts/revision_2026_09_03/predictions/matched_lora_2026_09_06/seed20260730_sprsound2022_calibration.csv": "06df86a5d3e9ce4bae1e0b5a930fe7739ec37173404fff5bde85656c8b4cf2a0",
+    "[user-home]/Documents/njgpt/\u5b66\u672f\u65b9\u5411/Respiratory Sound Classification/artifacts/revision_2026_09_03/predictions/matched_lora_2026_09_06/seed20260731_sprsound2022_calibration.csv": "146bc22c981abb2cbe0c7a341cff6a4874560e001ad4da28d5b709a35798ee2c",
+    "[user-home]/Documents/njgpt/\u5b66\u672f\u65b9\u5411/Respiratory Sound Classification/artifacts/revision_2026_09_03/predictions/matched_lora_2026_09_06/seed20260729_sprsound2022_locked_inter_test.csv": "2c035f6e0061a66f3f7b31e6e4ba6a5fab851dd89067cc854631086fb9f4bfd5",
+    "[user-home]/Documents/njgpt/\u5b66\u672f\u65b9\u5411/Respiratory Sound Classification/artifacts/revision_2026_09_03/predictions/matched_lora_2026_09_06/seed20260730_sprsound2022_locked_inter_test.csv": "16e5d85b074f9ad7dac1d1a6489eb6e218479e86f0adb2bf0cb529fb5c1c8a13",
+    "[user-home]/Documents/njgpt/\u5b66\u672f\u65b9\u5411/Respiratory Sound Classification/artifacts/revision_2026_09_03/predictions/matched_lora_2026_09_06/seed20260731_sprsound2022_locked_inter_test.csv": "03eef9a5e580da126ecdee075e6eb7f7689b301c0199a64e629dd457fea4cff8",
+    "[user-home]/Documents/njgpt/\u5b66\u672f\u65b9\u5411/Respiratory Sound Classification/artifacts/revision_2026_09_03/predictions/matched_lora_2026_09_06/seed20260729_sprsound2022_locked_intra_test.csv": "51d63a4de750a866f2483a07ac3bfac48a36e042a9ce713faf97b25eff30265a",
+    "[user-home]/Documents/njgpt/\u5b66\u672f\u65b9\u5411/Respiratory Sound Classification/artifacts/revision_2026_09_03/predictions/matched_lora_2026_09_06/seed20260730_sprsound2022_locked_intra_test.csv": "93575ef97beac8f25ff6da48b7887cd0f694d816d200a2b564b6becc5049e9cb",
+    "[user-home]/Documents/njgpt/\u5b66\u672f\u65b9\u5411/Respiratory Sound Classification/artifacts/revision_2026_09_03/predictions/matched_lora_2026_09_06/seed20260731_sprsound2022_locked_intra_test.csv": "2832e29cb7d3d5d41854ba7cd4db7b3ffbd4dea48fe7814af5a2a98ea2b14609"
+  },
+  "selection_after_locked_access": false,
+  "comparison_scope": "fixed rank/layers and matched update/LR schedule, not LoRA-optimal or universally causal",
+  "output_hashes": {
+    "classification_bootstrap_draws.npz": "119ef468b5c9cbf3fa265caceea8a3cfd82d386f833313bb316d580f30834674",
+    "classification_metrics.csv": "cec3ca7ecc2a727300eab6639bcbe4e3d0024d455294cd433213c9fd07961f56",
+    "calibration_regression_diagnostics.sha256": "57873c39545ea50a410674d2220a25c704ea365ad332c979825bb9dab68178bd",
+    "calibration_metrics.csv": "0dc02b1b90d66b9752822afd37ce7856eb958b90f5b8f496a323e8a1e042a5be",
+    "calibration_regression_diagnostics.json": "c3ef020dcc53a4d2e2f85d6559013aafb9d83f6380dbb72e720a9958d2664c8e"
+  }
+}

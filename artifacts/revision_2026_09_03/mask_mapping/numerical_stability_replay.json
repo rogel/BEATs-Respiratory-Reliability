@@ -1,0 +1,136 @@
+{
+  "schema_version": 1,
+  "stage": "BEATS_revision",
+  "analysis": "documented_failure_numerical_stability_replay",
+  "analysis_plan_sha256": "18b6e39bba441e5be1ec870591b9dbf2846b7e6ab6293be9d211aab12809be39",
+  "device": "mps",
+  "valid_samples_per_view": [
+    2016,
+    2016
+  ],
+  "exact": {
+    "mask_mode": "exact",
+    "adaptation": {
+      "strategy": "lora_qv",
+      "total_parameters": 90411634,
+      "trainable_parameters": 99842,
+      "trainable_fraction": 0.0011043047844926683,
+      "trainable_backbone_parameters": 98304,
+      "trainable_classifier_parameters": 1538,
+      "lora_modules": 8,
+      "lora_rank": 8,
+      "lora_alpha": 16.0,
+      "lora_dropout": 0.05,
+      "adapted_layer_indices": [
+        8,
+        9,
+        10,
+        11
+      ]
+    },
+    "layer_output_finite": {
+      "0": true,
+      "1": true,
+      "2": true,
+      "3": true,
+      "4": true,
+      "5": true,
+      "6": true,
+      "7": true,
+      "8": true,
+      "9": true,
+      "11": true,
+      "10": true
+    },
+    "attention_output_finite": {
+      "0": true,
+      "1": true,
+      "2": true,
+      "3": true,
+      "4": true,
+      "5": true,
+      "6": true,
+      "7": true,
+      "8": true,
+      "9": true,
+      "11": true,
+      "10": true
+    },
+    "exception": null,
+    "logits_finite": true,
+    "classification_loss_finite": true,
+    "consistency_loss_finite": true,
+    "total_loss_finite": true,
+    "trainable_gradients_present": 18,
+    "trainable_gradients_all_finite": true,
+    "nonfinite_gradient_names": [],
+    "encoder_layers_observed": 12,
+    "encoder_layers_all_finite": true,
+    "attention_modules_observed": 12,
+    "attention_outputs_all_finite": true
+  },
+  "legacy": {
+    "mask_mode": "legacy",
+    "adaptation": {
+      "strategy": "lora_qv",
+      "total_parameters": 90411634,
+      "trainable_parameters": 99842,
+      "trainable_fraction": 0.0011043047844926683,
+      "trainable_backbone_parameters": 98304,
+      "trainable_classifier_parameters": 1538,
+      "lora_modules": 8,
+      "lora_rank": 8,
+      "lora_alpha": 16.0,
+      "lora_dropout": 0.05,
+      "adapted_layer_indices": [
+        8,
+        9,
+        10,
+        11
+      ]
+    },
+    "layer_output_finite": {
+      "0": false,
+      "1": false,
+      "2": false,
+      "3": false,
+      "4": false,
+      "5": false,
+      "6": false,
+      "7": false,
+      "8": false,
+      "9": false,
+      "11": false,
+      "10": false
+    },
+    "attention_output_finite": {
+      "0": false,
+      "1": false,
+      "2": false,
+      "3": false,
+      "4": false,
+      "5": false,
+      "6": false,
+      "7": false,
+      "8": false,
+      "9": false,
+      "11": false,
+      "10": false
+    },
+    "exception": {
+      "type": "AcceleratorError",
+      "message": "scatter: index -1 is out of bounds for dimension with size 392"
+    },
+    "logits_finite": false,
+    "classification_loss_finite": false,
+    "consistency_loss_finite": false,
+    "total_loss_finite": false,
+    "trainable_gradients_present": 0,
+    "trainable_gradients_all_finite": false,
+    "nonfinite_gradient_names": [],
+    "encoder_layers_observed": 12,
+    "encoder_layers_all_finite": false,
+    "attention_modules_observed": 12,
+    "attention_outputs_all_finite": false
+  }
+}
