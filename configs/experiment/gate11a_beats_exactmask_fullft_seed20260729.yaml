@@ -1,0 +1,48 @@
+gate: 11A
+name: gate11a_beats_exactmask_fullft
+formal_status: exact_token_mask_full_finetuning_confirmation
+seed: 20260729
+allowed_seeds:
+  - 20260729
+  - 20260730
+  - 20260731
+train_value: train_fit
+validation_value: validation_select
+label_column: binary_label_id
+batch_size: 8
+samples_per_epoch: 7515
+num_workers: 4
+sampling:
+  mode: domain_class_event
+augmentation:
+  gain_min: 0.8
+  gain_max: 1.2
+  noise_probability: 0.5
+  noise_snr_min_db: 12.0
+  noise_snr_max_db: 30.0
+  shift_probability: 0.5
+  max_shift_fraction: 0.1
+optimizer:
+  name: adamw
+  backbone_learning_rate: 0.00001
+  head_learning_rate: 0.0001
+  weight_decay: 0.01
+schedule:
+  name: warmup_cosine
+  warmup_epochs: 3
+  max_epochs: 20
+  early_stopping_patience: 5
+consistency:
+  enabled: true
+  name: jensen_shannon
+  max_weight: 0.4
+  warmup_epochs: 20
+checkpoint_selection:
+  primary: minimum_domain_average_score
+  tie_breaker: mean_domain_average_score
+  tolerance: 1.0e-12
+classification:
+  threshold: 0.5
+data_access:
+  calibration_allowed: false
+  locked_allowed: false

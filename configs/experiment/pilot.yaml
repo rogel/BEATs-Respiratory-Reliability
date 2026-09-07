@@ -1,0 +1,25 @@
+name: single_seed_pilot
+seed: 20260727
+split_column: development_split
+train_value: train
+validation_value: validation
+batch_size: 64
+num_workers: 0
+augmentation:
+  enabled: true
+optimizer:
+  name: adamw
+  learning_rate: 0.0003
+  weight_decay: 0.0001
+schedule:
+  name: cosine
+  warmup_epochs: 5
+  max_epochs: 60
+  early_stopping_patience: 12
+loss:
+  class_weight_power: -0.5
+consistency:
+  enabled: true
+  name: jensen_shannon
+  max_weight: 0.4
+  warmup_epochs: 20

@@ -1,0 +1,51 @@
+name: gate9c_gradient_norm_audit
+seed: 20260729
+train_value: train_fit
+label_column: binary_label_id
+batch_size: 8
+num_views: 2
+
+augmentation:
+  gain_min: 0.8
+  gain_max: 1.2
+  noise_probability: 0.5
+  snr_db_min: 12.0
+  snr_db_max: 30.0
+  shift_probability: 0.5
+  max_shift_fraction: 0.1
+
+audit:
+  initialization_batches: 32
+  initialization_sampler_seed_offset: 910
+  post_prefix_batches: 64
+  post_prefix_sampler_seed_offset: 920
+
+prefix:
+  updates: 256
+  adaptation_learning_rate: 0.00005
+  head_learning_rate: 0.00005
+  weight_decay: 0.01
+  consistency_weight: 0.03333333333333333
+  gradient_clip_norm: 5.0
+
+gate:
+  complete_finite_batches: 64
+  any_class_conflict_fraction_at_least: 0.25
+  maximum_single_class_conflict_fraction_at_least: 0.20
+  hidden_class_conflict_fraction_at_least: 0.10
+  median_conflict_severity_at_least: 0.02
+
+norm_balance_gate:
+  complete_batches: 64
+  median_imbalance_factor_at_least: 1.20
+  dominant_domain_fraction_at_least: 0.65
+  each_half_dominant_fraction_at_least: 0.60
+  same_sign_blocks_at_least: 3
+  dominant_norm_share_at_least: 0.55
+  same_class_median_cosine_at_least: 0.20
+  heterogeneity_median_at_least: 0.1823215567939546
+  heterogeneity_block_median_at_least: 0.09531017980432493
+  heterogeneity_blocks_at_least: 3
+  weak_domain: icbhi2017
+  known_strong_domain: sprsound2022
+  dominant_directional_share_at_least: 0.55

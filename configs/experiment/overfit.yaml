@@ -1,0 +1,28 @@
+name: tiny_subset_overfit
+seed: 20260727
+split_column: development_split
+train_value: train
+validation_value: train
+sample_limit_train: 64
+sample_limit_validation: 64
+batch_size: 16
+num_workers: 0
+augmentation:
+  enabled: false
+optimizer:
+  name: adamw
+  learning_rate: 0.001
+  weight_decay: 0.0
+schedule:
+  name: cosine
+  warmup_epochs: 1
+  max_epochs: 50
+  early_stopping_patience: 15
+loss:
+  class_weight_power: 0.0
+consistency:
+  enabled: false
+  max_weight: 0.0
+  warmup_epochs: 0
+gate:
+  minimum_training_accuracy: 0.95

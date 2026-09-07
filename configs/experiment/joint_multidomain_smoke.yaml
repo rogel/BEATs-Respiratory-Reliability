@@ -1,0 +1,29 @@
+name: joint_multidomain_smoke
+seed: 20260729
+split_column: protocol_role
+train_value: train_fit
+validation_value: validation_select
+label_column: binary_label_id
+batch_size: 32
+num_workers: 0
+samples_per_epoch: 256
+sample_limit_validation: 64
+augmentation:
+  enabled: true
+optimizer:
+  name: adamw
+  learning_rate: 0.0003
+  weight_decay: 0.0001
+schedule:
+  name: cosine
+  warmup_epochs: 1
+  max_epochs: 2
+  early_stopping_patience: 2
+consistency:
+  enabled: false
+  name: jensen_shannon
+  max_weight: 0.0
+  warmup_epochs: 0
+alignment:
+  mode: none
+  weight: 0.0

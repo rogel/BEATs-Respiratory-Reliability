@@ -1,0 +1,35 @@
+name: gate9c_gradient_conflict_audit
+seed: 20260729
+train_value: train_fit
+label_column: binary_label_id
+batch_size: 8
+num_views: 2
+num_workers: 0
+sampling:
+  mode: domain_class_event
+augmentation:
+  gain_min: 0.8
+  gain_max: 1.2
+  noise_probability: 0.5
+  noise_snr_min_db: 12.0
+  noise_snr_max_db: 30.0
+  shift_probability: 0.5
+  max_shift_fraction: 0.1
+prefix:
+  updates: 256
+  adaptation_learning_rate: 0.00005
+  head_learning_rate: 0.00005
+  weight_decay: 0.01
+  consistency_weight: 0.03333333333333333
+  gradient_clip_norm: 5.0
+audit:
+  initialization_batches: 32
+  post_prefix_batches: 64
+  initialization_sampler_seed_offset: 101
+  post_prefix_sampler_seed_offset: 102
+gate:
+  complete_finite_batches: 64
+  any_class_conflict_fraction_at_least: 0.25
+  maximum_single_class_conflict_fraction_at_least: 0.2
+  hidden_class_conflict_fraction_at_least: 0.1
+  median_conflict_severity_at_least: 0.02

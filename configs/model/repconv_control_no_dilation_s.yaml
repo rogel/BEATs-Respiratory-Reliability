@@ -1,0 +1,15 @@
+name: repconv_control_no_dilation_s
+mode: repconv
+input_channels: 1
+channels: [24, 48, 96, 160]
+depths: [2, 2, 3, 2]
+expansion_ratio: 2
+kernel_size: 3
+num_training_branches: 3
+learnable_static_branch_weights: true
+temporal_dilations:
+  - [1, 1]
+  - [1, 1]
+  - [1, 1, 1]
+  - [1, 1]
+num_classes: 4

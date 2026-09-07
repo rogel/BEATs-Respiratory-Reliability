@@ -1,0 +1,34 @@
+name: sprsound_gate_a_smoke
+seed: 20260727
+split_column: development_split
+train_value: train
+validation_value: validation
+label_column: binary_label_id
+selection_metric: score
+sample_limit_train: 256
+sample_limit_validation: 128
+batch_size: 32
+num_workers: 2
+augmentation:
+  enabled: true
+optimizer:
+  name: adamw
+  learning_rate: 0.0003
+  weight_decay: 0.0001
+schedule:
+  name: cosine
+  warmup_epochs: 1
+  max_epochs: 2
+  early_stopping_patience: 2
+loss:
+  class_weight_power: -0.5
+consistency:
+  enabled: true
+  name: jensen_shannon
+  max_weight: 0.1
+  warmup_epochs: 2
+morphology:
+  enabled: true
+  attribute_names: [transient, continuous]
+  class_weight_power: -0.5
+  loss_weight: 0.4

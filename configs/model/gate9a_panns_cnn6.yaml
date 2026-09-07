@@ -1,0 +1,6 @@
+name: gate9a_panns_cnn6_audioset
+type: panns_cnn6
+checkpoint: checkpoints/pretrained/panns_cnn6_hf/model.safetensors
+upstream_checkpoint_name: Cnn6_mAP=0.343.pth
+pretraining: AudioSet_supervised
+num_classes: 2

@@ -1,0 +1,22 @@
+dataset: cross_domain_binary
+task: event_or_cycle_binary
+classes:
+  - normal
+  - adventitious
+sample_rate: 16000
+clip_seconds: 8.0
+duration_fit: zero_pad
+random_pad_position: true
+feature:
+  type: log_mel
+  n_fft: 512
+  win_length: 400
+  hop_length: 160
+  n_mels: 64
+  f_min: 50
+  f_max: 2000
+split:
+  train: train_fit
+  model_selection: validation_select
+  probability_calibration: calibration
+  final_tests_locked: true

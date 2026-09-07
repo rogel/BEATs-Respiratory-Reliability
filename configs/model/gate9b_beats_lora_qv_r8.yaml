@@ -1,0 +1,13 @@
+name: gate9b_beats_lora_qv_r8
+candidate: beats_lora_qv_r8
+type: beats
+checkpoint: checkpoints/pretrained/beats_as2m_cpt2/BEATs_iter3_plus_AS2M_finetuned_on_AS2M_cpt2.pt
+source_dir: third_party/beats
+pretraining: BEATs_iter3_plus_AS2M_then_AudioSet_supervised_cpt2
+num_classes: 2
+adaptation:
+  strategy: lora_qv
+  last_n_layers: 4
+  rank: 8
+  alpha: 16.0
+  dropout: 0.05

@@ -1,0 +1,17 @@
+name: lrac_reverse_control_s_sprsound2
+alignment_mode: reverse_control
+num_classes: 2
+spectrum:
+  channels: [24, 48, 96, 160]
+  depths: [2, 2, 3, 2]
+  expansion_ratio: 2
+  temporal_dilations:
+    - [1, 1]
+    - [1, 1]
+    - [1, 1, 1]
+    - [1, 1]
+waveform:
+  channels: [24, 48, 64, 96, 128]
+projection_dimension: 32
+interaction_hidden: 32
+max_residual_margin: 2.0

@@ -1,0 +1,33 @@
+name: sprsound_lrac_smoke
+seed: 20260727
+split_column: development_split
+train_value: train
+validation_value: validation
+label_column: binary_label_id
+selection_metric: score
+batch_size: 16
+num_workers: 0
+sample_limit_train: 256
+sample_limit_validation: 256
+augmentation:
+  enabled: true
+optimizer:
+  name: adamw
+  learning_rate: 0.0003
+  weight_decay: 0.0001
+schedule:
+  name: cosine
+  warmup_epochs: 1
+  max_epochs: 5
+  early_stopping_patience: 5
+loss:
+  class_weight_power: -0.5
+  final_weight: 0.5
+  spectrum_weight: 0.5
+  waveform_weight: 0.3
+  alignment_weight: 0.1
+consistency:
+  enabled: true
+  name: jensen_shannon
+  max_weight: 0.1
+  warmup_epochs: 5

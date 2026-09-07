@@ -1,0 +1,6 @@
+name: gate9a_beats_iter3_plus_as2m_cpt2
+type: beats
+checkpoint: checkpoints/pretrained/beats_as2m_cpt2/BEATs_iter3_plus_AS2M_finetuned_on_AS2M_cpt2.pt
+source_dir: third_party/beats
+pretraining: BEATs_iter3_plus_AS2M_then_AudioSet_supervised_cpt2
+num_classes: 2

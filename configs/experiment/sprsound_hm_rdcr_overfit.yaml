@@ -1,0 +1,34 @@
+name: sprsound_hm_rdcr_overfit
+seed: 20260727
+split_column: development_split
+train_value: validation
+validation_value: validation
+label_column: binary_label_id
+selection_metric: accuracy
+batch_size: 16
+num_workers: 0
+sample_limit_train: 64
+sample_limit_validation: 64
+augmentation:
+  enabled: false
+optimizer:
+  name: adamw
+  learning_rate: 0.001
+  weight_decay: 0.0
+schedule:
+  name: cosine
+  warmup_epochs: 1
+  max_epochs: 30
+  early_stopping_patience: 10
+loss:
+  class_weight_power: 0.0
+consistency:
+  enabled: false
+  name: jensen_shannon
+  max_weight: 0.0
+  warmup_epochs: 0
+morphology:
+  enabled: true
+  attribute_names: [transient, continuous]
+  class_weight_power: 0.0
+  loss_weight: 0.4

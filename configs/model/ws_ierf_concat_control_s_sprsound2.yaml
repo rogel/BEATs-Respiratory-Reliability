@@ -1,0 +1,16 @@
+name: ws_ierf_concat_control_s_sprsound2
+fusion_mode: concat_control
+num_classes: 2
+spectrum:
+  channels: [24, 48, 96, 160]
+  depths: [2, 2, 3, 2]
+  expansion_ratio: 2
+  temporal_dilations:
+    - [1, 1]
+    - [1, 1]
+    - [1, 1, 1]
+    - [1, 1]
+waveform:
+  channels: [24, 48, 64, 96, 128]
+fusion_hidden: 16
+max_residual_margin: 2.0

@@ -1,0 +1,31 @@
+name: sprsound_pilot_7class
+seed: 20260727
+split_column: development_split
+train_value: train
+validation_value: validation
+label_column: label_id
+selection_metric: score
+batch_size: 64
+num_workers: 4
+augmentation:
+  enabled: true
+optimizer:
+  name: adamw
+  learning_rate: 0.0003
+  weight_decay: 0.0001
+schedule:
+  name: cosine
+  warmup_epochs: 5
+  max_epochs: 30
+  early_stopping_patience: 8
+loss:
+  class_weight_power: -0.5
+consistency:
+  enabled: true
+  name: jensen_shannon
+  max_weight: 0.4
+  warmup_epochs: 20
+gate:
+  require_tfdcr_score_above_plain: true
+  require_tfdcr_score_above_repconv: true
+  require_tfdcr_macro_f1_not_below_plain: true

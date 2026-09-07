@@ -1,0 +1,9 @@
+name: gate9b_beats_last_block
+candidate: beats_last_block
+type: beats
+checkpoint: checkpoints/pretrained/beats_as2m_cpt2/BEATs_iter3_plus_AS2M_finetuned_on_AS2M_cpt2.pt
+source_dir: third_party/beats
+pretraining: BEATs_iter3_plus_AS2M_then_AudioSet_supervised_cpt2
+num_classes: 2
+adaptation:
+  strategy: last_block

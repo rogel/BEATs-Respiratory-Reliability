@@ -1,0 +1,17 @@
+name: mfrr_plain_s_sprsound2_masked_mean
+mode: plain
+input_channels: 1
+channels: [24, 48, 96, 160]
+depths: [2, 2, 3, 2]
+expansion_ratio: 2
+kernel_size: 3
+temporal_dilations:
+  - [1, 1]
+  - [1, 1]
+  - [1, 1, 1]
+  - [1, 1]
+pooling: masked_mean
+input_normalization: relaxed_frequency
+relaxed_frequency_weight: 0.5
+normalization_eps: 0.00001
+num_classes: 2

@@ -1,0 +1,70 @@
+protocol: cross_domain_binary_v1
+split_seed: 20260728
+training_seeds:
+  - 20260727
+  - 20260728
+  - 20260729
+task:
+  classes:
+    - normal
+    - adventitious
+  primary_metric: average_score
+  secondary_metrics:
+    - sensitivity
+    - specificity
+    - harmonic_score
+    - macro_f1
+    - roc_auc
+data_roles:
+  train: train_fit
+  model_selection: validation_select
+  probability_calibration: calibration
+  icbhi_final: locked_test
+  sprsound_descriptive_intra_subject: locked_intra_test
+  sprsound_final_inter_subject: locked_inter_test
+test_policy:
+  locked_until_method_calibration_and_seeds_frozen: true
+  testing_1_is_not_primary_evidence: true
+  one_shot_final_evaluation: true
+calibration:
+  metrics:
+    - brier
+    - negative_log_likelihood
+    - equal_frequency_ece_15
+  baselines:
+    - uncalibrated
+    - source_temperature_scaling
+    - target_temperature_scaling
+  target_calibration_patient_budgets:
+    - 5
+    - 10
+    - 20
+    - all
+selective_prediction:
+  uncertainty_baselines:
+    - one_minus_max_probability
+    - predictive_entropy
+  metrics:
+    - aurc_error
+    - aurc_balanced_error
+    - risk_at_80_percent_coverage
+    - risk_at_90_percent_coverage
+    - class_conditional_coverage
+gates:
+  baseline_problem:
+    minimum_mean_cross_domain_drop: 0.03
+  robust_model_pilot:
+    minimum_mean_cross_domain_gain: 0.015
+    both_directions_nonnegative: true
+    maximum_same_domain_drop: 0.01
+  robust_model_confirmation:
+    minimum_mean_cross_domain_gain: 0.02
+    patient_bootstrap_win_probability: 0.90
+    all_three_seeds_same_direction: true
+  calibration:
+    brier_and_nll_both_improve: true
+    no_average_score_change: true
+  selective_prediction:
+    minimum_relative_risk_reduction_at_80_percent_coverage: 0.15
+    minimum_adventitious_coverage_at_80_percent_overall: 0.70
+    maximum_class_coverage_gap: 0.10

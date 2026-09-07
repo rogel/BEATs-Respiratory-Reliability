@@ -1,0 +1,24 @@
+dataset: sprsound2022
+task: event_binary
+classes:
+  - normal
+  - adventitious
+sample_rate: 16000
+source_sample_rate: 8000
+clip_seconds: 8.0
+duration_fit: zero_pad
+random_pad_position: true
+feature:
+  type: log_mel
+  n_fft: 512
+  win_length: 400
+  hop_length: 160
+  n_mels: 64
+  f_min: 50
+  f_max: 2000
+split:
+  model_selection: train_patient_exclusive_holdout
+  validation_group: patient_id
+  validation_fraction: 0.2
+  testing_1: intra_subject_locked
+  testing_2: inter_subject_primary_locked

@@ -1,0 +1,25 @@
+dataset: icbhi2017
+task: cycle_4class
+classes:
+  - normal
+  - crackle
+  - wheeze
+  - both
+sample_rate: 16000
+clip_seconds: 8.0
+duration_fit: zero_pad
+random_pad_position: true
+feature:
+  type: log_mel
+  n_fft: 512
+  win_length: 400
+  hop_length: 160
+  n_mels: 64
+  f_min: 50
+  f_max: 2000
+split:
+  official_recording_split: true
+  strict_patient_split: true
+  strict_policy: any_official_test_recording_places_patient_in_test
+  validation_group: patient_id
+  validation_fraction: 0.2

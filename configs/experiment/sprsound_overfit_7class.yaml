@@ -1,0 +1,31 @@
+name: sprsound_tiny_overfit_7class
+seed: 20260727
+split_column: development_split
+train_value: train
+validation_value: train
+label_column: label_id
+selection_metric: macro_f1
+sample_limit_train: 70
+sample_limit_validation: 70
+batch_size: 14
+num_workers: 0
+augmentation:
+  enabled: false
+optimizer:
+  name: adamw
+  learning_rate: 0.001
+  weight_decay: 0.0
+schedule:
+  name: cosine
+  warmup_epochs: 1
+  max_epochs: 60
+  early_stopping_patience: 20
+loss:
+  class_weight_power: 0.0
+consistency:
+  enabled: false
+  max_weight: 0.0
+  warmup_epochs: 0
+gate:
+  minimum_training_accuracy: 0.95
+  minimum_training_macro_f1: 0.95

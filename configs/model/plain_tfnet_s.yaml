@@ -1,0 +1,14 @@
+name: plain_tfnet_s
+mode: plain
+input_channels: 1
+channels: [24, 48, 96, 160]
+depths: [2, 2, 3, 2]
+expansion_ratio: 2
+kernel_size: 3
+temporal_dilations:
+  - [1, 1]
+  - [1, 2]
+  - [1, 2, 4]
+  - [1, 2]
+num_classes: 4
+

@@ -1,0 +1,41 @@
+plan_id: BEATS-ABLATION-2026-09-03-v1
+plan_sha256: 18b6e39bba441e5be1ec870591b9dbf2846b7e6ab6293be9d211aab12809be39
+allowed_seeds:
+  - 20260729
+  - 20260730
+  - 20260731
+common:
+  batch_size: 8
+  samples_per_epoch: 7515
+  num_workers: 4
+  weight_decay: 0.01
+  backbone_or_adapter_learning_rate: 0.00001
+  head_learning_rate: 0.0001
+  warmup_epochs: 3
+  schedule_horizon_epochs: 20
+  max_epochs: 20
+  early_stopping_patience: 5
+  augmentation:
+    gain_min: 0.8
+    gain_max: 1.2
+    noise_probability: 0.5
+    noise_snr_min_db: 12.0
+    noise_snr_max_db: 30.0
+    shift_probability: 0.5
+    max_shift_fraction: 0.1
+families:
+  legacy-mask:
+    mask_mode: legacy
+    adaptation: fullft
+    js_max_weight: 0.4
+    fixed_prefix: true
+  no-js:
+    mask_mode: exact
+    adaptation: fullft
+    js_max_weight: 0.0
+    fixed_prefix: false
+  matched-lora:
+    mask_mode: exact
+    adaptation: lora
+    js_max_weight: 0.4
+    fixed_prefix: true

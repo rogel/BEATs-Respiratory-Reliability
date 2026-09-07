@@ -1,0 +1,33 @@
+name: gate9a_beats_iter3_plus_as2m_cpt2
+seed: 20260729
+train_value: train_fit
+validation_value: validation_select
+label_column: binary_label_id
+batch_size: 8
+samples_per_epoch: 7515
+num_workers: 4
+sampling:
+  mode: domain_class_event
+augmentation:
+  gain_min: 0.8
+  gain_max: 1.2
+  noise_probability: 0.5
+  noise_snr_min_db: 12.0
+  noise_snr_max_db: 30.0
+  shift_probability: 0.5
+  max_shift_fraction: 0.1
+optimizer:
+  name: adamw
+  backbone_learning_rate: 0.00001
+  head_learning_rate: 0.0001
+  weight_decay: 0.01
+schedule:
+  name: warmup_cosine
+  warmup_epochs: 3
+  max_epochs: 20
+  early_stopping_patience: 5
+consistency:
+  enabled: true
+  name: jensen_shannon
+  max_weight: 0.4
+  warmup_epochs: 20

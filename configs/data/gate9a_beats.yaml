@@ -1,0 +1,17 @@
+dataset: cross_domain_binary
+task: event_or_cycle_binary
+classes:
+  - normal
+  - adventitious
+sample_rate: 16000
+clip_seconds: 8.0
+duration_fit: zero_pad
+random_pad_position: true
+feature:
+  type: unused_waveform_only
+  n_fft: 512
+  win_length: 400
+  hop_length: 160
+  n_mels: 128
+  f_min: 20
+  f_max: 8000
